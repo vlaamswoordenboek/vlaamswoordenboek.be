@@ -1,0 +1,9 @@
+class ChangeUserdetails < ActiveRecord::Migration
+  def self.up
+    change_column :users, :details, :null => true
+  end
+
+  def self.down
+    change_column :users, :details, :null => false
+  end
+end
