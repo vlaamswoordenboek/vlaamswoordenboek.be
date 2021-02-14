@@ -1,0 +1,128 @@
+<p>Er zijn momenteel <%= User.count %> gebruikers geregistreerd op het Vlaams woordenboek. De meest recentelijk geregistreerde
+gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, :action => 'toon', :id => user.login ) }.join(', ')%>. </p>
+
+<h2>Top bewerkers</h2>
+
+<p>De volgende gebruikers hebben de meeste bewerkingen uitgevoerd aan de definities van het Vlaams woordenboek.</p>
+
+<p>
+<table class="barChart">
+	<tr>
+		<th width="0%">
+		</th>
+		<th width="30%">
+			Gebruiker
+		</th>
+		<th width="70%">
+			Bewerkingen
+		</th>
+	</tr>
+	<% count = 0 %>
+	<% maxc = Float( @topeditors.first[ "c" ] ) %>
+	<% for topeditor in @topeditors %>
+		<tr>
+			<td align="right">
+				<%= count = count + 1 %>
+			</td>
+			<td>
+				<%= 
+					login = User.find( topeditor[ "updated_by" ] ).login
+					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+				%>
+			</td>
+			<td class="quantifier">
+				<% 
+					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc 
+				%>
+    			<div style="width:<%= width.to_i %>%;">
+      				<span><%= topeditor[ "c" ] %></span>
+    			</div>
+ 			</td>
+		</tr>
+	<% end %>
+</table>
+</p>
+
+<h2>Actiefste gebruikers</h2>
+
+<p>De volgende gebruikers hebben in de afgelopen week de meeste bewerkingen aan het Vlaams woordenboek uitgevoerd.</p>
+
+<p>
+<table class="barChart">
+	<tr>
+		<th width="0%">
+		</th>
+		<th width="30%">
+			Gebruiker
+		</th>
+		<th width="70%">
+			Bewerkingen in laatste week
+		</th>
+	</tr>
+	<% count = 0 %>
+	<% maxc = Float( @activeeditors.first[ "c" ] ) %>
+	<% for topeditor in @activeeditors %>
+		<tr>
+			<td align="right">
+				<%= count = count + 1 %>
+			</td>
+			<td>
+				<%= 
+					login = User.find( topeditor[ "updated_by" ] ).login
+					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+				%>
+			</td>
+			<td class="quantifier">
+				<% 
+					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc 
+				%>
+    			<div style="width:<%= width.to_i %>%;">
+      				<span><%= topeditor[ "c" ] %></span>
+    			</div>
+ 			</td>
+		</tr>
+	<% end %>
+</table>
+</p>
+
+<h2>Top commentatoren</h2>
+
+<p>De volgende gebruikers hebben het meest gereageerd op definities van het Vlaams woordenboek.</p>
+
+<p>
+<table class="barChart">
+	<tr>
+		<th width="0%">
+		</th>
+		<th width="30%">
+			Gebruiker
+		</th>
+		<th width="70%">
+			Reacties
+		</th>
+	</tr>
+	<% count = 0 %>
+	<% maxc = Float( @topreactors.first[ "c" ] ) %>
+	<% for topreactor in @topreactors %>
+		<tr>
+			<td align="right">
+				<%= count = count + 1 %>
+			</td>
+			<td>
+				<%= 
+					login = User.find( topreactor[ "created_by" ] ).login
+					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+				%>
+			</td>
+			<td class="quantifier">
+				<% 
+					width = 5 + 90 * Float( topreactor[ "c" ] ) / maxc 
+				%>
+    			<div style="width:<%= width.to_i %>%;">
+      				<span><%= topreactor[ "c" ] %></span>
+    			</div>
+ 			</td>
+		</tr>
+	<% end %>
+</table>
+</p>

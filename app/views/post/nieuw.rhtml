@@ -1,0 +1,42 @@
+<p>Met het volgende formulier kunt ge een intern bericht sturen naar andere gebruikers van het Vlaams woordenboek.</p>
+
+<% form_tag :action => 'creeer', :id => @message do %>
+
+	<%= error_messages_for 'message' %>
+
+	<!--[form:message]-->
+
+	<div class="formfield">
+		<label for="message_to_user">Bestemmeling</label>
+		<div class="caption">
+			De login naam van de gebruiker aan wie ge een bericht wilt sturen
+		</div>
+		<% if @message.receiver %>
+			<%= text_field_with_auto_complete :user, :login, :value => @message.receiver.login %>
+		<% else %>
+			<%= text_field_with_auto_complete :user, :login, :value => "" %>
+		<% end %>
+	</div>
+	
+	<div class="formfield">
+		<label for="message_title">Titel</label>
+		<div class="caption">
+			De titel van dit bericht
+		</div>
+		<%= text_field 'message', 'title', :value => @message.title  %>
+	</div>
+	
+	<div class="formfield">
+		<label for="message_body">Bericht</label>
+		<div class="caption">
+			Het bericht zelf. Met vierkante haakjes (bvb [goesting]) kan je naar woorden in het woordenboek linken.
+		</div>
+		<%= text_area 'message', 'body', :value => @message.body  %>
+	</div>
+	
+	<!--[eoform:message]-->
+
+  <%= submit_tag 'Verstuur dit bericht' %>
+
+<% end %>
+

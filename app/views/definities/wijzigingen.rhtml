@@ -1,0 +1,13 @@
+<p>De onderstaande definities zijn de laatst gewijzigde definities van Vlaamse termen in ons woordenboek. Deze lijst is ook
+beschikbaar als <a href="/wijzigingen.xml">RSS Feed <img src="/images/rss.png" alt="RSS"/></a></p>
+
+<% counter = 1 %>
+<% for @definition_version in @definition_versions %>
+	<h2>#<%= @offset.to_i + counter %></h2>
+	<% counter = counter + 1 %>
+        <%= render(:partial => "definition_version") %>
+<% end %>
+
+<p>
+<a href="/definities/wijzigingen?offset=<%= @offset.to_i + 10 %>">Meer ...</a>
+</p>

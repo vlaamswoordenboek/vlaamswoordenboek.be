@@ -1,0 +1,46 @@
+<% cache( :controller => 'definities', :action => 'begintmet', :id => @begin, :part => 'lijst' ) do %>
+
+<% if @langer.size > 0 %>
+	<div class="block">
+		<p><center>
+			<% for l in @langer %>
+				<a href="/definities/begintmet/<%=l%>"><%= l %></a>
+			<% end %>
+		</center></p>
+	</div>
+<% end %>
+
+<% if @words.size > 0 %>
+
+	<p>De volgende <%= @words.size %> termen in onze databank beginnen met '<%=@begin%>':<p>
+
+	<table style="border:0px;">
+		<tr style="border:0px;">
+			<td valign="top" style="border:0px;">
+				<% 
+					count = 0
+					for word in @words 
+				%>
+						<%= link_to word.word, :controller => "definities", :action => "term", :id => word.word %><br/>
+						<% 
+							count = count + 1
+							if count % ( ( @words.size + 4 ) / 4 ) == 0
+						%>
+								</td><td valign="top" style="border:0px;">
+						<% 
+							end 
+						%>
+				<% 
+					end 
+				%>
+			</td>
+		</tr>
+	</table>
+
+<% else %>
+
+	<p> De databank bevat geen termen die beginnen met '<%=@begin%>'</p>
+	
+<% end %>
+
+<% end %>

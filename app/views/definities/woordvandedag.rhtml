@@ -1,0 +1,31 @@
+<p>Dagelijks kiezen we een woord van de dag, uit de vele plezante woorden die in dit Vlaams woordenboek terug te vinden zijn. Het
+Vlaams woord van de dag is ook beschikbaar als <a href="/woordvandedag.xml">RSS Feed <img src="/images/rss.png" alt="RSS"/></a></p>
+
+<% if logged_in? && current_user.admin? %>
+	<div class="block-admin">
+		<h3>Wachtrij</h3>
+		<ul>
+			<% if @upcoming_wotds.size > 0 %>
+				<% for @wotd in @upcoming_wotds 
+					@definition = Definition.find( @wotd.definition_id ) %>
+					<li><%= localize( @wotd.date(), "%d %B %Y" ) %>: <%= link_to @definition.word, :action => "toon", :id => @definition.id %></li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
+
+<% counter = 1 %>
+<% if @wotds.size > 0 %>
+	<% for @wotd in @wotds 
+		@definition = Definition.find( @wotd.definition_id ) %>
+		<h2>#<%= @offset.to_i + counter %> <%= localize( @wotd.date(), "%d %B %Y" ) %>: <%=@definition.word%></h2>
+		<% counter = counter + 1 %>
+		<%= render(:partial => "definition") %>
+	<% end %>
+<% end %>
+
+<p>
+<a href="/definities/woordvandedag?offset=<%= @offset.to_i + 10 %>">Meer ...</a>
+</p>

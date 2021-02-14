@@ -1,0 +1,10 @@
+<div class="formfield" style="border: solid #ccc 1px;margin: 0px 0px 5px 10px; padding: 0px 10px 0px 10px; background: #fff; color: #666;">
+	<p><b>
+		<a href="/forum/onderwerp/<%= @forumtopic.id %>"><%= @forumtopic.title %></a>
+	</b></p>
+	<%=textilize( @forumtopic.body ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
+	<p><div class="caption">
+		Toegevoegd door <a href="/gebruiker/toon/<%= @forumtopic.user.login %>"><%= @forumtopic.user.login %></a> op <%= localize( @forumtopic.created_at )%> |
+		<a href="/forum/onderwerp/<%= @forumtopic.id %>"><%= @forumtopic.comments.size %> reactie(s)</a>
+	</div></p>
+</div>

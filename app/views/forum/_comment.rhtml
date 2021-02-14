@@ -1,0 +1,9 @@
+<div class="formfield" style="border: solid #ccc 1px;margin: 0px 0px 5px 10px; padding: 0px 10px 0px 10px; background: #fff; color: #666;">
+	<p><b>
+		<%= @comment.title %>
+	</b></p>
+	<%=textilize( @comment.body ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
+	<p><div class="caption">
+			Toegevoegd door <a href="/gebruiker/toon/<%= @comment.user.login %>"><%= @comment.user.login %></a> op <%= localize( @comment.created_at )%>
+	</div></p>
+</div>

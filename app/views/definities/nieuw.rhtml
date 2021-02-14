@@ -1,0 +1,17 @@
+<p>Ingelogde gebruikers kunnen nieuwe termen en hun definities aan het Vlaamse woordenboek toevoegen.</p>
+
+<% if logged_in? %>
+
+	<p>Met het volgende formulier kunt ge nieuwe beschrijvingen van typisch Vlaamse woorden, termen en uitspraken toevoegen aan onze
+	databank.</p>
+
+	<% form_tag :action => 'creeer' do %>
+	  <%= render :partial => 'form' %>
+	  <%= submit_tag "Creëer" %>
+	<% end %>
+
+<% else %>
+
+	<%= render :partial => "account/login" %>
+
+<% end %>

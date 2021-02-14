@@ -1,0 +1,60 @@
+<%= error_messages_for 'definition' %>
+
+<!--[form:definition]-->
+
+<div class="formfield">
+	<label for="definition_word">Woord<span style="color:#ff0000;">*</span></label>
+	<div class="caption">
+		Het woord, term of de uitspraak die hier wordt gedefinieerd. Gebruik liefst geen hoofdletters.
+	</div>
+	<%= text_field 'definition', 'word', :value => @definition.word  %>
+</div>
+
+<div class="formfield">
+	<label for="definition_properties">Kenmerken</label>
+	<div class="caption">
+		Geef eventueel een aantal woordkenmerken aan<br>
+		- Geef bijvoorbeeld "de ~ (v.), ~sen" aan om het lidwoord, geslacht en meervoud van een zelfstandig naamwoord op te geven<br/>
+		- Dit veld is niet verplicht in te vullen
+	</div>
+	<%= text_field 'definition', 'properties', :value => @definition.properties  %>
+</div>
+
+<div class="formfield">
+	<label for="definition_description">Beschrijving<span style="color:#ff0000;">*</span></label>
+	<div class="caption">
+		Geef een beschrijving van de term.<br/>
+		- Gebruik "Algemeen Beschaafd Vlaams" om het woord te beschrijven<br>
+		- Beschrijf slechts 1 betekenis, voeg andere apart toe<br/>
+		- Gebruik vierkante haakjes om een ander woord te linken, zo wordt [goesting] omgezet naar <a href="definities/term/goesting">goesting</a>
+	</div>
+	<%= text_area 'definition', 'description', :value => @definition.description, :size => '60x10'  %>
+</div>
+
+<div class="formfield">
+	<label for="definition_word">Regio</label>
+	<div class="caption">
+		Indien het woord enkel in een lokaal dialect wordt gebruikt, geef dan ook de streek aan waar deze term wordt gebruikt<br/>
+		- <a href="/info/regios">Meer info over de regio's.</a>
+	</div>
+	<select name="definition[regio]">
+		<%= option_groups_from_collection_for_select( Regio::OPTIONS, :options, :type_name, :id, :name, @definition.regio ) %>
+	</select>
+</div>
+
+<div class="formfield">
+	<label for="definition_example">Voorbeeld<span style="color:#ff0000;">*</span></label>
+	<div class="caption">
+		Geef een voorbeeldzin met het woord. <br/>
+		- Gebruik ook hier weer "Algemeen Beschaafd Vlaams"<br/>
+		- Zorg dat de bovenstaande betekenis van het woord verduidelijkt wordt<br/>
+		- Hier kan je ook vierkante haakjes gebruiken om te linken naar andere woorden
+	</div>
+	<%= text_area 'definition', 'example', :value => @definition.example, :size => '60x10'  %>
+</div>
+
+<!--[eoform:definition]-->
+
+<p>Uw inbreng wordt geweldig geapprecieerd!</p>
+
+<div class="caption">Velden met <span style="color:#ff0000;">*</span> moeten worden ingevuld</div>

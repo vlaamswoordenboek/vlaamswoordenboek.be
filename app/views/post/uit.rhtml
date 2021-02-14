@@ -1,0 +1,28 @@
+<% if @messages.size > 0 %>
+	<table>
+		<th width="10%">Ontvanger</th>
+		<th width="70%">Onderwerp</th>
+		<th width="20%">Verzonden</th>
+		<% for @message in @messages %>
+			<tr>
+				<td>
+					<%= link_to @message.receiver.login, :controller => 'gebruiker', :action => 'toon', :id => @message.receiver.login %>
+				</td>
+				<td>
+					<% 
+					if @message.title != ""
+						message_title = @message.title
+					else
+						message_title = "(Zonder titel)"
+					end %>
+					<%= link_to message_title, :action => 'toon', :id => @message %>
+				</td>
+				<td>
+					<%= localize( @message.created_at, format = "%d %b %Y %H:%M" )%>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+<% else %>
+	<p>Je hebt nog geen berichten verstuurd.</p>
+<% end %>

@@ -1,0 +1,46 @@
+<p>Dit is slechts 1 definitie  voor "<%= @definition.word %>." 
+<%= link_to "Bekijk alle definities", :action => 'term', :id => @definition.word %>.</p>
+
+<%= render(:partial => "definition") %>
+
+<% if logged_in? && current_user.admin? %>
+	<div class="block-admin">
+		<h3>Markeer als woord van de dag</h3>
+		<p><% if @wotds.size > 0 %>
+			Dit woord was reeds wotd op
+			<% for @wotd in @wotds %>
+				<%= @wotd.date %>
+			<% end %>
+		<% end %>
+		<% form_tag :action => 'wotd', :id => @definition do %>
+			<%= select 'wotd', 'date', @wotd_dates %>
+	  		<%= submit_tag "Word of the day!" %>
+		<% end %></p>
+	</div>
+<% end %>
+
+<h2>Reacties</h2>
+
+<% if @definition.reactions.size > 0 %>
+	<% for @reaction in @definition.reactions %>
+		<%= render(:partial => "reaction") %>
+	<% end %>
+<% else %>
+	<p>Er zijn nog geen reacties op deze beschrijving.</p>
+<% end %>
+
+<h2>Voeg een reactie toe</h2>
+
+<p>Ingelogde gebruikers kunnen reacties aan deze definitie toevoegen.</p>
+
+<% if logged_in?
+	@reaction = Reaction.new 
+	form_tag :action => 'reageer', :id => @definition do %>
+	  <%= render :partial => 'reactionform' %>
+	  <%= submit_tag "Voeg mijn reactie toe" %>
+	<% end 
+  else %>
+
+	<%= render :partial => "account/login" %>
+
+<% end %>

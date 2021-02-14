@@ -1,0 +1,12 @@
+<p>De onderstaande reacties zijn de laatst toegevoegde reacties op termen in ons woordenboek. </p>
+
+<% counter = 1 %>
+<% for @reaction in @reactions %>
+	<h2>#<%= @offset.to_i + counter %> <%= link_to @reaction.definition.word, :controller => 'definities', :action => 'toon', :id => @reaction.definition.id %></h2>
+	<% counter = counter + 1 %>
+	<%= render(:partial => "reaction") %>
+<% end %>
+
+<p>
+<a href="/definities/reacties?offset=<%= @offset.to_i + 20 %>">Meer ...</a>
+</p>

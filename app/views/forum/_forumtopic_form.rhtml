@@ -1,0 +1,31 @@
+<%= error_messages_for 'forumtopic' %>
+
+<!--[form:forumtopic]-->
+
+<div class="formfield">
+	<label for="forumtopic_forum">Forum</label>
+	<div class="caption">
+		Kies het forum waarin uw onderwerp het beste past.
+	</div>
+	<%= collection_select('forumtopic', 'forum_id', Forum.find_all, "id", "title", :value => @forumtopic.forum_id ) %>
+</div>
+
+<div class="formfield">
+	<label for="forumtopic_title">Titel</label>
+	<div class="caption">
+		De titel van uw onderwerp
+	</div>
+	<%= text_field 'forumtopic', 'title', :value => @forumtopic.title  %>
+</div>
+
+<div class="formfield">
+	<label for="forumtopic_text">Tekst</label>
+	<div class="caption">
+		Schrijf hieronder uw boodschap
+	</div>
+	<%= text_area 'forumtopic', 'body', :value => @forumtopic.body, :size => '60x10'  %>
+</div>
+
+<!--[eoform:definition]-->
+
+<p>Uw inbreng wordt geweldig geapprecieerd!</p>

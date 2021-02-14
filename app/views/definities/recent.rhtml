@@ -1,0 +1,13 @@
+<p>De onderstaande definities zijn de laatst toegevoegde definities van Vlaamse termen in ons woordenboek. Deze lijst is ook
+beschikbaar als <a href="/recent.xml">RSS Feed <img src="/images/rss.png" alt="RSS"/></a></p>
+
+<% counter = 1 %>
+<% for @definition in @definitions %>
+	<h2>#<%= @offset.to_i + counter %></h2>
+	<% counter = counter + 1 %>
+	<%= render(:partial => "definition") %>
+<% end %>
+
+<p>
+<a href="/definities/recent?offset=<%= @offset.to_i + 20 %>">Meer ...</a>
+</p>

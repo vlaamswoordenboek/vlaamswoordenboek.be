@@ -1,0 +1,23 @@
+<%= error_messages_for 'reaction' %>
+
+<!--[form:reaction]-->
+
+<div class="formfield">
+	<label for="reaction_title">Titel</label>
+	<div class="caption">
+		De titel van uw reactie
+	</div>
+	<%= text_field 'reaction', 'title', :value => @reaction.title  %>
+</div>
+
+<div class="formfield">
+	<label for="reaction_body">Reactie</label>
+	<div class="caption">
+		Geef hier uw reactie op de bovenstaande definitie.<br/>
+	</div>
+	<%= text_area 'reaction', 'body', :value => @reaction.body, :size => '60x10'  %>
+</div>
+
+<!--[eoform:reaction]-->
+
+<p>Uw inbreng wordt geweldig geapprecieerd!</p>
