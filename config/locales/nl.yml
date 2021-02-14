@@ -1,6 +1,12 @@
 ---
 nl:
   activerecord:
+    attributes:
+      user:
+        login: "Login"
+        email: "E-mail adres"
+        password: "Paswoord"
+        password_confirmation: "Bevestiging paswoord"
     errors:
       messages:
         record_invalid: 'Validatie mislukt: %{errors}'

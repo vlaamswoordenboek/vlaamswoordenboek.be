@@ -12,7 +12,7 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 
   def a_test_user
-    user = User.create!(:email => 'johndoe@example.org', :login => 'aliekens', :password => 'ABBAACDC', :password_confirmation => 'ABBAACDC')
+    user = users(:user1)
   end
 
   def a_test_user2

@@ -15,15 +15,15 @@ class DefinitiesController < ApplicationController
   end
 
   def get_recent_gewijzigd(n = 10, offset = 0)
-    @recent_gewijzigd = DefinitionVersion.find :all, :limit => n, :order => 'updated_at DESC', :offset => offset
+    @recent_gewijzigd = DefinitionVersion.order('updated_at DESC').limit(n).offset(offset)
   end
 
   def get_recent_toegevoegd(n = 10, offset = 0)
-    @recent_toegevoegd = Definition.find :all, :limit => n, :order => 'id DESC', :offset => offset
+    @recent_toegevoegd = Definition.order('id DESC').limit(n).offset(offset)
   end
 
   def get_recent_reactions( n = 10, offset = 0 )
-    @recent_reactions = Reaction.find :all, :limit => n, :order => 'created_at DESC', :offset => offset
+    @recent_reactions = Reaction.order('created_at DESC').limit(n).offset(offset)
   end
 
   def get_top(n = 20, offset = 0)
@@ -108,7 +108,7 @@ class DefinitiesController < ApplicationController
   def index
     @title = "Welkom bij het Vlaams woordenboek"
     @definitions = random_sample( 5, true )
-    @wotd = Wotd.find :first, :conditions => "date <= '#{Date.today}'", :order => 'date DESC'
+    @wotd = Wotd.where("date <= '#{Date.today}'").order('date DESC').first
     recent_blocks
   end
 

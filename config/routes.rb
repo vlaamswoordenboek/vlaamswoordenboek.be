@@ -6,11 +6,12 @@ App::Application.routes.draw do
   post '/definities/creeer' => 'definities#creeer'
   post '/definities/update' => 'definities#update'
 
-  match ':controller/service.wsdl' => '#wsdl'
-  match '/definities/term/*id' => 'definities#term'
-  match '/:controller(/:action(/:id))'
-  match '/recent.xml' => 'definities#recent_rss'
-  match '/wijzigingen.xml' => 'definities#wijzigingen_rss'
-  match '/woordvandedag.xml' => 'definities#woordvandedag_rss'
-  match '*anything' => 'definities#index'
+  # TODO fix wsdl? (was that implemented?)
+  # match ':controller/service.wsdl' => '#wsdl'
+  get '/definities/term/*id' => 'definities#term'
+  get '/:controller(/:action(/:id))'
+  get '/recent.xml' => 'definities#recent_rss'
+  get '/wijzigingen.xml' => 'definities#wijzigingen_rss'
+  get '/woordvandedag.xml' => 'definities#woordvandedag_rss'
+  get '*anything' => 'definities#index'
 end
