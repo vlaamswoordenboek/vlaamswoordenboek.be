@@ -2,7 +2,7 @@
 module ApplicationHelper
 
   def localize( d, format = "%d %b %Y" )
-    I18n.l(d, format => format)
+    I18n.l(d, format: format)
   end
 
   def all_pagination_links( pages )

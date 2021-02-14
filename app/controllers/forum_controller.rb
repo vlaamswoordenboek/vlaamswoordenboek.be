@@ -1,26 +1,26 @@
 class ForumController < ApplicationController
-  
-  before_filter :login_required, :only => [ :creeeronderwerp, :reageer ]
+
+  before_action :login_required, :only => [ :creeeronderwerp, :reageer ]
 
   def index
     @title = "Forums"
     @forums = Forum.find( :all )
   end
-  
+
   def forum
     @forum = Forum.find( params[:id] )
     @title = 'Forum &#187; ' + @forum.title
   end
-  
+
   def onderwerp
     @forumtopic = Forumtopic.find( params[:id] )
     @title = @forumtopic.title
-    @trail = 
-      '<a href="/forum">Forum</a> &#187; ' + 
-      '<a href="/forum/forum/' + @forumtopic.forum.id.to_s + '">' + @forumtopic.forum.title + '</a> &#187; ' + 
+    @trail =
+      '<a href="/forum">Forum</a> &#187; ' +
+      '<a href="/forum/forum/' + @forumtopic.forum.id.to_s + '">' + @forumtopic.forum.title + '</a> &#187; ' +
       @forumtopic.title
   end
-  
+
   def nieuwonderwerp
     @forumtopic = Forumtopic.new
     @title = 'Start een nieuw forum onderwerp'
@@ -36,7 +36,7 @@ class ForumController < ApplicationController
       render :action => 'nieuw'
     end
   end
-  
+
   def reageer
     @forumtopic = Forumtopic.find( params[:id] )
     @comment = Comment.new(params[:comment])
@@ -50,5 +50,5 @@ class ForumController < ApplicationController
       render :action => 'onderwerp', :id => @forumtopic
     end
   end
-  
+
 end

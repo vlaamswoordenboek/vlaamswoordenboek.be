@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.5.8'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.2.0'
 gem 'RedCloth'
 
 # Bundle edge Rails instead:
@@ -11,6 +11,7 @@ gem 'RedCloth'
 gem 'sqlite3', '~> 1.3.5'
 
 gem "mini_racer"
+gem 'bootsnap'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +22,8 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem 'listen'
 end
 
 gem 'jquery-rails'

@@ -1,21 +1,21 @@
 class PostController < ApplicationController
-  
-  before_filter :login_required
+
+  before_action :login_required
   auto_complete_for :user, :login
-  
+
   def in
     @title = "Postvak: Binnengekomen berichten"
     @messages = Message.find( :all, :conditions => ["to_user = ?", current_user ], :order => 'created_at DESC' )
   end
-  
+
   def uit
     @title = "Postvak: Uitgaande berichten"
     @messages = Message.find( :all, :conditions => ["from_user = ?", current_user ], :order => 'created_at DESC' )
   end
-  
+
   def toon
     @message = Message.find( params[ :id ] )
-    if ( current_user != @message.sender ) && ( current_user != @message.receiver ) 
+    if ( current_user != @message.sender ) && ( current_user != @message.receiver )
       redirect_to :controller => 'post', :action => 'in'
     end
     if ( current_user == @message.receiver )
@@ -24,14 +24,14 @@ class PostController < ApplicationController
     end
     @title = @message.title
   end
-  
+
   def nieuw
     @title = "Nieuw bericht"
     @message = Message.new
     @message.from_user = current_user
     @message.to_user = User.find_by_login( params[ :id ] ).id
   end
-  
+
   def creeer
     @message = Message.new(params[:message])
     @message.from_user = self.current_user.id
@@ -50,5 +50,5 @@ class PostController < ApplicationController
     end
   end
 
-  
+
 end

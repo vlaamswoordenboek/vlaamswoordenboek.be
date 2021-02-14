@@ -1,6 +1,6 @@
 class DefinitiesController < ApplicationController
 
-  before_filter :login_required, :only => [ :reageer, :creeer, :nieuw, :bewerk, :update, :verwijder ]
+  before_action :login_required, :only => [ :reageer, :creeer, :nieuw, :bewerk, :update, :verwijder ]
 
   def title
     @title = @definition.word

@@ -1,6 +1,6 @@
 class AccountController < ApplicationController
   # If you want "remember me" functionality, add this before_filter to Application Controller
-  before_filter :login_from_cookie
+  before_action :login_from_cookie
 
   # say something nice, you goof!  something sweet.
   def index
@@ -33,7 +33,7 @@ class AccountController < ApplicationController
   rescue ActiveRecord::RecordInvalid
     render :action => 'signup'
   end
-  
+
   def logout
     self.current_user.forget_me if logged_in?
     cookies.delete :auth_token
@@ -41,7 +41,7 @@ class AccountController < ApplicationController
     flash[:notice] = "Ge zijt nu uitgelogd."
     redirect_back_or_default( :controller => 'definities', :action => 'index' )
   end
-  
+
   def instellingen
     if logged_in?
         @title = "Mijn instellingen"
@@ -50,7 +50,7 @@ class AccountController < ApplicationController
         redirect_back_or_default( :controller => 'definities', :action => 'index' )
     end
   end
-  
+
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])

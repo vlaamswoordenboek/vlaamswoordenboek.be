@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   auto_complete_for :definition, :word
 
   include AuthenticatedSystem
-  before_filter do |c|
+  before_action do |c|
     @current_user = (c.session[:user] && User.find_by_id(c.session[:user])) || :false
   end
 

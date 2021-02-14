@@ -15,9 +15,9 @@ cd app/
 gem instal bundler -v 1.17.3
 bundle install
 
-bundle exec rake db:schema:load
+./bin/rails db:schema:load
 bundle exec script/runner setup.rb
-bundle exec script/server
+./bin/rails s
 ~~~
 
 Now visit localhost:3000 and enjoy :)
