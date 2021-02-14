@@ -55,9 +55,10 @@
 	<hr style="border-bottom: 1px solid #EEE;border-top:0;"/>
 	<div class="right" style="text-align:right;width:200px;">
 		<div>
-			<%= link_to_remote image_tag('/images/thumbs_up.gif'),
+			<%= link_to image_tag('/images/thumbs_up.gif'),
 				{
-					:url => {:action => 'thumbsup', :controller => "definities", :id => @definition }
+					:url => {:action => 'thumbsup', :controller => "definities", :id => @definition },
+					:remote => true,
 				},
 				{
 					:title => "Ik vind dit een goede definitie",

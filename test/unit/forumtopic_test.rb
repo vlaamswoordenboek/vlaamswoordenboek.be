@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
-class ForumTopicTest < Test::Unit::TestCase
+class ForumTopicTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   def test_can_create
     forum = Forum.create!(:title => 'Test', :body => 'Test')

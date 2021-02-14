@@ -1,6 +1,6 @@
 <% if logged_in? %>
 
-	<h2>Ingelogd als <%= current_user.login %></h2> 
+	<h2>Ingelogd als <%= current_user.login %></h2>
 	<p>
 		<%= link_to 'Mijn profiel', :controller => 'gebruiker', :action => 'toon', :id => current_user.login %><br/>
 		<%= link_to 'Instellingen', :controller => 'account', :action => 'instellingen', :id => current_user.login %><br/>
@@ -14,7 +14,7 @@
 
 <% else %>
 
-	<% session[:return_to] = request.request_uri %>
+	<% session[:return_to] = request.url %>
 
 	<h2>Log in</h2>
 
@@ -43,7 +43,7 @@ definities verbeteren, en reageren op bestaande definities.</p>
 		<!--<p><label for="remember_me">Vergeet me niet</label> <%= check_box_tag 'remember_me' %></p>-->
 
 		<p><%= submit_tag 'Log in' %></p>
-	
+
 	<% end %>
 
 <% end %>

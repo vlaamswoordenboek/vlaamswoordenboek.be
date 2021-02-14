@@ -6,10 +6,6 @@ class DefinitiesController < ApplicationController
     @title = @definition.word
   end
 
-  # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :creeer, :update ],
-         :redirect_to => { :action => :index }
-
   def random_sample(n = 1, positiverating = false )
     if( positiverating )
       Definition.find(Definition.find_by_sql("select id from definitions where positivevotes > 100 order by random() limit #{n}").map { |q| q.id })

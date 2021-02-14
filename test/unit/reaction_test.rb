@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../test_helper'
 
-class ReactionTest < Test::Unit::TestCase
+class ReactionTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   def test_can_create
     definition = Definition.create!(:word => 'Test', :description => 'Test', :example => 'Test')
