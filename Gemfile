@@ -1,14 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.5.8'
+ruby '2.7.2'
 
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 6.1.0'
+gem 'puma', '~> 5.2.1'
 gem 'RedCloth'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', '~> 1.3.5'
+gem 'sqlite3', '~> 1.4'
 
 gem "mini_racer"
 gem 'bootsnap'

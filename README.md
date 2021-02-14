@@ -6,7 +6,7 @@ Oude code van vlaamswoordenboek. Meeste code dateert uit 2007, geschreven in een
 
 Should work with docker as well (replace podman with docker)
 
-`podman run -it -p 3000:3000 -v ./:/app:Z ruby:2.5.8-buster  "bash"`
+`podman run -it -p 3000:3000 -v ./:/app:Z ruby:2.7.2-buster  "bash"`
 
 In the docker container
 
