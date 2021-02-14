@@ -3,9 +3,9 @@
 
 class ApplicationController < ActionController::Base
   layout "standard"
-  
+
   auto_complete_for :definition, :word
-  
+
   include AuthenticatedSystem
   before_filter do |c|
     @current_user = (c.session[:user] && User.find_by_id(c.session[:user])) || :false
@@ -13,5 +13,5 @@ class ApplicationController < ActionController::Base
 
   # Pick a unique cookie name to distinguish our session data from others'
   session :session_key => '_vlaamswoordenboek_session_id'
-  
+
 end
