@@ -1,0 +1,2256 @@
+# 1000 top Flemish words, their definitions, examples, properties and rating based on
+# http://www.vlaamswoordenboek.be 
+# created by Anthony Liekens <anthony@liekens.net>
+# 
+# Fields: word, definition, example, properties, rating
+#
+# This work is licensed under the Creative Commons
+# Attribution-Noncommercial-Share Alike 2.0 Belgium License. To view a copy
+# of this license, visit
+# http://creativecommons.org/licenses/by-nc-sa/2.0/be/ or send a letter to
+# Creative Commons, 171 Second Street, Suite 300, San Francisco, California,
+# 94105, USA. 
+# 
+"poepen","neuken, vrijen\
+\
+Officieel vermeldt de Van Dale hier de betekenis van [kakken], en vermeldt de Vlaamse betekenis als bijkomstig, en grof. Ik denk niet dat de gemiddelde Vlaming poept op de toilet, een Nederlander doet dat wel. Een Vlaming poept graag met z'n twee, een Nederlander vindt dat maar een vieze gedachte.","Evelien liet in een geile bui aan Flor weten dat ze [goesting] had om met hem te poepen.","ww. poepte, heeft gepoept","109"
+"ambetant","vervelend, hinderend, irritant","Ik word ambetant van die [stoverij] tussen mijn tanden.\
+Ons baby'tje doet helemaal niet ambetant, zo nen brave.","bn.","103"
+"schup","spade","Ik heb een schup gekocht om 't gras af te steken.","de ~ (m.), ~pen","88"
+"frak","jas","Het begon te regenen, maar ik was mijnen frak vergeten.","de ~ (m.), ~ken","67"
+"voorschoot","schort","Vroeger moesten meisjes op school altijd een geruiten voorschoot aan.","het, de ~ (m.), ~en","65"
+"borstel, er met de grove ~ door gaan","grondig aanpakken","Om het netwerk achter de drugsbende bloot te leggen is de politie er in het milieu met de grove borstel door gegaan.","uitdr.","61"
+"boke","boterham","Hij heeft drie bokes met [choco] gegeten.\
+Ik eet eerst een boke met [hesp] en dan eentje met kaas.","het ~, ~s","59"
+"afslag","korting\
+\
+af·slag (de<sup>m</sup>)\
+2. prijsverlaging","Als je dat toestel in onze winkel koopt, krijg je 5 euro afslag.","de ~ (m.), ~en","58"
+"bolleke","snoepje, snoepgoed, zoete snoepbol om op te zuigen\
+","Wie van de kindjes wil een bolleke? Ge zijt allemaal heel flink geweest.\
+\
+Met mijne vlieger en zijne steert.\
+Hij gaat omhuge, ‘t is ‘t ziene weerd.\
+'k Geef hem maar [kleiwe], op zijn [gemak].\
+‘k Heb nog [drei] bollekes in mijne zak.\
+(De Vlieger, K. Burgelman, A. De Kegel)\
+","het ~, ~s","53"
+"kat, zijn ~ sturen","niet komen opdagen, een afspraak bewust missen","Ik had met Karel afgesproken om 14u, maar hij heeft zijn kat gestuurd.","uitdr.","42"
+"klotsbuis","zelfgemaakt speelgoed van vroeger\
+\
+Een stuk vliertak werd uitgehold en hierin werd een vlierbes gestopt. Met een stokje dat net in de uitholling paste werd er doorheen de buis geslagen waardoor men een [klots] kreeg.","We gaan het nog eens laten klotsen met de klotsbuis.","de ~ (v.), -zen","41"
+"tier, het ~ hebben","het moeilijk hebben","hij heeft weinig geslapen, nu heeft hij het tier om wakker te blijven","uitdr.","41"
+"nel","naald","Pak nel en draad!","de ~ (v.), ~len","37"
+"peke","oud ventje  zie [pee]","Dat peke zat weer in de [estaminet] deze middag.","het ~, ~s","35"
+"halfzegat","niet helemaal afgewerkt","het huis is maar halfzegat afgewerkt","bw.","34"
+"moksje","-> [mok]\
+\
+lief, vriendin","'k Heb gisteren de hele nacht met mijn moksje liggen [karjakken]","het ~, ~s","33"
+"matantje","Brussels dialect voor een man met vrouwelijke trekjes","Is dat een mantantje?","het ~, ~s","33"
+"zwanzen","nonsens verkopen, [zeveren]","Ge moet niet zo zwanzen, manneke!","ww. zwansde, heeft gezwansd","32"
+"gerief","gereedschap, uitrusting","Ik zal mijn gerief pakken om uwen band te plakken.","het ~ (o.), geen mv.","32"
+"bancontact","Belgisch systeem voor elektronische betalingen, ook gebruikt om [plastiek] bankkaart, geldautomaat aan te geven, ook bancontacten als werkwoord in de betekenis van elektronisch betalen of geld afhalen","Is hier ergens een bancontact in de buurt?\
+Ik ga met bancontact betalen.\
+Kan ik hier bancontacten of moet ik met cash betalen?","de ~ (m.)/het ~, ~en","32"
+"opzeg","opzegging(speriode)","Mijn lief heeft gisteren haar opzeg gekregen.","de ~ (m.)","31"
+"tutter","fopspeen\
+\
+zie ook: [tut]","Dat kleine meisje loopt de hele dag met haren tutter in de mond.","de ~ (m.), ~s","30"
+"maand","maanden, enkelvoudvorm \"maand\" wordt gebruikt om meervoud \"maanden\" aan te geven\
+","hij heeft drie maand [opzeg]","de ~ (v.), ~?","29"
+"smossen","In Tom Lanoye's toneelstuk \"De Jossen\" wordt \"smossen\" gebruikt als synoniem voor \"zoenen\".","Ze staan te smossen! :O","ww. smoste, heeft gesmost","29"
+"lunsen","vol [goesting] naar iets kijken\
+\
+zie [geilogen]","Op het strand zit hij te lunsen naar de meisjes in bikini.","ww. lunsde, heeft gelunsd","28"
+"webbe","goedlachs iemand\
+/'w.e b.e/","De webbe heeft weer een pint teveel op.","ne ~ (m.), ~s","28"
+"nagelenbuik","navel","De meisjes draaien er hun hand niet voor om om met een kort jakje hun nagelenbuik te laten zien. Koel.","","27"
+"vleesklak","kale vlek op een persoon","Meester Pieter heeft een vleesklak.","de ~ (m./v.), ~ken","27"
+"hoemp","De eerste dikke korst die van een ongesneden brood wordt afgesneden.","Ik snij een hoemp van het brood","de ~ (v.), ~en","27"
+"ijerdolleke","kleine veldmuis","Nu het begint te vriezen proberen de ijerdollekes binnen te komen.","het ~,  ~s","26"
+"zonenummer","netnummer, kengetal","In België moet ge altijd het zonenummer draaien, zelfs al belt ge lokaal.","het ~, ~s","26"
+"gendarme","rijkswachter, nationaal politieagent (bij de fusie van de politiediensten is deze benaming verdwenen)\
+\
+VD\
+\
+U hebt gezocht op het woord: gendarme.\
+RESULTAAT (max 20 woorden)\
+gen·dar·me (dem; gendarmen, gendarmes)  \
+  1  historische benaming voor een militair met politietaken \
+","De gendarmen zorgden ervoor dat de betoging niet uit de hand liep.","de ~, ~s/~n","26"
+"cliquetsysteem","belastingssysteem waardoor de [taks] op diesel automatisch verlaagd wordt als deze boven een prijs stijgt","Toen het cliquetsysteem nog maar pas in werking was getreden, heeft het bij forse prijsstijgingen van diesel in november 2007 niet gewerkt, omdat er geen regering was om deze te activeren.","het ~, -en","26"
+"boecht","rommel, ook [bucht]","Op de markt was het bijna allemaal boecht.","de ~ (m.)","25"
+"hammevlees","gekookte hesp\
+\
+\
+\
+\
+\
+\
+\
+\
+","Voor soortnamen geen hoofdletter gebruiken in het lemma, aub.\
+\
+Graag een duidelijke voorbeeldzin, waarin de betekenis tot zijn recht komt.","het ~, geen mv.","25"
+"humaniora","verouderde benaming voor algemeen secundair onderwijs (ASO)","In de humaniora hebben we een paar streken uitgehaald met onze leraars.","de ~ (v.)","25"
+"bavet","slabbetje < Fr. bavette (baver = kwijlen)\
+Men zegt eigenlijk bavette (welke regio?), \
+nooit bavet (bavet in Antw.)","Doe maar een bavet aan, als ge gaat beginnen [smossen] met uw eten.\
+Ai nee, Sofian heeft nog maar net verse kleerkes aan en ge zijt zijn bavet vergeten aandoen.","de ~ (v.), -ten","24"
+"moeven","bewegen, van plaats wisselen","\"Moeft nie!\" - \"Ge moogt nog niet meer moeven. Wat is er met die kerel aan de hand? [Percies] of hij zit altijd stil.\"","ww. moefde, heeft/is gemoefd","24"
+"maandstonden","menstruatie, ongesteld\
+synoniem van [regels]\
+\
+VD\
+maand·ston·den (zelfstandig naamwoord, meervoud)  \
+  1  (formeel) menstruatie  \
+","Ik heb mijn maandstonden.\
+","de ~ (mv.)","23"
+"sebiet","-> [subiet]\
+\
+straks, zo dadelijk, later < Fr. subit (bruusk, plots)","Ik zal u sebiet eens bellen.\
+Sebiet begint mijn favoriet programma op den TV.","bijw.","23"
+"smossen","knoeien, morsen","Stop met smossen en eet uw bord leeg.\
+Ik heb mayonnaise op mijn broek gesmost.","ww. smoste, heeft gesmost","23"
+"tuttefrut","kauwgum, kauwgom\
+\
+(Antw.) > [tutterfrut]\
+\
+zie ook: [tutteflut]","Na 5 minuten heeft die tuttefrut geen smaak meer.","de ~ (m.), ~ten","23"
+"desgevallend","in voorkomend geval","De algemene vergadering van Obligatiehouders is bevoegd om in te stemmen met alle wijzigingen aan de voorwaarden van de Obligaties, te beslissen over daden van bewaring voor het gemeenschappelijk belang en <b>desgevallend</b> één of meer gevolmachtigden aan te stellen die de door de vergadering genomen besluiten uitvoeren en de gezamenlijke Obligatiehouders vertegenwoordigen in het kader van de uitgifte.","","22"
+"plezant","plezierig, leuk\
+\
+\"Leuk\" krijgen we als Vlaming veel minder gemakkelijk over onze lippen dan een Nederlander, \"leuk\" klinkt te flauw, en te fleurig voor de gemiddelde stevig gebouwde Vlaamse kerel. Om niet te veel gelijk een jeanette te moeten klinken gebruiken we \"plezant.\" Het is trouwens een veel plezanter woord om uit te spreken.","'t Was een wreed plezant feestje, 'k heb nog zeer van het lachen.","bn.","22"
+"meujer","vrouwelijke hond, teef","Is het een meujer of een reu?","de ~ (v.), ~s","22"
+"kwistenbiebel","losbol, lichtjes op zijn kop gevallen niet ernstig te nemen persoon","Zie die kwistenbiebel daar nu eens bezig! Hij is bezig de straat proper te maken met handborstel en vuilblik.  \
+\
+Mag ik hier vermelden dat ik vroeger gehoord heb dat dit woord zou komen van iemand die den [biebel] in kwestie stelt?","de ~ (m.), ~s","22"
+"wezzelijr","iemand die niet stil kan zitten","Zit nu eens stil, wezzelijr!","","21"
+"jender","eender","Voor mij is het jender.","bn.","21"
+"villo","-> [velo]","Ik rij graag met mijn villo.","de ~ (m.), ~s","21"
+"aftrekker","vloerwisser, [gerief] om mee te dweilen","Om de vloer te kuisen heb ik een dweil, een emmer water, allesreiniger en een aftrekker nodig.","de ~ (m.), ~s","20"
+"schup, zijn ~ afkuisen","er de brui aan geven - ophouden","Ik kuis m'n schup af, want da werkt hier toch ni.","","20"
+"fleus","straks, later\
+\
+zie ook: [flees]\
+","Fleus komt de facteur.","bijw.","20"
+"voila","ziedaar, kijk\
+\
+>  Fr. voilà (= vois zie, là daar)\
+\
+VD\
+voi·là (tussenwerpsel)  \
+  1  ziedaar, kijk! \
+","Voila, daar hebt ge het al.\
+Voila zie, het eten is klaar.","tussenwerpsel","20"
+"doemp","damp, rook, mist","Met al den doemp in die café konden we mekaar [bekan] niet zien staan.","de ~ (m.), geen mv.","20"
+"kase(n)","kousen , sokken","Ik kreeg zeer voete van te wandelen me natte kase(n).","de ~ (vr.),","20"
+"amai","verbazende uitroep","Amai, 'k was [bekan] tegen die fietser gereden.\
+Amai, zoveel eieren dat ons [kieken]s hebben gelegd.","","19"
+"kwene","vrouw die door haar negatieve ingesteldheid geen aangenaam gezelschap is, zagerige ook wereldvreemde vrouw.","Met die kwene zou ik mijn leven niet willen slijten.","de ~ (v.), ~n","19"
+"galoche","schoenovertrek","Met die galochen over je schoenen blijven je voeten tenminste droog.","de ~ (v.), ~n","18"
+"prot","scheet","Wie heeft er hier een prot gelaten? Zo stinken.","de ~ (m.), ~ten","18"
+"fijge","scheldwoord, een vrouw die niet goed weet wat ze wil\
+\
+op z'n West-Vlaams uitgesproken met een &#91;iˑ&#93; voor \"ij\"","Die fiege wist weer van niks.","de ~ (v.), ~?","17"
+"aftrekker","flesopener; kurkentrekker","Geeft den aftrekker eens, of ik krijg dat fleske bier niet open.","de ~ (m.), ~s","17"
+"gelle","jullie","Gelle zou beter es wa harder werken.","pers. voornaamw./bezittelijk voornaamw.","17"
+"dienstencheque","gesubsidieerde cheque waarmee huishoudhulp betaald kan worden","Omdat onze [kuisvrouw] betaald wordt met dienstencheques, komt ons dat goedkoop uit, en hoeft ze niet in het zwart aan het werk.","de ~ (m.), ~s","17"
+"stoantje","pakjesdrager van fiets","Ik leg mijn boekentas op m'n stoantje van m'n [villo].","het ~, ~s","17"
+"bellekentrek","zonder reden, voor de grap, om de mensen te [koeieneren], aan de deur bellen en zo snel mogelijk uit het zicht verdwijnen. zie [belleketrek doen]\
+\
+Vroeger bestond de bel uit een handvat, één of meer staven, een duikelaar en een lange draad doorheen de gang tot vanachter, waar een bel/klokje was vastgemaakt aan een opgerolde veer. > vandaar trekken > trekbel ","De belhamels kozen als slachtoffer van bellekentrek meestal een oudje, dat wel wat tijd nodig had om tot aan de voordeur te geraken. De verwensingen vlogen dan ook de straat in.","","17"
+"langetanne","(lange tanden)\
+toch iets helemaal of gedeeltelijk opeten met tegengoesting","Hij heeft toch van de varkenspoten gegeten maar het was mee langetanne","","16"
+"kot","hok, kleine ruimte voor opslag\
+VD\
+kot (het; kotten)  \
+  1  klein armoedig huis  \
+  2  hok  \
+","Mijn tuingerief staat in het kot.","het ~, ~ten","16"
+"jat","tas voor bijvoorbeeld koffie < Fr. jatte < Lat. gabata (diep bord)\
+\
+uitgesproken als /zjat/ &#91;ʒɑt&#93;\
+\
+zie ook: [zjat]","Moet ik u nog een vers jatje koffie geven?","de ~ (v./m.), ~ten","15"
+"appel, den goeien ~","Betekent zoveel als \"amaai!\" en drukt dus vooral een gevoel van verbazing of verstomming uit.","Die man kan grote getallen met mekaar vermenigvuldigen, zomaar uit het hoofd. Ja, de goeien appel!","uitdr.","15"
+"woonst","woning","Onze nieuwe woonst is opgetrokken in minder dan 4 maand.","de ~ (v./m.), ~en","15"
+"foef","kut, vagina","Die [spannend]e broek zit niet gemakkelijk aan mijn foef.","de ~ (v.), ~en","15"
+"quasi","zo goed als, vrijwel","Het werk is quasi gedaan, nog 5 minuutjes.","","15"
+"mem","borst, [tet] (grof)\
+\
+ook memme","Het strand ligt hier vol vrouwen met blote memmen.\
+Zie eens wat een memme dat die heeft.\
+","de ~ (v.), ~men","15"
+"belleketrek doen","aanbellen en vlug wegrennen als plagerij","Hebt gij nu weer belleketrek gedaan bij de buren?\
+Nog één keer en ge krijgt een flinke straf.\
+","","15"
+"langen","geven, aanreiken\
+\
+","Lang mij dat touw eens.","","15"
+"opendeurdag","open dag, dag waarop bedrijven, scholen, ... open staan voor het publiek","Tijdens de opendeurdag van de school konden we kennis maken met de leerkrachten van onze kinderen.","","15"
+"windpokken","waterpokken, wijnpokken","Karelke staat vol met rode vlekskes, heeft hij misschien de windpokken?","de ~ (mv.)","15"
+"moef","grote handgevormde baksteen, afmetingen 300x140x70","Moefen werden veel gebruikt om grote gebouwen zoals kathedralen te bouwen.\
+","? ~, ~en","15"
+"goesting","Zin, lust, trek\
+\
+Dit woord werd door Radio 1 in Vlaanderen uitverkozen tot mooiste Nederlandstalige woord. \
+\
+Wij (regio Leiestreek) spreken van 'goeste hebben'...(zin hebben in..)","Ik heb goesting in biefstuk friet.\
+\
+Ik heb goesting om te [poepen].","de ~ (v.), ~?","14"
+"ijskreem","ijsje","Voor mij nen ijskreem met twee bollen vanille, alstublieft.","de ~ (m.), ~?","14"
+"kot","1. kot: hokje  Vb: autobuskotje:bushok\
+2. kot: studentenkamer\
+3. kot: huis\
+4. kot:achtergebouw","1. We kunnen schuilen bij regen in het autobuskotje.\
+2. Onze Fien zit op kot in Leuven,ik mis haar enorm.\
+3. Ik baal ervan als ik hoor dat het tijd is huiswaarts te keren,men spreekt van : we gaan naar ons kot!\
+4. De buren beginnen met de afbraak van hun koterijen(achtergebouwtjes).","","14"
+"ket","maar dan met hoofdletter: ne Ket\
+\
+inwoner van Brussel","De bekendste Kèt, Daane van d’Uugstroêt, is zeker Toots Thielemans met zijn [mondmuziek]ske. Een andere Kèt is Johan Verminnen. Voor de ouderen onder u is dat Het Kètje (Renaat Grassin) die ze \" 't Moezeke dad e flasjke ging débouchonèire \" op de radio (NIR) hebben horen debiteren.","de ~ (m.), ~en","14"
+"boebel","bult","Ik heb hier op mijn arm een grote boebel.\
+Moet ik dat aan de dokter tonen?","de ~ (m.), ~s","14"
+"kalisse","zoethout,  drop < Fr. (jus de) réglisse\
+\
+ook kalisje, kalisjebruud (Gent: stuk drop)","Ik kan hele dagen op een kalissestok zitten kauwen.","de ~ (m.), ~n","13"
+"kleed","jurk","Ik weet niet welk kleed ik moet aantrekken.\
+Onze dochter draagt liever een kleedje dan een broek.","het ~, -en","13"
+"kiekens, de ~ zitten door den draad","De tepels van een vrouw zijn zichtbaar door haar kledij.","Kijk Ive, de kiekens zitten door den draad.","uitdr.","13"
+"wijf","vrouw","Hebt ge die zijn wefke al gezien?","het ~","13"
+"vessem","hiel van voet\
+\
+zie [vars]","Miljaar, mijne vessem doet zeer.","de ~ (m.), -s","13"
+"kremkesvolk","marginale mensen","Hoe lopen die daar nu bij? Da's nu toch echt kremkesvolk.","het ~","13"
+"charet","kinderwagen","Leg dat kind nu eens in de charet! Ze is moe en wil slapen.","de ~ (v.), ~s","13"
+"schampavie","weg, verdwenen","Ik ben schampavie; ik ben er van door","","13"
+"aftrekken","masturberen, afrukken","‘t Is al twee weken geleden dat ik me nog afgetrokken heb.","ww. trok af, heeft afgetrokken","12"
+"halfopen bebouwing","1/woning waarbij 1 gevel gedeeld wordt met de buurwoning\
+\
+2/halfopen bebouwing: tweewoonste","1/We geraken met de auto tot in de hof, want ons huis is halfopen bebouwd.\
+\
+2/ We verkochten onze tweewoonste,het lukte niet met de buren!\
+\
+","de ~ (v.), ~en","12"
+"leeggoed","Lege flessen waar statiegeld op staat.","Ik heb twee bakken leeggoed in de garage staan.\
+Krijgen we nog leeggoed van deze flessen, of gooi ik ze in de glasbak?","het ~","12"
+"bulletijn","oud woord voor schoolrapport","Heeft onze jongste zijnen bulletijn al gehad op school?","de ~ (m.), ~en","12"
+"mazoet","stookolie","Ze komen onze tank met mazoet vullen, nog net op tijd voor de winter begint.","","12"
+"trizee","vergiet, zeef, [stramijn]\
+\
+nevenvormen:\
+[tricé] (Gent)\
+trezee\
+","Een trizee wordt gebruikt om pasta's, sla, of andere etenswaren te laten uitdruppen. ","de ~ (m.), ~s","12"
+"toile cirée","transparant woord (Fr. la toile= het linnen, la cire= de (bijen)was; ciré: volt.deelwoord; =bedekt met was)\
+\
+waterdichtgemaakt linnen vroeger met was, nu met een plastieklaag. Grondstof voor een tafellaken, een regenvest, een Zuidwester, een zeil(tje), enz.","We hebben een nieuwe toile cirée nodig, want ons huidig tafelkleed is helemaal beschadigd.","m.","12"
+"gendarme","bazige vrouw","Haar man heeft niets te vertellen. Zij is een echte gendarme.","de ~ (v.), ~s","12"
+"trimestriëel","driemaandelijks","Verder gelden nog als principes dat de trimestriële aangifte uitsluitend op elektronische wijze aan de RSZ kan worden overgemaakt en dat er in principe slechts één aangifte per werkgever mag worden ingestuurd. (sic)","bn.","12"
+"fiemel, fijne ~","motregen","Da's al de hele dag dat er van die fijne fiemel afvalt, ene mens heef toch geen goesting meer om ene voet buiten te zetten. Ik krijg er errem zin van!","de ~ (m.), geen mv.","12"
+"marsjang","verkoper, handelaar (Fr. marchand); vaak als tweede lid in samenstellingen: voddenmarsjang, oudijzermarsjang, kolenmarsjang","Haal eens gauw 'n bokal opgelegde haringen bij de vismarsjang, mijne jong, gij hebt nog jong benekes onder!","de ~ (m.), -s","12"
+"keun","konijn","Ons keun heeft de kabel van de TV doorgebeten.","","12"
+"bescheten commissie","beskeetn commissie: iets wat je moet afhandelen,maar niet plezant is.\
+\
+ik stond er alweer voor aap, \
+men wist niks af van mijn komst.","een geplande spreekbeurt...eens je aankomt,weet men niks van je komst...(dat zijn bescheten commissies)","de ~ (v.), -s","12"
+"babbelijr","hard snoepje, babbelaar = snoep uit Veurne\
+ook babbeluut in Antwerpen","Ik moet gene [lekstok] hebben,geef mij maar ne babbelijr","de ~ (m.), ~s","12"
+"kalisieklutser","iemand die probeert je van alles wijs te maken","gouw kalisieklutser pakt hem een ki in je andere hand","","12"
+"plakken","bepleisteren (van muren)","Nadat het huis winddicht was gemaakt, moesten de muren worden geplakt.","ww. plakte, heeft geplakt","12"
+"verenneweren","kapot maken, Antwerpse verbastering van ruïneren (Fr)","Ziet uit dat ge het niet verenneweert.","verenneweerde, heeft verenneweerd","12"
+"poutrel","stalen balk met I-profiel","Als we die muur willen uitbreken zullen we wel een poutrel moeten steken.","de ~ (m.), ~len","12"
+"haas, van den ~ gepoept zijn","haastig zijn","Waarom is hij zo snel weg?\
+Van den haas gepoept zeker?","uitdr.","12"
+"janm'nklote ","stoefer, opschepper","Die janm'nklote heeft zich weer een nieuw kostuum gekocht.","de ~ (m.)","12"
+"nieverans","nergens\
+\
+zie ook: [nieveranst], [nieverst]","Ik kan mijn sleutels nieverans vinden.","bijw.","12"
+"marcelleke","mouwenloos [onderlijfke]","Onder mijn hemd heb ik altijd een marcelleke aan","het ~, ~s","12"
+"nèffest","naast\
+\
+In Brugs: dernevenst en  derneffenst","Ben Crabbé zat er helemaal nèffest, toen hij dacht dat Gertude van Duitste [komaf] was. Was er ooit een Gertude in Blokken?","bw.","12"
+"froufrou","aan het voorhoofd recht geknipte haarlijn\
+\
+zie ook: [froe]","Mijn froufrou hangt [bekan] in mijn ogen, ik moet dringend eens naar de [coiffeur].","het ~, ~s","12"
+"touter","schommel, schommelstoeltje\
+\
+zie [beize], [bies], [biezabijs], [bijs], [boes], [boeschcammeré], [boesjkammeree], [rietseko], [rijtak], [sturrel], [stuur], [suur], [toeter], [wippentater], [zwier] \
+","De kinderen spelen veel met de touter die in onze boom hangt.","nen ~ (m.), -s","11"
+"kerstel","hakmes, kapbijl\
+\
+(zie ook [kapkerstel])","Die is met het kerstel gemaakt! (gez. van iem. met een hoekig gezicht)","het ~, ~len","11"
+"stutte","boterham","Geef me maar een stutte met [hesp]e.","de ~ (v.), ~n","11"
+"labeur","hard werk","De tuin omspitten is een wreed labeur.","het ~","11"
+"fijge","vijg\
+\
+op z'n West-Vlaams uitgesproken met een &#91;iˑ&#93; voor \"ij\"","Het was een zoete fiege.","de ~ (v.), ~n","11"
+"varis","spatader\
+\
+-> Fr. la varice ","Mijn tante heeft van die dikke varissen op haar benen. Het lijken wel kabels.","de ~ (v.), ~sen","11"
+"klits","knikker, (ook, enigszins eufemistisch) teelbal, kloot","Daar ging hij neer op zijn klitsen!\
+\
+(eertijds) Willy Vannitsen kon niet fitsen, hij viel op zijn klitsen ... (maar over de man zelf: niks dan goed!)","de ~ (v.), ~en","11"
+"schoon","mooi, proper\
+\
+De betekenis van \"schoon\" is breder in Vlaanderen dan in Nederland, omdat ze in Vlaanderen ook wordt gebruikt om aan te geven dat iets mooi is.","Na het dweilen is de vloer schoon.\
+Ik heb me een paar schone schoenen gekocht.\
+De Limburgse meiskes zijn de schoonste.","","11"
+"spelmaker","iemand die graag opvalt,die zich graag laat horen,die graag in de belangstelling staat.","Pfff,ik hou niet van die boekhouder,zo'n spelmaker.","","11"
+"huis van oostenrijk","een gezin waar je altijd welkom bent,er staat altijd een deur open.","Da's daar echt het huis van Oostenrijk,als je aanbelt je bent er nooit alleen.","","11"
+"zwaantje","gemotoriseerde politieagent, een [flik] op een [moto]","Nadat ik de zwaantjes eindelijk had afgeschud hing er een helicopter boven mijn auto.","het ~, ~s","11"
+"het let niet","het geeft niet, het maakt niet uit","Nee, het let niet dat ge morgen niet kunt komen, we spreken volgende week wel een nieuwe datum af.\
+Wat let het dat al die nieuwe migrant workers een onderklasse `a la Dickens` gaan vormen in de steden, en labeuren tegen hongerlonen.","","11"
+"trot, op ~ zijn","onderweg zijn, op weg zijn\
+\
+> Fr. trot (=draf van een paard) trotter \
+van jut naar jar gaan/van hut naar haar\
+\
+zie: [voyage, op ~ gaan], [schok, op ~ zijn], [radaille, op ~ zijn], [bratsen]","Als ge 'nen helen dag op trot zijt geweest, dan doet het wel eens goed om te gaan zitten en een koffie te kunnen drinken.","ww.","11"
+"kot","studentenkamer","Ik heb in mijnen studententijd altijd op kot gezeten","het ~ (o.), -en","11"
+"antoave","handigheid","Het ligt aan de antoave, of je al dan niet de kapotte fiets kan herstellen.","de ~ (v.), ~?","11"
+"totentrekker","1) toneelspeler, iemand die zich anders voordoet dan hij is\
+2) héél zuur snoepgoed (rode bol)waarbij het moeilijk is om een normaal gezicht te blijven trekken.","Zie dien totentrekker daar, het is precies kinneke jezus die daar zit, maar het is een echte gangster.","de ~ (m.), ~s","11"
+"ankerère","hunkeraar\
+\
+ankeren = hunkeren, hevig verlangen naar","Hou op met voortdurend vragen naar snoep! Je bent een ankerère.","de ~, ~?","11"
+"inkel geld","muntstukjes","Ik moet me voorzien van inkel geld,zodat ik een winkelkarretje kan nemen.","","11"
+"bleitsoepe","huilbui al of niet geveinsd.","Toen mijn dochter haar zinnetje niet kreeg,was 't bleitsoepe de hele namiddag.","de ~ (v.), geen mv.?","11"
+"zabberen","aan iets zuigen","Hij zit weer aan zijne [lekstok] te zabberen.","ww. zabberde, heeft gezabberd","11"
+"patat","aardappel\
+\
+variant (Antw.) pataat  /pa tae:t/\
+\
+In Nederland betekent dit [friet], maar deze betekenis wordt in België niet gebruikt.\
+\
+Herkomst: een Engelse plantkundige zou de aardappelplant  “Batata Virginiana” genoemd hebben.","Droge patatten zonder saus smaken niet.","de ~, (m.) -ten","11"
+"lul","boterhamworst, als broodbeleg\
+\
+\
+oud woord, dialect van averbode (vlaams-brabant)","Slager, ik wil graag 100 gram kaas en 100 gram lul.\
+\
+","? ~, geen mv.","11"
+"pulle","drinkfles\
+\
+pulle geven bij het autorijden = da's gas geven!","Bezorg me die pulle eens, ik heb dorst!\
+Geef maar pulle, dat we er op tijd zijn!","de ~ (v.), ~n","11"
+"affronteren","beledigen, kleineren\
+\
+VD\
+af·fron·te·ren (overgankelijk werkwoord; affronteerde, heeft geaffronteerd)  \
+  1  (formeel) beledigen  \
+","Ik was helemaal geaffronteerd toen mijn broek af zakte.","ww. affronteerde, heeft geaffronteerd","11"
+"kettier","kwartier \
+\
+de e is dof uitgesproken","nog een kettier geduld\
+\
+Verkoopt ge mij een kettier van de slachtkoe?\
+","het ~, ~en","11"
+"spinnebossel","borstel om spinrag te verwijderen, ragebol","Heeft iemand de lange steel van de spinnebossel gezien? Ik kan toch lastig het [spinnegeweef] gaan [vortdoen] met de kop alleen!","de ~ (m.), ~s","11"
+"schotelvod","doekje om de afwas mee te doen","Neem maar een propere schotelvod, want deze is te vuil om de tafel mee af te [kuisen].","de ~ (v.), ~den","11"
+"beenhouwer","slager, zie ook [beenhouwerij]","Onze beenhouwer heeft lekkere biefstuk.","de ~ (m.), ~s","11"
+"kaspoesjeir","stofjas (van het Frans cache-poussière) \
+werd over de gewone kledij gedragen om die proper te houden","Vroeger zaten de schoolkinderen met hun kaspoesjeir op de schoolbanken.","de ~ (m.)","11"
+"stroeskop","koppig iemand","Hij wil niet toegeven, wat nen stroeskop.","de ~ (m.), ~pen","11"
+"gelijkaardig","gelijkend, vergelijkbaar, overeenkomstig, gelijksoortig, soortgelijk, dergelijk\
+\
+~ aan: hetzelfde als, vergelijkbaar met","Dat nieuwe model van die auto is gelijkaardig aan de vorige versie.\
+De kandidaat beschikt over een graduaatsdiploma of over professionele ervaring in een gelijkaardige functie.","bn.","11"
+"aaker","emmer, ketel\
+\
+zie [aker]","Geef mij de aaker eens, dan vul ik die met aardappelen.","de ~ (m.), ~s","11"
+"achternoen","namiddag","Dezen achternoen komen oma en opa op bezoek.","de ~ (m.), ~en","11"
+"zondag","een plek in een schildering waar geen verf aangebracht is\
+wat opengelaten is","Wat voor 'ne kladschilder hebt ge nu in huis gehaald! Hij laat overal zondagen na.","de ~ (m.), ~en","11"
+"frietvet","frituurvet","Frieten bakt ge voor in frietvet van 170 graden, en dan bakt ge ze af op 190 graden.","het ~, ~ten","11"
+"zwier","schommel\
+\
+ook [beize], [bies], [biezabijs], [bijs], [boes], [boeschcammeré], [boesjkammeree], [rietseko], [rijtak], [sturrel], [stuur], [suur], [toeter], [touter], [wippentater]\
+","Als kind zat ik graag op de zwier.","de ~ (m.), -en","11"
+"plankier","voetpad, ook [plansier], [trottoir]","Tegenwoordig rijden er meer fietsers op het plankier dan op de baan.","het ~, ~en","11"
+"piket","stakerspost","De stakers hebben een piket opgeworpen voor de ingang van de fabriek.","","10"
+"gelijkvloers","de gelijkvloerse verdieping, de verdieping op de begane grond\
+\
+VD\
+hebt gezocht op het woord: gelijkvloers.\
+RESULTAAT (max 20 woorden)\
+ge·lijk·vloers1 (het)  \
+  1  (in België) benedenverdieping, de begane grond  \
+\
+ge·lijk·vloers2 (bijvoeglijk naamwoord)  \
+  1  op dezelfde hoogte als de begane grond  \
+","Onze [living] is op het gelijkvloers en geeft uit op den [hof].","het ~","10"
+"tango","een pilsje met grenadine","Marieke schenk ons nog een tango uit met veel grenadine.","de ~ (m.), ~s","10"
+"broske","heel kort geknipt kapsel","Toen men vroeger in het leger ging, toen knipten ze het haar in een broske.","het ~, ~s","10"
+"biezabijs","schommel \
+ook [beize], [bies], [biezabijs], [bijs], [boes], [boeschcammeré], [boesjkammeree], [rietseko], [rijtak], [sturrel], [stuur], [suur], [toeter], [touter], [wippentater], [zwier] ","De kinderen hebben veel plezier met de biezabijs gespeeld die we in de boom hebben gehangen.","de ~ (m.), -zen","10"
+"paster","pastoor","De paster en de [onderpaster] zingen het liefst gregoriaanse liederen.","de ~ (m.), ~s","10"
+"welgekomen","welkom","Kom binnen! Ge zijt welgekomen.\
+","bn.","10"
+"muzestrontjes","chocolade hagel","kinderen eten graag muzestrontjes op hun [stutte]","de ~ (mv.)","10"
+"pekkelen","bikkelen","Bij het pekkelen en zeker bij \"kappers\" en \"maaiers\" in het spel heb ik dikwijls mijn vingertoppen pijn gedaan.","pekkelde, heeft gepekkeld","10"
+"verschietachtig","om van te verschieten, om van te schrikken","Dat spookhuis was niet zo verschietachtig.","bn.","10"
+"kwaffeur","kapper\
+\
+-> Fr. coiffeur (= kapper); zie elders in dit woordenboek [coiffeur]\
+VD\
+coif·feur (dem; coiffeurs; coiffeuse)  \
+  1  (formeel) kapper  \
+","Mijn haar is veel te lang, 'k moet naar de kwaffeur.","de ~ (m.), -s","10"
+"mok","griet, meisje, meid, lief, vriendin\
+\
+ook [mokkel], [mokke], [moksje] (Regio Westhoek)","In onze klas zit geen een knappe mok.\
+Hij is met zijn mokke naar de cinema.\
+'k Heb gisteren de hele nacht met mijn moksje liggen [karjakken].","de ~ (v.), ~ken","10"
+"afwas","vaat, het af te wassen vaatwerk","Ik doe den afwas morgen wel.","de ~ (m.)","10"
+"koord","het gewone woord voor touw;\
+Noord-N. alleen touw of kabel voor koorddansers en in sommige uitdr. aan één koord trekken, op het slappe koord dansen, de kat komt op de koord;\
+\
+zie ook [zeel]","Hebt ge nog ergens 'nen bol koord? Ik wil die doos stevig vastknopen op het rek.","de ~ (v.), ~en","10"
+"tafelkleedske","tafelkleedje","Ik kocht me een nieuw tafelkleedske voor de keukentafel.","het ~, ~s","10"
+"lisse","lisse: wandelriem voor dieren.\
+\
+(Antw.) een les -> Fr. laisse","Neem de lisse, en ga een wandeling maken met Fifi.","de ~ (v.), ~n","10"
+"dem","ieder van de tepels van een uier","de koe haar achterste demmen zijn ontstoken","de ~ (vr.), ~men","10"
+"sloef","goedzak, iemand die zich laat doen, thuis niets in de pap te brokken heeft","Zijn vrouw is een echte [gendarme]. Gelukkig voor haar is haar echtgenoot een echte sloef.","de ~, ~en","10"
+"muilen","tongzoenen","Hij stond aan het [buskotje] met zijn [moksje] te muilen.","ww. muilde, heeft gemuild","10"
+"knabbeling(e)","iets om te eten\
+\
+","Ik heb visite deze avond. Ik voorzie drankjes en wat knabbelinge.","de ~ (v.), ~en","10"
+"stoverij","stoofvlees","Ik lust graag stoverij met [friet].","de ~ (v.), ~en","10"
+"ribbedebie","weg, verdwenen\
+\
+~ zijn: (ook) zich snel uit de voeten maken\
+\
+(mogelijk uit Bargoens \"rip = dood\" in combinatie met \"de bie = de weg\")\
+\
+zie [pist, de ~  in zijn]","Als je begint over betalen, is hij ribbedebie.","bw.","10"
+"smukregen","fijne, zachte regen","Ik reed een halfuur in de smukregen,ben toch wel doornat zeker!","de ~ (m.), geen mv.","10"
+"geiloewegen","-> [geilogen]\
+\
+de tweede e is dof uitgesproken","In het café staat hij altijd te gijloewegen.","","10"
+"crème-glace","ijsje","Voor mij ne crème-glace zonder chocoladesaus, graag.","de ~ (m.), ~n","10"
+"sneukelgerief","snoepgoed in het algemeen","Het viel me op bij het shoppen dat het sneukelgerief duur geworden is.","het ~, geen mv.(?)","10"
+"muishond","wezel","-","de ~ (m.), ~en","10"
+"verlengdraad","verlengsnoer","De draad aan de fonduepot is veel te kort. Hebben we nog ergens een verlengdraad liggen?","de ~ (m.),  -draden","10"
+"kaske","afstandsbediening voor tv, dvd, ofzo","Allee! Waar is het kaske van den televies weer naartoe?\
+\
+\
+\
+","het ~, ~s","10"
+"affaire","zaak","Dat is uw affaire helemaal niet, manneke.","de ~ (v.), ~s","10"
+"jimmenas","slimmerik,\
+de j wordt uitgesproken als het Franse Je","Da's nu eens een echte jimmenas zie, want die vindt voor alles een oplossing","de ~, ~sen","10"
+"ket","knikker, glazen bolletje, kinderspeelgoed\
+\
+zie ook [marbel], [laveur], [schiethuif]","Speelt gij liever met de ketten in het zand of op de stenen?","ne ~ (m.) , ~ten","10"
+"speen","zie ook [spijn]: aambeien\
+\
+Aambeien of hemorroïden - dat zijn plaatselijke verdikkingen (weefselkussentjes-huidflapjes) van de endeldarm en of anuswand. Kan best pijnlijk zijn!\
+\
+VD\
+speen (de; spenen)  \
+  1  rubber of plastic afsluiting op een zuigfles, voorzien van een gaatje waardoor het kind de vloeistof kan opzuigen  \
+  2  tepel van een zoogdier  \
+  3  aambei  \
+","Hij durft niet te gaan zitten, hij heeft het speen.","het ~, spenen","10"
+"patronage","gebouw/lokaal van de gemeente waar bibliotheek, chiro, ksa, gezinsbond hun stek hebben\
+(waar spreekbeurten, optredens, lezingen plaatsvinden)","De chiromeisjes spelen bij slecht weer in de patronage.\
+","de ~ (v.), ~s","10"
+"vijs","schroef","Zet die plank vast met een vijs.\
+Gij zijt een paar vijzen kwijt, zeker?\
+Zit er een vijs los?","de ~ (v.), vijzen","10"
+"spinnegeweef","spinnenweb, spinrag","Al dat spinnegeweef tegen het plafond, ik kan het niet meer zien! Waar is de [spinnebossel]?","het ~, -ven","10"
+"dretje","dun draadje","bind het vast met een dretje","het ~, ~s","10"
+"menneke","mannetje","Da' menneke is nooit tevreden.","het ~, ~s","10"
+"kemel","stomme fout","Het dictee staat vol kemels.","de ~  (m.), ~s","10"
+"lattestoor","rolluik","Het wordt donker, laat de lattestoors maar zakken en steek  de lucht maar aan. Lucht is het W-Vl. voor licht.","de ~ (m.), ~s","10"
+"grof brood","bruin brood","Breng eens een grof brood mee van de bakker.","het ~, -en","10"
+"peetje","oudje(m.)\
+\
+(Antw.) peeke \
+        ","'t Is een oud peetje aan het stuur.","","10"
+"peetie","klaaskoek","Op 6 december eten we peeties met choclamelk.","de ~ (m.),  ~s","10"
+"tietelen","Het al dan niet opzettelijk speels strijken of strelen met de borsten tegen een persoon, met een prikkelend gevoel als gevolg.\
+Tietelen is het antoniem van swaffelen, maar dan voor mensen met gevoel voor ironie. \
+","Stietelen\
+het equivalent van tietelen, maar dan als het koud is.","","10"
+"hutseklutse","hutsepot","Mijn ma maakt de beste utseklutse, met spekreepjes, worst en een knuistje erbij.","de ~ (v.?), geen mv.(?)","10"
+"patatscheller","aardappelmesje","Ik zal de [groentjes kuisen]. Waar is de patatscheller?","de ~ (m.), ~s","10"
+"was","kleren die gewassen worden\
+\
+VD\
+was1 (dem; wassen)  \
+  1  het wassen  \
+  2  wasgoed  \
+","Ik zal de propere was strijken en opplooien.","de ~ (m./v.)","10"
+"kwakkel","iemand die alles verkeerd doet","Die kwakkel heeft het hem weer gelapt, alles is weer verkeerd aan elkaar gezet.","de ~, ~s","10"
+"teleboetiek","telefoonwinkel","Veel teleboetieks zitten in nauwe schoentjes. Er wordt daar blijkbaar nogal losjes omgesprongen met de vigerende fiscale regelgeving. ","de ~ (v./m.), ~s/~en","10"
+"Sinksenfoor","jaarlijkse kermis ([foor]) in Antwerpen die rond Pinksteren ([Sinksen]) wordt gehouden","Na twee uur op de Sinksenfoor te hebben rondgelopen was mijn portemonnee helemaal leeg, en mijn maag stak ondersteboven in mijn buik.","","10"
+"pist, de ~  in zijn","plotseling verdwenen zijn","Toen de afwas moest gedaan worden was hij de pist in.","uitdr.","10"
+"frulleke","een gefronste rand aan bv. sjaal, kledingstuk","Ik bemerkte in de lentecollectie heel wat frullekes aan t-shirts, topjes.","het ~, ~s","10"
+"pist, de ~  in zijn","plotseling verdwenen zijn\
+\
+zie [ribbedebie]","Toen de afwas moest gedaan worden was hij de pist in.\
+\
+","uitdr.","10"
+"kop","bepaald soort charcuterie, kleine stukjes gekookt(meestal varkens-)vlees , in gelei of gestold vleesnat.\
+verwant aan [frut], maar frut is zuurder en met minder gelei\
+\
+ook hoofdvlees of perskop genoemd\
+en  op z'n Brugs : (h)oofflakke","Kop eet ik het liefst met flink wat mosterd.","de ~ (m.), geen mv.","10"
+"lut","stomme lut\
+dom iemand, \
+uitdrukking van zelfbeklag\
+\
+lut (vrouwspersoon? lutgard/t) Ruth? (= domme vrouw die in een zoutzuil veranderde, toen ze omkeek) \
+m(o)l(e)n(aa)r 4 mdkl. die wel eens verwisseld worden in verbasteringen.","Als mijn moeder tegen zichzelf zei dat ze een 'stomme lut' was, was ze vergeten dat ze al zout in de soep had gedaan, op het ogenblik dat ze zout in de soep deed. ","uitdr.","10"
+"tram, naar zijnen ~ gaan","naar bed gaan\
+\
+zie ook [kip], [kevie]","Ge moet niet te laat thuiskomen vandaag. Ga maar eens vroeg naar uwen tram.","uitdrukking","9"
+"aftrekken","een fles met kroonkurk openen","Kunt ge mijn pintje ook eens aftrekken?","ww. trok af, heeft afgetrokken","9"
+"bewaarschool","kleuterschool\
+\
+VD\
+be·waar·school (de)  \
+  1  (archaïsch) kleuterschool  \
+\
+\
+\
+","Ik ging op mijn 3 jaar naar de bewaarschool.","de ~ (v.), -en","9"
+"plaats","plein\
+\
+uitzondering: /Siengt Ja:ns plaa.en/ Sint-Jansplein\
+Vd\
+plaats (de; plaatsen)  \
+  1  punt of gebied op aarde of in de ruimte, waar iem. of iets zich bevindt  \
+  2  bepaalde plek op een oppervlakte  \
+  3  juiste plek of ruimte  \
+  4  stad, dorp  \
+  5  ruimte of plek, bestemd om door één persoon of zaak te worden ingenomen  \
+  6  positie in een rangorde, op een ranglijst  \
+  7  functie, taak  \
+  8  open stuk grond bij een gebouw  \
+  9  passage in een boek of geschrift  \
+  10  plein  \
+","De Groenplaats heette vroeger Place Verte. Vandaar. Moeten we het Napoléon kwalijk nemen? Zeker niet. De Franskiljons des te meer. ","de ~ (v.), ~en","9"
+"eerste zit","eerste examenperiode, of het slagen daarvan","Ik heb een eerste zit, en moet dus in de vakantie niks voor't school doen.\
+In de eerste zit heb ik niks gedaan, en nu zit ik te zwoegen voor mijn [tweede zit].","de ~ (m.)","9"
+"klootjesvolk","mensen die niks begrijpen","Is me dat een klootjesvolk! Ze hebben niets begrepen van de situatie.","het ~","9"
+"trekken","tochten\
+\
+VD\
+trek·ken3 (onovergankelijk werkwoord; trekker, trekking)  \
+  1\
+  3  (trok, heeft getrokken) een luchtstroom doorlaten  \
+ \
+","Laat alle deuren en vensters maar openstaan. Om de bezetting droog te krijgen moet het hard trekken.\
+Het trekt hier, staat er ergens een deur open?","ww. trok, heeft getrokken","9"
+"suppo","zetpil, ook [suppositoire], [poepsnoep], [gatcaramel]","Met een suppo zal de baby haar koorts wel beteren.","de ~ (m.), ~'s","9"
+"pertang","nochtans, toch, verbasterd van het Franse 'pourtant'\
+\
+","Hebben ze verloren?  Ze hebben pertang goed gespeeld.","bw.","9"
+"mokke","-> [mok] → [mokkel](standaard nederlands)","Zijn zus is een snelle mokke.","de ~ (v.), ~s","9"
+"stekkerdraad","prikkeldraad","Ik ben lelijk gevallen, maar gelukkig net niet in de stekkerdraad.","de ~ (m.), -en","9"
+"nunne","non-nonnetje-zusters","Tante Elodie, de tante van mijn pa, kan uren vertellen van haar jaren missie in Kinshasa. Elodie is een brave nunne.","de ~ (v.), ~n","9"
+"efkes","eventjes","Ik ga efkes naar 't toilet","bijw.","9"
+"hoofdvogel, de ~ afschieten","een flater begaan","Nu heb ik toch echt de hoofdvogel afgeschoten door in m'n pijama te gaan werken.","uitdr.","9"
+"hum","hemd, [em]","Trek een schoon hum aan om naar die receptie te gaan","het ~, ~men","9"
+"verschieten","schrikken\
+\
+\
+woordvorming te vergelijken met de meeste voorvoegsels ‘ver-’ vb: vermaken (herstellen), verlaten, verlopen, versjouwen enz.\
+wijst dat niet telkens op een ‘verplaatsen’ of ‘veranderen van plaats of situatie’?\
+","Ons bomma liet mij keihard verschieten, en ik was van mijnen hik vanaf.","ww. verschoot, is verschoten","9"
+"ajuin","ui\
+\
+ajuin, de ~ (m); ajuinen\
+  1  ui, als gewas  \
+  2  ui, als voedsel  \
+","Ik begin altijd te [bleiten] als ik ajuinen moet [pellen].","de ~ (m.), ~en","9"
+"prus","parkiet\
+\
+afgeleide van het Franse \"perruche\"","In onze volière zit een paartje prussen, dat zit nu eens de hele dag tegen elkaar te kwetteren.","de ~ (v.), ~sen","9"
+"waskeern","wasmachine","Laat de waskeern maar draaien!","de ~ (v.?), ~en?","9"
+"mutualiteit","verzekering voor ziektekosten, ziektekostenverzekering, ook [ziekenkas]","Ik moet de briefkes van mijn dokter eens naar de mutualiteit brengen.","de ~ (v.), ~en","9"
+"vremde","vreemdelingen\
+\
+vremde zijn van iets: ik kan het niet,weet het niet","In Kortrijk heel wat vremde!\
+\
+In het begin dat we hier woonden, waren we vremden van alles.","de ~, ~n","9"
+"zottekot","psychiatrie\
+\
+","Men verweet die man zot te zijn, nu weet men beter... Hij is een psychiatrische patient.","het ~, ~ten","9"
+"karjakken","vogelen, neuken","'k Heb gisteren de hele avond met mijn [moksje] liggen karjakken.","","9"
+"zurkel","zuring,(gewas van veelknopige planten met een zure smaak,  \
+   bladgroente bereid uit de jonge bladeren van de zuring  \
+","Ik eet graag zurkel[patat]ten","de ~ (m.), ~s","9"
+"isomo","piepschuim, polystyreen, afgeleid van de merknaam Isomo","Electronische apparatuur wordt ingepakt in isomo.","","9"
+"kletskop","kaalkop","Ik heb mijnen kletskop met zonnecrème ingesmeerd.","de ~ (m.), ~pen","9"
+"zulke","zo'n","Ik heb nog nooit zulke [schoon] bloemen gezien.","","9"
+"onbesnutst","geen of weinig manieren","Aan tafel zijt ge een onbesnutst varken.","bn.","9"
+"meemoeder","Meemoeder is de andere helft van een lesbisch paar waarvan de ene helft een kind heeft gebaard.\
+(De Standaard 05/01/2007) \
+\
+VD\
+mee·moe·der (dev)  \
+  1  degene die in een lesbisch ouderpaar niet de biologische moeder is  \
+","die klein heeft een moeder en een meemoeder","","9"
+"duvelke","Een transportmiddel met een horizontaal vlak, 2 wielen en 2 handvatten dat gemaakt is om bierbakken te transporteren.\
+\
+zie ook [pierewiet]","De brouwer kan dankzij zijn duvelke verschillende bakken bier in 1 keer verzetten.","het ~ (o.), -s","9"
+"sacoche","handtas\
+\
+zie ook: [chacoche], <a href=\"http://www.vlaamswoordenboek.be/definities/term/sjakosj%2C+in+de+%7E\">sjakosj, in de ~</a>","Er zit teveel gerief in mijn sacoche. Ik vind mijne GSM niet.","de ~ (v.), ~n","9"
+"sloef","pantoffel","Mijn nieuwe sloefen hebben een [schoon] geruit motiefke.","de ~ (m.), ~en","9"
+"ulle","deksel, schijf","Draai het ulleke goed dicht van het confituurpotje.\
+(schroef het dekseltje goed dicht van het confituurpotje.)","","9"
+"welstellend","welgesteld, rijk","De welstellende families gaven allemaal iets voor het goede doel.","bn.","9"
+"grootwarenhuis","supermarkt","Ik doe niet graag boodschappen in een grootwarenhuis. Geef mij maar de buurtwinkels.  ","het ~ , -zen","9"
+"vilbeluik","destructiebedrijf voor kadavers en slachtafval ","Als de wind slecht zit ruik je het vilbeluik.","het ~ , ~en","9"
+"hennig","handig, over een gebruiksvoorwerp\
+\
+ook: \"nen hennige\" over een persoon\
+\
+geassimleerd händig/hendig\
+\
+","Ik heb een electrische fruitpers gekocht. Da's echt iets hennig!\
+\
+Da's nen hennige!\
+(een mooiprater, vlot, iemand die de clown uithangt)","bn.","9"
+"poep","kont, achterwerk, zitvlak, [gat], billen\
+\
+De gebruikelijke Nederlandse betekenis van uitwerpselen of stront wordt in Vlaanderen bijna niet gebruikt. Uitzondering hierop is hondenpoep, hoewel de Vlaming eerder hondenstront zal verkiezen.\
+","Zet u neer op uw poep.\
+Als ge niet braaf zijt, krijgt ge een klets op uw poep.","de ~ (v.), ~en","9"
+"pulle","fles","[Passeert] die pulle eens, want ik heb dorst.","de ~ (v.), ~n","9"
+"loes","vrouwenborst","Kijk es naar die vrouw daar, die heeft mooie loezen, amai!","de ~ (v.), -zen","9"
+"wiestitie","piemeltje, het mannelijk deel! \
+\
+-> Fr. Nl. ouistiti (onomatopee) klanknabootsing van de schreeuw van een klein Z.Am. aapje met lange staart","we gaan da klein manneke zijn wiestitietje ambaleren( we gaan dat klein manneke zijn pamperke verschonen)","","9"
+"scheuteldoek","schoteldoek\
+\
+zie [schutteldoek], [schotelvod]","Als je de vaat moet doen, heb je een scheuteldoek nodig.","de ~ (m.), ~en","9"
+"trontinette","step, ook [trotinette], [trottinet]","Toch spijtig dat ik vroeger nooit een trontinette heb gekregen","de ~ (v.), ~s","9"
+"toespel","veiligheidsspeld  / 'toe spèl /\
+\
+zie [slutspelle]","Als ge een toespel bij hebt, valt ge nie in affronte.","de ~ (v.), ~len","9"
+"afgaan","1. door uw eigen toedoen voor aap staan\
+2. rinkelen","1. De Walter ging helemaal af toen hij tijdens zijn showke van zijne fiets viel.\
+2. Sorry, ik had mijn gsm niet horen afgaan.","ging af, is afgegaan","9"
+"pitsen","prutsen, knijpen","Zit niet zo te pitsen aan uw puisten.\
+Moet ik eens in uw vel pitsen?","ww. pitste, heeft gepitst","9"
+"sewales","soms\
+\
+de e dof uitgesproken","Sewales komt hij nog eens buiten.","bijw.","9"
+"interim-regering","tussentijdse regering om dringende zaken te behandelen in afwachting van de vorming van een permanente regering tijdens een formatiecrisis","Na de formatiecrisis van 2007 werd op 21 december 2007 een interim-regering geïnstalleerd, Verhofstadt 3.","de ~ (v.), ~en","9"
+"barbeteus","kinderkledingsstuk met gepofte korte broek\
+ Barbeteus ook in W-Vl","Ik hield absoluut niet van die gele barbeteus die ik moest dragen om naar de kleuterschool te gaan.","de ~ (vr.)","9"
+"bieke","bijtje","Er vliegen hier veel biekes rond.\
+Pas maar op dat ze u niet steken.","het ~ , ~s","9"
+"corsee","korset, rijglijf, tegenwoordig een elastische dwangbuis\
+/kor 'see/\
+\
+-> Fr. corset","Ik heb een zwakke rug.\
+Mijn dokter heeft me aanbevolen een corsee te dragen","de ~ (m.), ~s","9"
+"plakken","iets kleven met lijm of plakband alsook behangen(standaard Nederlands)\
+\
+plakken: we zijn blijven plakken,het was 2u toen we thuis waren! \
+\
+plakken: rontgenfoto's","De dokter wou dat ik plakken liet maken van de wervelkolom.","ww. plakte, heeft geplakt","9"
+"sloef","slof, pak sigaretten","Kunt ge een sloef sigaretten voor me meebrengen als ge naar Luxemburg gaat?","de ~ (m.), ~en","9"
+"seffens","later, straks, [sebiet]","Ik zal dat seffens wel even doen.","bijw.","9"
+"gatlikker","er alles voor doen om in de gunst te komen\
+\
+zie [gatkruiper]","daar de gatlikker van de baas, hij denkt zo een voetje voor te krijgen","de ~, ~s","9"
+"soppen","in een vloeistof [doppen]","Grootvader had geen tanden meer. Daarom sopte hij zijn [bokes] altijd in zijn koffie. ","ww. sopte, heeft gesopt","9"
+"flutje van een cent","iets zeer gemakkelijks\
+\
+(Vlaamse uitdr.) als van een leien dakje","Het is een flutje van een cent om die band aaneen te plakken.","","9"
+"strikijzer","breinaald","Om te breien heb je strikijzers nodig.","de ~ (m.), ~s","9"
+"diekedelver","slokop","Zie dien diekedelver were [fretten]. Jee persies in een joar niks gekregen!","de ~ (m.), ~s","9"
+"beesterie","ongedierte : zoals bladluizen,spint,wolluis,witziekte op bloem en groen\
+ook bij dieren (vlooien, teken).\
+","De rozen moeten besproeid worden, ze zitten vol beesterie.\
+De buxusbol zit vol met beesterie.De bladluizen zuigen al de blaadjes leeg.\
+","de ~ (v.), geen mv.","9"
+"economaat","huishoudelijke dienst, voorraad kantoorbenodigdheden (Fr. économat)","Als uw pen leeg is, gaat ge er maar een nieuwe halen in het economaat.","het ~, -en","9"
+"pekkel","vinger","Die zaak stinkt, blijf daar met je pekkels vanaf","de ~ (m.), ~s","9"
+"slunsepiet","voddenkoper\
+\
+Kan evengoed een heel slordig gekleed iemand zijn","Da's een echte slunsepiet! Zo slordig!","de ~, ~en","9"
+"vangen","gek zijn, zot zijn","Wat heeft hij je nu weer wijsgemaakt.\
+Hij vangt.","","9"
+"keiremelk","karnemelk  / 'kè: r.e mèlk /\
+\
+(Horebeke) kirremelk\
+(Antw.) botermelk(se pap) standaardtaal","keiremelk roeren tot pap","de ~ (v.),  geen mv. stofnaam","9"
+"droogkast","machine om was te drogen, wasdroger, droogtrommel\
+","Ik zal de was in de droogkast steken.","de ~ (v.), ~en","9"
+"muilpeer","een vuistslag in het gezicht\
+\
+VD\
+muil·peer (de)  \
+  1  (informeel) klap in het gezicht  \
+","als je niet zwijgt geef ik je een muilpeer\
+in het brugs een mûlpêire","de ~ (m./v.), -en","9"
+"werkonbekwaam","arbeidsongeschikt","Mijn broer kreeg de geel verf en was daardoor wel twee maand werkonbekwaam.","bn.","9"
+"haast, in zeven ~en","halsoverkop, rap-rap, op stel en sprong; erg slordig","Regering verkoopt in zeven haasten overheidsgebouwen.\
+Daarna ging het in zeven haasten naar het station.\
+Het is duidelijk dat deze vertaling in zeven haasten is afgelapt.\
+","uitdr.","9"
+"klutser","[zeveraar]","Die nieuwe baas... is me dat een klutser.","ne ~ (m.), ~s","9"
+"pol","hand","Hans, was je pollen voor we eten.\
+Geeft meneer eens een [schoon] polleke.","de ~ (m.), ~len","9"
+"haos","handschoen, want\
+\
+Limburgers: corrigeer mij als dit fout is, want dit is een vreemd woord voor mij.","Het vriest dat het kraakt en ik moet nog een heel eind met de fiets, ik zal maar haosen aandoen.","de ~ (v./m.), ~en","9"
+"karrakol","(zee)slak\
+\
+-> Spaans 'caracol' (=huisjesslak); zelfde oorsprong als escargot (=wijngaardslak) (co)limaçon, limace","Bij ons op de kermis staat ook altijd zo'n standje met hamburgers, hotdogs en karrakollen. Ik kan het dan niet laten om zo'n bakje met karrakollen in een kruidig sausje te kopen.","de ~ (v.), ~len","9"
+"doorgaan","vertrekken, weggaan","Ik neem nog even mijnen [frak], dan kunnen we doorgaan.","ging door, is doorgegaan","9"
+"spijen","spuwen; braken    zie [spouwen], [spougen]","Spaajende kènder zin daajende kènder (d.i. kinderen die veel overgeven, gedijen goed).","ww. spijde, heeft gespijd","9"
+"spij","spuw; overgeefsel","Bès dich stêrk? Raop dan m'ne spaaj èns op! (ben jij sterk? raap dan mijn spuw eens op!)","de ~ (m.)","9"
+"pitteleer","pandjesjas, ook [pitteleir] of [billekletser]","Nog 's de dirigent in pitteleer die buigt voor het publiek.","de ~ (m.), ~s","9"
+"ket","oog","Wat doet ge als uwe kleine zijn speelkameraadje een blauw ket heeft geslagen? - a. ge biedt de moeder uw excuses aan voor het wangedrag van uw zoon. - b. ge koopt een speelgoedje voor het kind - c. ge slaagt uwe zoon ook een blauw ket. Dan weet hij tenminste wat hij de andere heeft aangedaan.","de ~ (v.), -ten","9"
+"kriek","zure kers of morel","De vogels zijn met bijna al de krieken weg. \
+Vanavond eten we [frikandel]len met kirekskes.","de ~ (m.), -en","9"
+"dempig","kortademig\
+\
+(ook in Vlaams-Brabant)","Zo dempig als een koe.\
+Poeh, ik ben dempig gegeten! Ik kan geen pap meer zeggen.","bn.","9"
+"komaf","afkomst, oorsprong\
+\
+VD\
+kom·af de; m afkomst: van hoge ~\
+\
+","Was Gertrude van Duitse komaf? ","de ~ (m.), geen mv.","9"
+"zwaantje","gebakje gemaakt uit soezendeeg [branddeeg] in de vorm van een kuipje (ovaal), gevuld met slagroom en soms een beetje fruit, in de slagroom worden 2 stukjes (vorm van een vleugel) gestoken en een s-vormje voor de hals en kopje van een zwaan.","Als ik een luchtig gebakje wens, dan neem ik een zwaantje.","het ~, ~s","9"
+"smoren","roken\
+\
+in die betekenis op bepaalde plaatsen aan het verouderen, bij jongere generaties heet het vaak 'smoren' voor wietroken en 'roken' voor het roken van sigaretten.","Frank doet megawazig als hij smoort.\
+een sigarette, een puppe(pijp), smoren","ww. smoorde, heeft gesmoord","8"
+"geld trekken","geld innen","Ik moet nog 1000 euro trekken van de belastingen.","","8"
+"siroop","stroop van appelen en/of peren, de echte van Liège.\
+\
+Vd\
+si·roop (de; siropen)  \
+  1  dikke, zeer zoete vloeistof  \
+","Wil je nog een boterham met siroop? Ja, maar de lekkerste poepsiroop heb ik dit jaar op kamp gegeten.","de ~ (v.), -en","8"
+"gilet","klein vestje om onder een kostuum te dragen, zonder mouwen en met knopen\
+VD\
+\
+gi·let (het; gilets)  \
+  1  vest, mouwloos bovenkledingstuk voor heren  \
+","Moet mijn [plastron] boven of onder de gilet gedragen worden?","de ~ (m.), ~s","8"
+"bisser","zittenblijver","De bissers konden ons vertellen welke vragen de prof van wiskunde vorig jaar heeft gesteld.","de ~ (m.), ~s  ♀: ?","8"
+"poepsiroop","zie [siroop]","Pannenkoeken met poepsiroop en bruine suiker","de ~ (v.), -en","8"
+"allensj","niet eens","'t Heeft van de winter allensj nie gesneeuwd.","bw.","8"
+"preus model","iemand die heel veel belang hecht aan zijn uiterlijke,zijn of haar voorkomen.\
+\
+modieus,verzorgde persoon","meestal zegt men het tegen de vrouwen","","8"
+"bazaar","warboel, bende","Ben je daar al es gaan shoppen, wat een vuile bazaar!\
+\
+Fien haar kot, een vuil bazaarke, en dit voor een meisje, foei!","de ~ (m.), ~s","8"
+"ineensteken","maken, bouwen","Dat kastje van den Ikea hebben we op een kwartierke ineen gestoken.","","8"
+"cécémel","chocomel, afgeleid van de merknaam\
+\
+","(Tegen een kind): Zet u op uwen zetel, of ge gooit uw cécémel omver.\
+","de ~ (v./m.), geen mv.","8"
+"keunegat","jong, slank  dartel meisje","Zie dat keunegat daar rondspringen.","het ~, ~en","8"
+"jeannet","iemand die verwijfd is, ook pejoratief voor homofiel","Onze tegenstanders zijn een stel jeannetten.","de ~, ~ten","8"
+"gesplet-spletten","van het ww. splijten.\
+\
+Het hout splet van droogte.\
+Jana's haren moeten geknipt worden,de topjes spletten.\
+","De voegen spletten, de stenen komen los.","?","8"
+"kader","lijst voor schilderij of foto","We moeten nieuwe kaderkes kopen, zodat ik de nieuwe foto's kan inlijsten.","de ~ (m.), ~s","8"
+"vogelvlucht, in ~","directe afstand","In vogelvlucht is Hasselt maar 80 kilometer weg, maar we moeten zeker 20 kilometer extra om rijden om er te geraken.","uitdr.","8"
+"ovenkoek","platte koek die tegelijk met het brood in de oven wordt gebakken en die warm wordt gegeten ","Lekker een ovenkoek als morgenmaal","de ~ (m.), ~en","8"
+"ummes","immers\
+\
+variant (Antw.) ommes /oem.es/","Dat is ummes geen doen om elke dag van Leuven naar Brussel te wandelen","bw.","8"
+"buzzevlees","Roze worst [sossis] waarin vlees of afval van vlees wordt verwerkt. Vergelijk met kalfsworst dat normaal in een geel vel zit.\
+\
+\
+","Bah ! Weeral buzzevlees tussen mijne boterham.","zelfstandig naamwoord","8"
+"meise","meid","Zeg, ruim dat zelf eens een beetje op! Gij denkt zeker dat ik uw meise ben.","de ~ (v.), ~n","8"
+"schuppe zot","iemand die zich veelvuldig zot of gek voordoet\
+term komt denkelijk voort vanuit het kaartspel, nl. schoppen boer. [schuppezot]\
+","Hij is altijd even gek bezig, juist ne schuppe zot en in west-vlaanderen is dat een [pieken] zot","de ~ (m.), ~ten","8"
+"kous","sok","Bijna al mijn kousen zitten vol gaten, ik ga er nieuwe moeten kopen.","de ~ (vr.), ~en","8"
+"à volonté","zoveel men wil","fritten à volonté!","","8"
+"kletskop","klein plat koekje","Een tas koffie met een paar kletskoppen smaakt goed.","de ~ (m.), ~pen","8"
+"tittanteulleke","kleine muts, soort baret, meestal met een uitsteekseltje","Onze pa droeg altijd een tittanteulleke als hem met de velo reed.","het ~ (o.), ~s","8"
+"cresson","1. waterkers\
+2. tuinkers","Cresson groeide op e nat watteke. ","de ~ (m.)","8"
+"pamper","luier, afgeleid van de merknaam Pampers, uitgesproken met korte \"a\" klank, zoals \"panter\"\
+\
+VD\
+pam·per (de; pampers)  \
+  1  wegwerpluier  \
+","Ik heb Florke zijn pamper ververst.","de ~ (m.), ~s","8"
+"lavabo","wastafel","In onze badkamer is een bad, een WC en twee lavabo's.","de ~ (m.), ~'s","8"
+"windel","Zwachtel\
+\
+win·del (de m; windelen, windels)  \
+  1  (in België) zwachtel  \
+","Omdat em op de koer was gevallen en z'n hand bezeerd had, moest Jantje een week me ne windel rond zenne pols rondlopen.","de ~ (m.), ~s","8"
+"luster","kroonluchter\
+\
+VD\
+lus·ter (dem; lusters)  \
+  1  hangende luchter, kroonkandelaar  \
+","Er hangen ongelooflijk grote lusters in het koninklijk paleis.","de ~ (m.), ~s","8"
+"lochting","groententuin","Ik plant sla in mijn lochting.","de ~ (m./v.), ~en","8"
+"pistolet","rond, knapperig broodje, uitgesproken als /pistolé/, niet /pistolèt/ zoals in Nederland\
+\
+In tegenstelling tot de betekenis van \"pistolet\" in Nederland - een piccolo, i.e., een vol, langwerpig broodje - wordt in België met een \"pistolé\" een specifiek rond, zeer luchtig en knapperig broodje van een krokante gistdeeg bedoeld. Pistolets staan centraal in het typisch Vlaamse zondagse ontbijt dat pistolets, [sandwich]en. [boterkoek]en, eitjes, [charcuterie], etc omvat.","Elke zondagochtend halen we bij de bakker pistolets, en dan eten we daar een eitje bij.","de ~ (m.), ~s","8"
+"gaffelen","tijdens het eten veel naar binnen werken\
+(komt denkelijk van gaffel,werktuig waar men het hooi mee binnen steekt of op de hooiwagen laadt)\
+\
+VDgaf·fe·len (onovergankelijk werkwoord; gaffelde, heeft gegaffeld)  \
+  1  (informeel) smullen  \
+","Het smaakt zeker. Ge gaffelt nogal binnen.","gaffelde, heeft gegaffeld","8"
+"vule stance","vieze vrouw, een vuile Stance (afk. v. Constance)\
+\
+(Antw.) een vuil Jo / .en voa.el zj.e.oe/","Maria is een vuile stance.","'n ~ (v.), ","8"
+"gazet","krant\
+\
+ook \"gazette\"","Elke morgen de gazette; ik zou ze niet kunnen missen.","de ~ (v.), ~ten","8"
+"keikop","stijfkop, [koppigaard]","Hij wil niet toegeven dat hij fout was, de keikop.","de ~ (m.), ~pen","8"
+"smetsen","met de mond open eten","Hij zit weer te smetsen. Doe uw mond dicht tijdens het eten.","ww. smetse, heeft gesmetst","8"
+"afslag","uitrit","Na het kruispunt, neem je de tweede afslag om naar je bestemming te rijden.","de ~ (m.), ~en","8"
+"patat, zo zat als een ~","veel te zat","Ik ben zo zat als een [patat]! Die 5 laatste trappisten waren er te veel aan!","uitdr.","8"
+"maarte","de werkvrouw\
+de oppas voor kinderen,en meid.\
+vrouw die het huishoudelijke werk deed voor de pastoor.","Mijn grootmoeder had een inwonende meid,kort na de oorlog.\
+Ze was de hulp in het huis,en zorgde voor de drie zonen.\
+Het was dé allerliefste meid en verbleef er tot ze trouwde.\
+\
+Meneer pastoor had een meid,maar ze betekende voor hem,véél meer!","","8"
+"permeteren","van het Fr-permettre, aandurven","Kunt ge u dat permeteren?","zich ~  (ww.) permeteerde, heeft gepermeteerd","8"
+"labeur","landbouwbedrijvigheid, hoeve","Hij heeft nog een klein labeur, juist genoeg om zijn eigen en zijn oude moeder te onderhouden.","het ~","8"
+"alleenstaand","ongehuwd","Ik ben alleenstaand sinds mijn scheiding vorig jaar","bn.","8"
+"eeber","aardbei","Niks zo lekker als verse eeberen op de boot'ram!","de ~ (vr.), ~en","8"
+"paardenoog","spiegelei","Hebt ge liefst een omelet, een roerei of een paardenoog?","het ~ (o.), -en","8"
+"regels","menstruatie, ongesteld\
+synoniem van [maandstonden]\
+","Ik heb mijn regels.\
+","de ~ (mv.)","8"
+"pinksebloemen","seringen\
+\
+(zie ook: [jozemienen])\
+\
+VD\
+pink·ster·bloem (de)  \
+  1  bloem die met Pinksteren bloeit, de veldkers, de koekoeksbloem of de gele lis \
+","Moove of witte pinksebloemen: hun geur vult heel het huis!","mv.","8"
+"sloef, onder de ~ liggen","onder de plak zitten, de mindere zijn in een relatie, zich laten doen","Karel ligt thuis onder de sloef.","uitdr.","8"
+"stoeferke","pochet\
+","Hij kocht nooit ne [plastron] zonder bijpassend stoeferke.","het ~, ~s","8"
+"ijzerenweg","het spoor, de spoorwegen, N.M.B.S / S.N.C.F.\
+\
+letterlijke vertaling van Fr. chemin de fer","Hij werkt bij den ijzerenweg.","den ~ (m.)","8"
+"pelouze","het gazon\
+\
+-> transparant Fr. woord la pelouse (= grasmat)","Onze buurman heeft een nieuw [gesmachine] om zijn pelouze (gazon) af te rijden. (dixit claire)","de ~ (m.), -s","8"
+"opblinken","oppoetsen","Ik ga mijn schoenen opblinken. Geef me de [schoenblink] eens","ww. blonk op, heeft/is opgeblonken","8"
+"uitkuisen","binnenkant schoonmaken","Het hondenhok is vuil. Het moet dringend worden uitgekuist.","ww. kuiste uit, h. uitgekuist","8"
+"sneuken","snoepen","Van al dat gesneuk krijg je slechte tanden.","sneukte, heeft gesneukt","8"
+"vogelkes zonder kop","[blinde vinken, loze vinken]","Deze avond eten we vogelkes zonder kop","","8"
+"smoor","mist","Pas maar op, vanavond komt de smoor op, en het zal heel de nacht smoren!","de ~ (v.), -en","8"
+"achternadoen","na-apen, nadoen, nabootsen","Erik: Doe mij eens niet achterna, [jong]!\
+Karel: Doe mij eens niet achterna, [jong]!","ww. deed achterna, heeft achternagedaan","8"
+"spang","speld","Hebt ge mij niet een hampel spengskes voor de naamkaarten op te spangen?","de ~ (vr.), ~en; dim. spengske","8"
+"nestel","schoenveter","Ik ben over mijne losse nestel gestruikeld.","de ~ (m.), ~s","8"
+"begaaien","vuil maken, bevuilen","Kijk toch hoe ge uw kleren begaaid hebt!","ww. begaaide, heeft begaaid","8"
+"joint de culasse","koppakking (van motor)","De joint de culasse van mijn auto is kapot. Dat gaat me geld kosten.","de ~ ((?)), ~?","8"
+"scheutig","gerust","Awel, ik ben daar niet zo [scheutig] op.","bn.","8"
+"katoen geven","versnellen, verdapperen","Toen hij zag dat hij terrein verloor begon hij katoen te geven.","","8"
+"vortdoen","wegdoen, verwijderen; zoek maken\
+\
+(lokale uitspraak: voertdoên)","Wilt ge nu eindelijk al die rommel eens vortdoen! Ge breekt toch uw benen, hier!\
+Wie heeft de huissleutel vortgedaan, [daarjuist] lag 'r hier nog!","ww. deed voort, heeft voortgedaan","8"
+"slunse geven","gas geven (snelheid opdrijven)","\
+Geef maar slunse,of we komen te laat.\
+( Sneller rijden,of we komen te laat)","","8"
+"vort","weg; zoek; vertrokken\
+\
+(lokale uitspr.: voert; niet te verwarren met \"foert!\")","De zapdoos is weer vort, wie heeft hem het laatst gehad?\
+Is pa vort? [Daarjuist] was hij er nog!\
+Pas op, steek dat blaadje vort, de meester komt af!","bw.","8"
+"poen","kus, zoen","lang mich èns e poenneke","de ~ (v.), ~nen","8"
+"plakwaaier","vlieger\
+\
+","Aan zee, steken we de plakwaaier op.","de ~ (m.), ~s","8"
+"voorbijsteken","inhalen","Deze camion kunt ge misschien voorbijsteken, maar niet onze kwaliteit! (gezien op de vrachtwagen van een textielbedrijf)","ww. stak voorbij, heeft/is voorbijgestoken","8"
+"metseltaarte","samenstelling v. metselen en taart\
+\
+Taart met koekjes, tussen elke laag koekjes smeer je boterroom, net metselen.\
+\
+","De metseltaarte was de lekkerste toet op het dessertbuffet.","'n ~ (v.), ~n","8"
+"Stratièn, stratié","Straathond, samentrekking van straat en chien.","Een stratié (stratièn)wordt minder ziek dan een rashond","","8"
+"mokke","meisje, jonge vrouw","Geert z'n nieuw lief is een snelle mokke (mooi meisje).","de ~ (v.), ~n","8"
+"doppen","Van Dale online:\
+(in België; informeel) dopen, bevochtigen door indompeling","Hij dopte zijn koekje in de warme thee.","ww.dopte, heeft gedopt","8"
+"Bachten de Kupe","Deel van de Westhoek tussen de IJzer, de Vlaamse kust en de Franse grens.","Hij is van Bachten de Kupe.","","8"
+"brousse","oerwoud, jungle\
+VD\
+brous·se (dev; brousses)  \
+  1  (in België, niet algemeen) jungle  \
+","Mijn tante nonneke werkt in de brousse.","de ~ (v.), ~s","8"
+"corniche","1 uitstekende deksteen van de gevel\
+2 (bij pannendak) bekleding van dakgoot\
+3 bij plat dak) in schrijnwerk uitgevoerde, overstekende gevelbescherming, van boven bekleed met zink, onderaan en opstaand bekleed met houten planken\
+\
+/kor niesj/\
+\
+ In het brugs: kornisse","De corniche  (kornisse) moet eens geschilderd worden.","de ~ (v.), -s","8"
+"klunten","jammeraar, jammert over alles en nog wat","Oh gie klunten! Je kat is nie weggelopen.","de ~, ~?","8"
+"spel","ambras, miserie, ruzie","Jammer dat men zoveel spel maakt in de snookerzaal. ","het ~, ~en","8"
+"bretel","broekophouders\
+\
+&#91;brə<u>tɛl</u>&#93;","Zijn broek hangt altijd tot op zijn hielen.\
+Wij hebben hem mooie bretellen gekocht voor zijn verjaardag.  ","de ~ (v.), ~len","8"
+"maalsdoek","zakdoek","Mijne maalsdoek hangt vol [snottebel]le.","de ~ (m.), ~en","8"
+"smoezen (smeuzen)","(smeuzen), pletten met en vork,[dedderen]","Voor de kleine kinderen moest ik altijd de [patat]ten smoezen en met de groenten mengelen","ww., smoesde, gesmoesd","8"
+"chamfoeter","stouterik ","Gij zijt nen echte chamfoeter.\
+Het moet nu eens stoppen dat plagen.","","8"
+"gelijk","zoals","Uw manieren en principes zijn [juist] gelijk uw vader.","voegwoord","8"
+"mutten","kalf, lomperik","Welke mutten heeft dat nu weer uitgevonden?\
+\
+Inne minne mutten\
+10 pond grutten\
+10 pond kaas\
+inne minne mutten is de baas\
+","","8"
+"kameren","kamer huren om ge weet wel wat te doen, \"het\"","Hij [houdt aan] met de vrouw van zijn beste vriend. Zij gaan dan ook geregeld kameren. ","ww. kamerde, heeft gekamerd","8"
+"holebi","homo, lesbienne, of biseksueel","De tijden zijn veranderd, holebis hebben de dag van vandaag niet al te veel te klagen.","de ~ (m.), ~s","8"
+"vava","grootvader","Van de vava mogen we veel meer dan van onze papa, zeker als [moemoe] niet in de buurt is.","de ~ (m.), geen mv.","8"
+"schuffelen","fluiten\
+\
+uitspraak: de u zoals in vuur maar kort\
+&#91;sçyfələ(n)&#93;?\
+","Hij kon niet alleen zingen maar ook nog een aardig deuntje schuffelen.","ww., schuffelde, heeft geschuffeld","8"
+"band","rijstrook op [autostrade]","Op de [autostrade] rijd ik altijd op den derden band. ","de ~ (m.), ~en","8"
+"sjarel","deugniet, kerel\
+\
+zie [zjambaar], [sloeber], [bitskommer], [kastaar], [treze], [kapoen]","Gij zijt nogal ne sjarel.\
+","de ~ (m.), -s","8"
+"bukken","Het kopstoten van een geit of een schaap.","De geit bukte zo hard in zijn maag dat de boer op zijn gat viel.","ww. bukte, heeft gebukt","8"
+"eummekeus","/əməkəs/\
+diegene die daar staat\
+\
+verkleinwoord van hem /əm/\
+syn. [wiewouter], [mondeeke]","Dat moet ge niet aan mij vragen, vraagt dat maar aan eummekeus","pers.vnw","8"
+"bache","regenzeil","Als het regent, heb ik een bache voor op de fiets.","de ~ (v.), ~n","8"
+"dampkap","afzuigkast","Zet de dampkap af als ge uw biefstuk flambeert.","de ~ (v.), ~pen","8"
+"ringaaneen","Ringaaneen is een typisch Mols woord. Betekent zoiets als altijd maar door, telkens weer.\
+\
+ook (Antw.) /riengkani.en/ onophoudelijk, voortdurend (bw.)","Deze dagen regent het ringaaneen.","bw.","8"
+"gelei","(vruchten- of fruit-)confituur, ","Hij heeft liever [choco] dan gelei op zijn [boke]s.","de ~ (m.), geen mv.","8"
+"uilskuiken","dommerik","-","het ~ (o.), ~s","8"
+"geilogen","hartstochtelijk kijken naar eten, kleren... alles wat je de ogen uitsteekt.\
+/'gè.el oe.e g.en/\
+zie [lunsen]","Elke keer als we voorbij die etalage kwamen met die mooie ring, begon ik heel demonstratief te gejeloeëgen, maar mijn vriend pikte die hint niet op.","ww. geiloogde, gegeiloogd","8"
+"duiveltjessaus","saus op basis van azijn en mosterd, heerlijk bij zeeuwse mosselen","Een pikante duiveltjessaus geeft de jumbo meer smaak.","de ~ (v.), -zen","8"
+"vanensentens","van in het begin tot nu\
+van hier tot daar\
+helemaal","De brandweer had de straat vanensentens afgezet; de fabriek stond in lichterlaaie.","","8"
+"rap","snel, vlug\
+VD\
+rap2 (bijvoeglijk naamwoord; rapper, rapst; rapheid)  \
+  1  vlug, snel  \
+","Als dat hier niet rap uit de voeten is, dan sta ik niet in voor de gevolgen.","bn.","8"
+"galjaar","struise, kloeke bonk  (op aanwijzen van petrik)\
+\
+-> Fr. gaillard (= robuust, levendig, in goede fys. doening)","Als zo 'ne galjaar op u afstapt en ge hebt het een of ander op uwe kerfstok, dan kunt ge maar beter uw voorzorgen nemen en naar het voetpad aan de andere kant van 't straat oversteken.","ne ~ (m.) , -s","8"
+"blink","schoensmeer","Maar allez, ge gebruikt toch gene zwarte blink voor bruine schoenen!! Bezie nu!\
+Het is niks met uwe blink! (= uw methode deugt niet, het lukt u evenmin)","de ~ (m.)","8"
+"amen en uit!","gedaan! afgelopen!","Ons gedacht is het beste; punt amen en uit!\
+(aan het eind van een betoog) En daarmee amen en uit!\
+Ondertussen is het nog niet amen en uit met de Lappersfortboslegende, die zo stilaan een stadslegende aan het worden is.","tussenw.","8"
+"poetsvrouw","schoonmaakster, werkster\
+\
+VDpoets·vrouw (dev)  \
+  1  werkster  \
+\
+","zie ook [kuisvrouw]","de ~ (v.), ~en","8"
+"slierbaan","glijbaan\
+\
+ook [afrijs], [afrijzer], [afritser], [rijsaf], [schuifaf]","Hoe hoger de slierbaan, hoe harder je naar beneden glijdt.","de ~ (v.), slierbanen","8"
+"mazoet","mix van cola en bier","Echte mannen drinken geen mazoet.","de ~ (m.), geen mv. / -jes","8"
+"japneus","/zjapneus/ \
+spotnaam voor een klerikaal","Van ne japneus kunt ge verwachten dat hij in \"zuilen\" denkt.","de ~, -zen","8"
+"geburen","buurt","We hebben wel 3 frietkoten in ons geburen.","?","7"
+"spuit","injectie\
+VD\
+spuit (de; spuiten)  \
+  1  instrument om een vloeistof onder druk met kracht door een nauwe opening uit te werpen  \
+  2  (informeel) geweer  \
+  3  injectie, dosis  \
+","Ik ben een spuit gaan halen tegen de griep.","de ~ (m.), ~en","7"
+"vaneigens","vanzelfsprekend, dat spreekt voor zich, ook gebruikt als bevestiging van een ware uitspraak","Ik was vaneigens weer helemaal platzak.","bijw.","7"
+"neig","indrukwekkend, cool","Die film is keineig.","bn.","7"
+"auker","emmer\
+\
+zie ook [aker]","Vult dienen auker eens met water.","de ~ (m.), ~s","7"
+"stekken","een vervelend gevoel geven, prikken","Mijn zoon wilt de zelfgebreide pull die hij kreeg van oma,niet dragen: 'hij stekt', zegt hij! \
+\
+hamamelis (06 feb 2008 22:03)","","7"
+"oudmannekeshuis","rusthuis voor ouderlingen (uitdrukking die vroeger meer werd gebruikt)","Mijn grootvader was niet goed meer te been en hij is naar het oudmannekeshuis verhuisd.","","7"
+"bezetting","bepleistering  ook bezetsel; \
+\
+afleidingen: bezetter, bezetten\
+","De bezetter die onze muren had geplafoneerd, vertelde dat het gerust 6 weken kan duren voor het bezetsel helemaal droog is. De bezetting kan versneld uitzweten met warme lucht.","de ~ (v.), ~en","7"
+"huisgerief","huisraad","Heb-de gij meubelen, en heb-de gij huisgerief? Dan kunt ge trouwen met uw lief!","het ~, -ven","7"
+"kakkernest","nakomertje,[achterkomerke]","Ze hebben al vijf kinderen en nu tien jaar later nog een kakkernest erbij.","het ~, ~en","7"
+"teugs","teug, slok","Kom, drink nog een teugsje cola! Het zal je deugd doen.","de ~ (v.), ~en","7"
+"afkuisen","afvegen, schoonvegen","Kuis uw handen af voor ge aan tafel komt.\
+Kunt ge met een [schotelvod] de tafel eens afkuisen?","ww. kuiste af, heeft afgekuist","7"
+"klokkespel","mannelijk geslachtsdeel","J'ei den schip in zen klokkespel gekregen.\
+\
+(hij heeft een trap op zijn edele delen gekregen)","het ~, ~en","7"
+"kiezig","eng of vies","Tussen de ratten slapen in een kraakpand is kiezig.","bn.","7"
+"verdestereweren","2 gebruikstermen: Of: \"scheefgeslagen, gestolen dus\";  of: helemaal verfomfaaid zijn.\
+Tweede e wordt helder uitgesproken, als in mes.","1. Waar heb je die spullen verdestereweerd?\
+2. Door die hevige rukwinden ben ik helemaal verdestereweerd.","ww. verdestereweerde, heeft verdestereweerd","7"
+"swiss","uitgesproken - swies\
+kerkbewaarder, man die instond voor de orde in de kerk\
+\
+VD\
+suisse\
+(archaisch) vroegere ordebewaarder in rooms-katholieke kerken","De swiss droeg normaal een zwart kostuum en had een staf in de hand waarmee hij bv. op de grond tokte wanneer men moest rechtstaan of terug mocht gaan zitten.","de ~ (m.), ~en","7"
+"kaderen, ~ in","aansluiten bij, passen bij, deel uitmaken van","De aanleg van het nieuwe bos kadert in het milieuplan voor de provincie.","","7"
+"sjatten en taloren","je kunt de boom in","Mieke zei:\
+-Treesje, wil je dit even voor me doen?\
+Treesje:\
+-Sjatten en taloren! Doe-g-et zelf! ","uitdr.","7"
+"gejost","Duidt op een, meestal hypothetische, toestand van zware pech. Soms wordt ook 'gesjareld' gebruikt (mogelijk om mensen die echt Jos heten te ontzien, ten koste van mensen die echt Charel heten)","Als die tent nu ook nog wegwaait, dan zijn we gejost.","~ zijn (voltooid deelwoord)","7"
+"knoesel","enkel\
+\
+> knoes = kraakbeen; \
+  knoesel (verkleinwoord) van knoest (= uitwas)","Beatrijs had haar knoesel behoorlijk pijn gedaan door in het keldergat te schieten.","de ~ (m./v.), ~en","7"
+"kramiek","fijn tarwebrood met krenten","Ons middagmaal van koffie met kramiek.","de ~ (m./v.), ~en","7"
+"moederhuis","kraamafdeling van een ziekenhuis","We zijn met een taxi naar het moederhuis gesneld.","het ~, moederhuizen","7"
+"moederkeszalf","speeksel, [speek], [tuf], [zjuzzekeszalf] als placebo","Kom maar eens hier, ik zal er wat moederkeszalf aan smeren. Dan gaat het het vlugst over.","de ~ (v.), geen mv. stofnaam","7"
+"mottig","lelijk","Zo'n mottige kleur dat dien auto heeft.","bn.","7"
+"teut","mond","Zwijg maar een beetje, of ik klop op uwen teut!","de ~ (m.), ~en","7"
+"poepsimpel","eenvoudig, simpel","Die autoband wisselen is poepsimpel.","bn.","7"
+"carottentrekker","Van Dale\
+\
+1 (in België; spreektaal) iem. die zich door een uitvlucht aan een onaangename verplichting onttrekt\
+\
+zie ook: [karotentrekker] ","Hij moest het gras afdoen maar had opeens pijn in zijn rug.\
+'t Is nen echte corottentrekker.","de ~ (m.), ~s","7"
+"klots","harde knal","Hebt ge dat gehoord? Wat voor een klots was dat?","de ~ (m.), ~sen","7"
+"omhaling","geldcollecte","Er was een omhaling voor 11.11.11.","de ~ (v.), ~en","7"
+"kleven","plakken, lijmen","Ik heb een papieren aprilvis op zijn rug gekleefd.","ww. kleefde, heeft gekleefd","7"
+"paternoster","een hele reeks, serie, een lange lijst","Dat was een paternoster van leugens die hij aan het vertellen was.\
+Inwendig vloekte ik een hele paternoster bijeen!\
+Ik denk dat ze een hele paternoster zaligheden naar het hoofd van die douaniers heeft geslingerd in die uren dat ze daar zat. \
+Een hele paternoster kapelletjes en kruisen zijn de stille getuigen van onze christelijke wortels.","de ~ (m.), ~s","7"
+"sneuvering","Verkoudheid, maar met nadruk op de symptomen van een verstopte en/of lopende neus.","Amaai, ik had gisteren veel last van mijn sneuvering.","de ~ (v.), ~en","7"
+"spik","spaander; lucifer","Ga wat houtspikken kappen om de stoof aan te steken!\
+E spikske aansteken doet meer af dan vloeken tegen den donkele. (naar Eleanor Roosevelt)","de ~ (v.), ~ken","7"
+"spikske","lucifer","Heb ge mich gee spikske, mijn sigaar is weer uit!","het ~, ~ s","7"
+"vonkelhoutzaag","brandhoutzaag","Het vonkelhoutzaagske (foenkelhootzèègske) in het werkhuis van mijn vader was een kleine raamzaag met touwen zo oud en droog dat ik niet begreep hoe die de zaag nog konden gespannen houden.","de ~ (v.), -en","7"
+"panikeren","in paniek geraken, panieken","Ze begon helemaal te panikeren toen ze merkte dat ze de trein had gemist.","ww. panikeerde, heeft gepanikeerd","7"
+"schoofzak","eten, boterhammen, knapzak","Hebt ge uwe schoofzak bij, want het zal een lange dag worden?","de ~ (m.), -ken","7"
+"voddezjo","iemand van het vrouwelijk geslacht die er qua kleding slordig bijloopt. ","Doe iets deftigs aan, ge zijt just een voddezjo","","7"
+"vogelen","geslachtsgemeenschap hebben, ook [vossen], neuken, [poepen]","Ik heb [goesting] om te [vogelen]","","7"
+"tarmac","start- en landingsbaan\
+\
+-> Am. (handelsnaam) tar + mac(adam): wegdek van gewalst en geteerd steenslag\
+\
+","Het is druk op de tarmac in Zaventem","de, het ~ (m.), ~s","7"
+"pee","oudere kerel","Dien ouwe pee heeft veel grappige verhalen over zijn jeugd.","de ~ (m.), ~ën","7"
+"koersgidon","stuur van een racefiets","Ik wil 'ne velo met 'ne koersgidon van Sinterklaas!","de ~ (m.), ~s","7"
+"wijd","bijna, nagenoeg\
+\
+in die zin van: is't nu wijd gedaan met..., of dubbel: is't nu bekanst wijd gedaan met....","Is dat nu verdorie bekanst wijd gedaan met dat ruzie maken?","bw.","7"
+"zeggen, 't is te ~","dat wil zeggen, met andere woorden; ik bedoel\
+zie ook: [t.t.z.] ","Ik zet me op de kachel, 't is te zeggen met m'n voeten ...\
+Te betalen binnen 6 maand na de van krachtwording van de nieuwe wet, 't is te zeggen vóór begin december.","","7"
+"vroem","terug \
+\
+\
+\
+","Wanneer zijt ge vroem?","bijw.","7"
+"tjaffelen","Zelfs moe zijnde, toch nog voortgaan, meestal tegen zijn zin omdat men niet anders kan (of moet).\
+","Ziet ons hier door de regen tjaffelen. Zou het nog ver zijn?","tjaffelde, heeft getjaffeld","7"
+"kattenkop","verdeelstekker die in stopcontact zelf past","Ik heb een stopcontact te weinig om de toestellen aan te sluiten. Hebben we nog ergens een kattenkop? ","de ~ (m.), ~pen","7"
+"truweel","troffel\
+metselaarsgereedschap, een driehoekig stalen blad aan een gekromde steel met houten handvat","Ik ga mijn truweel zoeken om morgen dat muurtje te [metsen]. ","het ~ , ~en","7"
+"barometrische voor","decolleté","Aan die madam haar barometrische voor kunt ge aflezen dat het schoon weer is.","","7"
+"werkbeurs","Vroeger de dienst voor tewerkstelling (RVAW), thans de VDAB.","Onze Lowie heeft werk gekregen van de werkbeurs.","de ~ (v.), -","7"
+"koekenbak","ruzie, roepen en tieren\
+","Lap, het was te denken, 't is weer koekenbak!\
+","de ~ (m.), ~ken","7"
+"tessendoek","zakdoek","Ik heb een snotvalling, maar genen tessendoek :-(","de ~ (m.), ~en","7"
+"want","Vingerloze handschoen.\
+\
+VD\
+want2 (de; wanten)  \
+  1  handschoen zonder aparte vingers, alleen met een duim  \
+","Met die kou kunt ge beter uw wanten aandoen.","de ~ (vr.), ~en","7"
+"lukske","het alom bekende nieuwjaarswafeltje van Destroopere","Nieuwjaarsmaand, wie heeft er geen lekkere lukskes in huis?","het ~, ~s","7"
+"was, de vuile ~ buitenhangen","de fouten en gebreken van iemand bekendmaken ","Hij heeft genoeg stoten uigehaald, ze hebben nu maar van hem de vuile was buiten gehangen.","uitdr.","7"
+"wasspang","wasknijper, [wasspeld]","Als kind hielden wij ervan door de straat te koersen met [tijskaart]en vasgespangd met wasspangen op de [blein]en van onze velo.","de ~ (v.), ~en","7"
+"containerpark","terrein waar men gesorteerd afval in containers kan deponeren, [recyclagepark], milieustraat (Ned.)","Ik ben net een hele auto houtafval naar het containerpark gaan brengen.","het ~, ~en","7"
+"port-bagage","bagagedrager, imperiaal\
+\
+-> Fr. porte-bagage","Hoor de port-bagage eens fluiten, ge had hem beter afgedaan voor we vertrokken.","de ~, ~s","7"
+"boeksheiring","bakharing","Vandaag gaan we eens een goeie boeksheiring bakken","de ~ (v.), ~en","7"
+"deureterten","flink doorstappen\
+\
+afleiding:\
+deure = door\
+terten = stappen\
+\
+Zoiets zeggen we, als we met spoed ergens moeten zijn,en denken er niet op tijd te raken.\
+\
+","Komaan! We moeten deureterten, anders missen we de bus.\
+","ww. ?, ? ?","7"
+"kakkebeulleke","doopsuiker, suikerboon\
+\
+In Nederland kennen ze deze traditie niet, daar krijg je beschuit met muisjes (anijspitjes in gekleurd suiker)","Als er een kindje geboren is, dan krijg je altijd kakkebeullekes als je moeder en kind gaat bezoeken.","het ~, ~s","7"
+"wicht","Meisje, ook wel 'wichtje'. \
+\
+VD\
+wicht (het; wichten)  \
+  1  (pejoratief) meisje  \
+  2  klein kind  \
+","Marianne is een aardig wicht. Schat van een kind. ","","7"
+"brielpot","brielpot: morser\
+brielen: morsen","Als mijn kinderen schilderen, is het meer brielen dan wat anders. Het zijn twee brielpotten samen.","de ~, ~ten","7"
+"embrailleren","ontkoppelen (in auto)","Ge moet embrailleren als ge wilt schakelen.","","7"
+"remork","aanhangwagen met trekhaak\
+\
+> Fr. remorque  (= sleepwagen, sleepbak, nav.)","Ik ben vanmorgen met een remork afbraak naar het containerpark gereden.","de ~ (m.),","7"
+"karoten trekken","zich aanstellen, comedie spelen","Karel is helemaal niet op zijn gezicht gevallen, hij is karoten aan het trekken.","","7"
+"rond punt","rotonde","Op een rond punt kan het verkeer vlotter door dan een kruispunt met een rood licht.","","7"
+"Johnny en Marina","opzichtig tienerkoppeltje, veel lawaai, veel dure kleren, veel maquillage, maar weinig inhoud\
+Nederland: \"Sjonnie en Anita\"","In die café zit het altijd vol Johnny's en Marina's, we gaan ergens anders pinten pakken.","","7"
+"swingschoetje","dansschoentjes","Nog enkel mijn swingschoetjes aantrekken,en we gaan dansen!","het ~, ~s","7"
+"plakker","pleisteraar","De plakker zorgt dat de muren mooi effen worden.","de ~ (m.), ~s","7"
+"kossem","dikke keel, vet onder de kin","Dat [vremmes] heeft een dikke [kossem].","de ~ (m.), ~s","7"
+"grinsen","jengelen","De kleine is al de hele dag aan het grinsen. Zijn tandjes komen door.","ww. grinste, heeft gegrinst","7"
+"frit","friet, patat","- Is er iets Vlaamser dan fritten?\
+- Ja, frieten.","de ~ (v.), ~ten","7"
+"kobbejager","ragebol (ev)\
+\
+(enorme lange bezemsteel met typisch halfronde borstel):om spinnen te jagen.\
+\
+","Men zegt het ook wel eens:\
+\
+Kamde jij je haar niet? Je kapsel ziet er niet uit, just ne kobbejager!","de ~ (m), ~s","7"
+"ijsstoel","slee","Kom! Neem uwen ijsstoel maar mee!","de ~(m.), ~en","7"
+"bazatse","zak vol, doos vol, valies vol, ... vb:kledij","Mijn dochter kwam thuis van skiverlof, en gooide haar bazatse in de garage.","de ~ (v./m.), ~n","7"
+"appelsien","sinaasappel","Als we deze appelsienen persen hebben we vers [fruitsap].\
+\
+Appelsien, laat u zien!\
+Pas maar op, of ik eet u op!","de ~ (v.), ~en","7"
+"pardesu","overjas","Met mijn pardesu aan heb ik geen koud.","de ~ (m.). ~s","7"
+"a","a: dat zijt gij, als ik u aanspreek in een conversatie. Het is het lijdend of meewerkend of voorzetselvoorwerp van 'gij', de Vlaamse tweede persoon enkelvoud van het persoonlijk voornaamwoord als voorwerpsvorm.","Zot van a. Ik zieng a geiren. Da's da van a.","pers. vnw., 2pe, voorwerpsvorm","7"
+"statie, de ~ staat vol","vrouw met grote boezem\
+\
+variant (Antw.) Der is volk in de statie /stoas.e/.\
+tegenovergestelde: vrouw met platte boezem\
+gelijk met de statie (Antw.)","Hebt ge ze gezien? De statie staat vol.","zegswijze","7"
+"slets","teenslipper","Mijn nieuwe sletsen knellen wat aan mijn tenen.","de ~ (v.?), ~en","7"
+"aanschuiven","in een rij of in de file wachten","Er was zoveel volk bij de bakker dat de mensen tot buiten stonden aan te schuiven.","ww. schoof aan,heeft aangeschoven","7"
+"maseurke","nonneke, kloosterzuster\
+-> Fr. ma soeur (aanspreking van ~) zuster, ...\
+Ook in W-Vl. maseur, maseurke","Ik zat al van mijn drie jaar bij de maseurkens.\
+Ik heb een tante maseur in de Congo.\
+Bij maseur Antoinette.","het ~, ~s","7"
+"plavei","straattegel","Ze hebben nieuwe plaveien op het voetpad gelegd.","de ~ (v./m.), ~en","7"
+"keskeschiet","kitsch, iets van weinig waarde","Die nieuwe vaas is maar van keskeschiet.","?","7"
+"bremstig","geil, bronstig, loops","Ik sta bremstig vandaag.","bn.","7"
+"evident","voor de hand liggend","Het is nogal evident dat België als staat gaat blijven bestaan.","bn.","7"
+"luik","onderdeel van een boek, televisieprogramma, ...","Vandaag behandelen we het eerste luik van het boek.\
+In het laatste luik van het verslag vind je onze bevindingen en conclusies.\
+","het ~, ~en","7"
+"pietlulligheid","pietluttigheid, detail, bijzaak","Ik moet nog twee pietlulligheden aan mijn artikel veranderen en dan is het klaar.","de ~ (v.), -heden","7"
+"beenhouwerij","slagerswinkel, slagerij, \
+\
+zie ook [beenhouwer]","Ik ga naar de beenhouwerij om worsten en beleg.","de ~ (v.), ~en","7"
+"bekan","bijkans, bijna","Ik was bekan van den trap gevallen.\
+Karel weegt bekan 100 kilo.","","7"
+"ferm","erg, hard, [wreed], [neig]","Ik heb me gisteren ferm geamuseerd.\
+Hij heeft zijn eigen ferm zeer gedaan.","bn.","7"
+"duvelke","klein, handig voorwerp dat \"duivels\" goed presteert; het kan gaan om een klein kacheltje dat veel warmte afgeeft, of om een makkelijk wendbaar, solide steekwagentje ...\
+\
+duveltje in het standaard nederlands( klein kacheltje waarop gekookt kan worden)","Het duvelke brandde op halve kracht, maar toch was het na een half uur al lekker warm in de blokhut.","het ~ (o.), ~s","7"
+"brood, Frans ~","stokbrood  - van groot naar klein formaat\
+(flûte, baguette, épi of ficelle)","Frans brood met smeerkaas smaakt goed.","het ~, Franse broden","7"
+"muit","Een kooi met tralies, vooral voor vogels.","Ons Pietkootje zijn muite is vuil. we zullen ze eens moeten [uitkuisen].","de ~ (vr.), ~en","7"
+"mezinke","Uitroep van verbazing.","Hij heeft mezinke een nieuwe auto gekocht, en de vorige was nog niet versleten.","tussenw.","7"
+"poepjelei","siroop om op de boterham te smeren","Ik zou graag wat zoets hebben voor op mijn boterham.\
+Neem de poepjelei maar, hij is zeer lekker.","","7"
+"neute","noest, harde, donkere plek in hout op de plaats waar de tak uit de stam is voortgekomen \
+\
+zie [weer], [wieër]","Die plank kan je niet gebruiken voor een plint, ze zit vol neuten.","de ~ (m.), ~n","7"
+"kluchtig","gezegd van een interieur dat door de aangename lichtinval de indruk opwekt van helderheid en gezelligheid","Ge woont hier schoon. Wat is het hier kluchtig!","bn.","7"
+"stylo","balpen","Mijn stylo schrijft niet meer.","de ~ (m.), ~'s","7"
+"buiten, iets van~ weten","iets uit het hoofd weten","Hij moest zijn nota's raadplegen omdat hij de leerstof niet van buiten wist (kende).","uitdr.","7"
+"broebelen","(iets) onverstaanbaar, verward of krom zeggen ","Hij broebelde wat tussen zijn tanden, maar ik kon er geen woord van verstaan.","ww., broebelde, heeft gebroebeld","7"
+"gepresseerd","gehaast\
+\
+-> Fr. pressé (transparant woord)","Ik ben gepresseerd, want ik moet over welgeteld 8 minuten op de trein zitten.","bn.","7"
+"kolbas","boekentas","Hij is zijn \"kolbas\" vergeten in de school.","?","7"
+"snotter","snotjongen, snotjong\
+iem. die nog niet meetelt,\
+iem. die geen stem in het kapittel heeft.\
+snotneus, snotaap","'t Zijn nog snotters. Die kunt ge toch niet verantwoordelijk stellen voor wat ze uitspoken.","de ~ (m.)(v.), ~s","7"
+"toer","wandeling, rondje","Ik ga een toerke rond de blok lopen.","de ~ (m.), ~en","7"
+"lossendoor","doorheen","Hij is met zijne brommer lossendoor de garage gereden.","","7"
+"zeiker","idem als [zeveraar]","is me dat een zeikerd van een vent","","7"
+"bissemkes","rode bessen, die met een vork moeten \"afgerits\" worden","we zijn deze namiddag met een aantal vrienden een paar kilo bissemkes gaan plukken; het afritsen laten we aan onze vrouwen over.","de ~ (vr.), ~","7"
+"muilentrekker","zeer zuur snoepje in de vorm van een rode bol","Mijn tong doet helemaal zeer van die muilentrekker.","de ~ (m.), ~s","7"
+"keten","ketting\
+\
+VD\
+ke·ten de; v(m) -s, -en 1 ketting ","De keten van mijn fiets is kapot, er is een schakel gebroke.","de ~ (v.), ~s","7"
+"pocketspits","VD\
+(in België;voetbal) kleine, lichtgebouwde spits","Waar vinden we toch die pocketspits die we zo nodig hebben?","de ~ (m.), ~en","7"
+"gaaischieting","vogelschieting, [wipschieting]: het afschieten van gaaien (vogels) op de wip","Hij heeft de eerste prijs geschoten op de gaaischieting. ","de ~ (v.), ~en","7"
+"ni","wordt gebruikt als verdubbeling/versterking van een ontkenning","Het kan ook nooit ni goed zijn.\
+Ik heb hem [nieverans] ni gezien.","bijw.","7"
+"hoofdflakke","hoofdvlees, perskop","Een schel hoofdflakke met mosterd erop voor tussen mijn [stutte]n","de ~ (v.), geen mv.","7"
+"pots","muts, pet zonder klep","Het is aan het sneeuwen buiten. Ik zal maar een pots op zetten.","? ~, ~en","7"
+"mamzel","juffrouw, meisje","Met haar kommunie was ons Margriet een schoon mamzel.","de ~ (vr.), ~len","7"
+"bandbreuk","lekke band","Een bandbreuk in de afdaling van een col is niet van gevaar ontbloot.","de ~ (m.), ~en","7"
+"rebu","'Echt waardeloos' is niet overal synoniem van 'rebu'. In Haspengouw betekent het zoveel als 'van mindere kwaliteit'.","Bij fruit (bijvb. appels)worden de uitgesorteerde appels (te klein, te groot, beschadigd, kleur niet goed genoeg, te rijp of te onrijp enz.)verkocht als 'rebu' aan de fruitsap-industrie of voor andere verwerkers. Wel dient er bij gezegd te worden dat de HANDELS-kwaliteit minder is, de kwaliteit van het fruit op zich hoeft daarom niet minderwaardig te zijn: de 'rebu' is gewoon niet goed (mooi) genoeg voor in de winkel.","","7"
+"gelijk","onmiddellijk, direct, meteen ","\"dat zal ik gelijk regelen\" betekent hier dus niet \"volledig\", maar wel: ik breng dat onmiddellijk in orde.","bw.","7"
+"ventileren","uitsplitsen, verdelen (van uitgaven, onkostennota's e.d.) voor boekhoudkundige doeleinden","De totale kostprijs ventileren per begrotingsartikel.\
+Ventileren van de uitgaven over kostenposten en uitgavencategorieën, zoals voeding, kledij, ontspanning, verplaatsingen, schoolactiviteiten.\
+","","7"
+"gardeboe","spatbord\
+\
+-> Fr. garde-boue (= slijk-weerder)","Ze hebben tegen mijn auto gereden en er is een bluts in mijn gardeboe.","de ~ (v.), ~s","7"
+"jaarebees","aardbei","'k hem lekkere jaarebezen gegeten met kinnekessuiker","de ~ (v.), -zen","7"
+"C4","ontslagbrief","Bij ontslag in de fabriek krijgt men zijn C4.","de ~ (v.), ~'s","7"
+"stock","voorraad\
+\
+VD\
+stock (dem; stocks)  \
+  1  voorraad van goederen  \
+  2  het vaste kapitaal van een onderneming \
+","Hebt ge nog een maatje 39 op stock? Ik vind hem niet in het rek.","de ~ (m.), ~s","7"
+"stekkedoosje","luciferdoosje","Mijn stekkedoosje is helemaal leeg, hebt gij some een vuurke?","","7"
+"speelvoyage","huwelijksreis","We gingen op speelvoyage naar de Azurenkust.","de, het ~ (v.), ~n/~s","7"
+"peire, uwe ~ zien","heel wat te stellen hebben met iets of iemand.\
+/pè.e r.e/ of /'pee r.e/\
+zie [fluppes, uwe ~ zien], [pere, zijne ~ zien]","Ik heb mijne peire al gezien! Eerst ben ik gevallen en verstuikte mijn voet, toen bleek dat ik een hernia had en iets daarna moest ik geopereerd worden aan m'n knie. Als ge toch op uwe sukkel zijt!","uitdr.","7"
+"teledistributie","kabeltelevisie","Er zijn mensen die lang moeten wachten op een aansluiting op de teledistributie.","de ~ (v.), geen mv.","7"
+"metser","metselaar","De metsers hebben op 1 week bijna het hele huis gezet.","de ~ (m.), ~s","7"
+"goanewèè","vertrekkensklaar, op het punt staan door te gaan\
+\
+-> Eng. gone away","Awel, zijn we goanewèè? Waar moeten we nog op wachten?","bw.","7"
+"vrijage","relatie\
+VD\
+vrij·a·ge (dev; vrijages)  \
+  1  (archaïsch) verkering  \
+  2  toenadering tussen bedrijven e.d.  \
+","Daar komt een vrijage van, zoals die twee omgaan met elkaar...","de ~ (v.), ~n","7"
+"pootjelap","~ doen:\
+iemand langs achter een voet tussen zijn voeten steken om hem te doen struikelen\
+\
+(Antw.) ~ zetten: een lap geven tegen een voet (l/r) zodat die achter de andere voet haakt","Meester, hij doet (zet) mij altijd pootjelap.\
+Ik ga het aan mijn moeder zeggen, want mijn knie is al geschaafd.","uitdr.","7"
+"medisch onderzoek","algemene medische gezondheidscontrole","We gaan morgen met de klas op medisch onderzoek.\
+Voor mijn nieuw werk moet ik een medisch onderzoek ondergaan.","het ~","7"
+"kindergeld","kinderbijslag","Met het kindergeld dat we krijgen kunnen we geen kinderen mee grootbrengen.","het ~ (o)","7"
+"santeboetiek","alles erbij, compleet\
+              ","De verhuiswagen was er net op tijd. Eerst de meubelen, dan alle kartonnen dozen en heel de santeboetiek werden van de wagen gehaald.","de ~ (v.)","7"
+"patee","gebakje, taartje\
+\
+nogal een pateetje in de baby zijn luier = vaste stoelgang in de luier","Deze namiddag koffie met pateetjes!\
+\
+Amai, nogal nen patee in de luier van Emma!","de ~ (m.),  ~s","7"
+"blot","kaal","Die man daar heeft een blotte kop, dat moet fris zijn.","","7"
+"batteren","vechten","Loewie was weer aan het batteren met Frans.","ww. batterde, heeft gebatterd","7"
+"gat, van zijn ~ schudden","ergens vanaf geraken, van iets afkomen, ervoor zorgen dat ge iets niet moet doen. ","Ze wilt niet. Ze doet dat niet gere. Ik weet wel hoe ze dat van haar gat moet schudden. (Tante Julia)","uitdr.","7"
+"bijhouden","bewaren","Gaat ge die oude kranten nog bijhouden of zet ik ze bij het oud papier?","ww. hield bij, heeft bijgehouden","7"
+"communautair","betrekking hebbend op de verschillende (Vlaamse, Waalse, Brusselse en Duitse) gemeenschappen","België zit momenteel in een diepgaande communautaire crisis.","bn.","7"
+"wewe","weduwe\
+\
+zie ook: [weef]","\"Je bent een jonge wewe\" zei men me, toen mijn man stierf op 37-jarige leeftijd.","de ~ (v.), ~n","7"
+"taarteklaai","onnozelaar, kieken","Oe gij taarteklaai!","de ~ (m.), -s","7"
+"galjaar","buitenmaats, buitenproportioneel, kolossaal, enorm\
+zie [kastaar]\
+ -> Fr. gaillard (struis, durfal)","Dat trekpaard heeft galjaars van benen. Behaard als ze zijn, geven ze de indruk kolossen te zijn.","~ van ...","7"
+"stoppezot, ergens van ~ zijn","heel veel houden van iets of iemand, stapelzot","Ik ben stoppezot van u.\
+Die BMW, daar ben ik stoppezot van.","uitdr.","7"
+"wachtdienst","weekend- en nachtdienst voor artsen en apothekers","Er zijn prettiger dingen in het leven dan de wachtdienst verzekeren. ","de ~ (m.), ~en","7"
+"bilk","weide","Iedere morgen brengt de boer zijn koeien naar de bilk.","de ~ (m.), ~en","7"
+"taalbad","intensieve reeks van lessen in een vreemde taal \
+(verblijf in het land van oorsprong in contact met autochtonen)","Een taalbad nemen, ik kan het de jongeren alleen maar aanraden.","het ~, ~en","7"
+"trekken, amandelen ~","amandelen knippen, laten wegnemen","Mijne zoon moet zijn amandelen laten trekken.\
+Amandelen trekken ze als ze niet meer gezwollen zijn. In mijn geval toch.","","7"
+"kot","dierenhok\
+\
+VD\
+kot (het; kotten)  \
+  1  klein armoedig huis  \
+  2  hok  \
+","Het konijnenkot moet eens uitgekuist worden, het stinkt.","het ~, ~ten","7"
+"appartementsgebouw","flatgebouw","De eisen die serviceflats worden opgelegd zijn veel hoger dan de eisen voor gewone appartementsgebouwen.","het  ~ ,  ~en","7"
+"appelaar","appelboom","Een zonnige standplaats tot halfschaduw is goed voor de appelaar.\
+De appelaar laat zich momenteel van zijn mooiste zijde zien, als de appelen zo groot worden als de bloesems belooft het een mooie oogst te worden.  ","de ~ (m.), ~s","7"
+"applausvervanging","publiekswissel","Pär Zetterberg speelde gisteren zijn laatste match en kreeg een applausvervanging.\
+Uitblinker Romario verdiende een applausvervanging.","de ~ (v.), ~en","7"
+"texasbroek","de eerste jeansbroek [spijkerbroek] werd zo genoemd ","In een texasbroek voel ik mij gemakkelijk.","de ~ (v.), ~en","7"
+"neuzen","snoep in de vorm van een kegeltje (rode of groene) hard van buiten, zacht van binnen (geleiachtige [siroop] = stroop)","Breng me van het snoepkraam eens een half pond neuzen mee.","de ~ (mv.)","6"
+"koekenbak","prijs, het was te verwachten","'t Was weer koekenbak. Eigenlijk was het te voorzien, dat er ruzie van zou komen.","de ~ (m.), ~ken","6"
+"kevie","bed\
+<Lat\
+zie ook [tram, naar zijnen ~ gaan], [kip]","Hij ligt al in zijn kevie. Komt morgen maar eens terug.","de ~ (v.), ~s","6"
+"kloten","prutsen","Hij zit daar al heel den dag aan zijnen auto te kloten en heeft der nog niks van terecht gebracht.","ww. klootte, heeft gekloot","6"
+"nationaliteit","Net als in het Nederlands betekent dit woord ook het lid zijn van een staat.\
+\
+Echter, waar alle (Nederlandse) \"officiële\" taalinstanties het over eens lijken te zijn, is dat er een fout staat in elk van onze (Vlaamse) identiteitskaarten. Volgens deze \"instanties\" moet een Nederlander op de vraag \"Wat is uw nationaliteit\" antwoorden \"Nederlandse,\" als bijvoeglijk naamwoord. Deze logica volgend, zou een Belg dus moeten antwoorden \"Belgische,\" maar we zeggen steevast \"Belg,\" niet \"Belgische.\" Ook bij onze identiteitskaart staat er \"Belg.\" Fout dus?\
+\
+Ik ben het niet eens met het Nederlandse antwoord op deze vraag. Op de vraag \"Wat is de kleur van deze tafel\" antwoordt toch ook geen enkele Nederlander \"blauwe\" (met -e)?","Ondervrager: Dewelke is uw nationaliteit?\
+Staf: Ik heb de Belgische nationaliteit\
+Kees: Ik heb de Nederlandse nationaliteit\
+Ondervrager: Wat is uw nationaliteit?\
+Staf: Belg\
+Kees: Nederlandse","","6"
+"geitje","koosnaam voor Citroën 2CV auto, eend","Ons mama heeft nog met een mooi wit geitje gereden.","het ~, ~s","6"
+"kevie","duivenmand","In de tijd voor er constatateurs bestonden, spurtte de zoon van de duivenliefhebber met het katsjoewe ringetje naar het duivenlokaal, als de duif op het bart was 'neergevallen'. \
+\
+Om mee te kunnen spelen op Quiévrain, Tours of Bordeaux, bracht de duivenliefhebber zijn duif/duiven eigenhandig naar het duivenlokaal in een kevie.","de ~ (v.), ~s","6"
+"piet snot","vijfde wiel aan de wagen (onbelangrijk persoon)\
+\
+(Antw.) spreekt naast Piet Snot ook van Jan Lul","Hij stond erbij voor piet snot = hij had niets te zeggen (zijn aanwezigheid maakte niets uit)","","6"
+"functie, in ~ van","(gallicisme voor) afhankelijk van, rekening houdend met, op grond van","De verkopers worden verloond in functie van hun verdiensten.","uitdr.","6"
+"mot","klap, slag","Omdat hij zijn tong uitstak kreeg hij een mot in zijn gezicht.\
+\
+","de ~ (v.), -ten","6"
+"veest","scheet","Ze is het gewoon om veesten te laten.","de ~ (vr.), ~en","6"
+"klunten","klungelaar, onhandig persoon","Gij klunten! Kunt ge dat niet deftig ineensteken?","de ~, ~?","6"
+"afrolder","rolluik","Mijnen afrolder is kapot.","de ~ (m.), ~s","6"
+"wc-madam","vrouw die instaat voor de netheid van de toiletten (in openbare plaatsen, op beurzen)en daarvoor een kleine bijdrage vraagt (30 cent)","Gelukkig stond er een wc-madam aan de toiletten, zo weet ik dat het wc proper is.","de ~ (v.), ~men","6"
+"spek(ke)","snoepje, suikerbal, \"babbelaar\" - niet te verwarren met spekkies (zie [meiskesvlees])\
+\
+vgl. [kababbel]\
+","Moet ge nog ne spek(ke) hebben?","de ~ (m.), ~(ke)n","6"
+"bouwtoelating","toelating om te bouwen, bouwvergunning","Als we onze bouwtoelating hebben kan onze aannemer beginnen met de bouw van ons huis.","de ~ (v.), ~en","6"
+"pieren","zoeken, hengelen","Hij zou het snot uit je neus pieren om je fouten te weten te komen.","ww. pierde, heeft gepierd","6"
+"tweede zit","herexamen, herexamenperiode","Ik ga heel de zomer niks doen, tenzij ik tweede zit heb natuurlijk ...","de ~ (m.), geen mv.(?)","6"
+"wippen","neuken","Hij was nog met zijn [mokke] aan het wippen langs de graskant.","ww. wipte, heeft gewipt","6"
+"poert","scheet, prot\
+\
+","Loewieke heeft vandaag 5 poerten gelaten.","de ~ (m.), ~en","6"
+"klos","verantwoordelijke van iets dat misloopt","dat toneelstuk trekt op niets en de jules is weer de klos","de ~ (v.), ~sen","6"
+"afwerken","finaliseren, afronden\
+","Ik moet nog even dit bestand afwerken, dan kan ik naar huis.","werkte af, heeft afgewerkt","6"
+"hukken","hurken","De kindjes zitten allemaal op hun hukken.","de ~ (mv.)","6"
+"ieverans","ergens, onbekende plek\
+\
+ook ievers (West.Vl) reactie 1","Waar zijn jullie ieverans geweest?\
+                 ievers          ? (aan te vullen door een W.Vlaming) ","bw.","6"
+"keuten","ogen","Ziet ge dat dan niet? Trekt uw keuten is open.","de ~ (mv.)","6"
+"toogplakker","iemand die vaak of lang aan de bar zit, kroegloper","Mijn broer is een echte toogplakker","de ~ (m.), ~s","6"
+"kattin","in Vlaanderen het gewone woord voor poes, wijfjeskat","Is uw kat een kater of een kattin?","de ~ (v.), ~nen","6"
+"stienkstok","-> stinkstok, sigaret","Doe die stienkstok weg, het rookt hier al genoeg.","de ~ (m.), ~ken","6"
+"pollepel","opscheplepel, niet gelijk aan het gebruik van 'pollepel' in het AN. \
+VD\
+pol·le·pel (de, m.)  \
+  1  lange, houten keukenlepel  \
+  2  grote, diepe opscheplepel  \
+","Soep schepte op me ne pollepel.","de ~ (m.), ~s","6"
+"Indisch","betrekking hebbend op [Indië], Indiaas\
+\
+VD\
+\
+ \
+In·disch2 (bijvoeglijk naamwoord)  \
+  1  betr. hebbend op het voormalig Nederlands-Indië  \
+  2  Indiaas  \
+","We gaan vanavond eten in een Indisch restaurant.","","6"
+"bordeelsluiper","Pantoffel zonder hiel, 'instapper', vaak in felle kleuren (rood, paars). ","Hangde gij hier ten halvertwaalven 's morgens nog rond in uw bordeelsluipers? Ge zoudt beter werk gaan zoeken!","de ~ (m.), ~s","6"
+"klutteren","bibberen","Het is open hokje en ze staan daar te klutteren van de kou","ww., klutterde, heeft geklutterd","6"
+"onderlijfke","onderhemdje","Ik heb een onderlijfke aan onder mijn hemd.","het ~, ~s","6"
+"geraaktheid","infarct\
+uitgesproken: geroktèt","Fons ligt in het ziekenhuis, hij heeft een kleine geraaktheid gekregen, maar hij komt er wel weer bovenop.","de ~ (v.), -heden","6"
+"kostelijk","duur, kostbaar\
+\
+(Antw. variant) dier /deer/","Door die boete is dat avondje uit een kostelijke zaak geworden.","bn.","6"
+"avveseren","vooruitgaan\
+\
+-> Fr. avancer (transparant)","Schat, ik ben vandaag wat later want ik sta in de file en dat avveseert hier langs geen kanten.","ww. avveseerde, gavveseerd","6"
+"bevoordeligen","Bevoordelen","De werknemers worden bestolen om de ambtenaren te bevoordeligen. ","ww., bevoordeligde, heeft bevoordeligd","6"
+"kretsen","schuren","Ik denk dat ik ziek ben. Er kretst iets in mijn keel.","ww. kretste, heeft gekretst","6"
+"mistevreden","ontevreden","Hij was echt mistevreden over de gang van zaken. De prioriteiten werden niet gerespecteerd.","bn.","6"
+"kakken","Klagen, negatieve commentaar leveren","De Mario zat weer heel den avond te kakken op de [fiscus] die zijn zwart geld op de Kaaimaneilanden had gevonden.","ww.","6"
+"pijpenkop","verbreding aan het eind van een doodlopende straat","Een doodlopende straat heeft bij voorkeur een pijpenkop. Zo kunnen de auto's op een veilige manier rechtsomkeer maken.","de ~ (m.), ~pen","6"
+"labo","laboratorium, lab","Het hele labo was ontploft.","het ~, ~'s","6"
+"nadien","daarna\
+\
+\
+VD\
+na·dien (bijwoord)  \
+  1  (formeel) daarna  \
+","Voor onze [trouw] gaan we om 2 uur naar het stadhuis. Nadien gaan we naar de zaal voor de receptie.","bijw.","6"
+"nazicht","controle","Mijn auto moet morgen binnen voor een nazicht.","het ~, ~en","6"
+"unief","universiteit","De jaren aan d'unief waren de schoonsten van mijn leven.","de ~ (v.), ~s","6"
+"ruggemaftje","roggebroodje met rozijnen, zie ook [roggeverdoemeke]","Ruggemaftjes vullen de mage goed.","het ~, ~s","6"
+"klappen","praten\
+\
+vgl. met achterklap, klappei","Nen [Hollander] kan geen Vlaams klappen.","ww. klapte, heeft geklapt","6"
+"omstaander","omstander.\
+U hebt gezocht op het woord: omstaander.\
+RESULTAAT (max 20 woorden)\
+om·staan·ders (zelfstandig naamwoord, meervoud)  \
+  1  omstanders  \
+","De racewagen vloog uit de bocht en kwam terecht tussen de omstaanders.","de ~, ~s","6"
+"telloor","bord\
+\
+zie ook: [talloor], [teljoor]","-","het, de ~ (m./v.), -en","6"
+"hol","aars, kont, reet","O dierbaar België, den ezel kan ni schijte, \
+want zijnen hol, is volgeplakt me kol\
+(etc)","de ~ (m.), hollen","6"
+"aanhouden met","aanpappen, vreemd gaan\
+Zie [aanhouden]","Hij houdt aan met een del van achter de hoek.\
+De \"aanhouder\" wint, wordt wel eens gezegd in een dubbele betekenis. ","hield aan met, heeft aangehouden met","6"
+"sjarpe","sjaal voor de winter\
+\
+-> Fr. écharpe\
+\
+(Antw.) sjerp  /'sja: r.ep/  -er uitspr. a: (AN Spaanse graan)","Doe je sjarpe maar aan, als je naar buiten gaat.","de ~ (v.), ~n","6"
+"kwal","vettig iemand, zowel uiterlijk of innerlijk","Het is om er vies van te zijn zo een kwal van een vent","de, ~(m.) ~len","6"
+"helaba","hé gij daar","Helaba, rustig aan hé manneke of ik zal uw vader eens roepen.  ","uitroep","6"
+"rekske","elastiekje","Geeft eens een rekske om het papier bijeen te houden!","het ~, ~s","6"
+"opneemvod","dweil","Er staat water in mijne kelder. Met een emmer en een opneemvod kan ik het laatste water proper en rap opsoppen.","de ~ (vr.), ~den","6"
+"mintig","gezegd van een koe die geen melk meer geeft; (fig., kaartt.) zonder troefkaarten","De koe heeft gekalfd, maar ze is mintig, we zullen het kalfke de fles moeten geven.\
+\
+(bij het kaarten) ik ben mintig, mijn troeven zijn op!","bn.","6"
+"kassei","straatsteen, kinderkopke\
+\
+VD\
+kas·sei (de; kasseien)  \
+  1  straatkei met afgeronde bovenkant, vooral in België en Frankrijk  \
+","Mijn armen doen zeer van te veel op kasseien te fietsen.","de ~ (v./m.), ~en","6"
+"rakel","hark","Gebruik die rakel om de bodem effen te maken!","de ~ (m.), ~s","6"
+"gras afdoen","gras maaien, ook wel gras afrijden\
+","Morgen zal ik het gras nog eens af doen.","","6"
+"vrellie","meisje","Vraag het eens aan die vrellie.","de ~ (v.), ~s","6"
+"lief","vaste vriend of vriendin, geliefde, partner\
+\
+VD\
+lief1 (het; lieven)  \
+  1  (formeel) geliefde, beminde  \
+","Ik heb vanavond met mijn lief afgesproken.\
+Ik heb dringend een nieuw lief nodig want ik ben het beu om vrijgezel te zijn.","het ~, lieven","6"
+"kaka","stront, kak, poep","Nen aap in de zoo had zijn kaka over heel zijn raam uitgesmeerd.","","6"
+"zulle","bevestigend stopwoordje","Ik zal u nog wel hebben, zulle!","","6"
+"moezake","mier","In de gazon zitten veel moezakes.","het ~, ~s","6"
+"kuisen","poetsen","Ge moet alle dagen uw tanden kuisen, anders krijgt ge gaatjes.","ww. kuiste, heeft gekuist","6"
+"bom","bewust ongehuwde moeder","Tegenwoordig kiezen veel vrouwen om bom te zijn","de ~ (v.), ~men","6"
+"buskotje","bushokje","Hij stond aan het buskotje met zijn [moksje] te [muilen].\
+\
+","het ~, ~s","6"
+"kastrol","kookpot","Pak die kastrol met pannenlappen vast, anders brand je je vingers.","de ~ (v.), ~len","6"
+"sjicon","witloof\
+\
+-> Fr. chicon (= volksnaam van Romeinse sla (laitue romaine))","'ken gesteren sjicon geten.\
+\
+(ik heb gisteren witloof gegeten)","? ~, ~?","6"
+"witloof","witlof, Brussels lof","We eten vanavond hesperollekes met witloof en kaas.","het ~, geen mv.","6"
+"kortelings","binnenkort, weldra (in AN betekent \"kortelings\": onlangs, recent)","Kortelings hier opening van onze nieuwe schoenenzaak","bw.","6"
+"sinkseroos","pioen","Juni is de maand waarin de sinkserozen het mooist zijn.","de ~ (v.), -zen","6"
+"striepe","striepe komt van streep.\
+\
+strepen/lijnen/groeven","De zaak is afgesloten,ik heb er een streep onder getrokken.\
+\
+Mijn dochter lapte de ramen,ik bemerk tal van strepen.","","6"
+"fietjefaterie","prulletjes, pruts\
+brol","Breng geen prulletjes (fietjefaterietjes) mee van de rommelmarkt,we kunnen zoiets best missen.","de ~ (v.), ~s","6"
+"magneetbord","metalen bord dat ertoe bestemd is om briefjes met mededelingen, plaatjes enz. op vast te hechten door middel van een magneet","Magneetborden zijn tegenwoordig gelakt zodat men er ook met een bordstift kan op schrijven","het ~, ~en","6"
+"pens","worst (braadworst, bestaande uit varkensvlees waaraan gekookt bloed of meel is toegevoegd) ","We eten pensen met gestoofde worteltjes.","de ~ (v.), ~en","6"
+"keskespisser","misdienaar, vooral diegenen die de hoogmis, de huwelijken en de begrafenissen dienden.\
+\
+/'kès k.es pie s.er/\
+\
+ook  [kraal], [koraal] en [kriaaltje]","Keskespissers moesten kaarsendomper en wierookvat kunnen hanteren. Gekleed in toog (rood of zwart naargelang de dienst) en roket gaven zij het ritueel van de mis een waardig cachet. Zij wisten de miswijn en de hosties staan.","de ~ (m.),  -s","6"
+"overuur","uur of uren meer gepresteerd dan wettelijk/contractueel bepaald  ","Hij deed veel overuren om zijn dure wagen te kunnen afbetalen.","het ~ , ~en","6"
+"wachtzaal","wachtkamer, wachtruimte","Ge kunt de tandarts horen boren tot in de wachtzaal.\
+Neem plaats in de wachtzaal, de dokter komt u zo dadelijk halen.","","6"
+"foert","verrek, verdomme, de pot op!","foert, ik trap het hier af, dat ze 't in 't vervolg zelf doen!","tussenw.","6"
+"binnenkoer","binnenplaats (zie ook [koer])","Alle voorstellingen vinden plaats op de binnenkoer van het waterkasteel","de ~ (m.), ~en","6"
+"zekering","stop, [plomb], [plo]","Omdat ik de draad verkeerd had aangesloten, is de zekering gesprongen.","de ~ (v.), ~en","6"
+"strunkelen","struikelen","Ik ben over mijn eigen voeten gestrunkeld.","ww. strunkelde, is gestrunkeld","6"
+"badkostuum","badpak\
+/'bat k.es tum/ &#91;'bɑtkəstyˑm&#93; of (minder vaak) &#91;'bɑtkɔstyˑm&#93;","Ik moet mijn badkostuum nog zoeken, want morgen gaan we zwemmen.","het ~ (o.), ~s","6"
+"pitteleir","rokkostuum, pinguïnkostuum, kostuumvest met uitlopende punten, zie ook [pitteleer], [billekletser]","Voor de Karel zijn trouw moesten we allemaal in pitteleir komen.","de ~ (m.), ~s","6"
+"gatkaramel ","zetpil, ook [suppositoire], [suppo], [poepsnoep]","Ben een paar dagen niet naar [bachten] geweest, ik zal maar een gatcaramel opsteken.","de ~ (m./v.), ~len/~s","6"
+"motseklet","motorfiets,\
+-> Fr. motocyclette  zie [motocyclette]","Zelfs in de zomer kun je een dikke jas goed verdragen, als je een ritje met de motseklet gaat maken.","de ~ (m.), -ten","6"
+"em","hemd, [hum]","Ge zou beter is een proper em aandoen.","het ~, ~men","6"
+"pakske","pakje, verpakking, portie voor bijvoorbeeld friet","Voor mij een klein pakske friet met mayonaise, een [curryworst] en een [vleeskroket].\
+Met een pakske Marlboro en een pakske [sjiek]en zijt ge al meer dan 5 euro kwijt.","het ~,  ~s","6"
+"stoemp","sigarettenpeuk\
+\
+(Altijd als verkleinwoord?)","Ik had zo een goesting voor een sigaret dat ik de stoempkes wilde oprapen.","de ~ (m.(?)), ~en","6"
+"solfège","Notenleer","Onze kleine zit in 't tweede jaar solfège. Hij volgt nu ook al piano.","de ~ (v. (?)), geen mv.","6"
+"aren of jong","het is het een of het ander"," Wa wilde nei: aren of jong... ?\
+(wat wilt ge nu: eieren of jong(en)... ?)","","6"
+"voeten, voor de ~ lopen","hinderen","Loop niet constant voor de voeten zodat dat werkvolk hun werk kan doen.","uidr.","6"
+"wipzaag","decoupeerzaag","Om in bochten te zagen, heeft men een wipzaag nodig. ","de ~ (v.), ~en","6"
+"vas(t)spangen","vastspelden","(voorbeeld: zie [wasspang])","","6"
+"zaag","zeur ","Gij zaag, stop nu met [zagen] voor snoep. ","de ~ (v.)(m.), ~en","6"
+"hostess","stewardess\
+\
+VD\
+U hebt gezocht op het woord: hostess.\
+RESULTAAT (max 20 woorden)\
+hos·tess (dev; hostesses)  \
+  1  betaalde gastvrouw in vliegtuigen, vakantiedorpen, bordelen enz \
+","Bij Sabena hadden ze tenminste nog ferme hostesskes.","","6"
+"muizenstrontjes","hagelslag, [chocolade korrels]","Moet gij een boterham met muizenstrontjes of met [choco] hebben?","de ~ (mv.)","6"
+"bediejeme","e is dof uitgesproken - hetzelfde als [seffens]\
+\
+&#91;bədiˑjeˑmə&#93;","Wacht nog even! Hij komt bediejeme.","","6"
+"mondmuziek","mondharmonica\
+\
+Meestal als verkleinwoord: \"mondmuziekske\"\
+ook [noeneke]","Ik word er koud van, als ik Toots 'Ne me quitte pas' van Brel hoor spelen op z'n mondmuziekske.","de ~ (v.), ~en","6"
+"ketel","emmer\
+\
+Als Brabander is een emmer gewoon 'nen ieëmer\" voor mij, dus ik keek echt wel vreemd op toen een Limburger mij verzocht om een ketel water te vullen.\
+VD\
+ke·tel (dem; ketels)  \
+  1  metalen vat, meestal met hengsel en deksel, om een vloeibare stof in te koken en uit te schenken  \
+","Ik zal een ketel water vullen, dan kan ik poetsen.","de ~ (m.), ~s","6"
+"driegen","rijgen, met wijde steken vastmaken","Bij een eerste pasbeurt was het vestje enkel maar gedriegd.   ","ww. driegde, heeft gedriegd","6"
+"lek-m'n-lip","lolly (zie [lekstok])","Ge hebt al twee lek-m'n-lippen gehad vandaag, nu is het genoeg geweest!","de ~ (v./m.), ~pen","6"
+"ambetanterik","Iemand die [ambetant] is, een [poetzak]","Dien ambetanterik moet eens stoppen met op zijn fluitje te blazen.","de ~ (m.), ~en","6"
+"negerinnentet","negerinnezoen, Melo-cake","Ik heb een hele doos negerinnetetten opgegeten.","de ~ (v.), ~ten","6"
+"hospitalisatieverzekering","aanvullende verzekering voor onverwachte ziekenhuiskosten","Als ge een hospitalisatieverzekering hebt, dan betaalt die voor een kamer alleen.","de ~ (v.), ~en","6"
+"brug, de ~ maken","Een brugdag nemen, extra vrije dag nemen tussen een feestdag en weekend. ","Ik maak de brug.","uitdr.","6"
+"gedoen","gebeurtenis, hetgeen gedaan wordt (pejoratief)\
+\
+(Antw.) /g.e'doeng/","Met al dat gedoen rond de Oosterweelbrug of de Lange Wapper, zou een mens nog gaan denken dat we echt in een bananenrepubliek wonen.","het ~ (o.), geen mv. ","6"
+"meuren","stinken","Het meurt hier weer.","ww. meurde, heeft gemeurd","6"
+"fluwijn","overtrek van peluw","Toen ik in mijn bed stapte zag ik dat mijn moeder mijn fluwijn ververst had. ","de ~ (v.), ~en","6"
+"perette geven","er de vaart inzetten\
+\
+(Antw.) ook 'van' zijn paretten geven","Toen hij zag dat hij achterlag begon hij perette te geven.","uitdr.","6"
+"jan en alleman","iedereen","Jan en alleman heeft er al opgezeten.","","6"
+"curieuzeneus","nieuwsgierig","Moeit u eens met uw eigen zaken, curieuzeneuze mosterdpot!","(bn.), -ze","6"
+"kabas","zak, tas, ook boodschappentas of handtas","De boodschappen zitten in mijn kabas.\
+Ik vind mijn sleutels niet, waar is mijn kabas ergens? Hopelijk zitten ze daar in.","de ~ (v.), ~sen","6"
+"koet","sigaret","Hey menne geef nog is een [koet]","de ~ (m.), ~en","6"
+"plakker","sticker\
+\
+plak·ker (dem; plakkers; plakster)  \
+  1  iem. die ergens lang blijft zitten  \
+  2  plaatje e.d. om op te plakken of iets mee te bevestigen  \
+","Er kleeft een plakker van Radio 2 op mijn auto.","de ~ (m.), ~s","6"
+"moewer","fluitketel\
+\
+zie ook [moor]","Zer de [moewer] is op de [stoof]","de ~ (m./v.), ~en","6"
+"gezien","aangezien","Gezien uw schoolresultaten niet al te fameus zijn, zult ge in september nog eens moeten terugkomen!","voegw.","6"
+"lachtaarte","zij die graag en veel lacht, gemakkelijk lacht","Ben jij een echte lachtaarte, zeg! Je kan zo hartelijk en aanstekelijk lachen!","de ~ (v.), ~n","6"
+"suikerklitsen","doopsuiker (zie ook [kinnekeskak])","het kinneke heeft suikerklitsen gekakt","","6"
+"pisbroek","luier;\
+ook: pisdoek\
+(of om een merknaam te noemen: pamper)\
+De hangt hie eu fris geurke, onzen platten hanne hèt in zen pisbroek gescheten.","Er hangt hier een fris geurtje, onze baby heeft in zijn luier gekakt.","de ~, ~en","6"
+"rawwenis","het is gedroogd maaisel (géén hooi) of verdorde begroeiing van een gras- of slootkant, dat gebruikt wordt om in de winter bieten en aardappelen (of groenten zoals kool en prei) onder te stoppen. Rawwenis kan bijvb. zijn: oud strooi of slecht hooi, graskantmaaisel, bunt enz. Best niet te fijn gemaaid: met de zeis of een zeisieke afgedaan is 't beste.","\"k zal sebiet es wa rawwenis bijeen zuke om de praai onder te stoppe tegen at goa vrieze\"","de ~ (v.), geen mv.","6"
+"soupappe","/soepap/\
+ventiel aan een fietsband","Ik dacht dat mijn fietsband lek was, maar het is de soupappe die kapot is.","de ~ (v.), ~s","6"
+"slijper","potlood[scherper]","In mijn slijper zijn twee openingen, één voor normale potloden en één voor dikke potloden. ","de ~ (m.), ~s","6"
+"zagen","zeuren","Zit toch niet zo aan mijn kop te zagen!","ww. zaagde, heeft gezaagd","6"
+"klawiesteren","klawiesteren is erger dan krawietelen.","Je en nog e bitje moeten klawiesteren voe der te geraken wij.","ww. klawiesteerde, heeft klawiesteerd","6"
+"minet","lesbienne","In Antwerpen zeggen ze: \"Ziet die 2 minetten daar smossen met mekander\".","een ~ (v.), ~ten","6"
+"bakhuis","Letterlijk: apart gebouwtje aan het huis waar vroeger het brood werd gebakken.\
+Maar oudere mensen gebruiken dit als een soort externe bijkeuken - iedereen kent dat toch, zo'n oud mens dat eigenlijk alleen in z'n huis komt om te slapen, al de rest: eten, koken, wassen en plassen,... gebeurt in dat bakhuis. ","Ons bomma, waarvoor dat die een huis heeft, ik zou het begot niet weten, daar wordt niet in gestookt, alleen maar gekuist. En dan kom je in dat bakhuis, waar je je kont niet kunt keren en daar val je flauw van de hitte.","het ~, -zen","6"
+"dubbel gebruik","dubbelop","Ik heb nu twee wasmachienen, da's dubbel gebruik.","het ~, ~s","6"
+"waarborg","garantie, borg","Voor de huur van deze wagen vragen we een waarborg van 1000 euro.","de ~ (m.), ~en","6"
+"stoefen","opscheppen","Karel is aan het stoefen over zijnen nieuwen auto.","ww. stoefte, heeft gestoeft","6"
+"pietzak","gelukzak","Da's nogal nen pietzak; hij heeft de lotto gewonnen.","de ~ (m.), ~ken","6"
+"tet","borst","Ziet ge die griet met haar dikke tetten?","de ~ (v.), ~ten","6"
+"chacoche","handtas\
+\
+zie ook: [sacoche], <a href=\"http://www.vlaamswoordenboek.be/definities/term/sjakosj%2C+in+de+%7E\">sjakosj, in de ~</a>","Veel vrouwen dragen de helft van hun huishouden mee in hun chacoche.","de ~ (v.), ~n","6"
+"sjokkedijzen","met iemand zijn voeten rammelen of met zijn kloten spelen (figuurlijk)\
+hier in brugge zelfde betekenis maar uitspraak enigzins anders:(sjokkedèzen)","Hey vrind, je moet niet met mijn sjokkedijzen spelen. ","","6"
+"nikkelen Nelis","een gek iemand","zie hem daar bezig,nikkelen Nelis","","6"
+"kepelder","(verouderde benaming voor) boekentas\
+\
+/k.e 'pêl d.er/","De kinderen huppelden met hun kepelderkes op de rug de schoolpoort door de [koer] op.\
+","de ~ (m.), ~s","6"
+"mozegoot","Zelfgegraven gracht die vroeger naast of achter het huis werd voorzien om het afvalwater van pompbak en andere in te laten lopen.","Giet het vuil water maar in de mozegoot.","de ~ (v.), -en","6"
+"-","Amai \
+Het is ook nog het een en het ander dat\
+\
+","Ja wadde dadde 't is ook nog 't een en 't ander dadde.","","6"
+"smier","witte duif\
+\
+ook: iemand met wit haar","Zijn duivenkot zit vol smieren.\
+\
+Zeg witte smier, ga eens uit mijnen weg.","de ~ (m.), ~en","6"
+"maneuver","handeling\
+\
+-> Fr. la manoeuvre (= transparant woord)\
+\
+Ook in het Standaard Nederlands: manoeuvre\
+ma·noeu·vre (het, de; manoeuvres)  \
+  1  wending bij het besturen van schepen, voertuigen enz.  \
+  2  (vaak meervoud) gevechtsoefening, beweging van het \
+     leger  \
+  3  slinkse handelwijze  \
+","Hij moest alle soorten maneuvers doen om dat op zijn plaats te krijgen.","de ~ (v.), ~s","6"
+"karoke","ruitje","Waar is mijn hemd met die bruine karokes?\
+Het is toch al gewassen en gestreken zeker?\
+ \
+  ","het ~ , ~ s","6"
+"kuskienge","kuisvrouw, poetsvrouw, interieurverzorgster","Da's een goeie kuskienge. Ze laat geen [zondag]en na.","de ~ (v.), ~n","6"
+"living","woonkamer (van het engelse livingroom)","Karel is in de living. Hij is TV aan het kijken.","de ~ (v.), ~s","6"
+"krols","betekenis voor loops, maar enkel toepasselijk bij katten","Ons kat mag niet naar buiten, want ze is krols.","bn.","6"
+"ineenflappen","vlug en slordig iets [ineensteken]","Je kan het zien aan die kast hoe die ineengeflapt is, het is de Jef die de kast ineengeflapt heeft.","ww., flapte ineen, ineengeflapt","6"
+"vertrek","toilet","ik moet dringend naar het vertrek","het ~, ~ken","6"
+"kalk","krijt","Hij tekende met gekleurd kalk op het bord.","het ~, geen mv.","6"
+"avveseerplankske","hier gaat het om een step, Hollanders durven het een 'autoped' noemen.","Ik heb het woord voor 't eerst gehoord plm. 20 jaar geleden, bij een klant in BRASSCHAAT. Daar kwam de buurvrouw informeren of hare bengel soms daar was? Het antwoord: \" dieje is hier gewest moar ze zen zjust vertrokke mè 't AVVESEERPLANKSKE\". Ik kon het niet houden van 't lachen want ik had die gastjes 2 minuten daarvoor zien vertrekken met de step en ik wist dus direct wat er bedoeld werd...","het ~, ~s","6"
+"colère","woedeuitbarsting","Ze kreeg een colère toen haar kaartenhuisje ineen zakte.","de ~ (v.), ~s","6"
+"kalle","niet slimme, achterlijke vrouw","Die dwaze kalle heeft weer niets begrepen van de uitleg.","de ~ (v.), ~n","6"
+"trekzak","een gierige persoon","Nonkel emile zijn nalatenschap: dat is om U tegen te zeggen, jammer dat het zo'n trekzak was.","de ~, ~ken","6"
+"wasspeld","wasknijper","Waar zijn de wasspelden? Ik wil de was gaan ophangen.","de ~ (v.), ~en","6"
+"sipke","sipke drinken: een teugje, een klein slokje","Hij heeft totaal geen eetlust, enkel een sipke drinken wilt hij nog.","het ~, ~s","6"
+"pietje precies","uiterst zorgzaam iemand","opa,dat is een pietje precies...op alle gebied","","6"
+"friterie","[frituur]","Is er hier ergens een friterie in de buurt? Ik sterf van den honger.","","6"
+"bezien","bekijken","Bezie da ne keer?","bezag/bezaagt/bezagen, heeft bezien","6"
+"bekaf zijn","doodmoe zijn, doodop zijn\
+moegewerkt zijn\
+tenden alle krachten door een bepaalde activiteit","Iedereen was bekaf na de verhuis.","","6"
+"kine","afkorting van [kinesist] of kinesitherapie","Na mijn [accident] heb ik 2 maand kine moeten doen.","","6"
+"kieszak","vuil en onverzorgd iemand\
+","Bah! Wat een kieszak... Hij ruikt uren in de wind.","de ~, ~ken","6"
+"laveur","knikker\
+\
+zie ook [ket], [marbel], [schiethuif]\
+(Waasland) lavuur -> Fr. l'ivoire (= ivoor) Marleen W.","Vroeger had elk kind een zakje laveurs mee om te knikkeren op de speelplaats.","een ~ (v.), ~en","6"
+"fretzak","iemand die constant eet, neiging tot boulimie\
+\
+\
+men noemt soms iemand \"een fretzak\", bij voortdurend zagen... tot men iets bekomt","-","de ~, ~ken","6"
+"mugge","sportvliegtuigje","Op de vlieghaven van Oostende zie je meer muggen dan grote vliegtuigen.","de ~ (v.), ~n","6"
+"doppen","stempelen","Met deze job moet ik niet meer gaan doppen.","ww. dopte, heeft gedopt","6"
+"armoezaaier","arme mens, sukkelaar","In de oostbloklanden zitten veel armoezaaiers!","de ~ (m.), ~s","6"
+"nachtlampe","iemand die zeer lang opblijft","Kijk! Die nachtlampe is weer om 6 uur vanmorgen thuisgekomen.","de ~, ~n","6"
+"morgend","ochtend, morgen, vroege voormiddag","morgen morgend kom ik langs !","de ~ (m.), ~en","6"
+"klikken en klakken, met uw ~ buitenvliegen","met uw hele hebben en houden\
+\
+-> Fr. prendre ses cliques et ses claques","Toen Fonske ontdekte dat zijn vrouw een affaire had met een andere man, heeft hij haar met haar klikken en klakken buitengesmeten.","uitdr.","6"
+"neutekrakertje","laatste borreltje","Geef me nog een neutekrakertje, en dan zal ik gaan slapen!\
+\
+Gif me nog een neutekrakertje en ton goan 'k gaan slapen!","het ~, ~s","6"
+"afbollen, het ~ ","vertrekken","We staan hier al uren en ik wil naar huis, komaan, we bollen het hier af.","uitdr.","6"
+"fluitje","lang smal bierglas waarin bv. palm geschonken wordt.","\"Een palmke alstublieft.\"\
+\"In een fluitje?\"\
+\"Ja graag\"","het ~, ~s","6"
+"optieker","opticien","Optiekers denken vaak aan ogen.","de ~, ~s","6"
+"vinsterleir","vensterleer\
+zie ook [zeemvel]","Als ik de ramen zeem heb ik toch liever zo'n synthetisch leer i.p.v. zo'n echt vinsterleir, als dat nat is voelt dat akelig.","het ~, ~en","6"
+"spelleke","spel, game\
+SN is spelletje","Ik ga een computerspelleke spelen = Ik ga een computergame spelen","het ~, ~s","6"
+"tapis-plain","vast tapijt, kamerbreed tapijt","Bij de aankoop van een appartement kon men kiezen tussen tapis-plain en parket.","de ~ (m.), -s","6"
+"kutlekkerke","schoothondje,\
+euh...de iets minder vriendelijke term.\
+\
+ook wel 'preutelekker' genoemd.","Een tijd geleden was het echt een rage: bijna iedereen had van die Yorkshirehondjes en nu zijn het weer chihuahua's, dat wordt hier allemaal over dezelfde kam geschoren: kutlekkerkes!","het ~, ~s","6"
+"verwachten, zich ergens aan ~","verwachten, (met objectswisseling) te wachten staan","Wie zich misdraagt, mag zich aan een fikse boete verwachten!","uitdr.","6"
+"elentriek","elektrische stroom, elektriciteit\
+\
+zie ook: [elantriek]","Den elentriek is uitgevallen. Waar liggen de kaarsen?","de, het ~ (m.),  geen mv.","6"
+"mik","wit brood\
+\
+VD\
+mik (de; mikken)  \
+  1  brood van fijn roggemeel  \
+","Voor mij een mik, gesneden, alstublieft.","de ~ (v.), ~ken","6"
+"straatengel","persoon die zich buitenshuis vriendelijk en beleefd voordoet (maar zich thuis van zijn minder fraaie kant laat zien)\
+\
+in de uitdrukking:","Straatengel, huisduivel. (lokale uitspr.: Stroëtèngel, hausdievel)","de ~ (m.), ~en","6"
+"billekletser","rok, jas met zwaluwstaart, zie ook [pitteleir], [pitteleer]","De dirigent liet de panden van zijne billekletser zwaaien, toen hij voor het publiek applaus boog.","de ~ (m.), ~s","6"
+"opendeur","periode wanneer een bedrijf of school open is voor het publiek","Tijdens de opendeur bieden we tal van kortingen op onze producten.","de ~ (v.), ~en","6"
+"vossen","geslachtsgemeenschap hebben (zie ook [poepen],[vogelen])","Dat jong koppel doet niets dan vossen.","ww. voste, heeft gevost","6"
+"algemeenheid, met ~ van stemmen ","unaniem, eenparig","De nieuwe voorzitter werd verkozen met algemeenheid van stemmen.","uitdr.","6"
+"etalagist","iemand die etalages decoreert","De etalagiste heeft dat kleedje ondersteboven gehangen.","de ~ (m.), ~es","6"
+"ossenbilk","weide voor ossen, zie ook [ossebeick]\
+","Zie die ouwen! Hij is juist nog goed voor de ossenbilk.","de ~ (v.), ~ken","6"
+"alarmbelprocedure","(1) grondwettelijk vastgelegde procedure in België waarmee een taalgemeenschap beslissingen van een andere gemeenschap kan blokkeren; de maatregel is bedoeld om minderheden te behoeden voor discriminatie\
+(2) zekere alarmprocedure in de vennootschapswetgeving","Het is immers duidelijk dat de splitsing van BHV niet mogelijk is zonder de instemming van de Franstaligen, met als laatste stap de alarmbelprocedure.\
+In het buitenland bestaat er een procedure gelijkaardig aan de Belgische alarmbelprocedure: wanneer de vennootschap overdebt is, moeten er saneringsmaatregelen genomen worden waarbij een kapitaalsverhoging of een achtergestelde lening tot de mogelijkheden behoren.","de ~ (vr.), ~s","6"
+"allusie maken op","verwijzen naar, zinspelen op","Reclame voor kinderen en jongeren mag geen allusie maken op status of populariteit door de consumptie van de aangeprezen producten.","","6"
+"muntontwaarding","inflatie","De muntontwaarding is buiten verwachting bijzonder hoog. ","de ~ (v.), -en","6"
+"sergeant","/sèr zja:nt/ zoals in a:, dat stinkt!\
+lijmknecht\
+\
+verbastering van Fr. serre-joint (= die verbindingen aantrekt)\
+VD\
+ser·geant (dem)  \
+  1  (sergeanten, sergeants) onderofficier, in Nederland boven de korporaal der 1e klasse, in België boven de 1e-korporaal-chef  \
+  2  (sergeanten) lijmklem  \
+\
+","Ge moet eens twee sergeanten meebrengen om de keukenstoel te repareren, die al zolang uiteenhangt. Een likske lijm en opspannen.","de ~ (m.), ~en","6"
+"paggellen","prutsen aan iets wat niet zo direct lukt\
+\
+zie ook [moe.esen] (Antwerpse variant)","Paggellen betekent: prutsen aan iets die niet zo derect lukt en is ook west-vlaams.","ww. paggèlde, heeft gepaggèld","6"
+"stapelhuis","entrepot","Aan de haven liggen heel wat stapelhuizen.","het ~, -zen","6"
+"moe.esen","prutsen, proberen te repareren\
+\
+zie ook [paggellen] Westvlaams /pagèl.en/ of /pag.el.en/ ?","Vlak over ons huis woonde 'ne melkboer, die met 'nen triporteur motorisé de toer deed. Recta iedere zondag zat die aan zijne  moteur te moe.esen na een week rijden, tot die weer pico bello kon starten van den eerste keer. Wekelijks onderhoud was die zijn hobby. ","ww. moe.este, heeft gemoe.est","6"
+"vies","slecht gehumeurd","Wat is hij weer vies vandaag, 't is weer maandag hé.  ","bn.","6"
+"wevenaar","weduwenaar, manspersoon van wie de vrouw schielijk overleden is.","'ne Wevenaar die zijne plan kan trekken met was en plas, dat komt niet veel voor.","de ~ (m.), ~s","6"
+"lier","ladder zie ook [leer]","Zet de liër eens tegen de pereboom, dan kunnen we de peren in den top ook plukken.","","6"
+"amechtig","kortademig, onmachtig (meest in figuurlijke zin)","Ik was veel te snel vertrokken: al na twee minuten liep ik te puffen als een amechtig hangbuikvarken.\
+Hun gesprekken tonen aan dat hun eigen, verschillende spirituele tradities en geloofsovertuigingen het samenleven niet bemoeilijken maar dat ze juist het antwoord bieden om het spirituele vacuüm van een amechtig Europa opnieuw met zin te vervullen. (en nu gij!)\
+","bn.","6"
+"mouwveger","vleier\
+\
+zie ook [mouwefrotter]","Hij krijgt echt alles gedaan van zijnen baas, 't is ne rasechte mouwveger.","de ~ (m.), ~s","6"
+"paluffen","iemand overdreven troosten, moed geven door de persoon te knuffelen, stelen.\
+","Ik heb haar gisteren gepaluft.","ww. palufte, heeft gepaluft","6"
+"spinnekop","spin","Gisteren verschoot ik nogal van een grote spinnekop in de badkamer.","de ~ (m.), ~pen","6"
+"animatie","activiteiten, ontspanning, entertainment","Uiteraard zorgen we bij dit evenement ook voor animatie voor de kinderen, waarbij oude volksspelen centraal zullen staan. Voorts is er ook ballondecoratie, kindergrime, en natuurlijk seniorenanimatie ...","de ~ (v.), geen mv.(?)","6"
+"frigo","koelkast, [ijskast]","Als ge [choco] in de frigo zet, wordt hij helemaal hard.","de ~ (m.), ~'s","6"
+"fameus","zeer, erg\
+\
+VD\
+fa·meus (bijvoeglijk naamwoord; fameuzer, meest fameus)  \
+  1  beroemd  \
+  2  zeer groot, sterk enz.  \
+","Met die film is hij fameus beroemd geworden. ","bijwoord","6"
+"frigobox","koelbox","Als we de cola in de frigobox stoppen, blijft hij langer fris.","de ~ (m.), ~en","6"
+"randanimatie","ontspanning in de marge van een evenement\
+\
+(zie [animatie])","-","de ~ (v.), ~s","6"
+"aan","met (snelheid)","Ze hebben me aan 140 kilometer per uur geflitst.","","6"
+"anticipitatief","vooraf, anticiperend","Op uw 60ste verjaardag heft de fiscus als eindtaxatie een zogenaamde “anticipatieve heffing” op uw pensioenspaarpot. \
+\
+","(bn.) -ve(n)","6"
+"deur, aan de ~ zetten","ontslaan","Als ik u dat nog eens zie doen, zet ik u aan de deur!","uitdr.","6"
+"ratten","stelen","Mijn nieuwe GSM is gerat. Ik ga hem onmiddellijk blokkeren.","ww. ratte, heeft gerat","6"
+"goeivrouw","een vrouw die helpt bij de bevalling (vroeger bevielen de meeste vrouwen thuis)","Bij de eerste weeën stuurden ze iemand om de goeivrouw te halen.","de ~ (v.), ~en","6"
+"vodden","problemen, ruzie, narigheid","Ge gaat het zien: Daar komen vodden van!\
+\
+Maar zei grootmoeder zaliger al niet dat werk en privé strikt gescheiden moeten worden \"of er komen vodden van\"?\
+","de ~ (mv.)","6"
+"al bij al","al met al","Het weer viel al bij al wel goed mee.","","6"
+"apparentering","systeem voor het berekenen en toekennen van restzetels bij verkiezingen in België","De apparentering wacht!","de ~ (v.), ~en","6"
+"garagist","garagehouder","Er komt zwarte rook uit mijn uitlaat, ik moet eens langs mijn garagist gaan.","de ~ (m.), ~en   &#9792;: ~e","5"
+"terug van weggeweest","opnieuw aanwezig in de stad, bereikbaar","Na veertien dagen op de Causses in Fr. terug van weggeweest.","uitdr.","5"
+"bareel","slagboom","Omdat de bareel dicht is, geraken we niet meer van de parking.","de ~ (m.), -en","5"
+"pak, ergens de ~ van weg hebben","er de slag van te pakken hebben","Eindelijk heeft hij er de pak van weg. Het gaat nu als een fluitje van een cent.","uitdr.","5"
+"pak, ~ aan iets hebben","houvast hebben","Ik heb al dikwijls de bijbel gelezen, maar ik heb er geen pak aan.","uitdr.","5"
+"hullen","steenkolen\
+\
+ook [hulle], [hoelle]","Doe nog eens wat hullen op de stoof, ze brandt bijna niet meer."," - ","5"
+"verinneweren","overhoop halen","De kinderen zullen mijn nieuwe salon verinneweren.","","5"
+"pellen","schillen\
+\
+VD\
+pel·len2 (overgankelijk werkwoord, ook absoluut; pelde, heeft gepeld)  \
+  1  van de pel, de harde buitenhuid ontdoen  \
+","Kunt ge uwen appel nie zelf pellen?","ww. pelde, heeft gepeld","5"
+"wippen","omhooggaan, steigeren","Hij wipte van de pijn in zijn tanden.","ww. wipte, heeft gewipt","5"
+"kapkerstel","klein hakbijltje,\
+\
+/kap k.er 'stèl/","Als mijn vader een haan slacht, dan gebruikt hij altijd zijn kapkerstel om de haan zijn kop af te kappen.","het ~, ~len","5"
+"grossist","groothandelaar","Als ge rechtstreeks van een grossist kunt inkopen, zijt ge goedkoper af.","de ~ (m.), ~en   &#9792;: ?","5"
+"hots klots","iets heel vlug maken zonder waarde en/of stevigheid","Hij nagelde het nestkastje hots klots in elkander.","","5"
+"kwing, een ~ kwijt zijn","afwijkend gedrag vertonen, niet goed snik zijn\
+/.eng 'kwieng kwaa.et zèn/\
+\
+zie [afgebeten, er is een stukske ~]","Die is een kwing kwijt. Precies 'ne clown of 'ne pierrot. Maar hij speelt het niet. De bus doen stoppen en niet opstappen.","uitdr.","5"
+"afrijs","glijbaan\
+\
+zie [afrijzer], [afritser], [rijsaf], [schuifaf], [slierbaan]","De kinderen komen met de afrijs naar beneden.","de ~ (vr.), -zen","5"
+"knossel","warrige knoop","Er hangt een grote knossel onder mijn bureau.\
+Ik krijg die knossel niet los.","de ~ (m.), ~s","5"
+"sette","wol","Ons ma moest die trui van sette niet emmen.","? ~,  geen mv.","5"
+"rebu","een waardeloos iets, een prul, van slechte kwaliteit; gewoonlijk gezegd van voorwerpen\
+\
+","bv. iemand heeft een voorwerp aangeschaft waarvan achteraf blijkt dat dit van uiterst slechte kwaliteit is: \"dat is rebu\" (ik hoorde als kind mijn vader het woord vaak gebruiken; mijn vader werd geboren in Lokeren in het jaar 1910)","","5"
+"boekske","gebakje met vanillepudding tussen twee lagen bladerdeeg, waarvan de bovenste laag geglazuurd is","Op de markt van Lokeren verkopen ze lekkere boekskes.","het ~, ~s","5"
+"teljoor","bord\
+\
+zie ook: [talloor], [telloor]","Men gebruikt diepe en platte teljoren om te eten, een diepe teljoor voor de soep en een platte teljoor voor de groenten en de [patat]ten.","het, de ~ (m./v.), -en","5"
+"kladpapier","\"In Antwerpen zeggen ze het zo. Geen kladblad, waarop je een proef kon maken met doorhalingen en verbetering. Wel degelijk papier waarmee ge een klad (=vlek) inkt kon opzuigen of uw ballon-pen kon afvegen als je teveel inkt uit de inktpot had gedopt (=gedoopt). Ook gebruikt als onderlegger op een secretaire. (meestal groen of roze gekleurd)\" ~halowie","-","het ~, ~en","5"
+"kiekkers","dialectuitspraak van \"kijkers\"","Doe je kiekkers open en gaat ge het zien.","","5"
+"kaaskop","scheldwoord voor een Nederlander","Elke camping in de Ardennen zit vol kaaskoppen.","de ~, ~pen","5"
+"curieuzeneus","nieuwsgierigaard","Moeit u eens met uw eigen zaken, curieuzeneus!","de ~ (m.), curieuzeneuzen","5"
+"pakske","-","As ge nie braaf zijt kunt ge een pakske slaag krijgen!","het ~, ~s","5"
+"puppegalle","kruiwagen","J'ei de puppegalle gevuld me zand.\
+\
+(hij heeft de kruiwagen met zand gevuld)","de ~ (v.), -n","5"
+"pekkel","pikkel","Zet je fiets op zijn pekkel ipv tegen de ruit!","de ~ (m.), ~s","5"
+"kassierster","iemand die de kassa in een winkel bedient, caissière","Omdat er te weinig kassiersters waren stond de rij aan de kassa tot halverwege de winkel.","","5"
+"breefel","mond","Hoekt jen breefel!\
+(hou je mond)","de ~ (m.), ~s","5"
+"krikkel","lastig","Hij is een krikkel manneke.","bn.","5"
+"teute gerard","ja dag jan!","Het aanvrage me die lelijke del? Ja teute gerard! nog voor gin duzend frang","interj.","5"
+"sjiek","chic","Wow, zo ne sjieken [otto].","bn.","5"
+"extremis, in ~","op het laatste nippertje, op het laatste moment, op de valreep","De winnaar van de hoofdprijs kwam in extremis toch nog opdagen.","latijnse uitdrukking","5"
+"panne, in ~ vallen","pech krijgen onderweg\
+\
+VD\
+pan·ne (de; pannes)  \
+  1  motorpech  \
+\
+","Mijn auto viel halverwege tussen Brussel en Gent in panne.","uitdr.","5"
+"palul","goedzak die je alles kunt wijsmaken","zeg tegen die palul dat het lotjes zijn voor het goede doel en hij koopt ineens een gans boekje","","5"
+"pezewever","zeveraar","-","de ~ (m.), ~s","5"
+"bvba","besloten vennootschap met beperkte aansprakelijkheid","De accountant raadde ons aan een bvba op te richten om het restaurant in onder te brengen.  ","de ~ (vr.), ~'s","5"
+"taksplaat","nummerplaat, kenteken van auto’s ","Vanaf dit jaar nog zullen de taksplaten met drie cijfers beginnen, gevolgd door drie letters.","de ~ (m./v.), -en","5"
+"wullok","wulk (escargot)","wen vandage warme wulloks gegeten","de ~ (m.), ~s","5"
+"smoelpap","Griesmeelpudding. Smoel komt van het franse woord sémoule en deze pudding kan van rijst of graan gemaakt worden.","Smoelpap moet ge met rode bessen of krieken eten en met veel suiker want anders is dat niet lekker.","de ~ (v.), geen mv.","5"
+"lopen","rennen, hardlopen\
+\
+VD\
+o·pen2 (onovergankelijk werkwoord; loper)  \
+  1  (liep, heeft/is gelopen) zich te voet voortbewegen  \
+  2  (liep, heeft/is gelopen) rennen  \
+  3  (liep, heeft/is gelopen) (van zaken) zich voortbewegen  \
+","Ik heb de hele afstand gelopen.\
+Loopt, of ge mist uwen bus straks nog!","ww. liep, is gelopen","5"
+"ouwerdom","leeftijd, [ouwer]\
+\
+(het woord 'leeftijd' komt in de gesproken taal eigenlijk niet voor)","Iemand van awen awerdoem zou zoiet toch nimeer moette doen.","de ~ (m.), ~men","5"
+"kloefe","dommerik\
+\
+zie ook [kloefekapper]","Is me die een kloefe! Hij is te dwaas om ooi (hooi) te eten.","de ~, ~n","5"
+"willens nillens","willens of onwillens, tegen wil en dank\
+\
+(oorspronkelijk een Vlaamse uitdrukking, die stilaan ook Nederland verovert; zie Onze Taal-kalender 24.1.08 en WNT)","(...) deze moderne consumptiemaatschappij waarin we leven en waar we kinderen te vaak en willens nillens moeten dumpen in kinderdagverblijven van 6.30 tot 21 u of in de voorbewaking en naschoolse opvang.","uitdr.","5"
+"ouwer","leeftijd, [ouwerdom]","Toen da 'kik ouwen ouwer oj, speulde me nog elken dag oep 't straat...","de ~ (m.), ~s?","5"
+"verhuis","verhuizing","Mijn schoonmoeder heeft met verhuizen haar been gebroken. Ja, bij ene verhuis gaat er al eens iets kapot.","de ~ (m.), -zen","5"
+"moeten, niet ~","niet hoeven","Als ge uw bloemkool niet lust, moet ge het niet opeten.","","5"
+"poet","groente: wortel\
+Eens klaargemaakt wordt vooral het verkleinwoord gebruikt. \
+\
+","Met de kermis is er altijd rosbief met putekes en erwten. ","verkleinwoord putekes","5"
+"frengel","loszittende draden aan een stof (broek, lap, vod, tapijt,...)\
+zie [frenneke], [frengelke]\
+\
+-> Fr. frange (= boorddraden v.e. tapijt) \
+","Knipt nu eens die frengelen van die broek, dat is kweetni hoe slordig zo.","de ~ (m.), -en","5"
+"erpel","aardappel","Wil jij de erpels al jassen?","de ~ (m.), ~s","5"
+"savat","pantoffels","Wanneer ik thuis kom, doe ik eerst mijn savatten aan.","de ~ (m.), ~ten","5"
+"nauw aan het hart liggen","na aan het hart liggen","De jeugdzorg ligt nauw aan mijn hart.","uitdr.","5"
+"look","knoflook\
+\
+VD\
+look2 (het, dem; loken)  \
+  1  lelieachtige plant van het geslacht Allium, waartoe o.a. knoflook en uien behoren  \
+ 2  (in België) knoflook  ","De kok kan lekkere scampi's in look klaar maken.","de  ~ (m.), geen mv.","5"
+"klawieren","werkjes doen zonder echt af te werken","Hij is in zijn kot aan het klawieren.","ww. klawierde, heeft geklawierd","5"
+"blaffetuur"," In Aalst pejoratief gebruikt voor gehoororgaan","Weeral niet begrepen, jongen? Zet je blaffeturen  dan wijd open!","","5"
+"zicht, op het eerste ~","op het eerste gezicht","De architect kon op het eerste zicht al een aantal fouten in de constructie vaststellen.","","5"
+"peut","peut hebben \
+\
+bang zijn van iets","hé jos, ge hebt er zeker peut van!","","5"
+"nachtwinkel","Winkel die 's nachts open, en overdag gesloten is. Verkoopt voornamelijk drank, rookwaren, en allerhande voedsel.","De supermarkt is al gesloten. Ik haal wel een diepvriesmaaltijd in de nachtwinkel.","de ~ (m.), ~s","5"
+"keuteren","wroeten, peuteren met behulp van een stok of iets dergelijks. (In uw oren keuteren, de \"hoellestoof\" opkeuteren of uit m'n kindertijd: een mierennest openkeuteren)","Ik had mijn autosleutels in het putje laten vallen, ik heb nogal gekeuterd eer ik ze weer terug had.","ww. keuterde, heeft gekeuterd","5"
+"assenbak","asbak, [assepot]","Shit, den assenbak late vallen, nu ligt heel de vloer vol asse.","de ~ (m.), ~ken","5"
+"kostuum","pak, maatpak\
+\
+VD\
+kos·tuum (het; kostuums; kostuumpje)  \
+  1  kleding van één persoon, horend bij een bepaalde activiteit, een ambt of een toneelrol  \
+  2  een stel kleren, jas, broek en vest voor mannen  \
+","Ik heb een zwart kostuum met witte streepkes gekocht.","het ~, ~s","5"
+"tischen","geslachtsgemeenschap hebben, ook [vossen],[neuken],[poepen],[vogelen].","Hey [ket] ben gisteren nog is goe gaan tischen.","","5"
+"muggezifter","iemand die over iets banaals kan blijven doorzagen en op alles de puntjes op de \"i\" moet zetten\
+\
+VD\
+mug·gen·zif·ter (dem; muggenzifters)  \
+  1  kleingeestige vitter  \
+","De vergadering duurde dubbel zo lang door die muggezifter.","de ~ (m.), ~s  ♀: ?","5"
+"kop en kloten","met alles wat hij bij heeft","Die leurder is met kop en kloten buitengevlogen","","5"
+"malcontent","ontevreden","De leerlingen zijn malcontent omdat ze te veel huiswerk kregen.","bn.","5"
+"rekskesschieter","katapult (handmatig)","Wij maakten vroeger onze rekskesschieter altijd zelf.","de ~ (m.), ~s","5"
+"schutsel","omheining, meestal in beton ","Die schutsels van vroeger staan meestal allemaal scheef.","het ~ , ~s","5"
+"krot","armoede ","Was me dat een feest, alles erop en eraan. Dat was gene krot. ","de ~ (m.)","5"
+"gat, zijn bloot ~ tonen","eens gul zijn, meer geven dan normaal","€ 100 voor je spaarpot? Je nonkel heeft zijn bloot gat getoond.","uitdr.","5"
+"katholiek","deugdelijk, zoals het hoort","Toen de controleur de boekhouding controleerde zei hij dat het er niet katholiek uitzag. ","bn.","5"
+"krot en compagnie","in grote geldnood verkeren","Het is daar krot en compagnie, zij hebben geen nagel om aan hun gat te krabben.","uitdr.","5"
+"wezen","aangezicht.","\"Je moet op zijn minst elke dag je wezen wassen\", zei ik mijn zoon toen hij op reis vertrok.","het ~, ~s","5"
+"fronsen","in een kledingstuk plooien aanbrengen","Het kleedje is bijna af, de mouwen moeten nog gefronst worden.","ww. fronste, heeft gefronst","5"
+"deur, zo zot als een ~","zo gek als een deur","Onze nonkel Karel is zo zot als een deur.","uitdr.","5"
+"omlegging","omleiding voor verkeer\
+\
+VD\
+\
+om·leg·ging (dev)\
+ 	1 	(verkeer) wegomlegging\
+ 	2 	(scheikunde) overgang van een chemische verbinding in een isomere vorm","We waren helemaal verloren gereden omdat de omlegging niet goed was aangeduid.","de ~ (v.), ~en","5"
+"zjamoo","lui vrouwmens","wat een lui zjamoo","","5"
+"stravel","smalle strook onbewerkte grond (nadruk op laatste lettergreep)","We hebben achter in den hof nog een stravel liggen, als we daar dit jaar nog eens [eeber]en op plantten?","de ~ (vr.), ~len","5"
+"gazet","krant, dagblad","Tijdens mijn ontbijt lees ik de gazet.","de ~ (v.), ~ten","5"
+"vonkelhout","klein brandhout","Ge zult nog wat vonkelhout moeten gaan zagen, man, met die [entig]e [spik]ken die nog over zijn, krijg ich het vuur ni aan!","het ~, geen mv.","5"
+"kijzemieke","koolmees","als het koud is komen de kijzemiekes dicht aan huis","","5"
+"entig","enkel, enig","Er zijn nog entige droge broodkorsten over, da's misschien genoeg om \"verloren brood\" van te maken! Hoevel eier zijn ter nog?","bn.","5"
+"kuis","rein, heeft nog geen  betrekkingen gehad","Ze is nog kuis, ze is nog niet met een jongen naar bed geweest.","(bn.) ~e(n)","5"
+"afblekken","afdokken, betalen","Als hij de weddenschap verliest, zal hij moeten afblekken.","ww. blekte af, heeft afgeblekt","5"
+"spikskesdoos","lucifersdoos, doosje lucifers","Het stadhuis van Bilzen trek wat op een spikskesdoos.","de ~ (v.), -zen","5"
+"sjamfoeter","cfr. sjamfoeteren, foeteren \
+\
+iemand die veel geregeld/gedaan krijgt\
+\
+-> Fr. s'en foutre (= het zich niet aantrekken)\
+       je m'en fous (het kan me niet schelen)\
+","Dorus kreeg het toch weer geregeld dat hij minder landpacht moest betalen, de sjamfoeter.","de ~ (m.), -s","5"
+"sasmeester","sluiswachter","Een sasmeester heeft een grote verantwoordelijkheid voor het versassen van de boten","de ~(m.), ~s","5"
+"plat","zonder bruis","Voor mij een plat water.\
+\
+Spa Reine, die in de blauwe fles, is plat water.\
+\
+De cola is helemaal plat omdat den [toep] niet goed op de fles zat.\
+","bn.","5"
+"pateeke","gebakje","We hadden lekkere pateekes voor bij de koffie.","het ~,  ~s","5"
+"toe","dicht, gesloten\
+\
+VD\
+toe1 (bijwoord)  \
+  1  in de richting naar (met verplaatsing)  \
+  2  in de richting naar (zonder verplaatsing)  \
+  3  ter aanduiding van een bijvoeging  \
+  4  ter aanduiding van een betrekking, bestemming, bedoeling  \
+  5  (archaïsch) dicht  \
+","Doe de deur eens toe, het tocht hier.","","5"
+"bottel","Fles. Waarschijnlijk onder invloed van het Engels.","Moet je nog rijden of kraken we nog een bottel wijn?","","5"
+"deksel","het bovenste bedlinnen(gedeelte dat op je ligt,bij slapen)","Geef mijn deksel eens? Geef me mijn dons,leg het op mij.","","5"
+"piet","mannelijk geslachtsdeel, piemel, penis","Mijn piet krimpt helemaal van het koude zwembadwater.","de ~ (m.),  ~en","5"
+"VZW","Vereniging Zonder Winstoogmerk (afkorting)\
+non-profit organisatie, stichting","De organisatie heeft een VZW opgericht.","","5"
+"basseng","Fr bassin - teil,vroeger meestal uit zink\
+West Vlaams: bassing","wast u maar in de basseng","de ~ (m.), ~en","5"
+"oesschaard","Een vreemde, gevaarlijke, niet te voorspellen persoon\
+Dat is een oesschaard, kijk goed uit!","Dat is een echte oesschaard. ","de ~, ~en","5"
+"confituur","vruchtenjam, groentenjam (rabarberkonfituur)","Als mijn boterham met hesp op is, pak ik nog ene met confituur.","de ~ (v./m.), -en","5"
+"mali","tekort, deficit\
+tegengestelde van [boni]\
+<It","Er moest bespaard worden omdat het mali veel groter was dan verwacht. ","het ~","5"
+"tallieter","ziek worden; in \"panne\" vallen","J'is in tallieter gevallen: hij is ziek geworden","","5"
+"schijtpapier","WC papier","Godverdomme, het schijtpapier is op.\
+\
+Schijtpapier, schijtpapier!\
+Zeven frank de rol.\
+'t Is ni duur, 't Is ni duur.\
+'t Is maar voor uw hol.","het ~, ~en","5"
+"dal","zware tegel gebruikt voor o.a. stoepen\
+\
+-> Fr. la dalle (= cementtegel)\
+\
+(Antw.) de Franse mv. uitgang -s behouden /dals/","In dat steegje liggen de dallen van de stoep allemaal schots en scheef.","de ~ (m.), -len / -s","5"
+"vuile klap","vunzige praat, vuile taal","Tieners onder elkaar, da's niks dan vuile klap.","de ~ (m.)","5"
+"forsbal","spierbal bovenarm","Toen we jong waren toonden we mekaar onze forsballen. Wie de grootste had was zeker de sterkste.","de ~ (m.), ~len","5"
+"schap","onderdeel van een legkast, linnenkast; tapkast (nl. de planken)\
+ook [schab], schabben\
+\
+U hebt gezocht op het woord: schap.\
+RESULTAAT (max 20 woorden)\
+schap (het, de; schappen)  \
+  1  plank van een kast of langs een wand, vooral met winkelvoorraden  \
+","Voor mij nen trappist van het schap a.u.b. (d.i. niet gekoeld)","het ~, ~pen","5"
+"kloek, ni onder een ~ gebroeien zijn","uitgekookt zijn,\
+gebroeien is natuurlijk uitgebroed","Jij denkt zeker dat ik een stommerik ben, ik ben ni onder een kloek gebroeien zolle!","","5"
+"zjat","een kopje\
+\
+zie ook: [jat]","Kom! We gaan een zjat koffie drinken.","de ~ (v.), ~ten","5"
+"bachten, naar ~","naar het toilet, naar achteren","Ik moet naar bachten een kakske gaan doen.","uitdr.","5"
+"japon","kamerjas\
+\
+/ zja 'pon /","Onze buurvrouw staat elke ochtend in hare japon en met haar hoofd vol krulspelden op haar balkon met een [jat] koffie.","de ~ (m.),  -s","5"
+"plakkekke","plakkaatje, aanplakbiljet, affiche\
+\
+bv. bij de verkoping van een huis","Dat huis van de bakker wordt verkocht. Er staat een plakkekke.","het ~, ~s","5"
+"voordeur, een nieuw ~ krijgen","Als je 10, 20, 30, 40, ... wordt, dan krijg je een nief veurdeur.","Ik ben jarig geweest, ik heb al 4x een nieuw voordeur gekregen en nu vind ik het niet meer plezant!","uitdr.","5"
+"fiezelen","fluisteren","Wat zitten jullie daar in elkaars oren te fiezelen?","ww. fiezelde, heeft gefiezeld","5"
+"tegensteker","iemand die aardig de sfeer kan verpesten,door onaangenaam gedrag(zich aanstellen,constant in de belangstelling willen staan enz)\
+een ambetant iemand!","Onze buurman,mijn collega,de postbode (voorbeeld): dat zijn pas tegenstekers","de ~ (m.), ~s","5"
+"tram 3,...4...5..6.;:,met~mee zijn","30,40,50... geworden zijn","vanaf vandaag ben ik mee met tram 6, (ik ben vandaag 60 jaar geworden)","","5"
+"kodak","fototoestel, afgeleid van de merknaam Kodak","Daar wil ik een foto van, geef de kodak is.","de ~ (m.), ~s","5"
+"slef","Sloef, slof, pantoffel","Ik draag thuis altijd sleffen.","de ~ (m.), ~fen","5"
+"snot(te)keise","jong, klein kind","die snotkeise is een schete groot en hij gaat zich al moeien met werk van zijn vader ","","5"
+"zurkeltrutte","iemand die alles verkeerd begrijpt, doet","Is me dat een zurkeltrutte, alles is door haar in het 100 gelopen (verkeerd verlopen).","de ~, ~n","5"
+"bebbel","mond\
+\
+afleiding van babbelen(ww.) > bebbel (nw.)","Houd owen bebbel nei es!\
+(Hou nou eens je mond!)\
+\
+(Antw. stad) /he.oed aa.oe.em bèb.el na ies!/","de ~ (m.), ~s","5"
+"pompbak","spoelbak, wastafel","Zet de vuile glazen maar in de pompbak.","de ~ (m./v.), ~ken","5"
+"voetlingen","een paar sokken","Met kerst wil ik zo graag nieuwe voetlingen.","de ~ (mv.)","5"
+"toppeire","een klap / klets / boksstoot","Jammer dat er altijd toppeire vallen, na de fuif.","","5"
+"schêês","scheermes\
+\
+uitspraak: (enk.)&#91;sçɛˑs&#93; (mv.)&#91;<u>sçɛˑ</u>zə(n)&#93;","De coiffeur knipt mijn haren eerst met de schaar en werkt het dan bij met het schêês.","het ~, -zen","5"
+"tussenkomen","tussenbeide komen, optreden; het woord nemen; uitkeren, (financieel) tegemoet komen","Goed dat ik was tussengekomen of er waren accidenten gebeurd!\
+Meerdere sprekers wilden nog tussenkomen, maar de moderator vond het tijd om de polemiek te sluiten.\
+De ziekenkas komt voor dit soort kwalen niet meer tussen.","kwam tussen, is tussengekomen","5"
+"opspangen","opspelden","(voorbeeld: zie [spang])","","5"
+"stekeling","stekelbaars","Mijn vader ging als kind stekelingskes vangen in de beek","de ~ (m.), ~en","5"
+"deus krijgen","slaag krijgen\
+/d.es/ (met doffe e)\
+ook: [stravats] krijgen","Mijn man heeft als kind vuurke stook gedaan op zolder van z'n huis, 't was te verwachten dat hij daarvoor flink deus gekregen heeft.\
+En ik heb als kind [stravats]en gekregen, omdat ik me eens op m'n kamer had opgesloten, omdat ik niet naar school wilde.","uitdr.","5"
+"broek, zijn ~ afsteken","zijn broek laten zakken","De demonstranten staken gezamenlijk hun broek af.","uitdr.","5"
+"sterfput","1 zinkput\
+2 klein putteke fungerend als kolk met stankafsluiter","1 De sterfput is vol, hij moet dringend worden leeggemaakt.\
+2 Het sterfputteke stinkt, het zal zeker gaan onweren. ","de ~ (m.), ~ten","5"
+"tèppen","(Oost Vlaanderen, Lebbeke)onozelaar, simpel iemand\
+","Hij laat zich door iedereen doen,\"Wa nen tèppen is da jong!\" ","nen ~ (m.), ~s?","5"
+"ijsroom","roomijs","Fabrikant van ijsroom","de ~ (m.)","5"
+"plo","zekering \
+\
+zie [plomb]\
+\
+in Brugge: plong","Doordat er kortsluiting ontstond, sprong de plo (plong)  af.","de ~ (m.), ~'s","5"
+"suur","schommel\
+\
+zie ook [beize], [bies], [biezabijs], [bijs], [boes], [boeschcammeré], [boesjkammeree], [rietseko], [rijtak], [sturrel], [stuur], [toeter], [touter], [wippentater], [zwier] \
+","De kleine zit op de suur.","de ~ (m.), -en","5"
+"sneukelen","rondneuzen, tussen rommel kijken","Op zolder sneukelde ik tussen de rommel.","ww. sneukelde, heeft gesneukeld","5"
+"surfel","stekje, lucifer","Geef een ki je surfels vor m'n sigarette aan te steken!","? ~, ~s","5"
+"koddig","leuk, lief, vooral van een diertje","Wat een koddig hamstertje heb jij daar!","bn.","5"
+"verslensen","verwelken","Die plant heeft zijn beste tijd gehad, hij is al helemaal verslenst.","ww. verslenste, is verslenst","5"
+"troep","leger","Ik ben vroeger naar den troep moeten gaan als dienstplichtige.","de ~ (m.?), ~en","5"
+"haagschool doen","spijbelen","Ons dochter kwam thuis met een afwezigheidsbriefje van de directeur, ze heeft weer haagschool gedaan!","uitdr.","5"
+"kobbenette","kobbe: spin\
+\
+kobbenette(n): spinneweb","Als ik de zolder opruim,hang ik vol kobbenetten. Ik haat het!","de ~ (v.), ~n","5"
+"boloorde, ergens ~ van komen","ergens bijna gek van zijn","Luisteren naar cd's van mijn zoon, da's om boloorde van te komen.","uitdr.","5"
+"machoechel","zware vrouw","Die van achter den hoek is een [machoechel]","de ~ (v.), ~s","5"
+"onthaal","ontvangst, balie, receptie","Bezoekers moeten zich wenden tot het onthaal.","het ~","5"
+"lakkes","Zoals\
+\
+verbastering van 'gelijk als'\
+\
+(Antw.) gelakkes /g.e 'la k.es/","Hij danst lakkes een janet.","vgw.","5"
+"dunk","gedacht","Die heeft nen groten dunk van zijn eigen.","de ~ (m.), ~en","5"
+"proemelette","vrouw die van alles bijhoudt zonder orde","Bij die proemelette zou je je weg verliezen tussen al die rommel.","de ~ (v.), ~n &#9794;: proemelaar, ~s","5"
+"gaarnot","Garnaal en specifieker grijze garnaal. Klein [lakker] schaaldier gebruikt in \"croquette crevette\" of \"tomate crevette\".\
+\
+-> Fr. crevette (= garnaal)- de mannen van de vuilkar op zee","Zeg mensen, wat is da met de prijs van de gaarnot? In één jaar is die in prijs verdobbeld en als ge een tomat met gaarnot vraagt, kunde ze op één hand tellen.\
+\
+kroket krevet of tomat krevet. Ofwel schrijft ge Frans of Vlaams. Een van de twee.","de ~ (m.),  geen mv. stofnaam ","5"
+"smeurig","vettig, vuil","Met al dat spelen tijdens het eten hebben ze er weer een smeurige boel van gemaakt.","bn.","5"
+"autostrade","snelweg","Op de autostrade moogt ge 120 rijden.","de ~ (v.), ~s","5"
+"sjassen","de WC doorspoelen, chassen\
+\
+> Fr. chasser(= jagen  > chasse d'eau (=waterbak + mechanisme om bruusk een hoeveelheid water door de wc-pot te \"jagen\"","Wie heeft er vergeten te sjassen?","ww.","5"
+"branddeeg","soezendeeg","Voor het bereiden van [sjoeke]s beginnen we met een langwerpige soezen van branddeeg, die gevuld worden met banketbakkersroom, en worden afgewerkt met chocoladeglazuur.","het ~, ~en","5"
+"krawietelen","vele kleine activiteiten doen om een doel te bereiken","Weet je gie wel hoe dak ik moeten krawietelen om toe te komen","ww. krawietelde, heeft gekrawieteld","5"
+"portrettentrekker","fotograaf","Mijn foto's liggen nog bij den portrettentrekker.","de ~ (m.), ~s","5"
+"licentiaat","waardigheid, graad van licentiaat\
+\
+VD\
+li·cen·ti·aat1 (dem; licentiaten)  \
+  1  academicus die de bevoegdheid heeft om tot doctor te promoveren  \
+\
+li·cen·ti·aat2 (het; licentiaten)  \
+  1  waardigheid, graad van licentiaat  \
+  2  studiejaren, besteed aan het behalen van de graad van licentiaat  \
+","-","het ~, -en","5"
+"preut","vrouwelijk geslachtsdeel (onder de gordel)","Hier liefst geen voorbeeldzin, een goede verstaander heeft maar één woord nodig!","de ~ (v.), ~en","5"
+"sluikstorten","illegaal afval storten","Verboden te sluikstorten.","ww. sluikstortte, heeft gesluiktstort","5"
+"piezewiet","piemeltje, koosnaampje voor piemel","Houdt uw piezewiet goed vast als ge moet pissen, of heel uw broek is nat.","de ~ (m.), ~en","5"
+"kriezelkieken","krielkip, term wordt ook gebruikt om een mager, miezerig persoon te beschrijven","Kriezelkiekens laat je eigenlijk voor de sier op je erf lopen, veel vlees heb je daar niet van.","het ~, ~s","5"
+"webbe","rag","De werkplatse angt vul met spinnewebben, want je kûst er nooit.","het ~, ~n","5"
+"smoutebol","oliebol","Er zit veel te veel suiker op de smoutebollen.","de ~ (m.), ~len","5"
+"dresseren","opmaken\
+\
+","de borden dresseren","ww. dresseerde, heeft gedresseerd","5"
+"peper in zijn gat hebben","wordt gezegd van iemand die nogal druk is, zenuwachtig, rusteloos","Van 's morgens tot 's avonds is Fons met vanalles bezig. Stilzitten kan hij niet, hij heeft peper in zijn gat.","uitdr.","5"
+"horecagezwel","bierbuik","Den Dré hee nogal een horecagezwel gekweekt; hij is precies zes maanden zwanger.","het ~, ~s?","5"
+"wieër","knoest, verharding in hout\
+(fig. = onoverkomelijke situatie, probleem zonder uitweg)  \
+\
+zie [weer], [neute]\
+               \
+","Hij zit op ne wieër denk ik, want hij blijft daar maar over zeuren.","de ~ (m.), -en","5"
+"noot, een harde ~ om te kraken","iets moeilijks","Het examen wiskunde was een harde noot om te kraken.","uitdr.","5"
+"vermassakreren","Naar de duivel helpen, kapot maken, in het honderd laten lopen.\
+\
+-> Fr. massacre (=puinhoop, slagveld) massacrer (ww.) = vermoorden, kopje kleiner maken, stukslaan","Hij zou mijn fiets maken, maar hij heeft hem helemaal vermassakreerd....","vermassakreerde, heeft vermassakreerd","5"
+"toer","wijdte, omtrek, omvang","Er zit te veel toer in die rok (hij moet smaller gemaakt worden).","de ~ (m.)","5"
+"mijnheer","de heer\
+\
+(in AN wordt \"mijnheer\" vooral als aanspreking gebruikt)\
+\
+VD\
+mijn·heer (dem)  \
+  1  aanspreektitel voor een man  \
+  2  heer des huizes  \
+  3  titel voor marineofficieren  \
+\
+\
+","Mijnheer Janssens nam het woord.","","5"
+"tuf","motorfiets, (ook) brommertje","Mijn broer heeft zich een nieuwe tuf gekocht.\
+\
+Wat ik ook probeerde, mijn tuf kreeg ik niet aan de praat.","nen ~ (m.), ~fers","5"
+"mankement","  gebruikt als iets niet in orde is met een mens,toestel,\
+   voorwerp etc.\
+\
+VD\
+man·ke·ment (het; mankementen)  \
+  1  defect  \
+  2  verwonding, letsel  \
+","-","het ~, ~en","5"
+"buitenwipper","iemand die instaat voor de veiligheid in een café, club of disco","Den buitenwipper greep hem bij zijn kraag en zette hem op de straat.","de ~ (m.), ~s   &#9792;: ?","5"
+"kopen","bevallen, kinderen krijgen","Ze koopt zij heel gemakkelijk. Na een uur was het gepasseerd. De kleine weegt 3 kilo!","ww. kocht, heeft gekocht","5"
+"wedderaweg","verder","De Jef woont nog veel wedderaweg van't dorp dan de Sooi.\
+Ga eens wedderaweg van 't vuur.","","5"
+"galette","plat rond of rechthoekig ijskoekje\
+\
+/ga 'lèt/","Persoonlijk heb ik liever een galette dan een [cornet],\
+(meer ijs dan koek)","de ~ (v.), -n","5"
+"patronaat","VD\
+\
+4  (in België, niet algemeen) de werkgevers als georganiseerde groepering, werkgeversorganisatie ","Voor de regering is het nooit eenvoudig om de sociale vrede te bewaren: het patronaat heeft zo zijn eigen standpunten.","het ~ , geen mv.","5"
+"zwaantje","een oude vlaamse uitdrukking voor een glas limonade (ik denk dat dit verwees naar de producent van het produkt?)","Op café vraag je hier een zwaantje, de oudere bevolking weet waarover je het hebt.","het ~, ~s","5"
+"wiezen","kaartspel voor 4 spelers, whisten","Ik heb hier een [bat] kaarten, en we zijn met vier. Willen jullie mee wiezen of kleurenwiezen?","ww. wiesde, heeft gewiesd","5"
+"choclamelk","chocolademelk","Een warme kop choclamelk, na een wandeling... Da's heerlijk!","de ~ (v.), geen mv.","5"
+"valsmunter","valsemunter, iemand die geld vervalst\
+","Winkeliers kunnen zich, als ze dat willen, beschermen tegen valsmunters.","de ~ (m.), ~s","5"
+"zante","velg","De zante van m'n [villo] is geplooid van tegen de borduur te rijden.","de ~ (v.), ~en","5"
+"beuter","boter","Ik heb graag goeie beuter op m'n boterham.","de ~ (v.), ~s","5"
+"maar jonk toch","maar jongen/meisje toch, ik heb medelijden met je\
+","Kleine jongen: Ik heb in mijn broek geplast!\
+Grote jongen: Maar jonk toch!","","5"
+"combat","legerschoen, in Nederland \"kisten\" genoemd","Combats kuisen en van nieuwe [nestel]s voorzien is wreed veel werk.","de ~ (m.), ~s","5"
+"patineren","stil staan met draaiende banden","Een van mijn maten liet zien hoe ge met gierende banden moet patineren. Hij moet nu wel nieuwe banden kopen.","ww. patineerde, heeft gepatineerd","5"
+"brieftas","portefeuille","Een brieftas van Duits model is veel groter dan een Belgisch model.","de ~ (v./m.), ~sen","5"
+"verdoen","opdoen, verteren, verspillen van geld\
+\
+VD\
+ver·doen1 (overgankelijk werkwoord; verdeed, heeft verdaan)  \
+  1  nutteloos besteden  \
+","Op de kermis heeft-ie al zijn geld verdaan.","ww. verdeed, heeft verdaan","5"
+"allee","overloop\
+verbindingsgang op een bovenverdieping,waarop de trap uitkomt","Als ge de trap kuist vergeet dan ook niet den allee ook te kuisen.","de(n) ~ (m.), ~s","5"
+"kezze, een ~ gescheten","kers gescheten: nogal in rare papieren zitten","Jan heeft weer een kezze gescheten. Hij is van zattigheid in de gracht gereden.","uitdr.","5"
+"geel verf","geelzucht","Mijn broer kreeg de geel verf en was twee maand werkonbekwaam.","de ~ (m.)","5"
+"plooien","buigen","Hij plooide als een knipmes als hij voor de burgemeester stond.","ww. plooide, heeft geplooid","5"
+"demi","halflange jas","Hij heeft zijn nieuwe demi aan.","de ~ (v.), ~'s","5"
+"kweiken","huilen\
+kweiken of bleiten of schrieëven","Marieke heeft nog dagen aan een stuk zitten te kweiken omdat haar lief het afgemaakt had.\
+Ze heeft nogal een stukske afgeblèt.\
+Moet ge daar nu zo voor schrieëven?","ww. kweikte, heeft gekweikt","5"
+"pierewiet","steekwagentje\
+\
+ook [duvelke]","We zullen de koelkast verhuizen met een pierewiet.","de ~ (m.), ~en","5"
+"vakschool","beroepschool\
+VD\
+vak·school (de)  \
+  1  school waar men voor een bepaald vak wordt opgeleid  \
+\
+","Ik heb op de vakschool voor [metser] gestudeerd.","de ~ (v.), -en","5"
+"rien-de-knots","Niets, geen prijs","Op de foor neffe de roos geschoten, ik had rien-de-knots","","5"
+"blagaai","stoefer, spelmaker","Wat een blagaai, die man.","de ~ (m.), ~en","5"
+"piekebeste, op zijn ~ zijn","er op zijn best uitzien, heel mooi gekleed zijn","Jij moet, denk ik, ergens naar toe. Je bent op je piekebeste!","uitdr.","5"
+"sertoe","Van het Frans surtout, betekent 'vooral', 'temeer'","Hij kon er zich aan verwachten, sertoe dat ik hem verwittigd heb.","","5"
+"stadhuis, voor 't ~ trouwen","Een burgerlijk huwelijk aangaan in tegenstelling met  \
+[voor de kerk trouwen]. Het laatste is dan een kerkelijk huwelijk \
+Ook [voor den burgemeester trouwen] (of de notaris?) in  tegenstelling met [voor de pastoor trouwen]","Ze waren niet godsdienstig, dus zijn ze dan maar voor 't stadhuis getrouwd.","UItdrukking","5"
+"aosejakken","hijgen","Je bent zo aan't aosejakken, hard gelopen zeker?","","5"
+"zever in pakskes","onzin","Och jong, da's allemaal zever in pakskes wat gij daar vertelt!","","5"
+"rosjen","wrijven   /'ro sj.en/\
+ook [reussen]\
+\
+Uitdrukking: \"Ik zal es over zijn been moeten rosjen\"- Als je iets van iemand gedaan wil krijgen.\
+\
+","Na veel rosjen kreeg ik die vlek dan toch uit m'n broek.","","5"
+"gat, zijn ~ onder zijn arm pakken","gaan lopen, op ne loop schieten, vluchten","Zo gauw het er in 't café begon te stuiven, pakte ik mijn gat onder mijnen arm. De loebassen. Ik ben gene vechtersbaas.","uitdr.","5"
+"blojke","blaadje\
+Hier worden zowel boombladeren, als papier, als reclamedrukwerk mee bedoeld.\
+","'t Es naojaor, de blojkes valle van de boeëmen.\
+('t is herfst, de bladeren vallen van de bomen)\
+\
+De brievebus stekt wee vol me blojkes.\
+(de brievenbus steekt weer vol met reclame)\
+","het ~ (o.), -s","5"
+"ros","roodharig\
+VD\
+ros2 (bijvoeglijk naamwoord; rosser, meest ros)  \
+  1  roodachtig  \
+","Dat meiske staat beeldig met haar ros haar.","bn.","5"
+"koed","-> koud","Zet je bie de stove ([stoof])... 't Is koet buten.","bn.","5"
+"bedorvendans","verwend, bedorven kind\
+\
+(Antw.) /n.em b.e 'd.er v.en 'da:ns/  (a: Spaanse graan AN)","Met dien bedorvendans gaan ze hunne [pere]/[giele] nog zien. Bedorven tot op de graat. 'nen Dwingeland.","een ~ , (m.) (v.), geen mv.","5"
+"brokkiljon","steenafval\
+\
+\
+In Brugs: brikkeljon \
+","We hebben een muur uitgebroken en we hebben de broquiljon op onze oprit gekapt.","de ~ (m.), geen mv.","5"
+"filet d'anvers","gerookte filet van rundvlees ","Filet d'anvers is lekker tussen de boterhammen","de ~ (m.), geen mv.","5"
+"sloeberen","slurpen van soep of warme dranken","-","ww. sloeberde, heeft gesloeberd (?)","5"
+"lampet","iemand die veel kan drinken","is me dat een lampet, het is al zijn tiende glas (bier, water...) dat dat ie drinkt","","5"
+"luieriken","de luiaard uithangen, luieren","Hij heeft de hele dag geluierikt. Uit de zetel gekomen om een borreltje te drinken en een nootje te kraken of een eike te pellen. Voor de rest heb ik hem niet gehoord of gezien.","ww. luierikte, heeft geluierikt","5"
+"frut","bepaald soort charcuterie, een zuurdere vorm van [kop], met minder gelei gemaakt","Alleen bij die beenhouwer verkopen ze nog échte frut.","de ~ (m), geen mv.(?)","5"
+"ratek","schommel  \
+\
+ook ratak (Hufmaster) 16 nov 2007 18:02  (Antw.Kempen)\
+","Mijn kleine speelt op de ratek. (Gamba)\
+Die kleine zit op de ratak  (Hufmaster)","de ~ ((?)), ~ken","5"
+"jelee","jas, vest zie [gilet] \
+","Ik heb dat meiske eens goed tegen mijn jelee getrokken","","5"
+"foefkes, ~ vertellen","iets wijsmaken dat niet waar is","Ge moet mij geen foefkes vertellen.","uitdr.","5"
+"vitesse","versnelling\
+(gewoon een ingeburgerd frans woord)","Hij heeft nen nieuwen velo met 21 vitessen.","de ~ (v.), ~n","5"
+"gerust, ~ laten","met rust laten","Hij laat niemand gerust.\
+Laat me gerust, ik probeer te studeren.","bw.","5"
+"dutske","sukkeltje","Ocharme, zie dat dutske daar","het ~, ~s","5"
+"leer","ladder (Brabantse uitspr. lie.er)","Mijn vroegste herinnering van toen ik vier jaar (oud) was, is een [pompier] die bij het blussen, met zijn spuit van een leer naar beneden gevallen was, en door vier omstaanders op een klein leerke werd binnengedragen in het huis van een [gebuur].","? ~, ~s","5"
+"krabber","knoeier","Wat is me dat toch voor ne krabber, zo stuntelen.","de ~ (m.), -s","5"
+"mazoutje","een pilsner bier waar cola aan toegevoegd is,  uitgesproken als mazoetje.","Wat drinkt ge? Een mazoutje? Hebt ge niet liever iets steviger?","het ~ (o.), ~s","5"
+"navenant","/na:venaant/\
+gelijkaardig, overeenkomend\
+\
+ => Fr. à l'avenant (transparant), l verbasterd tot n \
+\
+VD\
+na·ve·nant (bijwoord)  \
+  1  (informeel) in evenredigheid  \
+\
+","Het huisje was armtierig en de meubeltjes navenant.","bn., bw.","5"
+"koekeloeren","er voor paal of Piet Snot bijstaan","De bus vertrok net alvorens hij er aan kwam. Nu staat hij daar te koekeloeren.","ww. koekeloerde, heeft gekoekeloerd","5"
+"openbaar ambt","openbare dienst, ambtenarij\
+\
+VD\
+open·baar (bijvoeglijk naamwoord; openbaarheid)  \
+  1  algemeen bekend  \
+  2  voor iedereen toegankelijk  \
+  3  van de overheid uitgaande  \
+ambt (het; ambten)  \
+  1  openbare betrekking, van overheidswege of kerkelijk  \
+","Artikel 10 alinea 2 van de Grondwet stelt de Belgische nationaliteit als voorwaarde voor de toegang tot het openbaar ambt.","het ~, (o.) ","5"
+"plekker","pleister, [plakker]\
+\
+","Die wonde is te groot voor ne' plekker. Da' moet genaaid worden.","de ~ (m.), ~s","5"
+"vlakaf","zonder omwegen","Volgens de meester is Piet een dommerik. Hij heeft het hem vlakaf gezegd.","bw.","5"
+"mottig","onwel, misselijk","Ik word mottig van die stank.","bn.","5"
+"bieter","tand","Ons [boeleke] heeft al twee bieterkes.","de ~ (m.), ~s","5"
+"ancien","soldaat, student e.d. met lange staat van dienst","De anciens onder de studenten weten dit natuurlijk al allemaal.","de ~ (m.), ~s","5"
+"kabinetsattaché","medewerker van een ministerieel kabinet, in rang onder kabinetsadviseur","De kabinetsattaché is minder bekend dan de [kabinetsadviseur].","de ~ (m.), ~'s","5"
+"seniorenanimatie","ontspanning, entertainment voor de ouderen\
+\
+(zie [animatie])","-","de ~ (v.), ~s","5"
+"aan","voor (prijs)","We hebben die grond gekocht aan 60 euro per vierkante meter.","","5"
+"fikfakken","beetje zoenen, beetje knuffelen, beetje (gewenste) handtastelijkheden.....dat is fikfakken\
+\
+zie [flikflooien]","Ons Marie wil altijd maar gaan wandelen met haar lief, jaja, ik weet dat wel, dat is voor in een donker hoekske een beetje te kunnen fikfakken.","ww. fikfakte, heeft gefikfakt","5"
+"langenasem","kauwgom","\"geef me eens een langenasem, tegen de slechte smaak in mijn mond\"","de ~ (m.), ~s","5"
+"antigifcentrum","openbare instantie die o.a. telefonisch advies verstrekt bij vergiftigingen","Een namenlijst van giftige planten krijg je bij het Antigifcentrum.","het ~, ~s/centra","5"
+"snutten","snuiten","Snut uw neus eens, de snottebellen lopen er zo uit.","ww. snutte, heeft gesnut","5"

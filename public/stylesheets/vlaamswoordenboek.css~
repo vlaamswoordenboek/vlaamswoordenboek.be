@@ -1,0 +1,295 @@
+body {
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	font:13px arial,helvetica,clean,sans-serif;
+	*font-size:small;
+	*font:x-small;
+	color:#333;
+	background:#f8f8f8;
+}
+
+/* Styling: Headers */
+
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	letter-spacing: -1px;
+	font-weight: normal;
+	color: #C58C00;
+	font-size: 200%;
+	margin: 10px 0px 0px 0px;
+}
+
+h2 {
+	font-size: 122%;
+	color: #444;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:.5em 0 .5em 0;
+}
+
+h3 { 
+	font-size: 107%;
+	color: #444;
+	font-weight: bold; 
+	font-family: Arial, Helvetica, sans-serif;
+			margin:.25em 0 .25em 0;
+}
+
+.small { 
+	display: inline;
+	font-size: 90%;
+	color: #444;
+	font-weight: normal; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h4, h5, h6 {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.formfield {
+	display:block;
+	margin: 5px 0px 10px 0px;
+}
+
+.field {
+	display:block;
+}
+
+label, .field-label {
+	font-weight:bold;
+	border: 0px solid #000;
+}
+
+.caption {
+	font-size: 90%;
+	color: #777;
+	border: 0px solid #000;
+	margin: 3px 0px 3px 0px;
+}
+
+.captioninline {
+	display: inline;
+	font-size: 90%;
+	color: #777;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  width: 20%;
+}
+
+/* Styling: Links */
+
+a, a:link, a:visited {
+	color: #2763A5;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0px;
+}
+
+/* Styling: Tag Clouds */
+
+#tagcloud {
+	text-align: center;
+}
+.nube1, .nube2, .nube3, .nube4, .nube5, .nube6 {font-weight:bold;}
+.nube1 {font-size: 1.0em;}
+.nube2 {font-size: 1.2em;}
+.nube3 {font-size: 1.4em;}
+.nube4 {font-size: 1.6em;}
+.nube5 {font-size: 1.8em;}
+.nube6 {font-size: 2.0em;}
+
+/* Structural: columns */
+
+#leftcontent {
+	position: absolute;
+	left:0px;
+	width:200px;
+	padding-left: 10px;
+	top:0px;
+	border:0px solid #000;
+}
+
+#centercontent {
+	margin-left: 219px;
+	margin-right:219px;
+	padding:0 10px 10px 10px;
+	top:0px;
+	border:0px solid #000;
+	/*
+	IE5x PC mis-implements the box model. Because of that we sometimes have
+	to perform a little CSS trickery to get pixel-perfect display across browsers.
+	The following bit of code was proposed by Tantek Celik, and it preys upon a CSS
+	parsing bug in IE5x PC that will prematurly close a style rule when it runs
+	into the string "\"}\"". After that string appears in a rule, then, we can override
+	previously set attribute values and only browsers without the parse bug will
+	recognize the new values. So any of the name-value pairs above this comment
+	that we need to override for browsers with correct box-model implementations
+	will be listed below.
+
+	We use the voice-family property because it is likely to be used very infrequently,
+	and where it is used it will be set on the body tag. So the second voice-family value 
+	of "inherit" will override our bogus "\"}\"" value and allow the proper value to
+	cascade down from the body tag.
+
+	The style rule immediately following this rule offers another chance for CSS2
+	aware browsers to pick up the values meant for correct box-model implementations.
+	It uses a CSS2 selector that will be ignored by IE5x PC.
+
+	Read more at http://www.glish.com/css/hacks.asp
+	*/
+
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 221px;
+	margin-right:221px;
+}
+html>body #centercontent {
+	margin-left: 221px;
+	margin-right:221px;
+}
+
+#rightcontent {
+	position: absolute;
+	right:0px;
+	top:0px;
+	width:210px;
+	padding-right:10px;
+	border:0px solid #000;
+}
+
+/* Structural: Blocks */
+
+#block {
+	border:1px solid #bbb;
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #111;
+	line-height:1.5em;
+	background-color: #fff;
+	font-size: 95%;
+}
+
+#block-search {
+	border:0px;
+}
+
+#block-admin {
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #111;
+	line-height:1.5em;
+	font-size: 95%;
+	border:1px solid #f88;
+	background-color: #fee;
+}
+
+.block {
+	border:1px solid #bbb;
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #111;
+	line-height:1.5em;
+	background-color: #fff;
+	font-size: 95%;
+}
+
+.block-search {
+	border:0px;
+}
+
+.block-admin {
+	margin-top: 10px;
+	padding: 0px 10px 0px 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #111;
+	line-height:1.5em;
+	font-size: 95%;
+	border:1px solid #f88;
+	background-color: #fee;
+}
+
+/* Structural: Tables */
+
+table {
+	border-collapse:collapse;
+	border:1px solid #bbb;
+	border-left: none;
+	border-right: none;
+	width:100%;
+}
+
+td {
+	border: 1px solid #bbb;
+	border-left: none;
+	border-right: none;
+	padding: 2px 5px 2px 5px;
+}
+
+th {
+	text-align:left;
+	padding: 5px 5px 5px 5px;
+	background: #eee;
+}
+
+/* Styling: barcharts */
+
+table.barChart td.quantifier {
+  width: 60%;
+	padding: 0;
+	color: #444;
+}
+
+table.barChart td.quantifier div {
+	background-color: #CCC;
+	height: 18px;
+	line-height: 18px;
+}
+
+table.barChart td.quantifier div span {
+	padding-left: 4px;
+	padding-right: 9px;
+	background: url("http://www.vlaamswoordenboek.be/images/barchart_end.gif") top right no-repeat;
+	display: block;
+	white-space: nowrap;
+}
+
+/* Structural: Menus */
+
+#primarymenu {
+	border-bottom: 1px solid #1D78D5;
+	padding: 5px 0px 3px 0px;
+}
+
+#primarymenu ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	sborder: 1px solid #0f0;
+}
+
+#primarymenu li {
+	display: inline;
+}
+
+#primarymenu a {
+	color: #777;
+	padding:2px 14px 2px 0px;
+	margin: 0px 1px 0px 0px;
+	font-family: "Trebuchet MS", Arial, Verdana, Sans-serif;
+	font-weight:bold;
+	font-size: 110%;
+	sborder: 1px solid #00f;
+}
