@@ -25,7 +25,7 @@
 	<div class="caption">
 			<%= link_to @definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id => @definition%>
 			<% if @definition.versions.size > 1 %>
-				&nbsp;|&nbsp; <%= link_to 'oudere versies', :controller => 'definities', :action => 'geschiedenis', :id => @definition %> 
+				&nbsp;|&nbsp; <%= link_to 'oudere versies', :controller => 'definities', :action => 'geschiedenis', :id => @definition %>
 			<% end %>
 			<% if logged_in? %>
 				&nbsp;|&nbsp; <%= link_to "bewerk", :controller => 'definities', :action => "bewerk", :id => @definition%>
@@ -34,20 +34,18 @@
 				<% end %>
 			<% end %>
 			<br/>
-			Toegevoegd door <%= link_to @definition.creator.login, :controller => 'gebruiker', :action => 'toon', :id => @definition.creator.login %> 
+			Toegevoegd door <%= link_to @definition.creator.login, :controller => 'gebruiker', :action => 'toon', :id => @definition.creator.login %>
 			<% if @definition.versions.size > 1 %>
 				en laatst gewijzigd door <%= link_to @definition.editor.login, :controller => 'gebruiker', :action => 'toon', :id => @definition.editor.login %>
 			<% end %>
-			(<%= 
-				Locale.set("nl-NL") 
+			(<%=
 				localize( @definition.versions.last.updated_at, format = '%d %b %Y %H:%M' )
 			%>)
 			<% if ( @definition.wotds.size > 0 ) %>
 				<% for @wotd in @definition.wotds %>
 					<% if ( @wotd.date < Date.today ) || ( logged_in? && current_user.admin? ) %>
-						<br/>Dit woord was woord van de dag op 
-						<%= 
-							Locale.set("nl-NL") 
+						<br/>Dit woord was woord van de dag op
+						<%=
 							localize( @wotd.date, format = '%d %b %Y' )
 						%>
 					<% end %>
@@ -57,13 +55,13 @@
 	<hr style="border-bottom: 1px solid #EEE;border-top:0;"/>
 	<div class="right" style="text-align:right;width:200px;">
 		<div>
-			<%= link_to_remote image_tag('/images/thumbs_up.gif'), 
+			<%= link_to_remote image_tag('/images/thumbs_up.gif'),
 				{
-					:url => {:action => 'thumbsup', :controller => "definities", :id => @definition }	
+					:url => {:action => 'thumbsup', :controller => "definities", :id => @definition }
 				},
 				{
 					:title => "Ik vind dit een goede definitie",
-					:href => url_for({:action => 'thumbsup', :controller => "definities", :id => @definition }), 
+					:href => url_for({:action => 'thumbsup', :controller => "definities", :id => @definition }),
 					:rel => "nofollow"
 				}
 			%>

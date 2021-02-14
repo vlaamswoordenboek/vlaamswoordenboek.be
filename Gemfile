@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 ruby '1.8.7'
 
-gem 'rails', '~>1.2.4.0'
+gem 'rails', '~> 2.0'
 gem 'rake', '< 2.0' # Arbitrarly old version
 
 gem 'RedCloth', '< 4.3'

@@ -19,12 +19,11 @@
 		</div>
 	</div>
 	<div class="caption">
-			Bewerking door 
+			Bewerking door
 			<a href="/gebruiker/toon/<%= @definition_version.editor.login  %>">
 				<%= @definition_version.editor.login %>
-			</a> op 
-			<%= 
-				Locale.set("nl-NL") 
+			</a> op
+			<%=  
 				localize( @definition_version.updated_at, format = '%d %b %Y %H:%M' )
 			%><br/>
 			<%= link_to @definition_version.definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id => @definition_version.definition%>

@@ -1,10 +1,10 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
-  
+
   def localize( d, format = "%d %b %Y" )
-    d.localize( format )
+    I18n.l(d, format => format)
   end
-  
+
   def all_pagination_links( pages )
     html= ''
     if pagination_links( pages )
