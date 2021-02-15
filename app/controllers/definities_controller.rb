@@ -1,63 +1,59 @@
 class DefinitiesController < ApplicationController
-  
-  before_filter :login_required, :only => [ :reageer, :creeer, :nieuw, :bewerk, :update, :verwijder ]
-  
+
+  before_action :login_required, :only => [ :reageer, :creeer, :nieuw, :bewerk, :update, :verwijder ]
+
   def title
     @title = @definition.word
   end
-  
-  # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :creeer, :update ],
-         :redirect_to => { :action => :index }
 
   def random_sample(n = 1, positiverating = false )
     if( positiverating )
-      Definition.find(Definition.find_by_sql("select id from definitions where positivevotes > 100 order by rand() limit #{n}").map { |q| q.id })
+      Definition.find(Definition.find_by_sql("select id from definitions where positivevotes > 100 order by random() limit #{n}").map { |q| q.id })
     else
-      Definition.find(Definition.find_by_sql("select id from definitions order by rand() limit #{n}").map { |q| q.id })
+      Definition.find(Definition.find_by_sql("select id from definitions order by random() limit #{n}").map { |q| q.id })
     end
   end
-  
+
   def get_recent_gewijzigd(n = 10, offset = 0)
-    @recent_gewijzigd = DefinitionVersion.find :all, :limit => n, :order => 'updated_at DESC', :offset => offset
+    @recent_gewijzigd = DefinitionVersion.order('updated_at DESC').limit(n).offset(offset)
   end
-  
+
   def get_recent_toegevoegd(n = 10, offset = 0)
-    @recent_toegevoegd = Definition.find :all, :limit => n, :order => 'id DESC', :offset => offset
+    @recent_toegevoegd = Definition.order('id DESC').limit(n).offset(offset)
   end
-  
+
   def get_recent_reactions( n = 10, offset = 0 )
-    @recent_reactions = Reaction.find :all, :limit => n, :order => 'created_at DESC', :offset => offset
+    @recent_reactions = Reaction.order('created_at DESC').limit(n).offset(offset)
   end
-  
+
   def get_top(n = 20, offset = 0)
     @definitions = Definition.find :all, :limit => n, :order => 'positivevotes DESC', :limit => n, :offset => offset
   end
-  
+
   def recent_gewijzigd_block
     unless read_fragment( :controller => "definities", :part => "recent_gewijzigd_block" )
       get_recent_gewijzigd( 5 )
-    end 
+    end
   end
-  
+
   def recent_toegevoegd_block
     unless read_fragment( :controller => "definities", :part => "recent_toegevoegd_block" )
       get_recent_toegevoegd( 5 )
-    end 
+    end
   end
-  
+
   def recent_reactions_block
     unless read_fragment( :controller => "definities", :part => "recent_reactions_block" )
       get_recent_reactions( 5 )
-    end 
+    end
   end
-  
+
   def recent_blocks
     recent_toegevoegd_block
     recent_gewijzigd_block
     recent_reactions_block
   end
-  
+
   def recent
     @offset = 0
     if params[:offset]
@@ -68,7 +64,7 @@ class DefinitiesController < ApplicationController
     @definitions = @recent_toegevoegd
     recent_blocks
   end
-  
+
   def wijzigingen
     @offset = 0
     if params[:offset]
@@ -79,7 +75,7 @@ class DefinitiesController < ApplicationController
     @definition_versions = @recent_gewijzigd
     recent_blocks
   end
-  
+
   def reacties
     @offset = 0
     if params[:offset]
@@ -90,7 +86,7 @@ class DefinitiesController < ApplicationController
     @reactions = @recent_reactions
     recent_blocks
   end
-  
+
   def recent_rss
     get_recent_toegevoegd( 10 )
     @feed_title = "Vlaams woordenboek: Recente toevoegingen"
@@ -112,17 +108,17 @@ class DefinitiesController < ApplicationController
   def index
     @title = "Welkom bij het Vlaams woordenboek"
     @definitions = random_sample( 5, true )
-    @wotd = Wotd.find :first, :conditions => "date <= '#{Date.today}'", :order => 'date DESC'
+    @wotd = Wotd.where("date <= '#{Date.today}'").order('date DESC').first
     recent_blocks
   end
-  
+
   def random
     @title = "Een willekeurige selectie"
     @definitions = random_sample( 10 )
     @definitions.sort!{ |a,b| b.positivevotes <=> a.positivevotes }
     recent_blocks
   end
-  
+
   def top
     @offset = 0
     if params[:offset]
@@ -132,7 +128,7 @@ class DefinitiesController < ApplicationController
     get_top( 20, @offset )
     recent_blocks
   end
-  
+
   def begintmet
     @begin = params[:id]
     unless read_fragment( :controller => 'definities', :action =>'begintmet', :id => @begin, :part => 'lijst' )
@@ -147,11 +143,11 @@ class DefinitiesController < ApplicationController
       query << " where word like '#{@begin}%'"
       query << " order by word asc"
       @words = Definition.find_by_sql(query)
-    end 
+    end
     @title = "Woorden die beginnen met '" + @begin +"'"
     recent_blocks
   end
-  
+
   def term
     @term = params[:id]
     @definitions = Definition.find(:all, :conditions => { :word => @term })
@@ -191,7 +187,7 @@ class DefinitiesController < ApplicationController
       end
     end
   end
-  
+
   def geschiedenis
     @definition = Definition.find(params[:id])
     @definition_versions = @definition.versions.reverse
@@ -211,7 +207,7 @@ class DefinitiesController < ApplicationController
     end
     recent_blocks
   end
-  
+
   def woordvandedag_rss
     woordvandedag
     @feed_title = "Vlaams woord van de dag"
@@ -232,9 +228,9 @@ class DefinitiesController < ApplicationController
     end
     redirect_to :action => 'toon', :id => @definition
   end
-  
+
   def expire_fragments_upon_save
-    
+
     expire_fragment( :controller => 'definities', :part => 'recent_toegevoegd_block' )
     expire_fragment( :controller => 'definities', :part => 'recent_gewijzigd_block' )
     str = @definition.word
@@ -243,7 +239,7 @@ class DefinitiesController < ApplicationController
     end
 
   end
-  
+
   def nieuw
     @definition = Definition.new
     @title = "Voeg een nieuwe definitie toe"
@@ -311,7 +307,7 @@ class DefinitiesController < ApplicationController
       redirect_to :action => 'term', :id => @definition.word
     end
   end
-  
+
   def verwijder_reactie
     @reaction = Reaction.find(params[:id])
     if( self.current_user.admin? )
@@ -324,7 +320,7 @@ class DefinitiesController < ApplicationController
       redirect_to :action => 'toon', :id => @reaction.definition.id
     end
   end
-  
+
   def get_voter
     if cookies[:voter]
       return Voter.find( cookies[:voter] )
@@ -334,7 +330,7 @@ class DefinitiesController < ApplicationController
       return current_voter
     end
   end
-    
+
   def thumbsup
     @definition = Definition.find(params[:id])
     @voter = get_voter
@@ -349,7 +345,7 @@ class DefinitiesController < ApplicationController
     end
     redirect_to :controller => 'definities', :action => 'toon', :id => @definition unless request.xhr?
   end
-  
+
   def thumbsdown
     @definition = Definition.find(params[:id])
     @voter = get_voter
@@ -364,5 +360,5 @@ class DefinitiesController < ApplicationController
       redirect_to :controller => 'definities', :action => 'toon', :id => @definition unless request.xhr?
     end
   end
-  
+
 end

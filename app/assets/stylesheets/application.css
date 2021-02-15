@@ -1,0 +1,37 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ div.auto_complete {
+   width: 350px;
+   background: #fff;
+ }
+ div.auto_complete ul {
+   border:1px solid #888;
+   margin:0;
+   padding:0;
+   width:100%;
+   list-style-type:none;
+ }
+ div.auto_complete ul li {
+   margin:0;
+   padding:3px;
+ }
+ div.auto_complete ul li.selected {
+   background-color: #ffb;
+ }
+ div.auto_complete ul strong.highlight {
+   color: #800;
+   margin:0;
+   padding:0;
+ }

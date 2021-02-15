@@ -1,24 +1,26 @@
 class Definition < ActiveRecord::Base
-#  acts_as_ferret :fields => { 
+#  acts_as_ferret :fields => {
 #    :word        => { :boost => 10 },
 #    :description  => { :boost => 2 },
 #    :example     => { :boost => 1 }
 #  }
-  acts_as_versioned
+  # TODO: Restore acts_as_versioned functionality
+  # acts_as_versioned
   has_many :votes, :dependent => :destroy
   has_many :reactions, :dependent => :destroy
   has_many :wotds, :dependent => :destroy
-  
+  has_many :versions, class_name: 'DefinitionVersion'
+
   validates_presence_of :word
   validates_presence_of :description
   validates_presence_of :example
-  
+
   HUMANIZED_ATTRIBUTES = {
     :word => "Woord",
     :description => "Beschrijving",
     :example => "Voorbeeld"
   }
-  
+
   def initialize( *params )
   	super( *params )
   end
@@ -26,7 +28,7 @@ class Definition < ActiveRecord::Base
   def self.human_attribute_name(attr)
     HUMANIZED_ATTRIBUTES[attr.to_sym] || super
   end
-  
+
   def self.search(query)
    if !query.to_s.strip.empty?
       tokens = query.split.collect {|c| "%#{c.downcase}%"}
@@ -35,7 +37,7 @@ class Definition < ActiveRecord::Base
       []
    end
   end
-  
+
   def <=>(other)
     word <=> other.word
   end
@@ -59,15 +61,3 @@ class Definition < ActiveRecord::Base
   end
 
 end
-
-Definition.versioned_class.class_eval do 
-
-  def editor
-    begin
-      User.find( self[:updated_by] )
-    rescue ActiveRecord::RecordNotFound
-      nil
-    end
-  end
-
-end 

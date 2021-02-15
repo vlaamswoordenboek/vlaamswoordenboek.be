@@ -86,10 +86,10 @@ ActiveRecord::Schema.define(:version => 17) do
     t.column "scope",                 :string,  :limit => 1
   end
 
-  add_index "globalize_languages", ["iso_639_1"], :name => "index_globalize_languages_on_iso_639_1"
-  add_index "globalize_languages", ["iso_639_2"], :name => "index_globalize_languages_on_iso_639_2"
-  add_index "globalize_languages", ["iso_639_3"], :name => "index_globalize_languages_on_iso_639_3"
   add_index "globalize_languages", ["rfc_3066"], :name => "index_globalize_languages_on_rfc_3066"
+  add_index "globalize_languages", ["iso_639_3"], :name => "index_globalize_languages_on_iso_639_3"
+  add_index "globalize_languages", ["iso_639_2"], :name => "index_globalize_languages_on_iso_639_2"
+  add_index "globalize_languages", ["iso_639_1"], :name => "index_globalize_languages_on_iso_639_1"
 
   create_table "globalize_translations", :force => true do |t|
     t.column "type",                :string
@@ -104,8 +104,8 @@ ActiveRecord::Schema.define(:version => 17) do
     t.column "namespace",           :string
   end
 
-  add_index "globalize_translations", ["tr_key", "language_id"], :name => "index_globalize_translations_on_tr_key_and_language_id"
   add_index "globalize_translations", ["table_name", "item_id", "language_id"], :name => "globalize_translations_table_name_and_item_and_language"
+  add_index "globalize_translations", ["tr_key", "language_id"], :name => "index_globalize_translations_on_tr_key_and_language_id"
 
   create_table "messages", :force => true do |t|
     t.column "from_user",  :integer

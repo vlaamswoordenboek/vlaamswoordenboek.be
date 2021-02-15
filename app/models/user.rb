@@ -12,21 +12,10 @@ class User < ActiveRecord::Base
   validates_length_of       :email,    :within => 3..100
   validates_uniqueness_of   :login, :email, :case_sensitive => false
   before_save :encrypt_password
-  
+
   has_many :reactions, :foreign_key => "created_by", :dependent => :destroy
   has_many :definition_versions, :foreign_key => "updated_by", :dependent => :destroy
 
-  HUMANIZED_ATTRIBUTES = {
-    :login => "Login",
-    :email => "E-mail adres",
-    :password => "Paswoord",
-    :password_confirmation => "Bevestiging paswoord"
-  }
-
-  def self.human_attribute_name(attr)
-    HUMANIZED_ATTRIBUTES[attr.to_sym] || super
-  end
-  
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
     u = find_by_login(login) # need to get the salt
@@ -48,7 +37,7 @@ class User < ActiveRecord::Base
   end
 
   def remember_token?
-    remember_token_expires_at && Time.now.utc < remember_token_expires_at 
+    remember_token_expires_at && Time.now.utc < remember_token_expires_at
   end
 
   # These create and unset the fields required for remembering users between browser closes
@@ -63,7 +52,7 @@ class User < ActiveRecord::Base
     self.remember_token            = nil
     save(false)
   end
-  
+
   def inbox_size
     if @inbox_size
       @inbox_size
@@ -71,19 +60,19 @@ class User < ActiveRecord::Base
       @inbox_size = Message.count( :all, :conditions => { :to_user => self.id, :read => false } )
     end
   end
-  
+
   def admin?
     return (login == "aliekens") || (login == "haloewie") || (login == "Grytolle") || (login == "de Bon") || (login == "LimoWreck" ) || (login == "Georges Grootjans") || (login == "fansy") || (login == "Marcus") || (login=="petrik") || (login=="LeGrognard")
   end
 
   protected
-    # before filter 
+    # before filter
     def encrypt_password
       return if password.blank?
       self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
       self.crypted_password = encrypt(password)
     end
-    
+
     def password_required?
       crypted_password.blank? || !password.blank?
     end
