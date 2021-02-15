@@ -1,3 +1,7 @@
 user1:
   email: johndoe@example.org
   login: johndoe
+
+user2:
+  email: 'johndoe2@example.org'
+  login: 'auser'

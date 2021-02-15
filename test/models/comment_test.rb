@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../test_helper'
 
 class CommentTest < ActiveSupport::TestCase
   def test_can_create
-    user = a_test_user
+    user = users(:user1)
     comment = Comment.new(:title => 'Test', :body => 'Test', :user => user)
 
     assert comment.valid?
