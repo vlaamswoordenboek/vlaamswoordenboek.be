@@ -30,12 +30,13 @@ class VisitAsAnonymousUsersTest < ApplicationSystemTestCase
     assert_text 'Dit zijn de top Vlaamse termen volgens het aantal positieve stemmen.'
     assert_text 'topword'
 
-    # TODO check top words
-
     # Go back to start
     click_link 'Wees welgekomen'
     click_link 'Recent'
 
-    # TODO check recent words
+    assert_text 'De onderstaande definities zijn de laatst toegevoegde definities van Vlaamse termen in ons woordenboek.'
+    assert_text 'capteren'
+
+    click_link 'Wees welgekomen'
   end
 end

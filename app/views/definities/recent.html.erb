@@ -1,7 +1,7 @@
 <p>De onderstaande definities zijn de laatst toegevoegde definities van Vlaamse termen in ons woordenboek. Deze lijst is ook
 beschikbaar als <%= link_to recent_definitions_path(format: 'xml') do %>RSS Feed <%= image_tag 'rss.png', alt: 'RSS' %> <% end %></p>
 
-<%= @recent_definitions.each_with_index do |definition, counter| %>
+<% @recent_definitions.each_with_index do |definition, counter| %>
   <h2>#<%= @offset.to_i + counter + 1 %></h2>
   <%= render partial: 'definition', object: definition %>
 <% end %>

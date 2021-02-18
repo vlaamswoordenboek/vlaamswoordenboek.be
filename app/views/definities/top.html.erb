@@ -1,6 +1,6 @@
 <p>Dit zijn de top Vlaamse termen volgens het aantal positieve stemmen.</p>
 
-<%= @top_definitions.each_with_index do |definition, counter| %>
+<% @top_definitions.each_with_index do |definition, counter| %>
   <h2>#<%= @offset.to_i + counter + 1 %></h2>
   <%= render partial: 'definition', object: definition %>
 <% end %>
