@@ -1,0 +1,3 @@
+wotd1_today:
+  definition: capteren_ww1
+  date: <%= Date.yesterday %>

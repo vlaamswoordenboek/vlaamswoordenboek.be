@@ -1,12 +1,10 @@
-<% new_definition = @definition %>
-
-<% if @definitions.size > 0 %>
-	<p>Onze databank bevat de volgende beschrijving(en) van "<%=@term%>"</p>
-	<% for @definition in @definitions %>
-		<%= render(:partial => "definition") %>
-	<% end %>
+<% unless @definitions.empty? %>
+  <p>Onze databank bevat de volgende beschrijving(en) van "<%=@term%>"</p>
+  <% @definitions.each do |definition| %>
+    <%= render partial: "definition", object: definition %>
+  <% end %>
 <% else %>
-	<p>Er zijn nog geen beschrijvingen van "<%=@term%>" in onze databank.</p>
+  <p>Er zijn nog geen beschrijvingen van "<%= @term %>" in onze databank.</p>
 <% end %>
 
 <h2>Voeg een nieuwe beschrijving toe aan onze databank!</h2>
@@ -16,14 +14,14 @@ uitspraken in onze databank aanvullen. Om fouten te verbeteren klikt ge bij de b
 reageren op een definitie klikt ge op de "reacties" link.</p>
 
 <% if logged_in?
-	@definition = Definition.new 
-	@definition.word = @term
-	form_tag :action => 'creeer' do %>
-	  <%= render :partial => 'form' %>
-	  <%= submit_tag "Voeg mijn definitie toe" %>
-	<% end 
+  @definition = Definition.new
+  @definition.word = @term
+  form_tag :action => 'creeer' do %>
+    <%= render :partial => 'form' %>
+    <%= submit_tag "Voeg mijn definitie toe" %>
+  <% end
   else %>
 
-	<%= render :partial => "account/login" %>
+  <%= render :partial => "account/login" %>
 
 <% end %>

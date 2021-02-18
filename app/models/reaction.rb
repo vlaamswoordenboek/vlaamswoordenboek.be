@@ -8,4 +8,7 @@ class Reaction < ActiveRecord::Base
       end
     end
 
+  def self.recent(count: 10, offset: 0)
+    self.order('created_at DESC').limit(count).offset(offset)
+  end
 end

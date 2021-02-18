@@ -1,12 +1,10 @@
 <p>Dit zijn de top Vlaamse termen volgens het aantal positieve stemmen.</p>
 
-<% counter = 1 %>
-<% for @definition in @definitions %>
-	<h2>#<%= @offset.to_i + counter %></h2>
-	<% counter = counter + 1 %>
-	<%= render(:partial => "definition") %>
+<%= @top_definitions.each_with_index do |definition, counter| %>
+  <h2>#<%= @offset.to_i + counter + 1 %></h2>
+  <%= render partial: 'definition', object: definition %>
 <% end %>
 
 <p>
-<a href="/definities/top?offset=<%= @offset.to_i + 20 %>">Meer ...</a>
+  <%= link_to 'Meer ...', top_definitions_path(offset: @offset.to_i + 20) %>
 </p>

@@ -1,5 +1,5 @@
 <p>Dit is een willekeurige selectie woorden van wat het Vlaams woordenboek zoal te bieden heeft. Herlaad voor <a href="">meer</a>.</p>
 
-<% for @definition in @definitions %>
-	<%= render(:partial => "definition") %>
+<% @random_definitions.each do |definition| %>
+  <%= render partial: 'definition', object: definition %>
 <% end %>

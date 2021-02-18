@@ -1,7 +1,7 @@
-<p>Dit is slechts 1 definitie  voor "<%= @definition.word %>." 
-<%= link_to "Bekijk alle definities", :action => 'term', :id => @definition.word %>.</p>
+<p>Dit is slechts 1 definitie  voor "<%= @definition.word %>."
+<%= link_to "Bekijk alle definities", term_definitions_path(term: @definition.word) %>.</p>
 
-<%= render(:partial => "definition") %>
+<%= render partial: "definition", object: @definition %>
 
 <% if logged_in? && current_user.admin? %>
 	<div class="block-admin">
@@ -34,11 +34,11 @@
 <p>Ingelogde gebruikers kunnen reacties aan deze definitie toevoegen.</p>
 
 <% if logged_in?
-	@reaction = Reaction.new 
+	@reaction = Reaction.new
 	form_tag :action => 'reageer', :id => @definition do %>
 	  <%= render :partial => 'reactionform' %>
 	  <%= submit_tag "Voeg mijn reactie toe" %>
-	<% end 
+	<% end
   else %>
 
 	<%= render :partial => "account/login" %>

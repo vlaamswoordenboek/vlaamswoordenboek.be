@@ -25,6 +25,23 @@ class Definition < ActiveRecord::Base
   	super( *params )
   end
 
+  def self.random_sample(count: 1, needs_positive_rating: false)
+    q = self.limit(count).order('RANDOM()')
+    if needs_positive_rating
+      q = q.where('positivevotes > ?', 100)
+    end
+    # Working with a subquery so that we can order on something else than the RANDOM()
+    self.where(id: q.select(:id))
+  end
+
+  def self.recent(count: 10, offset: 0)
+    self.order('id DESC').limit(count).offset(offset)
+  end
+
+  def self.top(count: 10, offset: 0)
+    self.order('positivevotes DESC').limit(count).offset(offset)
+  end
+
   def self.human_attribute_name(attr)
     HUMANIZED_ATTRIBUTES[attr.to_sym] || super
   end
