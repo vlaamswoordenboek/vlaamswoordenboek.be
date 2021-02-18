@@ -24,6 +24,11 @@ App::Application.routes.draw do
     get :updates, on: :collection
   end
 
+  resources :users, controller: 'gebruiker', only: [:index, :show] do
+    get 'wijzigingen', as: :edits, on: :member, action: :edits
+    get 'reacties', as: :reactions, on: :member, action: :reactions
+  end
+
   # TODO fix wsdl? (was that implemented?)
   # match ':controller/service.wsdl' => '#wsdl'
   get '/definities/term/*id' => 'definities#term'
