@@ -26,12 +26,12 @@ class Definition < ActiveRecord::Base
   end
 
   def self.random_sample(count: 1, needs_positive_rating: false)
-    q = self.limit(count).order('RANDOM()')
+    q = self.limit(count).order('RAND()')
     if needs_positive_rating
       q = q.where('positivevotes > ?', 100)
     end
-    # Working with a subquery so that we can order on something else than the RANDOM()
-    self.where(id: q.select(:id))
+    # Working with a "subquery" so that we can order on something else than the RANDOM()
+    self.where(id: q.pluck(:id))
   end
 
   def self.recent(count: 10, offset: 0)
