@@ -25,4 +25,3 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV['JAWSDB_URL'] %>
