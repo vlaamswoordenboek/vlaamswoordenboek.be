@@ -38,5 +38,7 @@ class VisitAsAnonymousUsersTest < ApplicationSystemTestCase
     assert_text 'capteren'
 
     click_link 'Wees welgekomen'
+
+    (all 'a', text: 'johndoe').first.click
   end
 end

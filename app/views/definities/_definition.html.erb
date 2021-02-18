@@ -34,9 +34,9 @@
 				<% end %>
 			<% end %>
 			<br/>
-			Toegevoegd door <%= link_to  definition.creator.login, :controller => 'gebruiker', :action => 'toon', :id =>  definition.creator.login %>
+			Toegevoegd door <%= link_to  definition.creator.login, user_path(definition.editor.login) %>
 			<% if  definition.versions.size > 1 %>
-				en laatst gewijzigd door <%= link_to  definition.editor.login, :controller => 'gebruiker', :action => 'toon', :id =>  definition.editor.login %>
+				en laatst gewijzigd door <%= link_to definition.editor.login, user_path(definition.editor.login) %>
 			<% end %>
 			(<%=
 				localize(  definition.versions.last.updated_at, format = '%d %b %Y %H:%M' )
