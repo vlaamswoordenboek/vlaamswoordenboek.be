@@ -17,6 +17,13 @@ App::Application.routes.draw do
     get 'recent', as: :recent, on: :collection, action: :recent
   end
 
+  resource :info, controller: 'info', only: [:show] do
+    get :contact, on: :collection
+    get :regios, on: :collection
+    get :feeds, on: :collection
+    get :updates, on: :collection
+  end
+
   # TODO fix wsdl? (was that implemented?)
   # match ':controller/service.wsdl' => '#wsdl'
   get '/definities/term/*id' => 'definities#term'
