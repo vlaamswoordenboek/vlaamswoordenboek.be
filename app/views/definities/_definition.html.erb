@@ -5,8 +5,8 @@
 			<div class="small">(<%=  definition.properties %>)</div>
 		<% end %>
 	</h2>
-	<%=textilize(  definition.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
-	<i><%=textilize(  definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%></i>
+	<%=textilize(  definition.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%>
+	<i><%=textilize(  definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%></i>
 	<div class="right">
 		<div class="caption">
 			<a href="/info/regios">
