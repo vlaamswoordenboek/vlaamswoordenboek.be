@@ -1,6 +1,8 @@
 user1:
   email: johndoe@example.org
   login: johndoe
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
 
 user2:
   email: 'johndoe2@example.org'

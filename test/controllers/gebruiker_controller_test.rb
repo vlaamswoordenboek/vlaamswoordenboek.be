@@ -1,6 +1,6 @@
 require "test_helper"
 
-class GebruikerControllerTest < ActionDispatch::IntegrationTest
+class AcccountControllerTest < ActionDispatch::IntegrationTest
   test "get index work" do
     get users_path
     assert_response :success

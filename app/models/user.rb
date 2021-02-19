@@ -18,8 +18,10 @@ class User < ActiveRecord::Base
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
-    u = find_by_login(login) # need to get the salt
-    u && u.authenticated?(password) ? u : nil
+    u = find_by(login: login)
+    return nil if u.nil?
+    return nil unless u.authenticated?(password)
+    u
   end
 
   # Encrypts some data with the salt.
@@ -41,23 +43,20 @@ class User < ActiveRecord::Base
   end
 
   # These create and unset the fields required for remembering users between browser closes
-  def remember_me
-    self.remember_token_expires_at = 2.weeks.from_now.utc
-    self.remember_token            = encrypt("#{email}--#{remember_token_expires_at}")
-    save(false)
+  def remember_me!
+    update_columns(remember_token_expires_at: 2.weeks.from_now.utc,
+                      remember_token: SecureRandom.uuid)
   end
 
-  def forget_me
-    self.remember_token_expires_at = nil
-    self.remember_token            = nil
-    save(false)
+  def forget_me!
+    update_columns(remember_token_expires_at: nil, remember_token: nil)
   end
 
   def inbox_size
     if @inbox_size
       @inbox_size
     else
-      @inbox_size = Message.count( :all, :conditions => { :to_user => self.id, :read => false } )
+      @inbox_size = Message.where(to_user: self.id, read:false).count
     end
   end
 

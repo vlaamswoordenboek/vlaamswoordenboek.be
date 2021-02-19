@@ -24,6 +24,10 @@ App::Application.routes.draw do
     get :updates, on: :collection
   end
 
+  post 'login', controller: :account, as: :login
+  get 'logout', controller: :account, as: :logout
+  resource :account, controller: 'account', only: [:new, :create, :edit, :update]
+
   resources :users, controller: 'gebruiker', only: [:index, :show] do
     get 'wijzigingen', as: :edits, on: :member, action: :edits
     get 'reacties', as: :reactions, on: :member, action: :reactions
