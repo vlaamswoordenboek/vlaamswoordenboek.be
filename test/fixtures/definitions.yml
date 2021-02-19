@@ -17,7 +17,7 @@ capteren_ww2:
   word: capteren
   description: "opnemen van een film, televisieprogramma voor uitzending"
   example: "Er gaat veel volk zijn en de VRT gaat het hele gebeuren capteren voor een live uitzending."
-  updated_at: 2020/22/2 02:02:22
+  updated_at: <%= 3.hours.ago %>
 
 topword:
   word: topword

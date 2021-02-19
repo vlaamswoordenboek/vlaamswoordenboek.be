@@ -4,7 +4,7 @@
 	<p>&#187; <%= link_to "Schrijf een bericht naar deze gebruiker", :controller => 'post', :action => 'nieuw', :id => @user.login %></p>
 <% end %>
 
-<% if @user.details != "" %>
+<% if !@user.details.blank? %>
 	<h2>Over mezelf</h2>
 	<%=textilize( @user.details ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
 <% else %>
@@ -21,12 +21,12 @@
 
 <% if @definition_versions.size > 0 %>
 
-	<% for @definition_version in @definition_versions %>
-		<% if @definition_version.definition %>
-			<%= render(:partial => "definities/definition_version") %>
+	<% @definition_versions.each do |definition_version| %>
+		<% if definition_version.definition %>
+			<%= render partial: "definities/definition_version", object: definition_version %>
 		<% end %>
 	<% end %>
-	
+
 <% else %>
 
 	<p>Deze gebruiker heeft nog geen bijgedragen geleverd aan het Vlaams woordenboek.</p>
@@ -39,10 +39,10 @@
 
 <% if @reactions.size > 0 %>
 
-	<% for @reaction in @reactions %>
-		<% if @reaction.definition %>
-			<h2><a href='/definities/toon/<%=@reaction.definition.id%>'><%= @reaction.definition.word %></a></h2>
-			<%= render(:partial => "definities/reaction") %>
+	<% @reactions.each do |reaction| %>
+		<% if reaction.definition %>
+			<h2><a href='/definities/toon/<%=reaction.definition.id%>'><%= reaction.definition.word %></a></h2>
+			<%= render partial: "definities/reaction", object: reaction %>
 		<% end %>
 	<% end %>
 

@@ -1,23 +1,15 @@
 <% if @definition_versions.size > 0 %>
 
-	<%= all_pagination_links( @definition_versions_pages ) %>
-	
-	<% for @definition_version in @definition_versions %>
-		<% if @definition_version.definition %>
-			<%= render(:partial => "definities/definition_version") %>
-		<% end %>
-	<% end %>
-	
-	<% if @definition_versions_pages.current.previous %>
-		<%= link_to('&laquo; vorige pagina', {:params => params.merge('page' => @definition_versions_pages.current.previous)}) %> &nbsp;|&nbsp;
-	<% end %>
-	<%= pagination_links(@definition_versions_pages) %> 
-	<% if @definition_versions_pages.current.next %>
-		&nbsp;|&nbsp; <%= link_to('volgende pagina &raquo;', {:params => params.merge('page' => @definition_versions_pages.current.next)}) %>
-	<% end %>
-	
+  <%= will_paginate @definition_versions %>
+
+  <% @definition_versions.each do |definition_version| %>
+    <%= render partial: 'definities/definition_version', object: definition_version %>
+  <% end %>
+
+  <%= will_paginate @definition_versions %>
+
 <% else %>
 
-	<p>Deze gebruiker heeft nog geen bijdragen geleverd aan het Vlaams woordenboek.</p>
+  <p>Deze gebruiker heeft nog geen bijdragen geleverd aan het Vlaams woordenboek.</p>
 
 <% end %>
