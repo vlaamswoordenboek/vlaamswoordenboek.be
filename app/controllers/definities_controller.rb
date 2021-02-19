@@ -83,6 +83,24 @@ class DefinitiesController < ApplicationController
     @top_definitions = Definition.top(count: 20, offset: @offset)
   end
 
+  def new
+    @definition = Definition.new
+    @title = "Voeg een nieuwe definitie toe"
+  end
+
+  def create
+    @definition = Definition.new(new_definition_params)
+    @definition.updated_by = self.current_user.id
+    @definition.rating = 0;
+    if @definition.save
+      flash[:notice] = 'Uw nieuwe term werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage!'
+      expire_fragments_upon_save
+      redirect_to term_definitions_path(@definition.word)
+    else
+      render 'new'
+    end
+  end
+
   private
   def set_title_from_definition
     @title = @definition.word
@@ -209,24 +227,6 @@ class DefinitiesController < ApplicationController
 
   end
 
-  def nieuw
-    @definition = Definition.new
-    @title = "Voeg een nieuwe definitie toe"
-  end
-
-  def creeer
-    @definition = Definition.new(params[:definition])
-    @definition.updated_by = self.current_user.id
-    @definition.rating = 0;
-    if @definition.save
-      flash[:notice] = 'Uw nieuwe term werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage!'
-      expire_fragments_upon_save
-      redirect_to :action => 'term', :id => @definition.word
-    else
-      render :action => 'nieuw'
-    end
-  end
-
   def reageer
     @definition = Definition.find(params[:id])
     @reaction = Reaction.new(params[:reaction])
@@ -325,4 +325,13 @@ class DefinitiesController < ApplicationController
     end
   end
 
+  def new_definition_params
+    params.require(:definition).permit(
+      :word,
+      :properties,
+      :description,
+      :regio,
+      :example
+    )
+  end
 end

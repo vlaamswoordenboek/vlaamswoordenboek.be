@@ -7,8 +7,8 @@ beschrijving goed vindt.</p>
   <p>Als ingelogde gebruiker kunt ge <%= link_to 'nieuwe definities toevoegen', :action => 'nieuw' %>.</p>
 <% else %>
 
-  <p>Als ge u <%= link_to "registreert", :controller => "account", :action => "signup" %>
-    (dit duurt gemiddeld 12 seconden) en <%= link_to "inlogt", :controller => "account", :action => "login"%>
+  <p>Als ge u <%= link_to "registreert", new_account_path %>
+    (dit duurt gemiddeld 12 seconden) en <%= link_to "inlogt", login_path %>
     kunt ge meewerken aan het woordenboek door termen toe te voegen of te bewerken.
   </p>
 
@@ -43,13 +43,13 @@ toevoegen.</p>
 
 <% if logged_in? %>
 
-  <% form_tag :action => 'creeer' do %>
-    <%= render :partial => 'form' %>
+  <%= form_for Definition.new do |form| %>
+    <%= render partial: 'form', object: form %>
     <%= submit_tag "Creëer" %>
   <% end %>
 
 <% else %>
 
-  <p>Ge zijt niet <a href="/account/signup">geregistreerd</a> of <a href="/account/login">ingelogd</a>.</p>
+  <p>Ge zijt niet <%= link_to 'geregistreerd', new_account_path %> of <%= link_to 'ingelogd', login_path %>.</p>
 
 <% end %>

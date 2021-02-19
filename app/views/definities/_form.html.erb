@@ -1,5 +1,3 @@
-<%= error_messages_for 'definition' %>
-
 <!--[form:definition]-->
 
 <div class="formfield">
@@ -7,7 +5,7 @@
 	<div class="caption">
 		Het woord, term of de uitspraak die hier wordt gedefinieerd. Gebruik liefst geen hoofdletters.
 	</div>
-	<%= text_field 'definition', 'word', :value => @definition.word  %>
+	<%= form.text_field :word %>
 </div>
 
 <div class="formfield">
@@ -17,7 +15,7 @@
 		- Geef bijvoorbeeld "de ~ (v.), ~sen" aan om het lidwoord, geslacht en meervoud van een zelfstandig naamwoord op te geven<br/>
 		- Dit veld is niet verplicht in te vullen
 	</div>
-	<%= text_field 'definition', 'properties', :value => @definition.properties  %>
+	<%= form.text_field :properties  %>
 </div>
 
 <div class="formfield">
@@ -28,7 +26,7 @@
 		- Beschrijf slechts 1 betekenis, voeg andere apart toe<br/>
 		- Gebruik vierkante haakjes om een ander woord te linken, zo wordt [goesting] omgezet naar <a href="definities/term/goesting">goesting</a>
 	</div>
-	<%= text_area 'definition', 'description', :value => @definition.description, :size => '60x10'  %>
+	<%= form.text_area :description, :size => '60x10'  %>
 </div>
 
 <div class="formfield">
@@ -37,9 +35,7 @@
 		Indien het woord enkel in een lokaal dialect wordt gebruikt, geef dan ook de streek aan waar deze term wordt gebruikt<br/>
 		- <a href="/info/regios">Meer info over de regio's.</a>
 	</div>
-	<select name="definition[regio]">
-		<%= option_groups_from_collection_for_select( Regio::OPTIONS, :options, :type_name, :id, :name, @definition.regio ) %>
-	</select>
+	<%= form.select :regio, Regio::OPTIONS.collect { |option| [option.type_name, option.options.collect { |option| [option.id, option.name] }] } %>
 </div>
 
 <div class="formfield">
@@ -50,7 +46,7 @@
 		- Zorg dat de bovenstaande betekenis van het woord verduidelijkt wordt<br/>
 		- Hier kan je ook vierkante haakjes gebruiken om te linken naar andere woorden
 	</div>
-	<%= text_area 'definition', 'example', :value => @definition.example, :size => '60x10'  %>
+	<%= form.text_area :example, :size => '60x10'  %>
 </div>
 
 <!--[eoform:definition]-->

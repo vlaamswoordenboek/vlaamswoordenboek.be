@@ -4,8 +4,6 @@ class Definition < ActiveRecord::Base
 #    :description  => { :boost => 2 },
 #    :example     => { :boost => 1 }
 #  }
-  # TODO: Restore acts_as_versioned functionality
-  # acts_as_versioned
   has_many :votes, :dependent => :destroy
   has_many :reactions, :dependent => :destroy
   has_many :wotds, :dependent => :destroy
@@ -20,6 +18,21 @@ class Definition < ActiveRecord::Base
     :description => "Beschrijving",
     :example => "Voorbeeld"
   }
+
+  after_save do
+    DefinitionVersion.create!(
+      definition: self,
+      word: word,
+      description: description,
+      example: example,
+      positivevotes: positivevotes,
+      negativevotes: negativevotes,
+      updated_at: Time.now,
+      updated_by: updated_by,
+      regio: regio,
+      properties: properties,
+    )
+  end
 
   def initialize( *params )
   	super( *params )

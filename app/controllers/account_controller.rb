@@ -12,7 +12,7 @@ class AccountController < ApplicationController
       end
       flash[:notice] = "Ge zijt succesvol ingelogd"
 
-      redirect_back_or_default(root_path)
+      redirect_to root_path
     end
   end
 
@@ -34,7 +34,7 @@ class AccountController < ApplicationController
     if @user.save
       self.current_user = @user
       flash[:notice] = "Merci om u in te schrijven! Ge kunt nu nieuwe woorden aan het woordenboek toevoegen."
-      redirect_back_or_default(root_path)
+      redirect_to root_path
     else
       render 'new'
     end

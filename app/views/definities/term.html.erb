@@ -13,14 +13,14 @@
 uitspraken in onze databank aanvullen. Om fouten te verbeteren klikt ge bij de bovenstaande definities op de "bewerk" link, en om te
 reageren op een definitie klikt ge op de "reacties" link.</p>
 
-<% if logged_in?
-  @definition = Definition.new
-  @definition.word = @term
-  form_tag :action => 'creeer' do %>
-    <%= render :partial => 'form' %>
+<% if logged_in? %>
+
+  <%= form_for Definition.new do |form| %>
+    <%= render partial: 'form', object: form %>
     <%= submit_tag "Voeg mijn definitie toe" %>
-  <% end
-  else %>
+  <% end %>
+
+<% else %>
 
   <%= render :partial => "account/login" %>
 

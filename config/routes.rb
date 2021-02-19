@@ -8,7 +8,7 @@ App::Application.routes.draw do
 
   resources :definitions, controller: 'definities',
             path: 'definities',
-            only: [:show] do
+            only: [:show, :new, :create] do
     get 'woordvandedag', as: :wotd, on: :collection
     get 'term/:term', as: :term, on: :collection, action: :term
 
@@ -25,6 +25,7 @@ App::Application.routes.draw do
   end
 
   post 'login', controller: :account, as: :login
+  get 'login', controller: :account
   get 'logout', controller: :account, as: :logout
   resource :account, controller: 'account', only: [:new, :create, :edit, :update]
 
