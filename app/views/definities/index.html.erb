@@ -17,8 +17,8 @@ beschrijving goed vindt.</p>
 <h2>Doorzoek het Vlaams Woordenboek</h2>
 
 <p>
-  <% form_tag :controller => 'definities', :action => 'zoek' do %>
-    <%= text_field_with_auto_complete :definition, :word, :size => 15, :value => "" %>
+  <%= form_tag search_definitions_path, method: :get do %>
+    <%= text_field_with_auto_complete :definition, :q, { :size => 15, :value => "" }, { url: autocomplete_definitions_path } %>
     <%= submit_tag 'Zoek' %>
   <% end %>
 </p>

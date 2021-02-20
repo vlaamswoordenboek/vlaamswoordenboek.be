@@ -4,9 +4,41 @@ class DefinitiesController < ApplicationController
   before_action :recent_blocks, except: [:recent_rss, :wijzigingen_rss]
   after_action :set_title_from_definition, only: [:show]
 
+  include AutoComplete
+  auto_complete_for :definition, :q, search_column: 'word'
+
   def index
     @title = "Welkom bij het Vlaams woordenboek"
     @random_definitions = Definition.random_sample(count: 5, needs_positive_rating: true)
+  end
+
+  def search
+    unless params[:definition] && params[:definition][:q]
+      redirect_to root_path
+      return
+    end
+
+    @q = params[:definition][:q]
+    @definitions = Definition.search @q
+    @title = "Zoekresultaten voor '#{@q}'"
+  end
+
+  def prefix
+    @begin = params[:prefix]
+    unless read_fragment( :controller => 'definities', :action =>'begintmet', :id => @begin, :part => 'lijst' )
+      @langer = []
+      ('a'..'z').each do |letter|
+        if Definition.where("word LIKE ?", "#{@begin}#{letter}%").exists?
+          @langer << @begin + letter
+        end
+      end
+
+      @words = Definition.where('word LIKE ?', "#{@begin}%").
+               order(word: :asc).
+               distinct.
+               pluck(:word)
+    end
+    @title = "Woorden die beginnen met '" + @begin +"'"
   end
 
   def woordvandedag
@@ -166,36 +198,6 @@ class DefinitiesController < ApplicationController
     @feed_description = "Recent toegevoegde woorden aan het Vlaams Woordenboek"
     response.headers['Content-Type'] = 'application/rss+xml'
     render :action => 'wijzigingen_rss', :layout => false
-  end
-
-  def begintmet
-    @begin = params[:id]
-    unless read_fragment( :controller => 'definities', :action =>'begintmet', :id => @begin, :part => 'lijst' )
-      @langer = []
-      for letter in 'a'..'z'
-        if Definition.find( :first, :conditions => "word like '#{@begin}#{letter}%'")
-          @langer << @begin+letter
-        end
-      end
-      query = "select distinct word"
-      query << " from definitions"
-      query << " where word like '#{@begin}%'"
-      query << " order by word asc"
-      @words = Definition.find_by_sql(query)
-    end
-    @title = "Woorden die beginnen met '" + @begin +"'"
-  end
-
-  def zoek
-    if params[:definition]
-      @zoekquery = params[:definition][:word]
-      #@definitions = Definition.find_by_contents( @zoekquery )
-      @definitions = Definition.search( @zoekquery )
-      @definition = Definition.new # gebruiken om in form nieuwe definitie toe te voegen
-      @title = "Zoekresultaten voor '#{@zoekquery}'"
-    else
-      redirect_to :action => 'index'
-    end
   end
 
   def geschiedenis

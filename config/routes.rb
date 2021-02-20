@@ -11,6 +11,9 @@ App::Application.routes.draw do
             only: [:show, :new, :create] do
     get 'woordvandedag', as: :wotd, on: :collection
     get 'term/:term', as: :term, on: :collection, action: :term
+    get 'search', as: :search, on: :collection, action: :search
+    get 'begintmet/:prefix', as: :prefix, on: :collection, action: :prefix
+    post 'autocomplete', on: :collection, action: :auto_complete_for_definition_q
 
     get 'random', as: :random, on: :collection, action: :random
     get 'top', as: :top, on: :collection, action: :top

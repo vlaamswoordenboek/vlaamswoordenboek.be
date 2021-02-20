@@ -365,6 +365,7 @@ Ajax.Autocompleter = Class.create(Autocompleter.Base, {
   },
 
   onComplete: function(request) {
+    console.log(request.responseText);
     this.updateChoices(request.responseText);
   }
 });

@@ -15,7 +15,6 @@ class SignupTest < ApplicationSystemTestCase
       center.click_button 'Log in'
     end
 
-
     assert_text 'Een nieuwe beschrijving toevoegen'
 
     fill_in 'definition[word]', with: 'goesting'

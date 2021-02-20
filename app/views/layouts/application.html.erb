@@ -6,8 +6,8 @@
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<meta property="fb:admins" content="544031756" />
 	<title>Het Vlaams woordenboek <% if @title %>&#187; <%= @title %><% end %></title>
-	<%= stylesheet_link_tag 'scaffold' %>
-	<%= stylesheet_link_tag 'vlaamswoordenboek' %>
+	<%= stylesheet_link_tag 'application' %>
+	<%= javascript_include_tag 'application' %>
 	<link rel="alternate" type="application/rss+xml" title="Vlaams woord van de dag" href="/woordvandedag.xml" />
 </head>
 <body>
@@ -28,32 +28,9 @@
 		<div class="block">
 			<h2>Index</h2>
 			<p>
-				<a href="/definities/begintmet/a">A</a>
-				<a href="/definities/begintmet/b">B</a>
-				<a href="/definities/begintmet/c">C</a>
-				<a href="/definities/begintmet/d">D</a>
-				<a href="/definities/begintmet/e">E</a>
-				<a href="/definities/begintmet/f">F</a>
-				<a href="/definities/begintmet/g">G</a>
-				<a href="/definities/begintmet/h">H</a>
-				<a href="/definities/begintmet/i">I</a>
-				<a href="/definities/begintmet/j">J</a>
-				<a href="/definities/begintmet/k">K</a>
-				<a href="/definities/begintmet/l">L</a>
-				<a href="/definities/begintmet/m">M</a>
-				<a href="/definities/begintmet/n">N</a>
-				<a href="/definities/begintmet/o">O</a>
-				<a href="/definities/begintmet/p">P</a>
-				<a href="/definities/begintmet/q">Q</a>
-				<a href="/definities/begintmet/r">R</a>
-				<a href="/definities/begintmet/s">S</a>
-				<a href="/definities/begintmet/t">T</a>
-				<a href="/definities/begintmet/u">U</a>
-				<a href="/definities/begintmet/v">V</a>
-				<a href="/definities/begintmet/w">W</a>
-				<a href="/definities/begintmet/x">X</a>
-				<a href="/definities/begintmet/y">Y</a>
-				<a href="/definities/begintmet/z">Z</a>
+				<% ('A'..'Z').each do |letter| %>
+					<%= link_to letter, prefix_definitions_path(prefix: letter.downcase) %>
+				<% end %>
 			</p>
 		</div>
 
@@ -107,8 +84,8 @@
 		<div class="block block-search">
 			<p>
 				<center>
-					<% form_tag :controller => 'definities', :action => 'zoek' do %>
-					<%= text_field_with_auto_complete :definition, :word, :size => 15, :value => "" %>
+					<%= form_tag search_definitions_path, method: :get do %>
+					<%= text_field_with_auto_complete :definition, :q, { :size => 15, :value => "" }, { url: autocomplete_definitions_path } %>
 					<%= submit_tag 'Zoek' %>
 					<% end %>
 				</center>

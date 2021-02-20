@@ -19,11 +19,12 @@ class SignupTest < ApplicationSystemTestCase
     click_on 'Akkoord!'
 
     assert_text 'Een nieuwe beschrijving toevoegen'
+    assert_text 'Geef eventueel een aantal woordkenmerken aan'
     assert_text 'Kenmerken'
 
-    click_on 'Logout'
+    click_on 'Log uit'
     assert_selector "h1", text: "Welkom bij het Vlaams woordenboek"
 
-    assert_no_text 'Een nieuwe beschrijving toevoegen'
+    assert_no_text 'Geef eventueel een aantal woordkenmerken aan'
   end
 end

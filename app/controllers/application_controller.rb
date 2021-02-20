@@ -4,8 +4,6 @@
 class ApplicationController < ActionController::Base
   layout "application"
 
-  auto_complete_for :definition, :word
-
   include AuthenticatedSystem
   before_action do |c|
     @current_user = (c.session[:user] && User.find_by_id(c.session[:user])) || :false

@@ -40,5 +40,44 @@ class VisitAsAnonymousUsersTest < ApplicationSystemTestCase
     click_link 'Wees welgekomen'
 
     (all 'a', text: 'johndoe').first.click
+
+    assert_text 'Recentste wijzigingen'
+    assert_text 'Recente reacties'
+
+    click_link 'Het Vlaams woordenboek'
+    page.find '#centercontent' do |center|
+      center.fill_in 'definition[q]', with: 'capteren'
+      center.click_button 'Zoek'
+    end
+
+    assert_text "Zoekresultaten voor 'capteren'"
+    assert_text 'opnemen van een film, televisieprogramma voor uitzending'
+
+    click_link 'C'
+    assert_text 'ca'
+    assert_text 'capteren'
+
+    click_link 'ca'
+    assert_text "De volgende 1 termen in onze databank beginnen met 'ca':"
+    click_link 'capteren'
+
+    assert_text 'Onze databank bevat de volgende beschrijving(en) van "capteren"'
+    assert_text 'opnemen van een film'
+    assert_text 'ontvangen van radio- of tv-signaal'
+
+    click_link 'Het Vlaams woordenboek'
+    #byebug
+
+    page.find '#rightcontent' do |rightc|
+      rightc.fill_in 'definition[q]', with: 'cap'
+      sleep 2 # Give service time to execute JS
+      (rightc.all 'li', text: 'capteren')[0].click
+      sleep 2
+      rightc.click_button 'Zoek'
+    end
+
+    assert_text 'Uw vraag naar "capteren" leverde de volgende resultaten op:'
+    assert_text 'opnemen van een film'
+    assert_text 'ontvangen van radio- of tv-signaal'
   end
 end
