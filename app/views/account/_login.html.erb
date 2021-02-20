@@ -5,9 +5,9 @@
     <%= link_to 'Mijn profiel', users_path(current_user.login) %><br/>
     <%= link_to 'Instellingen', edit_account_path %><br/>
     <% if current_user.inbox_size > 0 %>
-      <b><%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', :controller => 'post', :action => 'in' %></b><br/>
+      <b><%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', posts_path %></b><br/>
     <% else %>
-      <%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', :controller => 'post', :action => 'in' %> <br/>
+      <%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', posts_path %> <br/>
     <% end %>
     <%= link_to 'Log uit', logout_path %>
   </p>

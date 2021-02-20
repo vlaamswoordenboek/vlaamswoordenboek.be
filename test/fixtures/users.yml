@@ -7,3 +7,5 @@ user1:
 user2:
   email: 'johndoe2@example.org'
   login: 'auser'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>

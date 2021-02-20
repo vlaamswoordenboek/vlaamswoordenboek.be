@@ -1,7 +1,7 @@
 <div class="caption">Geregistreerd sinds <%= localize( @user.created_at ) %></div>
 
 <% if logged_in? && @user != current_user %>
-	<p>&#187; <%= link_to "Schrijf een bericht naar deze gebruiker", :controller => 'post', :action => 'nieuw', :id => @user.login %></p>
+	<p>&#187; <%= link_to "Schrijf een bericht naar deze gebruiker", new_post_path(to: @user.login) %></p>
 <% end %>
 
 <% if !@user.details.blank? %>
@@ -10,7 +10,7 @@
 <% else %>
 	<% if logged_in? && @user == current_user %>
 		<h2>Over mezelf</h2>
-		In uw <%= link_to( "instellingen", :controller => 'account', :action => 'instellingen') %> kunt ge iets schrijven over
+		In uw <%= link_to( "instellingen", edit_account_path) %> kunt ge iets schrijven over
 		uzelf, en dat wordt dan hier weergegeven.
 	<% end %>
 <% end %>

@@ -1,10 +1,5 @@
 App::Application.routes.draw do
-  # TODO: Fix routes.rb
-
   root to: 'definities#index'
-
-  post '/definities/creeer' => 'definities#creeer'
-  post '/definities/update' => 'definities#update'
 
   resources :definitions, controller: 'definities',
             path: 'definities',
@@ -43,9 +38,7 @@ App::Application.routes.draw do
     get 'reacties', as: :reactions, on: :member, action: :reactions
   end
 
-  resources :post, only: [] do
-    get :in, on: :collection
-  end
+  resources :posts, controller: 'post', only: [:index, :new, :create]
 
   get '/recent.xml' => 'definities#recent_rss'
   get '/wijzigingen.xml' => 'definities#wijzigingen_rss'
