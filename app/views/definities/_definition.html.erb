@@ -25,16 +25,16 @@
 	<div class="caption">
 			<%= link_to  definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id =>  definition%>
 			<% if  definition.versions.size > 1 %>
-				&nbsp;|&nbsp; <%= link_to 'oudere versies', :controller => 'definities', :action => 'geschiedenis', :id =>  definition %>
+				&nbsp;|&nbsp; <%= link_to 'oudere versies', history_definition_path(definition) %>
 			<% end %>
 			<% if logged_in? %>
-				&nbsp;|&nbsp; <%= link_to "bewerk", :controller => 'definities', :action => "bewerk", :id =>  definition%>
+				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition.id) %>
 				<% if current_user.admin? %>
 					&nbsp;|&nbsp; <span style="background-color:#f00"><a href="http://www.vlaamswoordenboek.be/definities/verwijder/<%=  definition.id %>" onclick="return confirm('Ben je zeker dat je dit lemma wil verwijderen?')">verwijder</a></span>
 				<% end %>
 			<% end %>
 			<br/>
-			Toegevoegd door <%= link_to  definition.creator.login, user_path(definition.editor.login) %>
+			Toegevoegd door <%= link_to  definition.creator.login, user_path(definition.creator.login) %>
 			<% if  definition.versions.size > 1 %>
 				en laatst gewijzigd door <%= link_to definition.editor.login, user_path(definition.editor.login) %>
 			<% end %>

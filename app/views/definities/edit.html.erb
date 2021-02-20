@@ -1,0 +1,6 @@
+<p>Met het volgende formulier kunt ge uw beschrijving aanpassen.</p>
+
+<%= form_for @definition do |form| %>
+  <%= render partial: 'form', object: form %>
+  <%= submit_tag 'Bewerk' %>
+<% end %>

@@ -1,8 +1,10 @@
 class DefinitiesController < ApplicationController
 
-  before_action :login_required, :only => [ :reageer, :creeer, :nieuw, :bewerk, :update, :verwijder ]
+  before_action :login_required, :only => [ :add_reaction, :new, :create, :edit, :update, :destroy ]
   before_action :recent_blocks, except: [:recent_rss, :wijzigingen_rss]
-  after_action :set_title_from_definition, only: [:show]
+
+  before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :add_reaction]
+  before_action :set_title_from_definition, only: [:show, :edit, :update, :history, :add_reaction]
 
   include AutoComplete
   auto_complete_for :definition, :q, search_column: 'word'
@@ -63,10 +65,8 @@ class DefinitiesController < ApplicationController
   end
 
   def show
-    @definition = Definition.find(params[:id])
-
     if logged_in? && current_user.admin?
-      @wotds = Wotd.find( :all, :conditions => "definition_id = '#{@definition.id}'" );
+      @wotds = Wotd.where(definition: @definition)
       @wotd_dates = []
       date = Date.today
       for i in (1..50)
@@ -133,9 +133,56 @@ class DefinitiesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @definition.updated_by = self.current_user.id
+    if @definition.update(edit_definition_params)
+      flash[:notice] = 'Uw aanpassing werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage.'
+      expire_fragments_upon_save
+      redirect_to term_definitions_path(term: @definition.word)
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    if( self.current_user.admin? )
+      @definition.destroy
+      flash[:notice] = 'Uw beschrijving werd verwijderd.'
+      expire_fragments_upon_save
+      redirect_to :action => 'term', :id => @definition.word
+    else
+      flash[:notice] = 'Woorden kunnen niet worden verwijderd'
+      redirect_to :action => 'term', :id => @definition.word
+    end
+  end
+
+  def history
+    @definition_versions = @definition.versions.reverse
+  end
+
+  def add_reaction
+    @reaction = Reaction.new(reaction_params)
+    @reaction.definition = @definition
+    @reaction.created_by = self.current_user.id
+    if @reaction.save
+      flash[:notice] = 'Bedankt voor uw reactie!'
+      expire_fragment( :controller => 'definities', :part => 'recent_reactions_block' )
+      redirect_to definition_path(@definition)
+    else
+      render 'toon'
+    end
+  end
+
   private
   def set_title_from_definition
     @title = @definition.word
+  end
+
+  def find_definition
+    @definition = Definition.find(params[:id])
   end
 
   def recent_gewijzigd_block
@@ -200,12 +247,6 @@ class DefinitiesController < ApplicationController
     render :action => 'wijzigingen_rss', :layout => false
   end
 
-  def geschiedenis
-    @definition = Definition.find(params[:id])
-    @definition_versions = @definition.versions.reverse
-    title
-  end
-
   def wotd
     if logged_in? && current_user.admin?
       @definition = Definition.find( params[:id] )
@@ -227,51 +268,6 @@ class DefinitiesController < ApplicationController
       expire_fragment( :controller => 'definities', :action => 'begintmet', :id => str[0..i], :part => 'lijst' )
     end
 
-  end
-
-  def reageer
-    @definition = Definition.find(params[:id])
-    @reaction = Reaction.new(params[:reaction])
-    @reaction.definition = @definition
-    @reaction.created_by = self.current_user.id
-    if @reaction.save
-      flash[:notice] = 'Bedankt voor uw reactie!'
-      expire_fragment( :controller => 'definities', :part => 'recent_reactions_block' )
-      redirect_to :action => 'toon', :id => @definition
-    else
-      render :action => 'toon', :id => @definition
-    end
-  end
-
-  def bewerk
-    @definition = Definition.find(params[:id])
-    title
-  end
-
-  def update
-    @definition = Definition.find(params[:id])
-    title
-    params[:definition][:updated_by] = self.current_user.id
-    if @definition.update_attributes(params[:definition])
-      flash[:notice] = 'Uw aanpassing werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage.'
-      expire_fragments_upon_save
-      redirect_to :action => 'term', :id => @definition.word
-    else
-      render :action => 'bewerk'
-    end
-  end
-
-  def verwijder
-    @definition = Definition.find(params[:id])
-    if( self.current_user.admin? )
-      @definition.destroy
-      flash[:notice] = 'Uw beschrijving werd verwijderd.'
-      expire_fragments_upon_save
-      redirect_to :action => 'term', :id => @definition.word
-    else
-      flash[:notice] = 'Woorden kunnen niet worden verwijderd'
-      redirect_to :action => 'term', :id => @definition.word
-    end
   end
 
   def verwijder_reactie
@@ -334,6 +330,23 @@ class DefinitiesController < ApplicationController
       :description,
       :regio,
       :example
+    )
+  end
+
+  def edit_definition_params
+    params.require(:definition).permit(
+      :word,
+      :properties,
+      :description,
+      :regio,
+      :example
+    )
+  end
+
+  def reaction_params
+    params.require(:reaction).permit(
+      :title,
+      :body
     )
   end
 end

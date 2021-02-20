@@ -1,0 +1,8 @@
+<p>De beschrijving van deze term werd <%= @definition_versions.size %> keer aangepast.</p>
+
+<% if @definition_versions.size > 0 %>
+	<% @definition_versions.each do |definition_version| %>
+		<h2>Versie <%= definition_version.version %></h2>
+		<%= render partial: "definition_version", object: definition_version %>
+	<% end %>
+<% end %>

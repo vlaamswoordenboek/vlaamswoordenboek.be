@@ -1,4 +1,5 @@
 capteren_ww1_v1:
+  version: 1
   definition: capteren_ww1
   editor: user1
   updated_at: 2020/2/2 02:02:02
@@ -15,6 +16,7 @@ capteren_ww1_v1:
   Er mag geen water meer gecapteerd worden uit alle waterlopen van het IJzerbekken. (middelkerke.be)"
 
 capteren_ww2_v1:
+  version: 1
   definition: capteren_ww2
   editor: user1
   updated_at: <%= 3.hours.ago %>
@@ -22,6 +24,7 @@ capteren_ww2_v1:
   example: "Er gaat veel volk zijn en de VRT gaat het hele gebeuren capteren voor een live uitzending."
 
 topword_v1:
+  version: 1
   definition: topword
   editor: user1
   updated_at: 2015/2/22 02:02:22

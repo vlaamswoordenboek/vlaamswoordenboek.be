@@ -1,8 +1,0 @@
-<p>De beschrijving van deze term werd <%= @definition_versions.size %> keer aangepast.</p>
-
-<% if @definition_versions.size > 0 %>
-	<% for @definition_version in @definition_versions %>
-		<h2>Versie <%= @definition_version.version %></h2>
-		<%= render(:partial => "definition_version") %>
-	<% end %>
-<% end %>

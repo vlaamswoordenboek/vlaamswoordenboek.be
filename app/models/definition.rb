@@ -22,6 +22,7 @@ class Definition < ActiveRecord::Base
   after_save do
     DefinitionVersion.create!(
       definition: self,
+      version: (versions.last&.version || 0) + 1,
       word: word,
       description: description,
       example: example,

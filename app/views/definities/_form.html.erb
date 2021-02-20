@@ -35,7 +35,7 @@
 		Indien het woord enkel in een lokaal dialect wordt gebruikt, geef dan ook de streek aan waar deze term wordt gebruikt<br/>
 		- <a href="/info/regios">Meer info over de regio's.</a>
 	</div>
-	<%= form.select :regio, Regio::OPTIONS.collect { |option| [option.type_name, option.options.collect { |option| [option.id, option.name] }] } %>
+	<%= form.select :regio, Regio::OPTIONS.collect { |option| [option.type_name, option.options.collect { |option| [option.name, option.id] }] } %>
 </div>
 
 <div class="formfield">

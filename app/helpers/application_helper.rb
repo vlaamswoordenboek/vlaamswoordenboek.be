@@ -20,6 +20,7 @@ module ApplicationHelper
   end
 
   def textilize(text)
+    return "" if text.blank?
     RedCloth.new(text).to_html.html_safe
   end
 end
