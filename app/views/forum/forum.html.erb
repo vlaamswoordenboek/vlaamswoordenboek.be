@@ -1,8 +1,0 @@
-<% if @forum.forumtopics.size > 0 %>
-	<p>De recentste discussieonderwerpen in dit forum:</p>
-	<% for @forumtopic in @forum.forumtopics.reverse %>
-		<%= render_partial 'forumtopic' %>
-	<% end %>
-<% else %>
-	<p>Er werden nog geen forum onderwerpen aan dit forum toegevoegd. U kan dus de eerste zijn!</p>
-<% end %>
