@@ -20,6 +20,7 @@ App::Application.routes.draw do
     get 'recent', as: :recent, on: :collection, action: :recent
 
     get 'geschiedenis', as: :history, on: :member, action: :history
+    get 'thumbsup', on: :member, action: :thumbsup
 
     # TODO: reactions should really be their own (sub) controller
     post 'reactie', as: :post_reaction, on: :member, action: :add_reaction
@@ -42,10 +43,9 @@ App::Application.routes.draw do
     get 'reacties', as: :reactions, on: :member, action: :reactions
   end
 
-  # TODO fix wsdl? (was that implemented?)
-  # match ':controller/service.wsdl' => '#wsdl'
-  get '/definities/term/*id' => 'definities#term'
-  get '/:controller(/:action(/:id))'
+  resources :post, only: [] do
+    get :in, on: :collection
+  end
 
   get '/recent.xml' => 'definities#recent_rss'
   get '/wijzigingen.xml' => 'definities#wijzigingen_rss'

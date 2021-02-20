@@ -17,7 +17,7 @@
 
 <h2>Recentste wijzigingen</h2>
 
-<p><%= link_to "Bekijk alle (#{@user.definition_versions.size}) wijzigingen van deze gebruiker.", :action => 'wijzigingen', :id => @user.login %></p>
+<p><%= link_to "Bekijk alle (#{@user.definition_versions.size}) wijzigingen van deze gebruiker.", edits_user_path(@user.login) %></p>
 
 <% if @definition_versions.size > 0 %>
 
@@ -35,7 +35,7 @@
 
 <h2>Recente reacties</h2>
 
-<p><%= link_to "Bekijk alle (#{@user.reactions.size}) reacties van deze gebruiker.", :action => 'reacties', :id => @user.login %></p>
+<p><%= link_to "Bekijk alle (#{@user.reactions.size}) reacties van deze gebruiker.", reactions_user_path(@user.login) %></p>
 
 <% if @reactions.size > 0 %>
 

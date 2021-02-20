@@ -1,6 +1,6 @@
 <div class="formfield" style="border: solid #ddd 1px;padding: 10px 10px 10px 10px;background-color: #fff8f0">
 	<h2>
-		<%= link_to definition_version.word, :controller => 'definities', :action => 'term', :id => definition_version.word %>
+		<%= link_to definition_version.word, term_definitions_path(term: definition_version.word) %>
 		<% if definition_version.properties.size > 0 %>
 			<div class="small">(<%= definition_version.properties %>)</div>
 		<% end %>
@@ -26,9 +26,9 @@
 			<%=
 				localize( definition_version.updated_at, format = '%d %b %Y %H:%M' )
 			%><br/>
-			<%= link_to definition_version.definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id => definition_version.definition%>
+			<%= link_to definition_version.definition.reactions.size.to_s + " reactie(s)", definition_path(definition_version.definition) %>
 			<% if logged_in? %>
-				&nbsp;|&nbsp; <%= link_to "bewerk", :controller => 'definities', :action => "bewerk", :id => definition_version.definition%>
+				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition_version.definition) %>
 				<% if current_user.admin? %>
 					&nbsp;|&nbsp; <%= link_to "verwijder", :controller => 'definities', :action => "verwijder", :id => definition_version.definition%>
 				<% end %>

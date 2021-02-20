@@ -1,6 +1,12 @@
 require "test_helper"
 
 class DefinitiesControllerTest < ActionDispatch::IntegrationTest
+  test "woord van de dag works" do
+    get wotd_definitions_path
+
+    assert_response :success
+  end
+
   test "recent RSS works" do
     get '/recent.xml'
 

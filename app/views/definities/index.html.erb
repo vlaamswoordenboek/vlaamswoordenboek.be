@@ -4,7 +4,7 @@ woordenboek bevat reeds <%= Definition.count %> termen. Kijk gerust wat rond, en
 beschrijving goed vindt.</p>
 
 <% if logged_in? %>
-  <p>Als ingelogde gebruiker kunt ge <%= link_to 'nieuwe definities toevoegen', :action => 'nieuw' %>.</p>
+  <p>Als ingelogde gebruiker kunt ge <%= link_to 'nieuwe definities toevoegen', new_definition_path %>.</p>
 <% else %>
 
   <p>Als ge u <%= link_to "registreert", new_account_path %>

@@ -46,15 +46,15 @@
 
 		<div id="primarymenu">
 			<% if logged_in? %>
-				<div style="float:right;"><li><%= link_to 'Nieuw woord', :controller => 'definities', :action => 'nieuw' %></li></div>
+				<div style="float:right;"><li><%= link_to 'Nieuw woord', new_definition_path %></li></div>
 			<% else %>
-				<div style="float:right;"><li><%= link_to 'Log in', :controller => 'account', :action => 'login'-%></li></div>
+				<div style="float:right;"><li><%= link_to 'Log in', login_path -%></li></div>
 			<% end %>
 			<ul>
-				<li><%= link_to 'Woordenboek', :controller => 'definities' %></li>
-				<li><%= link_to 'Woord van de dag', :controller => 'definities', :action => 'woordvandedag' %></li>
-				<li><%= link_to 'Gebruikers', :controller => 'gebruiker', :action => 'index' %></li>
-				<li><%= link_to 'Info', :controller => 'info', :action => 'index' %></li>
+				<li><%= link_to 'Woordenboek', definitions_path %></li>
+				<li><%= link_to 'Woord van de dag', wotd_definitions_path %></li>
+				<li><%= link_to 'Gebruikers', users_path %></li>
+				<li><%= link_to 'Info', info_path %></li>
 			</ul>
 		</div>
 

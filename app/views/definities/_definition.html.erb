@@ -1,6 +1,6 @@
 <div class="formfield" style="border: solid #ddd 1px;padding: 10px 10px 10px 10px;background-color: #fff8f0">
 	<h2>
-		<%= link_to  definition.word, :controller => 'definities', :action => 'term', :id =>  definition.word %>
+		<%= link_to  definition.word, term_definitions_path(term: definition.word) %>
 		<% if  definition.properties.size > 0 %>
 			<div class="small">(<%=  definition.properties %>)</div>
 		<% end %>
@@ -23,7 +23,7 @@
 		</div>
 	</div>
 	<div class="caption">
-			<%= link_to  definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id =>  definition%>
+			<%= link_to  definition.reactions.size.to_s + " reactie(s)", definition_path(definition) %>
 			<% if  definition.versions.size > 1 %>
 				&nbsp;|&nbsp; <%= link_to 'oudere versies', history_definition_path(definition) %>
 			<% end %>
@@ -55,17 +55,9 @@
 	<hr style="border-bottom: 1px solid #EEE;border-top:0;"/>
 	<div class="right" style="text-align:right;width:200px;">
 		<div>
-			<%= link_to image_tag('/images/thumbs_up.gif'),
-				{
-					:url => {:action => 'thumbsup', :controller => "definities", :id =>  definition },
-					:remote => true,
-				},
-				{
-					:title => "Ik vind dit een goede definitie",
-					:href => url_for({:action => 'thumbsup', :controller => "definities", :id =>  definition }),
-					:rel => "nofollow"
-				}
-			%>
+			<%= link_to thumbsup_definition_path(definition), remote: true, rel: 'nofollow', title: 'Ik vind dit een goede definitie' do %>
+				<%= image_tag('/images/thumbs_up.gif') %>
+			<% end %>
 			<div id="definition-<%= definition.id%>-positive" style="display:inline;color:#777;font-size:22px;"><%=  definition.positivevotes %></div>
 		</div>
 	</div>
