@@ -1,6 +1,7 @@
 class PostController < ApplicationController
 
   before_action :login_required
+  include AutoComplete
   auto_complete_for :user, :login
 
   def in
