@@ -1,7 +1,6 @@
 class DefinitiesController < ApplicationController
 
   before_action :login_required, :only => [ :add_reaction, :new, :create, :edit, :update, :destroy ]
-  before_action :recent_blocks, except: [:recent_rss, :wijzigingen_rss]
 
   before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :add_reaction]
   before_action :set_title_from_definition, only: [:show, :edit, :update, :history, :add_reaction]
@@ -126,7 +125,6 @@ class DefinitiesController < ApplicationController
     @definition.rating = 0;
     if @definition.save
       flash[:notice] = 'Uw nieuwe term werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage!'
-      expire_fragments_upon_save
       redirect_to term_definitions_path(@definition.word)
     else
       render 'new'
@@ -140,7 +138,6 @@ class DefinitiesController < ApplicationController
     @definition.updated_by = self.current_user.id
     if @definition.update(edit_definition_params)
       flash[:notice] = 'Uw aanpassing werd succesvol in onze databank bewaard. Bedankt voor uw bijdrage.'
-      expire_fragments_upon_save
       redirect_to term_definitions_path(term: @definition.word)
     else
       render 'edit'
@@ -151,7 +148,6 @@ class DefinitiesController < ApplicationController
     if( self.current_user.admin? )
       @definition.destroy
       flash[:notice] = 'Uw beschrijving werd verwijderd.'
-      expire_fragments_upon_save
       redirect_to :action => 'term', :id => @definition.word
     else
       flash[:notice] = 'Woorden kunnen niet worden verwijderd'
@@ -176,6 +172,24 @@ class DefinitiesController < ApplicationController
     end
   end
 
+  def recent_rss
+    @definitions = Definition.recent(count: 10)
+    @feed_title = "Vlaams woordenboek: Recente toevoegingen"
+    @feed_url = "http://" + request.host_with_port
+    @feed_description = "Recent toegevoegde woorden aan het Vlaams Woordenboek"
+    response.headers['Content-Type'] = 'application/rss+xml'
+    render 'recent'
+  end
+
+  def wijzigingen_rss
+    @definition_versions = DefinitionVersion.recent(count: 10)
+    @feed_title = "Vlaams woordenboek: Recente wijzigingen"
+    @feed_url = "http://" + request.host_with_port
+    @feed_description = "Recent toegevoegde woorden aan het Vlaams Woordenboek"
+    response.headers['Content-Type'] = 'application/rss+xml'
+    render 'recent_changes'
+  end
+
   private
   def set_title_from_definition
     @title = @definition.word
@@ -183,68 +197,6 @@ class DefinitiesController < ApplicationController
 
   def find_definition
     @definition = Definition.find(params[:id])
-  end
-
-  def recent_gewijzigd_block
-    unless read_fragment( :controller => "definities", :part => "recent_gewijzigd_block" )
-      @recent_gewijzigd = DefinitionVersion.recent(count: 5)
-    end
-  end
-
-  def recent_toegevoegd_block
-    unless read_fragment( :controller => "definities", :part => "recent_toegevoegd_block" )
-      @recent_toegevoegd = Definition.recent(count: 5)
-    end
-  end
-
-  def recent_reactions_block
-    unless read_fragment( :controller => "definities", :part => "recent_reactions_block" )
-      @recent_reactions = Reaction.recent(count: 5)
-    end
-  end
-
-  def recent_blocks
-    recent_toegevoegd_block
-    recent_gewijzigd_block
-    recent_reactions_block
-  end
-
-  def wijzigingen
-    @offset = 0
-    if params[:offset]
-    	@offset = params[:offset]
-    end
-    @title = "Recente wijzigingen"
-    get_recent_gewijzigd( 20, @offset )
-    @definition_versions = @recent_gewijzigd
-  end
-
-  def reacties
-    @offset = 0
-    if params[:offset]
-    	@offset = params[:offset]
-    end
-    @title = "Recente reacties"
-    get_recent_reactions( 20, @offset )
-    @reactions = @recent_reactions
-  end
-
-  def recent_rss
-    get_recent_toegevoegd( 10 )
-    @feed_title = "Vlaams woordenboek: Recente toevoegingen"
-    @feed_url = "http://" + request.host_with_port
-    @feed_description = "Recent toegevoegde woorden aan het Vlaams Woordenboek"
-    response.headers['Content-Type'] = 'application/rss+xml'
-    render :action => 'recent_rss', :layout => false
-  end
-
-  def wijzigingen_rss
-    get_recent_gewijzigd( 10 )
-    @feed_title = "Vlaams woordenboek: Recente wijzigingen"
-    @feed_url = "http://" + request.host_with_port
-    @feed_description = "Recent toegevoegde woorden aan het Vlaams Woordenboek"
-    response.headers['Content-Type'] = 'application/rss+xml'
-    render :action => 'wijzigingen_rss', :layout => false
   end
 
   def wotd
@@ -257,17 +209,6 @@ class DefinitiesController < ApplicationController
       end
     end
     redirect_to :action => 'toon', :id => @definition
-  end
-
-  def expire_fragments_upon_save
-
-    expire_fragment( :controller => 'definities', :part => 'recent_toegevoegd_block' )
-    expire_fragment( :controller => 'definities', :part => 'recent_gewijzigd_block' )
-    str = @definition.word
-    for i in (0..str.length-1)
-      expire_fragment( :controller => 'definities', :action => 'begintmet', :id => str[0..i], :part => 'lijst' )
-    end
-
   end
 
   def verwijder_reactie
