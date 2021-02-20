@@ -24,7 +24,7 @@
 		Geef een beschrijving van de term.<br/>
 		- Gebruik "Algemeen Beschaafd Vlaams" om het woord te beschrijven<br>
 		- Beschrijf slechts 1 betekenis, voeg andere apart toe<br/>
-		- Gebruik vierkante haakjes om een ander woord te linken, zo wordt [goesting] omgezet naar <a href="definities/term/goesting">goesting</a>
+		- Gebruik vierkante haakjes om een ander woord te linken, zo wordt [goesting] omgezet naar <%= link_to 'goesting', term_definitions_path(term: 'goesting') %>
 	</div>
 	<%= form.text_area :description, :size => '60x10'  %>
 </div>
@@ -33,7 +33,7 @@
 	<label for="definition_word">Regio</label>
 	<div class="caption">
 		Indien het woord enkel in een lokaal dialect wordt gebruikt, geef dan ook de streek aan waar deze term wordt gebruikt<br/>
-		- <a href="/info/regios">Meer info over de regio's.</a>
+		- <%= link_to "Meer info over de regio's.", regios_info_path %>
 	</div>
 	<%= form.select :regio, Regio::OPTIONS.collect { |option| [option.type_name, option.options.collect { |option| [option.name, option.id] }] } %>
 </div>

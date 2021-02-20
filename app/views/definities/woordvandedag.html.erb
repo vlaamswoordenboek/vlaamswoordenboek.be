@@ -24,5 +24,5 @@
 <% end %>
 
 <p>
-<a href="/definities/woordvandedag?offset=<%= @offset.to_i + 10 %>">Meer ...</a>
+  <%= link_to 'Meer ...', wotd_definitions_path(offset: @offset + 20) %>
 </p>

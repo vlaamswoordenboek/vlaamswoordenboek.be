@@ -22,8 +22,10 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="leftcontent">
 
-		<a href="/"><img src="/images/boek.png" style="float:left;padding:10px 10px 0px 10px;" alt="Vlaams Woordenboek logo"/></a>
-		<center><h2 style="padding: 10px 0px 0px 0px;"><a href="/" style="color:#333;">Het Vlaams woordenboek</a></h2></center><br/>
+		<%= link_to root_path do %>
+			<img src="/images/boek.png" style="float:left;padding:10px 10px 0px 10px;" alt="Vlaams Woordenboek logo"/>
+		<% end %>
+		<center><h2 style="padding: 10px 0px 0px 0px;"><%= link_to 'Het Vlaams woordenboek', root_path, style: "color:#333;" %></h2></center><br/>
 
 		<div class="block">
 			<h2>Index</h2>

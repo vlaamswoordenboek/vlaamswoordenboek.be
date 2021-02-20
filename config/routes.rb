@@ -3,7 +3,7 @@ App::Application.routes.draw do
 
   resources :definitions, controller: 'definities',
             path: 'definities',
-            only: [:show, :new, :create,  :edit, :update] do
+            only: [:index, :show, :new, :create,  :edit, :update] do
     get 'woordvandedag', as: :wotd, on: :collection
     get 'term/:term', as: :term, on: :collection, action: :term
     get 'search', as: :search, on: :collection, action: :search

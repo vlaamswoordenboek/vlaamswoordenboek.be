@@ -1,4 +1,4 @@
-<p>Op deze web site kunt ge beschrijvingen van <a href="/info">Vlaamse</a> woorden, termen en uitspraken vinden, toevoegen en
+<p>Op deze web site kunt ge beschrijvingen van <%= link_to 'Vlaamse', info_path %> woorden, termen en uitspraken vinden, toevoegen en
 bewerken. Deze woorden zijn goed ingeburgerd in Vlaanderen, maar worden niet als Nederlandse standaardtaal aanvaard. Het Vlaams
 woordenboek bevat reeds <%= Definition.count %> termen. Kijk gerust wat rond, en gebruik de duimen om aan te geven of ge een
 beschrijving goed vindt.</p>
@@ -26,7 +26,7 @@ beschrijving goed vindt.</p>
 <h2>Woord van de dag (<%= link_to 'meer', wotd_definitions_path %>)</h2>
 <%= render partial: "definition", object: Wotd.today.definition %>
 
-<h2>Een willekeurige selectie (<a href="/definities/random">meer</a>)</h2>
+<h2>Een willekeurige selectie (<%= link_to 'meer', random_definitions_path %>)</h2>
 
 <p>Hier is een willekeurige selectie van wat we zoal te bieden hebben.</p>
 

@@ -9,17 +9,17 @@
 	<i><%=textilize(  definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%></i>
 	<div class="right">
 		<div class="caption">
-			<a href="/info/regios">
-			<% if  definition.regio == 0 %>
-				Gans Vlaanderen
-			<% elsif  definition.regio == 1 %>
-				<div style="color: #f00;">Standaard Nederlands</div>
-			<% elsif  definition.regio % 100 == 0 %>
-				Provincie <%= Regio::REGIO[ definition.regio] %>
-			<% else %>
-				Regio <%= Regio::REGIO[ definition.regio] %>
+			<%= link_to regios_info_path do %>
+				<% if  definition.regio == 0 %>
+					Gans Vlaanderen
+				<% elsif  definition.regio == 1 %>
+					<div style="color: #f00;">Standaard Nederlands</div>
+				<% elsif  definition.regio % 100 == 0 %>
+					Provincie <%= Regio::REGIO[ definition.regio] %>
+				<% else %>
+					Regio <%= Regio::REGIO[ definition.regio] %>
+				<% end %>
 			<% end %>
-			</a>
 		</div>
 	</div>
 	<div class="caption">
