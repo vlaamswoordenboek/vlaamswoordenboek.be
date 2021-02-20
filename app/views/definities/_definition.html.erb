@@ -56,7 +56,7 @@
 	<div class="right" style="text-align:right;width:200px;">
 		<div>
 			<%= link_to thumbsup_definition_path(definition), remote: true, rel: 'nofollow', title: 'Ik vind dit een goede definitie' do %>
-				<%= image_tag('/images/thumbs_up.gif') %>
+				<%= image_tag 'thumbs_up.gif', alt: '👍' %>
 			<% end %>
 			<div id="definition-<%= definition.id%>-positive" style="display:inline;color:#777;font-size:22px;"><%=  definition.positivevotes %></div>
 		</div>
