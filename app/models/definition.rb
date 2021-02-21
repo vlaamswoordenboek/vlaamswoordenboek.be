@@ -40,7 +40,7 @@ class Definition < ActiveRecord::Base
   end
 
   def self.random_sample(count: 1, needs_positive_rating: false)
-    q = self.limit(count).order('RAND()')
+    q = self.limit(count).order('RANDOM()')
     if needs_positive_rating
       q = q.where('positivevotes > ?', 100)
     end
