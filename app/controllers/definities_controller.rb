@@ -28,7 +28,7 @@ class DefinitiesController < ApplicationController
 
   def prefix
     @begin = params[:prefix]
-    unless read_fragment( :controller => 'definities', :action =>'begintmet', :id => @begin, :part => 'lijst' )
+    unless read_fragment( :controller => 'definities', :action => 'prefix', :prefix => @begin, :part => 'lijst' )
       @langer = []
       ('a'..'z').each do |letter|
         if Definition.where("word LIKE ?", "#{@begin}#{letter}%").exists?
