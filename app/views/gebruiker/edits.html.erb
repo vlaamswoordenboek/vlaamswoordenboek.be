@@ -1,0 +1,15 @@
+<% if @definition_versions.size > 0 %>
+
+  <%= will_paginate @definition_versions %>
+
+  <% @definition_versions.each do |definition_version| %>
+    <%= render partial: 'definities/definition_version', object: definition_version %>
+  <% end %>
+
+  <%= will_paginate @definition_versions %>
+
+<% else %>
+
+  <p>Deze gebruiker heeft nog geen bijdragen geleverd aan het Vlaams woordenboek.</p>
+
+<% end %>

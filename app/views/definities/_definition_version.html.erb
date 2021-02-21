@@ -1,36 +1,36 @@
 <div class="formfield" style="border: solid #ddd 1px;padding: 10px 10px 10px 10px;background-color: #fff8f0">
 	<h2>
-		<%= link_to @definition_version.word, :controller => 'definities', :action => 'term', :id => @definition_version.word %>
-		<% if @definition_version.properties.size > 0 %>
-			<div class="small">(<%= @definition_version.properties %>)</div>
+		<%= link_to definition_version.word, term_definitions_path(term: definition_version.word) %>
+		<% if definition_version.properties.size > 0 %>
+			<div class="small">(<%= definition_version.properties %>)</div>
 		<% end %>
 	</h2>
-	<%=textilize( @definition_version.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
-	<i><%=textilize( @definition_version.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%></i>
+	<%=textilize( definition_version.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
+	<i><%=textilize( definition_version.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%></i>
 	<div class="right">
 		<div class="caption">
-			<% if @definition_version.regio == 0 %>
+			<% if definition_version.regio == 0 %>
 				Gans Vlaanderen
-			<% elsif @definition_version.regio % 100 == 0 %>
-				Provincie <%= Regio::REGIO[@definition_version.regio] %>
+			<% elsif definition_version.regio % 100 == 0 %>
+				Provincie <%= Regio::REGIO[definition_version.regio] %>
 			<% else %>
-				Regio <%= Regio::REGIO[@definition_version.regio] %>
+				Regio <%= Regio::REGIO[definition_version.regio] %>
 			<% end %>
 		</div>
 	</div>
 	<div class="caption">
 			Bewerking door
-			<a href="/gebruiker/toon/<%= @definition_version.editor.login  %>">
-				<%= @definition_version.editor.login %>
-			</a> op
-			<%=  
-				localize( @definition_version.updated_at, format = '%d %b %Y %H:%M' )
+			<%= link_to user_path(definition_version.editor.login) do %>
+				<%= definition_version.editor.login %>
+			<% end %> op
+			<%=
+				localize( definition_version.updated_at, format = '%d %b %Y %H:%M' )
 			%><br/>
-			<%= link_to @definition_version.definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id => @definition_version.definition%>
+			<%= link_to definition_version.definition.reactions.size.to_s + " reactie(s)", definition_path(definition_version.definition) %>
 			<% if logged_in? %>
-				&nbsp;|&nbsp; <%= link_to "bewerk", :controller => 'definities', :action => "bewerk", :id => @definition_version.definition%>
+				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition_version.definition) %>
 				<% if current_user.admin? %>
-					&nbsp;|&nbsp; <%= link_to "verwijder", :controller => 'definities', :action => "verwijder", :id => @definition_version.definition%>
+					&nbsp;|&nbsp; <%= link_to "verwijder", :controller => 'definities', :action => "verwijder", :id => definition_version.definition%>
 				<% end %>
 			<% end %>
 	</div>

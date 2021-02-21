@@ -1,9 +1,9 @@
 <p>
-	<%= link_to 'Wees welgekomen', :controller => 'definities', :action => 'index' %>
-	| <%= link_to 'Willekeurig', :controller => 'definities', :action => 'random' %>
-	| <%= link_to 'Top woorden', :controller => 'definities', :action => 'top' %>
-	| <%= link_to 'Recent', :controller => 'definities', :action => 'recent' %>
-	<% if logged_in? %>
-	| <%= link_to 'Voeg een term toe', :controller => 'definities', :action => 'nieuw' %>
-	<% end %>
+  <%= link_to 'Wees welgekomen', root_path %>
+  | <%= link_to 'Willekeurig', random_definitions_path %>
+  | <%= link_to 'Top woorden', top_definitions_path %>
+  | <%= link_to 'Recent', recent_definitions_path %>
+  <% if logged_in? %>
+  | <%= link_to 'Voeg een term toe', new_definition_path %>
+  <% end %>
 </p>

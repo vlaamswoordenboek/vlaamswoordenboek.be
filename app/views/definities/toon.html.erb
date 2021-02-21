@@ -1,7 +1,7 @@
-<p>Dit is slechts 1 definitie  voor "<%= @definition.word %>." 
-<%= link_to "Bekijk alle definities", :action => 'term', :id => @definition.word %>.</p>
+<p>Dit is slechts 1 definitie  voor "<%= @definition.word %>."
+<%= link_to "Bekijk alle definities", term_definitions_path(term: @definition.word) %>.</p>
 
-<%= render(:partial => "definition") %>
+<%= render partial: "definition", object: @definition %>
 
 <% if logged_in? && current_user.admin? %>
 	<div class="block-admin">
@@ -12,9 +12,9 @@
 				<%= @wotd.date %>
 			<% end %>
 		<% end %>
-		<% form_tag :action => 'wotd', :id => @definition do %>
-			<%= select 'wotd', 'date', @wotd_dates %>
-	  		<%= submit_tag "Word of the day!" %>
+		<% form_tag new_wotd_definition_path(@definition) do %>
+			<%= select_tag 'date', @wotd_dates %>
+	  	<%= submit_tag "Word of the day!" %>
 		<% end %></p>
 	</div>
 <% end %>
@@ -22,8 +22,8 @@
 <h2>Reacties</h2>
 
 <% if @definition.reactions.size > 0 %>
-	<% for @reaction in @definition.reactions %>
-		<%= render(:partial => "reaction") %>
+	<% @definition.reactions.each do |reaction| %>
+		<%= render partial: 'reaction', object: reaction %>
 	<% end %>
 <% else %>
 	<p>Er zijn nog geen reacties op deze beschrijving.</p>
@@ -33,13 +33,12 @@
 
 <p>Ingelogde gebruikers kunnen reacties aan deze definitie toevoegen.</p>
 
-<% if logged_in?
-	@reaction = Reaction.new 
-	form_tag :action => 'reageer', :id => @definition do %>
-	  <%= render :partial => 'reactionform' %>
+<% if logged_in? %>
+	<%= form_for Reaction.new, url: post_reaction_definition_path(@definition) do |form| %>
+	  <%= render :partial => 'reactionform', object: form %>
 	  <%= submit_tag "Voeg mijn reactie toe" %>
-	<% end 
-  else %>
+	<% end %>
+<% else %>
 
 	<%= render :partial => "account/login" %>
 

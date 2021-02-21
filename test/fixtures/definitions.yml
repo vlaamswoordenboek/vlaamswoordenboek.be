@@ -1,0 +1,26 @@
+capteren_ww1:
+  word: capteren
+  description: "
+- ontvangen van radio- of tv-signaal
+- ok figuurlijk: opvangen, oppikken, (computer) van het scherm plukken"
+  example: "Gebruik de Clipboard-inputoptie om de inhoud van het klembord te capteren.
+Normaal hoor je dan een reactie van de camera, die zijn tape klaarzet om te gaan capteren.
+Het is vandaag al mogelijk om 3D-beelden live te capteren.
+Het pakket “AptDecoder” om de Weersatellieten te capteren is verkrijgbaar als freeware bij Ptast.
+Zorg dus dat je medewerkers tijd kunnen nemen om een goed idee te capteren en verder uit te denken.
+Ben op zoek naar een, liefst gratis, programma dat in staat is filmpjes te capteren van het scherm met geluid.
+Open VLD capteerde het enorme ongenoegen van de ondernemers en dwong een verlenging van de overgangsperiode af. (standard.be)
+Er mag geen water meer gecapteerd worden uit alle waterlopen van het IJzerbekken. (middelkerke.be)"
+  updated_at: 2020/2/2 02:02:02
+
+capteren_ww2:
+  word: capteren
+  description: "opnemen van een film, televisieprogramma voor uitzending"
+  example: "Er gaat veel volk zijn en de VRT gaat het hele gebeuren capteren voor een live uitzending."
+  updated_at: <%= 3.hours.ago %>
+
+topword:
+  word: topword
+  description: The best word
+  example: Does the topword really need an example?
+  positivevotes: 242424

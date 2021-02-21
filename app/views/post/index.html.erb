@@ -1,0 +1,28 @@
+<% if @messages.size > 0 %>
+	<table>
+		<th width="10%">Verzender</th>
+		<th width="70%">Onderwerp</th>
+		<th width="20%">Verzonden</th>
+		<% @messages.each do |message| %>
+			<tr>
+				<td>
+					<%= link_to message.sender.login, user_path(message.sender.login) %>
+				</td>
+				<td>
+					<% message_title = message.title.blank? ? "(Zonder titel)" : message.title %>
+
+					<% if message.read %>
+						<%= link_to message_title, post_path(message) %>
+					<% else %>
+						<b><%= link_to message_title, post_path(message) %></b>
+					<% end %>
+				</td>
+				<td>
+					<%= localize( message.created_at, format = "%d %b %Y %H:%M" )%>
+				</td>
+			</tr>
+		<% end %>
+	</table>
+<% else %>
+	<p>Je hebt nog geen berichten ontvangen.</p>
+<% end %>

@@ -1,13 +1,11 @@
 <p>De onderstaande definities zijn de laatst toegevoegde definities van Vlaamse termen in ons woordenboek. Deze lijst is ook
-beschikbaar als <a href="/recent.xml">RSS Feed <img src="/images/rss.png" alt="RSS"/></a></p>
+beschikbaar als <%= link_to recent_definitions_path(format: 'xml') do %>RSS Feed <%= image_tag 'rss.png', alt: 'RSS' %> <% end %></p>
 
-<% counter = 1 %>
-<% for @definition in @definitions %>
-	<h2>#<%= @offset.to_i + counter %></h2>
-	<% counter = counter + 1 %>
-	<%= render(:partial => "definition") %>
+<% @recent_definitions.each_with_index do |definition, counter| %>
+  <h2>#<%= @offset.to_i + counter + 1 %></h2>
+  <%= render partial: 'definition', object: definition %>
 <% end %>
 
 <p>
-<a href="/definities/recent?offset=<%= @offset.to_i + 20 %>">Meer ...</a>
+  <%= link_to 'Meer ...', recent_definitions_path(offset: @offset.to_i + 20) %>
 </p>

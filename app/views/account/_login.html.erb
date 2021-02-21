@@ -1,49 +1,49 @@
 <% if logged_in? %>
 
-	<h2>Ingelogd als <%= current_user.login %></h2>
-	<p>
-		<%= link_to 'Mijn profiel', :controller => 'gebruiker', :action => 'toon', :id => current_user.login %><br/>
-		<%= link_to 'Instellingen', :controller => 'account', :action => 'instellingen', :id => current_user.login %><br/>
-		<% if current_user.inbox_size > 0 %>
-			<b><%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', :controller => 'post', :action => 'in' %></b><br/>
-		<% else %>
-			<%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', :controller => 'post', :action => 'in' %> <br/>
-		<% end %>
-		<%= link_to 'Log uit', :controller => 'account', :action => 'logout' %>
-	</p>
+  <h2>Ingelogd als <%= current_user.login %></h2>
+  <p>
+    <%= link_to 'Mijn profiel', users_path(current_user.login) %><br/>
+    <%= link_to 'Instellingen', edit_account_path %><br/>
+    <% if current_user.inbox_size > 0 %>
+      <b><%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', posts_path %></b><br/>
+    <% else %>
+      <%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', posts_path %> <br/>
+    <% end %>
+    <%= link_to 'Log uit', logout_path %>
+  </p>
 
 <% else %>
 
-	<% session[:return_to] = request.url %>
+  <% session[:return_to] = request.url %>
 
-	<h2>Log in</h2>
+  <h2>Log in</h2>
 
-<p><%= link_to 'Registreer als nieuwe gebruiker', :controller => 'account', :action => 'signup' %> om het Vlaamse Woordenboek op zijn
-best te kunnen gebruiken. Als ingelogde gebruiker kunt ge bijvoorbeeld nieuwe termen aan ons woordenboek toevoegen, andermans
-definities verbeteren, en reageren op bestaande definities.</p>
+  <p><%= link_to 'Registreer als nieuwe gebruiker', new_account_path %> om het Vlaamse Woordenboek op zijn
+  best te kunnen gebruiken. Als ingelogde gebruiker kunt ge bijvoorbeeld nieuwe termen aan ons woordenboek toevoegen, andermans
+  definities verbeteren, en reageren op bestaande definities.</p>
 
-	<% form_tag :controller => "account", :action => "login" do -%>
+  <%= form_tag login_path do -%>
 
-		<div class="formfield">
-			<label for="login">Gebruikersnaam</label>
-			<div class="caption">
-				Uw gebruikersnaam
-			</div>
-			<%= text_field_tag :login %>
-		</div>
+    <div class="formfield">
+      <label for="login">Gebruikersnaam</label>
+      <div class="caption">
+        Uw gebruikersnaam
+      </div>
+      <%= text_field_tag :login %>
+    </div>
 
-		<div class="formfield">
-			<label for="password">Paswoord</label>
-			<div class="caption">
-				Uw geheime paswoord
-			</div>
-			<%= password_field_tag :password %>
-		</div>
+    <div class="formfield">
+      <label for="password">Paswoord</label>
+      <div class="caption">
+        Uw geheime paswoord
+      </div>
+      <%= password_field_tag :password %>
+    </div>
 
-		<!--<p><label for="remember_me">Vergeet me niet</label> <%= check_box_tag 'remember_me' %></p>-->
+    <!--<p><label for="remember_me">Vergeet me niet</label> <%= check_box_tag 'remember_me' %></p>-->
 
-		<p><%= submit_tag 'Log in' %></p>
+    <p><%= submit_tag 'Log in' %></p>
 
-	<% end %>
+  <% end %>
 
 <% end %>

@@ -1,31 +1,28 @@
-<p>Dagelijks kiezen we een woord van de dag, uit de vele plezante woorden die in dit Vlaams woordenboek terug te vinden zijn. Het
-Vlaams woord van de dag is ook beschikbaar als <a href="/woordvandedag.xml">RSS Feed <img src="/images/rss.png" alt="RSS"/></a></p>
+<p>
+  Dagelijks kiezen we een woord van de dag, uit de vele plezante woorden die in dit Vlaams woordenboek terug te vinden zijn.
+  Het Vlaams woord van de dag is ook beschikbaar als
+  <%= link_to wotd_definitions_path(format: 'xml') do %>
+    RSS Feed <%= image_tag 'rss.png', alt: 'RSS' %>
+  <% end %>
+</p>
 
 <% if logged_in? && current_user.admin? %>
-	<div class="block-admin">
-		<h3>Wachtrij</h3>
-		<ul>
-			<% if @upcoming_wotds.size > 0 %>
-				<% for @wotd in @upcoming_wotds 
-					@definition = Definition.find( @wotd.definition_id ) %>
-					<li><%= localize( @wotd.date(), "%d %B %Y" ) %>: <%= link_to @definition.word, :action => "toon", :id => @definition.id %></li>
-				<% end %>
-			<% end %>
-		</ul>
-	</div>
+  <div class="block-admin">
+    <h3>Wachtrij</h3>
+    <ul>
+      <% @upcoming_words.each do |wotd| %>
+        <li><%= localize wotd.date, "%d %B %Y" %>: <%= link_to definition_path(wotd.definition) %></li>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
 
 
-<% counter = 1 %>
-<% if @wotds.size > 0 %>
-	<% for @wotd in @wotds 
-		@definition = Definition.find( @wotd.definition_id ) %>
-		<h2>#<%= @offset.to_i + counter %> <%= localize( @wotd.date(), "%d %B %Y" ) %>: <%=@definition.word%></h2>
-		<% counter = counter + 1 %>
-		<%= render(:partial => "definition") %>
-	<% end %>
+<% @wotds.each_with_index do |wotd, counter| %>
+  <h2>#<%= @offset.to_i + counter + 1 %> <%= localize wotd.date, "%d %B %Y" %>: <%= wotd.definition.word %></h2>
+  <%= render partial: 'definition', object: wotd.definition %>
 <% end %>
 
 <p>
-<a href="/definities/woordvandedag?offset=<%= @offset.to_i + 10 %>">Meer ...</a>
+  <%= link_to 'Meer ...', wotd_definitions_path(offset: @offset + 20) %>
 </p>

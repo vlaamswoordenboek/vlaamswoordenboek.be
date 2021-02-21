@@ -1,0 +1,6 @@
+capteren_ww1_reaction1:
+  title: Een comment
+  body: Ik denk dat het anders moet!
+  definition: capteren_ww1
+  creator: user1
+  created_at: <%= 7.hours.ago %>

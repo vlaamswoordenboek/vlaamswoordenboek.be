@@ -1,3 +1,23 @@
 user1:
   email: johndoe@example.org
   login: johndoe
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
+
+user2:
+  email: 'johndoe2@example.org'
+  login: 'auser'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
+
+user3:
+  email: 'johndoe3@example.org'
+  login: 'auser3'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
+
+aliekens:
+  email: 'aliekens@example.org'
+  login: 'aliekens'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>

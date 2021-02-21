@@ -1,3 +1,9 @@
 class Wotd < ActiveRecord::Base
-  has_one :definition
+  belongs_to :definition
+
+  scope :past, -> { where("date <= ?", Date.today).order('date DESC') }
+
+  def self.today
+    Wotd.past.first
+  end
 end

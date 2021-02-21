@@ -1,48 +1,50 @@
 <div class="formfield" style="border: solid #ddd 1px;padding: 10px 10px 10px 10px;background-color: #fff8f0">
 	<h2>
-		<%= link_to @definition.word, :controller => 'definities', :action => 'term', :id => @definition.word %>
-		<% if @definition.properties.size > 0 %>
-			<div class="small">(<%= @definition.properties %>)</div>
+		<%= link_to  definition.word, term_definitions_path(term: definition.word) %>
+		<% if  definition.properties.size > 0 %>
+			<div class="small">(<%=  definition.properties %>)</div>
 		<% end %>
 	</h2>
-	<%=textilize( @definition.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
-	<i><%=textilize( @definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%></i>
+	<%=textilize(  definition.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%>
+	<i><%=textilize(  definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%></i>
 	<div class="right">
 		<div class="caption">
-			<a href="/info/regios">
-			<% if @definition.regio == 0 %>
-				Gans Vlaanderen
-			<% elsif @definition.regio == 1 %>
-				<div style="color: #f00;">Standaard Nederlands</div>
-			<% elsif @definition.regio % 100 == 0 %>
-				Provincie <%= Regio::REGIO[@definition.regio] %>
-			<% else %>
-				Regio <%= Regio::REGIO[@definition.regio] %>
+			<%= link_to regios_info_path do %>
+				<% if  definition.regio == 0 %>
+					Gans Vlaanderen
+				<% elsif  definition.regio == 1 %>
+					<div style="color: #f00;">Standaard Nederlands</div>
+				<% elsif  definition.regio % 100 == 0 %>
+					Provincie <%= Regio::REGIO[ definition.regio] %>
+				<% else %>
+					Regio <%= Regio::REGIO[ definition.regio] %>
+				<% end %>
 			<% end %>
-			</a>
 		</div>
 	</div>
 	<div class="caption">
-			<%= link_to @definition.reactions.size.to_s + " reactie(s)", :controller => 'definities', :action => "toon", :id => @definition%>
-			<% if @definition.versions.size > 1 %>
-				&nbsp;|&nbsp; <%= link_to 'oudere versies', :controller => 'definities', :action => 'geschiedenis', :id => @definition %>
+			<%= link_to  definition.reactions.size.to_s + " reactie(s)", definition_path(definition) %>
+			<% if  definition.versions.size > 1 %>
+				&nbsp;|&nbsp; <%= link_to 'oudere versies', history_definition_path(definition) %>
 			<% end %>
 			<% if logged_in? %>
-				&nbsp;|&nbsp; <%= link_to "bewerk", :controller => 'definities', :action => "bewerk", :id => @definition%>
+				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition.id) %>
 				<% if current_user.admin? %>
-					&nbsp;|&nbsp; <span style="background-color:#f00"><a href="http://www.vlaamswoordenboek.be/definities/verwijder/<%= @definition.id %>" onclick="return confirm('Ben je zeker dat je dit lemma wil verwijderen?')">verwijder</a></span>
+					&nbsp;|&nbsp; <span style="background-color:#f00">
+						<%= link_to 'verwijder', definition_path(definition), method: :delete, 'data-confirm': 'Ben je zeker dat je dit lemma wil verwijderen?' %>
+					</span>
 				<% end %>
 			<% end %>
 			<br/>
-			Toegevoegd door <%= link_to @definition.creator.login, :controller => 'gebruiker', :action => 'toon', :id => @definition.creator.login %>
-			<% if @definition.versions.size > 1 %>
-				en laatst gewijzigd door <%= link_to @definition.editor.login, :controller => 'gebruiker', :action => 'toon', :id => @definition.editor.login %>
+			Toegevoegd door <%= link_to  definition.creator.login, user_path(definition.creator.login) %>
+			<% if  definition.versions.size > 1 %>
+				en laatst gewijzigd door <%= link_to definition.editor.login, user_path(definition.editor.login) %>
 			<% end %>
 			(<%=
-				localize( @definition.versions.last.updated_at, format = '%d %b %Y %H:%M' )
+				localize(  definition.versions.last.updated_at, format = '%d %b %Y %H:%M' )
 			%>)
-			<% if ( @definition.wotds.size > 0 ) %>
-				<% for @wotd in @definition.wotds %>
+			<% if (  definition.wotds.size > 0 ) %>
+				<% for @wotd in  definition.wotds %>
 					<% if ( @wotd.date < Date.today ) || ( logged_in? && current_user.admin? ) %>
 						<br/>Dit woord was woord van de dag op
 						<%=
@@ -55,19 +57,11 @@
 	<hr style="border-bottom: 1px solid #EEE;border-top:0;"/>
 	<div class="right" style="text-align:right;width:200px;">
 		<div>
-			<%= link_to image_tag('/images/thumbs_up.gif'),
-				{
-					:url => {:action => 'thumbsup', :controller => "definities", :id => @definition },
-					:remote => true,
-				},
-				{
-					:title => "Ik vind dit een goede definitie",
-					:href => url_for({:action => 'thumbsup', :controller => "definities", :id => @definition }),
-					:rel => "nofollow"
-				}
-			%>
-			<div id="definition-<%=@definition.id%>-positive" style="display:inline;color:#777;font-size:22px;"><%= @definition.positivevotes %></div>
+			<%= link_to thumbsup_definition_path(definition), remote: true, rel: 'nofollow', title: 'Ik vind dit een goede definitie' do %>
+				<%= image_tag 'thumbs_up.gif', alt: '👍' %>
+			<% end %>
+			<div id="definition-<%= definition.id%>-positive" style="display:inline;color:#777;font-size:22px;"><%=  definition.positivevotes %></div>
 		</div>
 	</div>
-	<div class="fb-like" data-href="http://www.vlaamswoordenboek.be/definities/toon/<%=@definition.id%>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+	<div class="fb-like" data-href="http://www.vlaamswoordenboek.be/definities/toon/<%= definition.id%>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 </div>

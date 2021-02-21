@@ -1,0 +1,18 @@
+<div id="block">
+  <div class="caption">
+    Bericht van
+    <%= link_to @message.sender.login, user_path(@message.sender.login) %>
+    voor
+    <%= link_to @message.receiver.login, user_path(@message.receiver.login) %>
+    verstuurd op
+    <%= localize( @message.created_at, format = "%d %b %Y %H:%M" )%>
+  </div>
+
+  <%= textilize( @message.body ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ) %>
+</div>
+
+<h2>Stuur een antwoord</h2>
+
+<%= form_for Message.new(title: "re: #{@message.title}", receiver: @message.sender), url: posts_path do |form| %>
+  <%= render partial: 'form', object: form %>
+<% end %>

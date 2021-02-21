@@ -1,5 +1,5 @@
 <p>Er zijn momenteel <%= User.count %> gebruikers geregistreerd op het Vlaams woordenboek. De meest recentelijk geregistreerde
-gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, :action => 'toon', :id => user.login ) }.join(', ')%>. </p>
+gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, user_path(user.login) ) }.join(', ')%>. </p>
 
 <h2>Top bewerkers</h2>
 
@@ -25,14 +25,14 @@ gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, :action => '
 				<%= count = count + 1 %>
 			</td>
 			<td>
-				<%= 
+				<%=
 					login = User.find( topeditor[ "updated_by" ] ).login
-					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+					link_to login, user_path(login)
 				%>
 			</td>
 			<td class="quantifier">
-				<% 
-					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc 
+				<%
+					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc
 				%>
     			<div style="width:<%= width.to_i %>%;">
       				<span><%= topeditor[ "c" ] %></span>
@@ -67,14 +67,14 @@ gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, :action => '
 				<%= count = count + 1 %>
 			</td>
 			<td>
-				<%= 
+				<%=
 					login = User.find( topeditor[ "updated_by" ] ).login
-					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+					link_to login, user_path(login)
 				%>
 			</td>
 			<td class="quantifier">
-				<% 
-					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc 
+				<%
+					width = 5 + 90 * Float( topeditor[ "c" ] ) / maxc
 				%>
     			<div style="width:<%= width.to_i %>%;">
       				<span><%= topeditor[ "c" ] %></span>
@@ -109,14 +109,14 @@ gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, :action => '
 				<%= count = count + 1 %>
 			</td>
 			<td>
-				<%= 
+				<%=
 					login = User.find( topreactor[ "created_by" ] ).login
-					link_to login, :controller => "gebruiker", :action => "toon", :id => login
+					link_to login, user_path(login)
 				%>
 			</td>
 			<td class="quantifier">
-				<% 
-					width = 5 + 90 * Float( topreactor[ "c" ] ) / maxc 
+				<%
+					width = 5 + 90 * Float( topreactor[ "c" ] ) / maxc
 				%>
     			<div style="width:<%= width.to_i %>%;">
       				<span><%= topreactor[ "c" ] %></span>

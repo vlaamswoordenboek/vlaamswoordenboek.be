@@ -1,41 +1,37 @@
-<p>Op deze web site kunt ge beschrijvingen van <a href="/info">Vlaamse</a> woorden, termen en uitspraken vinden, toevoegen en
+<p>Op deze web site kunt ge beschrijvingen van <%= link_to 'Vlaamse', info_path %> woorden, termen en uitspraken vinden, toevoegen en
 bewerken. Deze woorden zijn goed ingeburgerd in Vlaanderen, maar worden niet als Nederlandse standaardtaal aanvaard. Het Vlaams
 woordenboek bevat reeds <%= Definition.count %> termen. Kijk gerust wat rond, en gebruik de duimen om aan te geven of ge een
 beschrijving goed vindt.</p>
 
 <% if logged_in? %>
-<p>Als ingelogde gebruiker kunt ge <%= link_to 'nieuwe definities toevoegen', :action => 'nieuw' %>.</p>
+  <p>Als ingelogde gebruiker kunt ge <%= link_to 'nieuwe definities toevoegen', new_definition_path %>.</p>
 <% else %>
 
-<p>Als ge u 
-<%= link_to "registreert", :controller => "account", :action => "signup" %> 
-(dit duurt gemiddeld 12 seconden) en 
-<%= link_to "inlogt", :controller => "account", :action => "login"%> 
-kunt ge meewerken aan het woordenboek door termen toe te voegen of te bewerken.</p>
+  <p>Als ge u <%= link_to "registreert", new_account_path %>
+    (dit duurt gemiddeld 12 seconden) en <%= link_to "inlogt", login_path %>
+    kunt ge meewerken aan het woordenboek door termen toe te voegen of te bewerken.
+  </p>
 
 <% end %>
 
 <h2>Doorzoek het Vlaams Woordenboek</h2>
 
 <p>
-	<% form_tag :controller => 'definities', :action => 'zoek' do %>
-		<%= text_field_with_auto_complete :definition, :word, :size => 15, :value => "" %>
-		<%= submit_tag 'Zoek' %>
-	<% end %>
+  <%= form_tag search_definitions_path, method: :get do %>
+    <%= text_field_with_auto_complete :definition, :q, { :size => 15, :value => "" }, { url: autocomplete_definitions_path } %>
+    <%= submit_tag 'Zoek' %>
+  <% end %>
 </p>
 
-<% @definition = Definition.find( @wotd.definition_id ) %>
+<h2>Woord van de dag (<%= link_to 'meer', wotd_definitions_path %>)</h2>
+<%= render partial: "definition", object: Wotd.today.definition %>
 
-<h2>Woord van de dag (<a href="/definities/woordvandedag">meer</a>)</h2> 
-
-<%= render(:partial => "definition") %>
-
-<h2>Een willekeurige selectie (<a href="/definities/random">meer</a>)</h2>
+<h2>Een willekeurige selectie (<%= link_to 'meer', random_definitions_path %>)</h2>
 
 <p>Hier is een willekeurige selectie van wat we zoal te bieden hebben.</p>
 
-<% for @definition in @definitions %>
-	<%= render(:partial => "definition") %>
+<% @random_definitions.each do |definition| %>
+  <%= render partial: "definition", object: definition %>
 <% end %>
 
 <% @definition = Definition.new %>
@@ -47,13 +43,13 @@ toevoegen.</p>
 
 <% if logged_in? %>
 
-	<% form_tag :action => 'creeer' do %>
-	  <%= render :partial => 'form' %>
-	  <%= submit_tag "Creëer" %>
-	<% end %>
+  <%= form_for Definition.new do |form| %>
+    <%= render partial: 'form', object: form %>
+    <%= submit_tag "Creëer" %>
+  <% end %>
 
 <% else %>
 
-	<p>Ge zijt niet <a href="/account/signup">geregistreerd</a> of <a href="/account/login">ingelogd</a>.</p>
+  <p>Ge zijt niet <%= link_to 'geregistreerd', new_account_path %> of <%= link_to 'ingelogd', login_path %>.</p>
 
 <% end %>

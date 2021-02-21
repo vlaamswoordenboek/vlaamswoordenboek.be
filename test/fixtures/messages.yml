@@ -1,0 +1,11 @@
+from_user2_to_user1:
+  sender: user2
+  receiver: user1
+  title: Hello
+  body: World
+
+from_user2_to_user3:
+  sender: user2
+  receiver: user3
+  title: Hello
+  body: World

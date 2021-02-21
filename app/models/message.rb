@@ -1,22 +1,6 @@
 class Message < ActiveRecord::Base
+  belongs_to :sender, class_name: 'User', foreign_key: :from_user
+  belongs_to :receiver, class_name: 'User', foreign_key: :to_user
 
-  # the user who created the initial version for this definition
-  def sender
-    begin
-      User.find( self[ :from_user ] )
-    rescue ActiveRecord::RecordNotFound
-      nil
-    end
-  end
-
-  # the user who last updated the definition
-  def receiver
-    begin
-      User.find( self[ :to_user ] )
-    rescue ActiveRecord::RecordNotFound
-      nil
-    end
-  end
-
-
-end 
+  attr_accessor :receiver_login
+end

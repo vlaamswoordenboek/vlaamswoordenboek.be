@@ -1,0 +1,16 @@
+<% if @reactions.size > 0 %>
+
+  <%= will_paginate @reactions %>
+
+  <% @reactions.each do |reaction| %>
+    <h2><%= link_to reaction.definition.word, definition_path(reaction.definition) %></h2>
+    <%= render partial: "definities/reaction", object: reaction %>
+  <% end %>
+
+  <%= will_paginate @reactions %>
+
+<% else %>
+
+  <p>Deze gebruiker heeft nog geen reacties geschreven.</p>
+
+<% end %>

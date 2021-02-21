@@ -1,0 +1,25 @@
+<% if @definitions.size > 0 %>
+  <p>Uw vraag naar "<%= @q %>" leverde de volgende resultaten op:</p>
+  <% @definitions.each do |definition| %>
+    <%= render partial: 'definition', object: definition %>
+  <% end %>
+<% else %>
+  <p>Uw vraag naar "<%= @q %>" leverde helaas geen resultaten op.</p>
+<% end %>
+
+<h2>Voeg een nieuw item toe aan onze databank!</h2>
+
+<p>Niet gevonden wat ge zocht? Als ingelogd gebruiker kunt ge hier vanalle vlaamstalige dingens en hun betekenis toevoegen aan onze databank.</p>
+
+<% if logged_in? %>
+
+  <% form_for Definition.new(word: @q) do |form| %>
+    <%= render partial: 'form', object: form %>
+    <%= submit_tag "Voeg mijn definitie toe" %>
+  <% end %>
+
+<% else %>
+
+  <%= render :partial => "account/login" %>
+
+<% end %>

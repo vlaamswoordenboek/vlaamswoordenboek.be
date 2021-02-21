@@ -1,0 +1,29 @@
+<% cache( :controller => 'definities', :action => 'begintmet', :id => @begin, :part => 'lijst' ) do %>
+
+  <% if @langer.size > 0 %>
+    <div class="block">
+      <p><center>
+        <% @langer.each do |l| %>
+          <%= link_to l, prefix_definitions_path(prefix: l) %>
+        <% end %>
+      </center></p>
+    </div>
+  <% end %>
+
+  <% if @words.size > 0 %>
+
+    <p>De volgende <%= @words.size %> termen in onze databank beginnen met '<%=@begin%>':<p>
+
+    <div class="prefix-columns" %>
+      <% @words.each do |word| %>
+        <%= link_to word, term_definitions_path(term: word) %> <br />
+      <% end %>
+    </div>
+
+  <% else %>
+
+    <p> De databank bevat geen termen die beginnen met '<%=@begin%>'</p>
+
+  <% end %>
+
+<% end %>
