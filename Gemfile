@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'RedCloth'
 gem 'will_paginate'
+gem 'airbrake'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
