@@ -71,7 +71,7 @@ module AutoCompleteHelper
     js_options[:method]     = "'#{options[:method].to_s}'" if options[:method]
 
     { :after_update_element => :afterUpdateElement,
-      :on_show => :onShow, :on_hide => :onHide, :min_chars => :minChars }.each do |k,v|
+      :on_show => :onShow, :on_hide => :onHide, :min_chars => :minChars }.each do |k, v|
       js_options[v] = options[k] if options[k]
     end
 
@@ -81,12 +81,12 @@ module AutoCompleteHelper
   end
 
   def options_for_javascript(options)
-          if options.empty?
-            '{}'
-          else
-            "{#{options.keys.map { |k| "#{k}:#{options[k]}" }.sort.join(', ')}}"
-          end
-        end
+    if options.empty?
+      '{}'
+    else
+      "{#{options.keys.map { |k| "#{k}:#{options[k]}" }.sort.join(', ')}}"
+    end
+  end
 
   # Use this method in your view to generate a return for the AJAX autocomplete requests.
   #
@@ -119,8 +119,7 @@ module AutoCompleteHelper
     suffix = (Time.now.to_f * 1000).to_i # Make sure that 2 autocompletes get a different ID
     id = "#{object}_#{method}_auto_complete_#{suffix}"
     text_field(object, method, tag_options.merge(id: "#{object}_#{method}_#{suffix}")) +
-    content_tag("div", "", :id => id, :class => "auto_complete") +
-    auto_complete_field("#{object}_#{method}_#{suffix}", { :url => { :action => "auto_complete_for_#{object}_#{method}" }, update: id }.update(completion_options))
+      content_tag("div", "", :id => id, :class => "auto_complete") +
+      auto_complete_field("#{object}_#{method}_#{suffix}", { :url => { :action => "auto_complete_for_#{object}_#{method}" }, update: id }.update(completion_options))
   end
-
 end

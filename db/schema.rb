@@ -11,7 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 17) do
-
   create_table "comments", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -154,5 +153,4 @@ ActiveRecord::Schema.define(version: 17) do
     t.integer "definition_id"
     t.date "date"
   end
-
 end

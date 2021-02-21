@@ -66,7 +66,7 @@ class VisitAsAnonymousUsersTest < ApplicationSystemTestCase
     assert_text 'ontvangen van radio- of tv-signaal'
 
     click_link 'Het Vlaams woordenboek'
-    #byebug
+    # byebug
 
     page.find '#rightcontent' do |rightc|
       rightc.fill_in 'definition[q]', with: 'cap'

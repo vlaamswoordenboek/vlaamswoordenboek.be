@@ -1,3 +1,2 @@
 module DefinitiesHelper
-  
 end

@@ -1,6 +1,5 @@
 class DefinitiesController < ApplicationController
-
-  before_action :login_required, :only => [ :new, :create, :edit, :update, :destroy, :add_reaction, :delete_reaction, :new_wotd]
+  before_action :login_required, :only => [:new, :create, :edit, :update, :destroy, :add_reaction, :delete_reaction, :new_wotd]
 
   before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :destroy, :add_reaction, :thumbsup, :new_wotd]
   before_action :set_title_from_definition, only: [:show, :edit, :update, :history, :add_reaction]
@@ -28,7 +27,7 @@ class DefinitiesController < ApplicationController
 
   def prefix
     @begin = params[:prefix]
-    unless read_fragment( :controller => 'definities', :action => 'prefix', :prefix => @begin, :part => 'lijst' )
+    unless read_fragment(:controller => 'definities', :action => 'prefix', :prefix => @begin, :part => 'lijst')
       @langer = []
       ('a'..'z').each do |letter|
         if Definition.where("word LIKE ?", "#{@begin}#{letter}%").exists?
@@ -41,7 +40,7 @@ class DefinitiesController < ApplicationController
                distinct.
                pluck(:word)
     end
-    @title = "Woorden die beginnen met '" + @begin +"'"
+    @title = "Woorden die beginnen met '" + @begin + "'"
   end
 
   def woordvandedag
@@ -72,7 +71,7 @@ class DefinitiesController < ApplicationController
       date = Date.today
       for i in (1..50)
         datestr = date.strftime("%Y-%m-%d")
-        wotd = Wotd.find_by_date( datestr )
+        wotd = Wotd.find_by_date(datestr)
         if !wotd
           @wotd_dates << datestr;
         end
@@ -162,7 +161,7 @@ class DefinitiesController < ApplicationController
 
   def thumbsup
     unless Vote.where(definition_id: @definition, voter_id: @voter.id).exists?
-      @vote = Vote.create( :definition => @definition, :voter => @voter, :value => 1 )
+      @vote = Vote.create(:definition => @definition, :voter => @voter, :value => 1)
       @definition.increment!(:positivevotes)
     end
 
@@ -224,6 +223,7 @@ class DefinitiesController < ApplicationController
   end
 
   private
+
   def set_title_from_definition
     @title = @definition.word
   end
@@ -234,7 +234,7 @@ class DefinitiesController < ApplicationController
 
   def find_or_init_voter
     @voter ||= if cookies[:voter]
-                Voter.find cookies[:voter]
+                 Voter.find cookies[:voter]
                else
                  current_voter = Voter.create!
                  cookies[:voter] = { :value => current_voter.id.to_s, :expires => 1.year.from_now }

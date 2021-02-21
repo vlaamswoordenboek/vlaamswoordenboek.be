@@ -1,5 +1,4 @@
 module AutoComplete
-
   def self.included(base)
     base.extend(ClassMethods)
   end
@@ -43,5 +42,4 @@ module AutoComplete
       end
     end
   end
-
 end

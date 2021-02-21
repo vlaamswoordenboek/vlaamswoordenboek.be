@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
     u = find_by(login: login)
     return nil if u.nil?
     return nil unless u.authenticated?(password)
+
     u
   end
 
@@ -45,7 +46,7 @@ class User < ActiveRecord::Base
   # These create and unset the fields required for remembering users between browser closes
   def remember_me!
     update_columns(remember_token_expires_at: 2.weeks.from_now.utc,
-                      remember_token: SecureRandom.uuid)
+                   remember_token: SecureRandom.uuid)
   end
 
   def forget_me!
@@ -56,23 +57,25 @@ class User < ActiveRecord::Base
     if @inbox_size
       @inbox_size
     else
-      @inbox_size = Message.where(to_user: self.id, read:false).count
+      @inbox_size = Message.where(to_user: self.id, read: false).count
     end
   end
 
   def admin?
-    return (login == "aliekens") || (login == "haloewie") || (login == "Grytolle") || (login == "de Bon") || (login == "LimoWreck" ) || (login == "Georges Grootjans") || (login == "fansy") || (login == "Marcus") || (login=="petrik") || (login=="LeGrognard")
+    return (login == "aliekens") || (login == "haloewie") || (login == "Grytolle") || (login == "de Bon") || (login == "LimoWreck") || (login == "Georges Grootjans") || (login == "fansy") || (login == "Marcus") || (login == "petrik") || (login == "LeGrognard")
   end
 
   protected
-    # before filter
-    def encrypt_password
-      return if password.blank?
-      self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
-      self.crypted_password = encrypt(password)
-    end
 
-    def password_required?
-      crypted_password.blank? || !password.blank?
-    end
+  # before filter
+  def encrypt_password
+    return if password.blank?
+
+    self.salt = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{login}--") if new_record?
+    self.crypted_password = encrypt(password)
+  end
+
+  def password_required?
+    crypted_password.blank? || !password.blank?
+  end
 end
