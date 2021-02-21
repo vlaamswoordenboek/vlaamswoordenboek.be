@@ -2,22 +2,13 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-		<meta property="fb:admins" content="544031756" />
+
 		<title>Het Vlaams woordenboek <% if @title %>&#187; <%= @title %><% end %></title>
 		<%= stylesheet_link_tag 'application' %>
 		<%= javascript_include_tag 'application' %>
 		<link rel="alternate" type="application/rss+xml" title="Vlaams woord van de dag" href="/woordvandedag.xml" />
 	</head>
 <body>
-
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=140695019358024";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="leftcontent">
 
 		<%= link_to root_path do %>
