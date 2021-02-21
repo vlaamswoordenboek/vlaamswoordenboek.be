@@ -30,7 +30,9 @@
 			<% if logged_in? %>
 				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition.id) %>
 				<% if current_user.admin? %>
-					&nbsp;|&nbsp; <span style="background-color:#f00"><a href="http://www.vlaamswoordenboek.be/definities/verwijder/<%=  definition.id %>" onclick="return confirm('Ben je zeker dat je dit lemma wil verwijderen?')">verwijder</a></span>
+					&nbsp;|&nbsp; <span style="background-color:#f00">
+						<%= link_to 'verwijder', definition_path(definition), method: :delete, 'data-confirm': 'Ben je zeker dat je dit lemma wil verwijderen?' %>
+					</span>
 				<% end %>
 			<% end %>
 			<br/>

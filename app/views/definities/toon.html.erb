@@ -12,9 +12,9 @@
 				<%= @wotd.date %>
 			<% end %>
 		<% end %>
-		<% form_tag :action => 'wotd', :id => @definition do %>
-			<%= select 'wotd', 'date', @wotd_dates %>
-	  		<%= submit_tag "Word of the day!" %>
+		<% form_tag new_wotd_definition_path(@definition) do %>
+			<%= select_tag 'date', @wotd_dates %>
+	  	<%= submit_tag "Word of the day!" %>
 		<% end %></p>
 	</div>
 <% end %>

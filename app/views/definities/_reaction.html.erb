@@ -4,11 +4,11 @@
 	</b></p>
 	<%=textilize( reaction.body ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
 	<div class="caption">
-			Toegevoegd door <%= link_to reaction.creator.login, user_path(reaction.creator.login) %> 
+			Toegevoegd door <%= link_to reaction.creator.login, user_path(reaction.creator.login) %>
 			op <%= localize( reaction.created_at, format = "%d %b %Y %H:%M" )%>
 			<% if logged_in? %>
 				<% if current_user.admin? %>
-					&nbsp;|&nbsp; <span style="background-color:#f00"><%= link_to "verwijder", :controller => 'definities', :action => "verwijder_reactie", :id => reaction%></span>
+					&nbsp;|&nbsp; <span style="background-color:#f00"><%= link_to "verwijder", reaction_definitions_path(reaction_id: reaction.id), method: 'delete' %></span>
 				<% end %>
 			<% end %>
 	</div>

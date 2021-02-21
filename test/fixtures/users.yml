@@ -15,3 +15,9 @@ user3:
   login: 'auser3'
   salt: shouldberandom
   crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
+
+aliekens:
+  email: 'aliekens@example.org'
+  login: 'aliekens'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>

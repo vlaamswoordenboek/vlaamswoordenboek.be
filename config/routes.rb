@@ -3,7 +3,7 @@ App::Application.routes.draw do
 
   resources :definitions, controller: 'definities',
             path: 'definities',
-            only: [:index, :show, :new, :create,  :edit, :update] do
+            only: [:index, :show, :new, :create,  :edit, :update, :destroy] do
     get 'woordvandedag', as: :wotd, on: :collection
     get 'term/:term', as: :term, on: :collection, action: :term
     get 'search', as: :search, on: :collection, action: :search
@@ -19,6 +19,9 @@ App::Application.routes.draw do
 
     # TODO: reactions should really be their own (sub) controller
     post 'reactie', as: :post_reaction, on: :member, action: :add_reaction
+    delete 'reactie/:reaction_id', as: :reaction, on: :collection, action: :delete_reactie
+
+    post 'newwotd', as: :new_wotd, on: :member, action: :new_wotd
   end
 
   resource :info, controller: 'info', only: [:show] do

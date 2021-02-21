@@ -1,8 +1,8 @@
 class DefinitiesController < ApplicationController
 
-  before_action :login_required, :only => [ :new, :create, :edit, :update, :destroy, :add_reaction ]
+  before_action :login_required, :only => [ :new, :create, :edit, :update, :destroy, :add_reaction, :delete_reaction, :new_wotd]
 
-  before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :add_reaction, :thumbsup]
+  before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :destroy, :add_reaction, :thumbsup, :new_wotd]
   before_action :set_title_from_definition, only: [:show, :edit, :update, :history, :add_reaction]
 
   before_action :find_or_init_voter, only: [:thumbsup]
@@ -147,14 +147,13 @@ class DefinitiesController < ApplicationController
   end
 
   def destroy
-    if( self.current_user.admin? )
+    if self.current_user.admin?
       @definition.destroy
       flash[:notice] = 'Uw beschrijving werd verwijderd.'
-      redirect_to :action => 'term', :id => @definition.word
     else
       flash[:notice] = 'Woorden kunnen niet worden verwijderd'
-      redirect_to :action => 'term', :id => @definition.word
     end
+    redirect_to term_definitions_path(term: @definition.word)
   end
 
   def history
@@ -179,11 +178,31 @@ class DefinitiesController < ApplicationController
     @reaction.created_by = self.current_user.id
     if @reaction.save
       flash[:notice] = 'Bedankt voor uw reactie!'
-      expire_fragment( :controller => 'definities', :part => 'recent_reactions_block' )
       redirect_to definition_path(@definition)
     else
       render 'toon'
     end
+  end
+
+  def delete_reactie
+    @reaction = Reaction.find(params[:reaction_id])
+    if self.current_user.admin?
+      @reaction.destroy
+      flash[:notice] = 'Uw reactie werd verwijderd.'
+    else
+      flash[:notice] = 'Reacties kunnen niet worden verwijderd'
+    end
+    redirect_to definition_path(@reaction.definition)
+  end
+
+  def new_wotd
+    if logged_in? && current_user.admin?
+      @wotd = Wotd.new(date: params[:date], definition: @definition)
+      if @wotd.save
+        flash[:notice] = 'Definitie bewaard voor WOTD'
+      end
+    end
+    redirect_to definition_path(@definition)
   end
 
   def recent_rss
@@ -211,31 +230,6 @@ class DefinitiesController < ApplicationController
 
   def find_definition
     @definition = Definition.find(params[:id])
-  end
-
-  def wotd
-    if logged_in? && current_user.admin?
-      @definition = Definition.find( params[:id] )
-      @wotd = Wotd.new( params[:wotd] )
-      @wotd.definition_id = params[:id]
-      if @wotd.save
-        flash[:notice] = 'Definitie bewaard voor WOTD'
-      end
-    end
-    redirect_to :action => 'toon', :id => @definition
-  end
-
-  def verwijder_reactie
-    @reaction = Reaction.find(params[:id])
-    if( self.current_user.admin? )
-      @reaction.destroy
-      flash[:notice] = 'Uw reactie werd verwijderd.'
-      expire_fragment( :controller => 'definities', :part => 'recent_reactions_block' )
-      redirect_to :action => 'toon', :id => @reaction.definition.id
-    else
-      flash[:notice] = 'Woorden kunnen niet worden verwijderd'
-      redirect_to :action => 'toon', :id => @reaction.definition.id
-    end
   end
 
   def find_or_init_voter
