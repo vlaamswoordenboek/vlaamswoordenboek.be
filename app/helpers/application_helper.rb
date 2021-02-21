@@ -5,9 +5,26 @@ module ApplicationHelper
     I18n.l(d, format: format)
   end
 
-  def textilize(text)
+  def format_user_content(text)
     return "" if text.blank?
-    RedCloth.new(text).to_html.html_safe
+
+    RedCloth.new(text).
+      to_html.
+      gsub(/\[(.*?)\]/) do |m, a|
+        link_to(m[1..-2], term_definitions_path(term: m[1..-2]))
+      end.
+      html_safe
+  end
+
+  def format_user_content_for_xml(text)
+    return "" if text.blank?
+
+    RedCloth.new(text).
+      to_html.
+      gsub(/\[(.*?)\]/) do |m|
+        link_to(m[1..-2], term_definitions_path(term: m[1..-2]))
+      end.
+      html_safe
   end
 end
 

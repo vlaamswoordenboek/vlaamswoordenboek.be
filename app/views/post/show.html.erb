@@ -8,7 +8,7 @@
     <%= localize( @message.created_at, format = "%d %b %Y %H:%M" )%>
   </div>
 
-  <%= textilize( @message.body ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ) %>
+  <%= format_user_content(@message.body) %>
 </div>
 
 <h2>Stuur een antwoord</h2>

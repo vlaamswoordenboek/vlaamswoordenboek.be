@@ -13,7 +13,7 @@
 
   <% unless current_user.details.blank? %>
     <h2>Over mezelf</h2>
-    <%= textilize( current_user.details ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
+    <%= format_user_content(current_user.details) %>
   <% end %>
 
   <!--[eoform:user]-->

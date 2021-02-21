@@ -6,7 +6,7 @@
 
 <% if !@user.details.blank? %>
 	<h2>Over mezelf</h2>
-	<%=textilize( @user.details ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
+	<%= format_user_content(@user.details) %>
 <% else %>
 	<% if logged_in? && @user == current_user %>
 		<h2>Over mezelf</h2>

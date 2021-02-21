@@ -5,8 +5,8 @@
 			<div class="small">(<%= definition_version.properties %>)</div>
 		<% end %>
 	</h2>
-	<%=textilize( definition_version.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%>
-	<i><%=textilize( definition_version.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' )%></i>
+	<%= format_user_content(definition_version.description) %>
+	<i><%= format_user_content(definition_version.example) %></i>
 	<div class="right">
 		<div class="caption">
 			<% if definition_version.regio == 0 %>
