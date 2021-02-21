@@ -1,9 +1,11 @@
 class DefinitiesController < ApplicationController
 
-  before_action :login_required, :only => [ :add_reaction, :new, :create, :edit, :update, :destroy ]
+  before_action :login_required, :only => [ :new, :create, :edit, :update, :destroy, :add_reaction ]
 
-  before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :add_reaction]
+  before_action :find_definition, only: [:toon, :show, :edit, :update, :history, :add_reaction, :thumbsup]
   before_action :set_title_from_definition, only: [:show, :edit, :update, :history, :add_reaction]
+
+  before_action :find_or_init_voter, only: [:thumbsup]
 
   include AutoComplete
   auto_complete_for :definition, :q, search_column: 'word'
@@ -159,6 +161,18 @@ class DefinitiesController < ApplicationController
     @definition_versions = @definition.versions.reverse
   end
 
+  def thumbsup
+    unless Vote.where(definition_id: @definition, voter_id: @voter.id).exists?
+      @vote = Vote.create( :definition => @definition, :voter => @voter, :value => 1 )
+      @definition.increment!(:positivevotes)
+    end
+
+    respond_to do |format|
+      format.js { render 'thumbsup' }
+      format.html { redirect_to definition_path(@definition) }
+    end
+  end
+
   def add_reaction
     @reaction = Reaction.new(reaction_params)
     @reaction.definition = @definition
@@ -224,44 +238,14 @@ class DefinitiesController < ApplicationController
     end
   end
 
-  def get_voter
-    if cookies[:voter]
-      return Voter.find( cookies[:voter] )
-    else
-      current_voter = Voter.create
-      cookies[:voter] = { :value => current_voter.id.to_s, :expires => 1.year.from_now }
-      return current_voter
-    end
-  end
-
-  def thumbsup
-    @definition = Definition.find(params[:id])
-    @voter = get_voter
-    @vote = Vote.find(:first, :conditions => ["voter_id = ? and definition_id = ?", @voter.id, @definition.id])
-    if @vote
-      # This cookie holder already voted, we'll ignore his request
-    else
-      @vote = Vote.create( :definition => @definition, :voter => @voter, :value => 1 )
-      @definition.positivevotes += 1
-      @definition.rating = @definition.positivevotes - @definition.negativevotes
-      @definition.save_without_revision!
-    end
-    redirect_to :controller => 'definities', :action => 'toon', :id => @definition unless request.xhr?
-  end
-
-  def thumbsdown
-    @definition = Definition.find(params[:id])
-    @voter = get_voter
-    @vote = Vote.find(:first, :conditions => ["voter_id = ? and definition_id = ?", @voter.id, @definition.id])
-    if @vote
-      # This cookie holder already voted, we'll ignore his request
-    else
-      @vote = Vote.create( :definition => @definition, :voter => @voter, :value => -1 )
-      @definition.negativevotes += 1
-      @definition.rating = @definition.positivevotes - @definition.negativevotes
-      @definition.save_without_revision!
-      redirect_to :controller => 'definities', :action => 'toon', :id => @definition unless request.xhr?
-    end
+  def find_or_init_voter
+    @voter ||= if cookies[:voter]
+                Voter.find cookies[:voter]
+               else
+                 current_voter = Voter.create!
+                 cookies[:voter] = { :value => current_voter.id.to_s, :expires => 1.year.from_now }
+                 current_voter
+               end
   end
 
   def new_definition_params

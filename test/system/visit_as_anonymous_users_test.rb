@@ -79,5 +79,14 @@ class VisitAsAnonymousUsersTest < ApplicationSystemTestCase
     assert_text 'Uw vraag naar "capteren" leverde de volgende resultaten op:'
     assert_text 'opnemen van een film'
     assert_text 'ontvangen van radio- of tv-signaal'
+
+    vote_node = -> { (find "#definition-#{definitions(:capteren_ww1).id}-positive") }
+    vote_node.call.assert_text '0'
+    vote_node.call.sibling('a').click
+    sleep 1
+    vote_node.call.assert_text '1', exact: true
+    vote_node.call.sibling('a').click
+    sleep 1
+    vote_node.call.assert_text '1', exact: true
   end
 end

@@ -1,2 +1,0 @@
-page.replace_html "definition-#{@definition.id}-positive", @definition.positivevotes
-page.replace_html "definition-#{@definition.id}-negative", @definition.negativevotes
