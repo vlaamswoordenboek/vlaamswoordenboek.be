@@ -9,3 +9,9 @@ user2:
   login: 'auser'
   salt: shouldberandom
   crypted_password: <%= User.encrypt('password', 'shouldberandom') %>
+
+user3:
+  email: 'johndoe3@example.org'
+  login: 'auser3'
+  salt: shouldberandom
+  crypted_password: <%= User.encrypt('password', 'shouldberandom') %>

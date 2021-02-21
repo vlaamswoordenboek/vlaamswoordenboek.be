@@ -8,4 +8,8 @@ class ActiveSupport::TestCase
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
+
+  def login_as(user, password: 'password')
+    post login_path, params: { login: user.login, password: password }
+  end
 end

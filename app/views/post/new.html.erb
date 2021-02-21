@@ -1,0 +1,5 @@
+<p>Met het volgende formulier kunt ge een intern bericht sturen naar andere gebruikers van het Vlaams woordenboek.</p>
+
+<%= form_for Message.new, url: posts_path do |form| %>
+  <%= render partial: 'form', object: form %>
+<% end %>

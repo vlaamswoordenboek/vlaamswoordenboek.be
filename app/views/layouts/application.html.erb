@@ -97,7 +97,7 @@
 		<% if logged_in? && current_user.inbox_size > 0 %>
 			<div class="block">
 				<h2>Berichten</h2>
-				<p>Er zijn nieuwe berichten (<%=current_user.inbox_size%>) in uw <%= link_to 'postvak', in_posts_path %></p>
+				<p>Er zijn nieuwe berichten (<%=current_user.inbox_size%>) in uw <%= link_to 'postvak', posts_path %></p>
 			</div>
 		<% end %>
 

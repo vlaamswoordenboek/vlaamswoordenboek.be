@@ -1,5 +1,5 @@
 <p>
-	<%= link_to 'Postvak in', :controller => 'post', :action => 'in' %>
-	| <%= link_to 'Postvak uit', :controller => 'post', :action => 'uit' %>
-	| <%= link_to 'Nieuw bericht', :controller => 'post', :action => 'nieuw' %>
+	<%= link_to 'Postvak in', posts_path %>
+	| <%= link_to 'Postvak uit', outbox_posts_path %>
+	| <%= link_to 'Nieuw bericht', new_post_path %>
 </p>

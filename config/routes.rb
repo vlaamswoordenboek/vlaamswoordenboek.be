@@ -38,7 +38,9 @@ App::Application.routes.draw do
     get 'reacties', as: :reactions, on: :member, action: :reactions
   end
 
-  resources :posts, controller: 'post', only: [:index, :new, :create]
+  resources :posts, controller: 'post', only: [:index, :new, :create, :show] do
+    get 'outbox', as: :outbox, on: :collection, action: :outbox
+  end
 
   get '/recent.xml' => 'definities#recent_rss'
   get '/wijzigingen.xml' => 'definities#wijzigingen_rss'
