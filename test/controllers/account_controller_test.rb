@@ -30,7 +30,7 @@ class AccountControllerTest < ActionDispatch::IntegrationTest
     assert_response :redirect
     assert_equal 'Merci om u in te schrijven! Ge kunt nu nieuwe woorden aan het woordenboek toevoegen.', flash[:notice]
 
-    user = User.find_by_login('newuser')
+    user = User.find_by(login: 'newuser')
     assert user.authenticated?('safe_password')
     assert_not user.authenticated?('other_password')
   end
@@ -46,10 +46,9 @@ class AccountControllerTest < ActionDispatch::IntegrationTest
     }
     assert_response :success
 
-    user = User.find_by_login('newuser')
+    user = User.find_by(login: 'newuser')
     assert user.nil?
   end
-
 
   test "user can look at settings" do
     sign_in_as(users(:user1))

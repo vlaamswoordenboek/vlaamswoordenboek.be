@@ -5,8 +5,8 @@
 			<div class="small">(<%=  definition.properties %>)</div>
 		<% end %>
 	</h2>
-	<%=textilize(  definition.description ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%>
-	<i><%=textilize(  definition.example ).gsub(/\[(.*?)\]/, '<a href ="/definities/term/\1">\1</a>' ).html_safe%></i>
+	<%= format_user_content(definition.description) %>
+	<i><%= format_user_content(definition.example) %></i>
 	<div class="right">
 		<div class="caption">
 			<%= link_to regios_info_path do %>
@@ -63,5 +63,4 @@
 			<div id="definition-<%= definition.id%>-positive" style="display:inline;color:#777;font-size:22px;"><%=  definition.positivevotes %></div>
 		</div>
 	</div>
-	<div class="fb-like" data-href="http://www.vlaamswoordenboek.be/definities/toon/<%= definition.id%>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 </div>

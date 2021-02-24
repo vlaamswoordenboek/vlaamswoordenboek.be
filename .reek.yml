@@ -1,0 +1,23 @@
+detectors:
+  # You can disable smells completely
+  IrresponsibleModule:
+    enabled: false
+directories:
+  "app/controllers":
+    InstanceVariableAssumption:
+      enabled: false
+    TooManyStatements:
+      max_statements: 10
+  "app/models":
+    Attribute:
+      enabled: false
+  "db/migrate":
+    FeatureEnvy:
+      enabled: false # Complains about 'refers to 't' more than self'
+    UncommunicativeVariableName:
+      enabled: false # change has the variable name 't'
+    TooManyStatements:
+      enabled: false # Migrations have quite often many statements
+  "test":
+    TooManyStatements:
+      max_statements: 25

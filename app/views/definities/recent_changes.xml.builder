@@ -13,8 +13,8 @@ xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") do
         xml.link definition_url(definition_version.definition.id)
         xml.guid definition_url(definition_version.definition.id)
         xml.description do
-          xml << textilize( definition_version.description ).gsub(/\[(.*?)\]/, '\1' ).gsub(/</,'&lt;').gsub(/>/,'&gt;')
-	        xml << "&lt;i&gt;" + textilize( definition_version.example ).gsub(/\[(.*?)\]/, '\1' ).gsub(/</,'&lt;').gsub(/>/,'&gt;') + "&lt;/i&gt;"
+          xml << format_user_content_for_xml(definition_version.description)
+          xml << "<> #{format_user_content_for_xml(definition_version.example)} <>"
         end
       end
     end

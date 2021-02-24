@@ -1,6 +1,6 @@
 class AddVersions < ActiveRecord::Migration
   def self.up
-#    add_column :definitions, :version, :integer
+    #    add_column :definitions, :version, :integer
     rename_column :definitions, :created_by, :updated_by
     rename_column :definitions, :created_at, :updated_at
     Definition.create_versioned_table

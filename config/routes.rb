@@ -2,8 +2,8 @@ App::Application.routes.draw do
   root to: 'definities#index'
 
   resources :definitions, controller: 'definities',
-            path: 'definities',
-            only: [:index, :show, :new, :create,  :edit, :update, :destroy] do
+                          path: 'definities',
+                          only: [:index, :show, :new, :create, :edit, :update, :destroy] do
     get 'woordvandedag', as: :wotd, on: :collection
     get 'term/:term', as: :term, on: :collection, action: :term
     get 'search', as: :search, on: :collection, action: :search

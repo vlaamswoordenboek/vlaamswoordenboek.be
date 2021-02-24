@@ -1,25 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<meta property="fb:admins" content="544031756" />
-	<title>Het Vlaams woordenboek <% if @title %>&#187; <%= @title %><% end %></title>
-	<%= stylesheet_link_tag 'application' %>
-	<%= javascript_include_tag 'application' %>
-	<link rel="alternate" type="application/rss+xml" title="Vlaams woord van de dag" href="/woordvandedag.xml" />
-</head>
+		<title>Het Vlaams woordenboek <% if @title %>&#187; <%= @title %><% end %></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+		<%= stylesheet_link_tag 'application' %>
+		<%= javascript_include_tag 'application' %>
+		<link rel="alternate" type="application/rss+xml" title="Vlaams woord van de dag" href="/woordvandedag.xml" />
+	</head>
 <body>
-
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=140695019358024";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 	<div id="leftcontent">
 
 		<%= link_to root_path do %>
@@ -140,7 +133,7 @@
 						google_ui_features = "rc:0";
 					//-->
 					</script>
-					<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+					<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
 					</script>
 				</center></p>
 			</div>
@@ -153,7 +146,7 @@
 		<center style="color:#aaa;">
 			Het Vlaams woordenboek &nbsp;|&nbsp;
 			Concept en realisatie door <a href="http://anthony.liekens.net">Anthony Liekens</a> <br/><br/>
-			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br/><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Het Vlaams Woordenboek</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://anthony.liekens.net" property="cc:attributionName" rel="cc:attributionURL">Anthony Liekens</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+			<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br/><br/><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Het Vlaams Woordenboek</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://anthony.liekens.net" property="cc:attributionName" rel="cc:attributionURL">Anthony Liekens</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 		</center>
 	</p>
 

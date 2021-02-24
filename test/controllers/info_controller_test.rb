@@ -26,6 +26,6 @@ class InfoControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  # TODO Voorwaarden, but there is no link to it?
-  # TODO uitspraak, but there is no link to it?
+  # TODO: Voorwaarden, but there is no link to it?
+  # TODO: uitspraak, but there is no link to it?
 end

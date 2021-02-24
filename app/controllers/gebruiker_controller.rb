@@ -1,5 +1,4 @@
 class GebruikerController < ApplicationController
-
   before_action :find_user, only: [:show, :reactions, :edits]
 
   def index

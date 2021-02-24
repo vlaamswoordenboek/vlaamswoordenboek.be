@@ -4,11 +4,11 @@ class CreateDefinitions < ActiveRecord::Migration
       t.column :word, :string
       t.column :definition, :text
       t.column :example, :text
-      
+
       t.column :positivevotes, :integer, :null => false, :default => 0
       t.column :negativevotes, :integer, :null => false, :default => 0
       t.column :rating, :float, :null => false, :default => 0
-      
+
       t.column :created_by, :integer
       t.column :created_at, :datetime
     end
