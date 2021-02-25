@@ -30,7 +30,7 @@
 			<% if logged_in? %>
 				&nbsp;|&nbsp; <%= link_to "bewerk", edit_definition_path(definition_version.definition) %>
 				<% if current_user.admin? %>
-					&nbsp;|&nbsp; <%= link_to "verwijder", definition_path(definition), method: :delete %>
+					&nbsp;|&nbsp; <%= link_to "verwijder", definition_path(definition_version.definition), method: :delete %>
 				<% end %>
 			<% end %>
 	</div>
