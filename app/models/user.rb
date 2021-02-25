@@ -16,6 +16,20 @@ class User < ActiveRecord::Base
   has_many :reactions, :foreign_key => "created_by", :dependent => :destroy
   has_many :definition_versions, :foreign_key => "updated_by", :dependent => :destroy
 
+  ADMINS = [
+    "aliekens",
+    "haloewie",
+    "Grytolle",
+    "de Bon",
+    "LimoWreck",
+    "Georges Grootjans",
+    "fansy",
+    "Marcus",
+    "petrik",
+    "LeGrognard",
+    "nathans"
+  ].freeze
+
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
     u = find_by(login: login)
@@ -62,7 +76,7 @@ class User < ActiveRecord::Base
   end
 
   def admin?
-    return (login == "aliekens") || (login == "haloewie") || (login == "Grytolle") || (login == "de Bon") || (login == "LimoWreck") || (login == "Georges Grootjans") || (login == "fansy") || (login == "Marcus") || (login == "petrik") || (login == "LeGrognard")
+    login.in?(ADMINS)
   end
 
   protected

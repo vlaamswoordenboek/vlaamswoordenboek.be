@@ -2,7 +2,7 @@
 
   <h2>Ingelogd als <%= current_user.login %></h2>
   <p>
-    <%= link_to 'Mijn profiel', users_path(current_user.login) %><br/>
+    <%= link_to 'Mijn profiel', user_path(current_user.login) %><br/>
     <%= link_to 'Instellingen', edit_account_path %><br/>
     <% if current_user.inbox_size > 0 %>
       <b><%= link_to 'Postvak (' + current_user.inbox_size.to_s + ')', posts_path %></b><br/>
