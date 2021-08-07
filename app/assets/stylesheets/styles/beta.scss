@@ -1,0 +1,61 @@
+
+.beta-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #FFF;
+    border: 1px solid #D4E0D7;
+}
+
+.beta-badge {
+    height: 50px;
+    background: #58C777;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: sans-serif;
+    color: #FFF;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+    left: -70px;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.34);
+}
+
+.beta-badge:after {
+	position: absolute;
+	content: '';
+	display: block;
+	height: 100px;
+	width: 100px;
+	background: #EDF1EE;
+	top: -55px;
+	left: 130px;
+ transform: rotate(-45deg);
+	box-shadow: -115px -121px 0px 0px #EDF1EE;
+}
+
+.beta-badge .left {
+	position: absolute;
+	content: '';
+	display: block;
+	top: 50px;
+	left: 25px;
+	height: 8px;
+	width: 8px;
+	background: linear-gradient(135deg, rgba(90, 146, 106, 1) 50%,rgba(90, 146, 106, 0) 50.1%);
+}
+.beta-badge .right {
+	position: absolute;
+	content: '';
+	display: block;
+	top: 50px;
+	left: 157px;
+	height: 8px;
+	width: 8px;
+	background: linear-gradient(135deg, rgba(90, 146, 106, 1) 50%,rgba(90, 146, 106, 0) 50.1%);
+	transform: rotate(90deg);
+}
