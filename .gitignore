@@ -20,3 +20,7 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+.byebug_history
+.irb-save-history
+config/master.key

@@ -1,0 +1,2 @@
+SET SESSION sql_mode = '';
+SET SESSION sql_require_primary_key = 0;
