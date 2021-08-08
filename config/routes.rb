@@ -48,4 +48,6 @@ App::Application.routes.draw do
   get '/recent.xml' => 'definities#recent_rss'
   get '/wijzigingen.xml' => 'definities#wijzigingen_rss'
   get '/woordvandedag.xml' => 'definities#woordvandedag'
+
+  get 'robots.txt' => 'utils#robots'
 end

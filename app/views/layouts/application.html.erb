@@ -11,6 +11,10 @@
 		<%= stylesheet_link_tag 'application' %>
 		<%= javascript_include_tag 'application' %>
 		<link rel="alternate" type="application/rss+xml" title="Vlaams woord van de dag" href="/woordvandedag.xml" />
+
+		<% if ENV['VLAAMSWOORDENBOEK_BETA'] %>
+			<meta name="robots" content="noindex, nofollow">
+		<% end %>
 	</head>
 <body>
 	<% if ENV['VLAAMSWOORDENBOEK_BETA'] %>
