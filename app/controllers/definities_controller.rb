@@ -46,10 +46,10 @@ class DefinitiesController < ApplicationController
   def woordvandedag
     @title = "Vlaams woord van de dag"
 
-    @offset = params[:offset] || 0
-    @wotds = Wotd.all.past.limit(10).offset(@offset)
+    @offset = params[:offset].to_i || 0
+    @wotds = Wotd.all.past.limit(20).offset(@offset)
     if logged_in? && current_user.admin?
-      @upcoming_wotds = Wotd.find :all, :conditions => "date > '#{Date.today}'", :order => 'date ASC'
+      @upcoming_wotds = Wotd.where("date > ?", Date.today).order('date ASC')
     end
 
     respond_to do |format|

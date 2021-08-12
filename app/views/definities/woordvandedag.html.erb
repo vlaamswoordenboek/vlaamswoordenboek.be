@@ -10,8 +10,8 @@
   <div class="block-admin">
     <h3>Wachtrij</h3>
     <ul>
-      <% @upcoming_words.each do |wotd| %>
-        <li><%= localize wotd.date, "%d %B %Y" %>: <%= link_to definition_path(wotd.definition) %></li>
+      <% @upcoming_wotds.each do |wotd| %>
+        <li><%= localize wotd.date, "%d %B %Y" %>: <%= link_to wotd.definition.word, definition_path(wotd.definition) %></li>
       <% end %>
     </ul>
   </div>
