@@ -1,0 +1,16 @@
+<p>
+  De onderstaande definities zijn de laatst gewijzigde definities van Vlaamse termen in ons woordenboek.
+  Deze lijst is ook beschikbaar als <%= link_to recent_edits_rss_path(format: 'xml') do %>RSS Feed <%= image_tag 'rss.png', alt: 'RSS' %> <% end %>
+</p>
+
+<% counter = 1 %>
+<% @definition_versions.each do |definition_version| %>
+  <h2>#<%= @offset.to_i + counter %></h2>
+  <% counter = counter + 1 %>
+
+  <%= render partial: 'definition_version', object: definition_version %>
+<% end %>
+
+<p>
+  <%= link_to 'Meer...', recent_edits_definitions_path(offset: @offset.to_i + 20) %>
+</p>

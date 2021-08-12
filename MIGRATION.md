@@ -39,6 +39,10 @@
   ALTER TABLE messages MODIFY COLUMN title varchar(255) CHARACTER SET UTF8MB4;
   ~~~
 
+  ~~~
+  INSERT INTO schema_migrations (version) VALUES ('001_create_users'), ('004_create_votes'), ('007_create_wotds'), ('010_create_comments'), ('013_change_ratings'), ('016_create_messages'), ('002_create_definitions'), ('005_add_regios'), ('008_create_forums'), ('011_change_definition_column '), ('014_add_properties'), ('017_change_userdetails'), ('003_create_voters'), ('006_create_reactions'), ('009_create_forumtopics'), ('012_add_versions'), ('015_add_userdetails')
+  ~~~
+
 
 # Application setup
 * Create Database cluster

@@ -105,6 +105,24 @@ class DefinitiesController < ApplicationController
     @recent_definitions = Definition.recent(count: 20, offset: @offset)
   end
 
+  def wijzigingen
+    @offset = 0
+    if params[:offset]
+      @offset = params[:offset]
+    end
+    @title = "Recente wijzigingen"
+    @definition_versions = DefinitionVersion.recent(count: 20, offset: @offset)
+  end
+
+  def reacties
+    @offset = 0
+    if params[:offset]
+      @offset = params[:offset]
+    end
+    @title = "Recente reacties"
+    @reactions = Reaction.recent(count: 20, offset: @offset)
+  end
+
   def top
     @offset = 0
     if params[:offset]

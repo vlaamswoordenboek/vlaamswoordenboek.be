@@ -14,6 +14,9 @@ App::Application.routes.draw do
     get 'top', as: :top, on: :collection, action: :top
     get 'recent', as: :recent, on: :collection, action: :recent
 
+    get 'wijzigingen', as: :recent_edits, on: :collection, action: :wijzigingen
+    get 'reacties', as: :recent_reactions, on: :collection, action: :reacties
+
     get 'geschiedenis', as: :history, on: :member, action: :history
     post 'thumbsup', on: :member, action: :thumbsup
 
@@ -46,7 +49,7 @@ App::Application.routes.draw do
   end
 
   get '/recent.xml' => 'definities#recent_rss'
-  get '/wijzigingen.xml' => 'definities#wijzigingen_rss'
+  get '/wijzigingen.xml' => 'definities#wijzigingen_rss', as: :recent_edits_rss
   get '/woordvandedag.xml' => 'definities#woordvandedag'
 
   get 'robots.txt' => 'utils#robots'

@@ -1,0 +1,15 @@
+<p>De onderstaande reacties zijn de laatst toegevoegde reacties op termen in ons woordenboek. </p>
+
+<% counter = 1 %>
+<%= @reactions.each do |reaction| %>
+  <h2>#<%= @offset.to_i + counter %>
+    <%= link_to reaction.definition.word, definition_path(reaction.definition) %>
+  </h2>
+  <% counter = counter + 1 %>
+
+  <%= render partial: 'reaction', object: reaction %>
+<% end %>
+
+<p>
+  <%= link_to 'Meer ...', recent_reactions_definitions_path(offset: @offset.to_i + 20) %>
+</p>
