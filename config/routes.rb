@@ -15,7 +15,7 @@ App::Application.routes.draw do
     get 'recent', as: :recent, on: :collection, action: :recent
 
     get 'geschiedenis', as: :history, on: :member, action: :history
-    get 'thumbsup', on: :member, action: :thumbsup
+    post 'thumbsup', on: :member, action: :thumbsup
 
     # TODO: reactions should really be their own (sub) controller
     post 'reactie', as: :post_reaction, on: :member, action: :add_reaction

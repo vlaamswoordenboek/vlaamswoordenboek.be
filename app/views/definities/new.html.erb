@@ -5,7 +5,7 @@
 	<p>Met het volgende formulier kunt ge nieuwe beschrijvingen van typisch Vlaamse woorden, termen en uitspraken toevoegen aan onze
 	databank.</p>
 
-	<% form_tag :action => 'creeer' do %>
+	<% form_tag definitions_path do %>
 	  <%= render :partial => 'form' %>
 	  <%= submit_tag "Creëer" %>
 	<% end %>
