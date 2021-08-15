@@ -6,16 +6,18 @@
 <% if logged_in? && current_user.admin? %>
 	<div class="block-admin">
 		<h3>Markeer als woord van de dag</h3>
-		<p><% if @wotds.size > 0 %>
-			Dit woord was reeds wotd op
-			<% for @wotd in @wotds %>
-				<%= @wotd.date %>
+		<p>
+			<% if @wotds.size > 0 %>
+				Dit woord was reeds wotd op
+				<% for @wotd in @wotds %>
+					<%= @wotd.date %>
+				<% end %>
 			<% end %>
+		</p>
+		<%= form_tag new_wotd_definition_path(@definition) do %>
+			<%= select_tag 'date', options_for_select(@wotd_dates) %>
+	  	<%= submit_tag "Woord van de dag!" %>
 		<% end %>
-		<% form_tag new_wotd_definition_path(@definition) do %>
-			<%= select_tag 'date', @wotd_dates %>
-	  	<%= submit_tag "Word of the day!" %>
-		<% end %></p>
 	</div>
 <% end %>
 

@@ -1,12 +1,12 @@
 <% cache( :controller => 'definities', :action => 'prefix', :id => @begin, :part => 'lijst' ) do %>
 
-  <% if @langer.size > 0 %>
+  <% if @langer_counts.size > 0 %>
     <div class="block">
-      <p><center>
-        <% @langer.each do |l| %>
-          <%= link_to l, prefix_definitions_path(prefix: l) %>
+      <ol class="prefix-list">
+        <% @langer_counts.each_pair do |prefix, count| %>
+          <li><%= link_to "#{prefix} (#{count})", prefix_definitions_path(prefix: prefix) %></li>
         <% end %>
-      </center></p>
+      </ol>
     </div>
   <% end %>
 

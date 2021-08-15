@@ -28,12 +28,13 @@ class DefinitiesController < ApplicationController
   def prefix
     @begin = params[:prefix]
     unless read_fragment(:controller => 'definities', :action => 'prefix', :prefix => @begin, :part => 'lijst')
-      @langer = []
-      ('a'..'z').each do |letter|
-        if Definition.where("word LIKE ?", "#{@begin}#{letter}%").exists?
-          @langer << @begin + letter
-        end
-      end
+
+      prefixes_to_check = ('a'..'z').map { |letter| "\"#{@begin}#{letter}\"" }
+      @langer_counts = Definition.
+        joins("JOIN JSON_TABLE('[#{prefixes_to_check.join(',')}]', '$[*]' COLUMNS(prefix VARCHAR(255) PATH '$')) prefixes ON definitions.word LIKE CONCAT(prefixes.prefix, '%')").
+        order('prefixes.prefix').
+        group('prefixes.prefix').
+        count
 
       @words = Definition.where('word LIKE ?', "#{@begin}%").
                order(word: :asc).
@@ -69,14 +70,13 @@ class DefinitiesController < ApplicationController
     if logged_in? && current_user.admin?
       @wotds = Wotd.where(definition: @definition)
       @wotd_dates = []
-      date = Date.today
-      for i in (1..50)
+
+      (Date.today..(Date.today+50)).each do |date|
         datestr = date.strftime("%Y-%m-%d")
-        wotd = Wotd.find_by_date(datestr)
+        wotd = Wotd.find_by(date: datestr)
         if !wotd
-          @wotd_dates << datestr;
+          @wotd_dates << datestr
         end
-        date = date + 1
       end
     end
 

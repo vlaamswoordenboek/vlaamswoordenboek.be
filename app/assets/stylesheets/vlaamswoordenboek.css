@@ -26,19 +26,19 @@ h2 {
 	margin:.5em 0 .5em 0;
 }
 
-h3 { 
+h3 {
 	font-size: 107%;
 	color: #444;
-	font-weight: bold; 
+	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 			margin:.25em 0 .25em 0;
 }
 
-.small { 
+.small {
 	display: inline;
 	font-size: 90%;
 	color: #444;
-	font-weight: normal; 
+	font-weight: normal;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -137,7 +137,7 @@ img {
 	will be listed below.
 
 	We use the voice-family property because it is likely to be used very infrequently,
-	and where it is used it will be set on the body tag. So the second voice-family value 
+	and where it is used it will be set on the body tag. So the second voice-family value
 	of "inherit" will override our bogus "\"}\"" value and allow the proper value to
 	cascade down from the body tag.
 
@@ -180,6 +180,10 @@ html>body #centercontent {
 	font-size: 95%;
 }
 
+.block p.center, .block-admin p.center {
+	text-align: center;
+}
+
 .block-search {
 	border:0px;
 }
@@ -193,6 +197,10 @@ html>body #centercontent {
 	font-size: 95%;
 	border:1px solid #f88;
 	background-color: #fee;
+}
+
+.block-admin form {
+	margin: 1em 0;
 }
 
 /* Structural: Tables */
@@ -266,4 +274,17 @@ table.barChart td.quantifier div span {
 	font-weight:bold;
 	font-size: 110%;
 	sborder: 1px solid #00f;
+}
+
+
+.prefix-list {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.prefix-list li {
+	display: inline-block;
+	margin-right: 1em;
 }

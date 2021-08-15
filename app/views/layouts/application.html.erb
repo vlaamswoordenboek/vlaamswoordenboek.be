@@ -102,28 +102,22 @@
 			</div>
 		<% end %>
 
-		<% if logged_in? && current_user.admin? %>
-			<%=current_user.admin?%>
+		<div class="block">
+			<p class="center">
+				<b>Nieuwe versie!</b><br/>
+				Er is een nieuwe versie van het Vlaams Woordenboek online. Mocht je problemen ondervinden, gelieve deze te melden op onze
+					<a href="https://github.com/vlaamswoordenboek/vlaamswoordenboek.be/issues">GitHub</a>.
+			</p>
+		</div>
 
+		<% if logged_in? && current_user.admin? %>
 			<div class="block-admin">
-				<p><center>Ingelogd als admin</center></p>
+				<p class="center">Ingelogd als admin</p>
 			</div>
 
 		<% else %>
-
-
 			<div class="block">
-				<p>
-				<center>
-					<b>Nieuwe versie!</b><br/>
-					Er is een nieuwe versie van het Vlaams Woordenboek online. Mocht je problemen ondervinden, gelieve deze te melden op onze
-						<a href="https://github.com/vlaamswoordenboek/vlaamswoordenboek.be/issues">GitHub</a>.
-				</center>
-				</p>
-			</div>
-
-			<div class="block">
-				<p><center>
+				<p class="center">
 					<script type="text/javascript"><!--
 						google_ad_client = "pub-7726730941948502";
 						google_ad_width = 160;
@@ -142,7 +136,7 @@
 					</script>
 					<script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
 					</script>
-				</center></p>
+				</p>
 			</div>
 
 		<% end %>
