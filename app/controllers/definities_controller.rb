@@ -11,7 +11,7 @@ class DefinitiesController < ApplicationController
 
   def index
     @title = "Welkom bij het Vlaams woordenboek"
-    @random_definitions = Definition.random_sample(count: 5, needs_positive_rating: true)
+    @random_definitions = Definition.preload(:created_by, :last_edited_by).random_sample(count: 5, needs_positive_rating: true)
   end
 
   def search
@@ -21,7 +21,7 @@ class DefinitiesController < ApplicationController
     end
 
     @q = params[:definition][:q]
-    @definitions = Definition.search @q
+    @definitions = Definition.preload(:created_by, :last_edited_by).search @q
     @title = "Zoekresultaten voor '#{@q}'"
   end
 
@@ -37,6 +37,7 @@ class DefinitiesController < ApplicationController
 
       @words = Definition.where('word LIKE ?', "#{@begin}%").
                order(word: :asc).
+               preload(:created_by, :last_edited_by).
                distinct.
                pluck(:word)
     end
@@ -47,7 +48,7 @@ class DefinitiesController < ApplicationController
     @title = "Vlaams woord van de dag"
 
     @offset = params[:offset].to_i || 0
-    @wotds = Wotd.all.past.limit(20).offset(@offset)
+    @wotds = Wotd.all.past.preload(definitions: [:created_by, :last_edited_by])..limit(20).offset(@offset)
     if logged_in? && current_user.admin?
       @upcoming_wotds = Wotd.where("date > ?", Date.today).order('date ASC')
     end
@@ -86,14 +87,14 @@ class DefinitiesController < ApplicationController
 
   def term
     @term = params[:term]
-    @definitions = Definition.where(word: @term).order(positivevotes: :desc)
+    @definitions = Definition.where(word: @term).preload(:created_by, :last_edited_by).order(positivevotes: :desc)
 
     @title = @term
   end
 
   def random
     @title = "Een willekeurige selectie"
-    @random_definitions = Definition.random_sample(count: 10).order(:positivevotes)
+    @random_definitions = Definition.random_sample(count: 10).preload(:created_by, :last_edited_by).order(:positivevotes)
   end
 
   def recent
@@ -102,7 +103,7 @@ class DefinitiesController < ApplicationController
       @offset = params[:offset]
     end
     @title = "Recente toevoegingen"
-    @recent_definitions = Definition.recent(count: 20, offset: @offset)
+    @recent_definitions = Definition.preload(:created_by, :last_edited_by).recent(count: 20, offset: @offset)
   end
 
   def wijzigingen
@@ -130,7 +131,7 @@ class DefinitiesController < ApplicationController
     end
     @title = "Top woorden"
 
-    @top_definitions = Definition.top(count: 20, offset: @offset)
+    @top_definitions = Definition.preload(:created_by, :last_edited_by).top(count: 20, offset: @offset)
   end
 
   def new

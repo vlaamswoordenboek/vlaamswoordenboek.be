@@ -13,6 +13,9 @@ class Definition < ActiveRecord::Base
   validates_presence_of :description
   validates_presence_of :example
 
+  belongs_to :created_by, class_name: 'User', optional: true
+  belongs_to :last_edited_by, class_name: 'User', optional: true
+
   HUMANIZED_ATTRIBUTES = {
     :word => "Woord",
     :description => "Beschrijving",
@@ -75,19 +78,11 @@ class Definition < ActiveRecord::Base
 
   # the user who created the initial version for this definition
   def creator
-    begin
-      User.find(versions.first[:updated_by])
-    rescue ActiveRecord::RecordNotFound
-      nil
-    end
+    created_by
   end
 
   # the user who last updated the definition
   def editor
-    begin
-      User.find(versions.last[:updated_by])
-    rescue ActiveRecord::RecordNotFound
-      nil
-    end
+    last_edited_by
   end
 end
