@@ -41,16 +41,14 @@
 				en laatst gewijzigd door <%= link_to definition.editor.login, user_path(definition.editor.login) %>
 			<% end %>
 			(<%=
-				localize(  definition.versions.last.updated_at, format = '%d %b %Y %H:%M' )
+				localize(  definition.updated_at, format = '%d %b %Y %H:%M' )
 			%>)
-			<% if (  definition.wotds.size > 0 ) %>
-				<% for @wotd in  definition.wotds %>
-					<% if ( @wotd.date < Date.today ) || ( logged_in? && current_user.admin? ) %>
-						<br/>Dit woord was woord van de dag op
-						<%=
-							localize( @wotd.date, format = '%d %b %Y' )
-						%>
-					<% end %>
+			<% definition.wotds.each do |wotd| %>
+				<% if ( wotd.date < Date.today ) || ( logged_in? && current_user.admin? ) %>
+					<br/>Dit woord was woord van de dag op
+					<%=
+						localize( wotd.date, format = '%d %b %Y' )
+					%>
 				<% end %>
 			<% end %>
 	</div>

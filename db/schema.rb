@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_15_114011) do
+ActiveRecord::Schema.define(version: 2021_08_15_121622) do
 
   create_table "comments", id: :integer, force: :cascade do |t|
     t.string "title"
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2021_08_15_114011) do
     t.string "properties", default: "", null: false
     t.bigint "created_by_id"
     t.bigint "last_edited_by_id"
+    t.integer "reactions_count"
+    t.integer "versions_count"
     t.index ["created_by_id"], name: "index_definitions_on_created_by_id"
     t.index ["last_edited_by_id"], name: "index_definitions_on_last_edited_by_id"
   end

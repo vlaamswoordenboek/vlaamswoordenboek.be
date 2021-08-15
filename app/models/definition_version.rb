@@ -1,5 +1,5 @@
 class DefinitionVersion < ActiveRecord::Base
-  belongs_to :definition
+  belongs_to :definition, counter_cache: 'versions_count'
   belongs_to :editor, class_name: 'User', foreign_key: 'updated_by'
 
   def <=>(other)
