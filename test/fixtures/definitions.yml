@@ -12,15 +12,22 @@ Ben op zoek naar een, liefst gratis, programma dat in staat is filmpjes te capte
 Open VLD capteerde het enorme ongenoegen van de ondernemers en dwong een verlenging van de overgangsperiode af. (standard.be)
 Er mag geen water meer gecapteerd worden uit alle waterlopen van het IJzerbekken. (middelkerke.be)"
   updated_at: 2020/2/2 02:02:02
+  created_by: user1
+  last_edited_by: user1
+
 
 capteren_ww2:
   word: capteren
   description: "opnemen van een film, televisieprogramma voor uitzending"
   example: "Er gaat veel volk zijn en de VRT gaat het hele gebeuren capteren voor een live uitzending."
   updated_at: <%= 3.hours.ago %>
+  created_by: user1
+  last_edited_by: user1
 
 topword:
   word: topword
   description: The best word
   example: Does the topword really need an example?
   positivevotes: 242424
+  created_by: user1
+  last_edited_by: user1

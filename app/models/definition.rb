@@ -22,6 +22,14 @@ class Definition < ActiveRecord::Base
     :example => "Voorbeeld"
   }
 
+  before_create do
+    self.created_by = User.find(updated_by)
+  end
+
+  before_save do
+    self.last_edited_by = User.find(updated_by)
+  end
+
   after_save do
     DefinitionVersion.create!(
       definition: self,

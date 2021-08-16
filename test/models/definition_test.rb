@@ -8,5 +8,7 @@ class DefinitionTest < ActiveSupport::TestCase
     assert definition.valid?
 
     assert definition.save
+    assert_equal users(:user1), definition.creator
+    assert_equal users(:user1), definition.editor
   end
 end

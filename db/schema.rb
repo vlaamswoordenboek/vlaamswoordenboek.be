@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2021_08_15_121622) do
 
-  create_table "comments", id: :integer, force: :cascade do |t|
+  create_table "comments", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.integer "user_id"
@@ -21,12 +21,12 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.string "resource_type"
   end
 
-  create_table "definition_versions", id: :integer, force: :cascade do |t|
+  create_table "definition_versions", charset: "utf8mb4", force: :cascade do |t|
     t.integer "definition_id"
     t.integer "version"
-    t.binary "word"
-    t.text "description", collation: "utf8mb4_0900_ai_ci"
-    t.text "example", collation: "utf8mb4_0900_ai_ci"
+    t.string "word"
+    t.text "description"
+    t.text "example"
     t.integer "positivevotes", default: 0
     t.integer "negativevotes", default: 0
     t.integer "updated_by"
@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.string "properties", default: "", null: false
   end
 
-  create_table "definitions", id: :integer, force: :cascade do |t|
-    t.string "word", collation: "utf8mb4_0900_ai_ci"
-    t.text "description", collation: "utf8mb4_0900_ai_ci"
-    t.text "example", collation: "utf8mb4_0900_ai_ci"
+  create_table "definitions", charset: "utf8mb4", force: :cascade do |t|
+    t.string "word"
+    t.text "description"
+    t.text "example"
     t.integer "positivevotes", default: 0, null: false
     t.integer "negativevotes", default: 0, null: false
     t.integer "updated_by"
@@ -56,12 +56,12 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.index ["last_edited_by_id"], name: "index_definitions_on_last_edited_by_id"
   end
 
-  create_table "forums", id: :integer, force: :cascade do |t|
+  create_table "forums", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "body"
   end
 
-  create_table "forumtopics", id: :integer, force: :cascade do |t|
+  create_table "forumtopics", charset: "utf8mb4", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.integer "user_id"
@@ -69,7 +69,7 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.integer "forum_id"
   end
 
-  create_table "globalize_countries", id: :integer, force: :cascade do |t|
+  create_table "globalize_countries", charset: "utf8mb4", force: :cascade do |t|
     t.string "code", limit: 2
     t.string "english_name"
     t.string "date_format"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.index ["code"], name: "index_globalize_countries_on_code"
   end
 
-  create_table "globalize_languages", id: :integer, force: :cascade do |t|
+  create_table "globalize_languages", charset: "utf8mb4", force: :cascade do |t|
     t.string "iso_639_1", limit: 2
     t.string "iso_639_2", limit: 3
     t.string "iso_639_3", limit: 3
@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.index ["rfc_3066"], name: "index_globalize_languages_on_rfc_3066"
   end
 
-  create_table "globalize_translations", id: :integer, force: :cascade do |t|
+  create_table "globalize_translations", charset: "utf8mb4", force: :cascade do |t|
     t.string "type"
     t.string "tr_key"
     t.string "table_name"
@@ -118,28 +118,24 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.index ["tr_key", "language_id"], name: "index_globalize_translations_on_tr_key_and_language_id"
   end
 
-  create_table "messages", id: :integer, force: :cascade do |t|
+  create_table "messages", charset: "utf8mb4", force: :cascade do |t|
     t.integer "from_user"
     t.integer "to_user"
-    t.string "title", collation: "utf8mb4_0900_ai_ci"
-    t.text "body", collation: "utf8mb4_0900_ai_ci"
+    t.string "title"
+    t.text "body"
     t.datetime "created_at"
     t.boolean "read", default: false, null: false
   end
 
-  create_table "reactions", id: :integer, force: :cascade do |t|
-    t.string "title", collation: "utf8mb4_0900_ai_ci"
-    t.text "body", collation: "utf8mb4_0900_ai_ci"
+  create_table "reactions", charset: "utf8mb4", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
     t.integer "definition_id"
     t.integer "created_by"
     t.datetime "created_at"
   end
 
-  create_table "schema_info", id: false, force: :cascade do |t|
-    t.integer "version"
-  end
-
-  create_table "users", id: :integer, force: :cascade do |t|
+  create_table "users", charset: "utf8mb4", force: :cascade do |t|
     t.string "login"
     t.string "email"
     t.string "crypted_password", limit: 40
@@ -151,16 +147,16 @@ ActiveRecord::Schema.define(version: 2021_08_15_121622) do
     t.text "details"
   end
 
-  create_table "voters", id: :integer, force: :cascade do |t|
+  create_table "voters", charset: "utf8mb4", force: :cascade do |t|
   end
 
-  create_table "votes", id: :integer, force: :cascade do |t|
+  create_table "votes", charset: "utf8mb4", force: :cascade do |t|
     t.integer "voter_id"
     t.integer "definition_id"
     t.integer "value"
   end
 
-  create_table "wotds", id: :integer, force: :cascade do |t|
+  create_table "wotds", charset: "utf8mb4", force: :cascade do |t|
     t.integer "definition_id"
     t.date "date"
   end
