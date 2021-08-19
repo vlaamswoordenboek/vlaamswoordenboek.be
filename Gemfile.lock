@@ -95,6 +95,7 @@ GEM
     ffi (1.15.3)
     globalid (0.5.2)
       activesupport (>= 5.0)
+    htmlentities (4.3.4)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -263,6 +264,7 @@ DEPENDENCIES
   brakeman (~> 4.10)
   byebug
   capybara (>= 3.26)
+  htmlentities
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2 (~> 0.5)

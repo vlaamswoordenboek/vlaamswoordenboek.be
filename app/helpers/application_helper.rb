@@ -7,10 +7,12 @@ module ApplicationHelper
   def format_user_content(text)
     return "" if text.blank?
 
+    coder = HTMLEntities.new
+
     RedCloth.new(text).
       to_html.
       gsub(/\[(.*?)\]/) do |m, a|
-        link_to(m[1..-2], term_definitions_path(term: m[1..-2]))
+        link_to(coder.decode(m[1..-2]), term_definitions_path(term: coder.decode(m[1..-2]).html_safe))
       end.
       html_safe
   end
@@ -18,10 +20,11 @@ module ApplicationHelper
   def format_user_content_for_xml(text)
     return "" if text.blank?
 
+    coder = HTMLEntities.new
     RedCloth.new(text).
       to_html.
       gsub(/\[(.*?)\]/) do |m|
-        link_to(m[1..-2], term_definitions_path(term: m[1..-2]))
+        link_to(coder.decode(m[1..-2]).html_safe, term_definitions_path(term: coder.decode(m[1..-2]).html_safe))
       end.
       html_safe
   end

@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'RedCloth'
+gem 'htmlentities'
 gem 'will_paginate'
 gem 'airbrake'
 gem "barnes"
