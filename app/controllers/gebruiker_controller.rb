@@ -5,6 +5,7 @@ class GebruikerController < ApplicationController
     @title = "Gebruikers"
     @topeditors = User.connection.select_all "select count(updated_by) as c, updated_by from definition_versions group by updated_by order by c desc limit 10;"
     @activeeditors = User.connection.select_all "select count(updated_by) as c, updated_by from definition_versions where updated_at > '#{1.week.ago.to_s(:db)}' group by updated_by order by c desc limit 10;"
+    @activeeditors = @topeditors if @activeeditors.empty? # Just failsafe mostly for development where there might be no recent edits
     @topreactors = User.connection.select_all "select count(created_by) as c, created_by from reactions group by created_by order by c desc limit 10;"
     @recentusers = User.order('id DESC').limit(5)
   end

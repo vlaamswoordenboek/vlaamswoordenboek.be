@@ -1,5 +1,8 @@
-<p>Er zijn momenteel <%= User.count %> gebruikers geregistreerd op het Vlaams woordenboek. De meest recentelijk geregistreerde
-gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, user_path(user.login) ) }.join(', ')%>. </p>
+<p>
+	Er zijn momenteel <%= User.count %> gebruikers geregistreerd op het Vlaams woordenboek. De meest recentelijk geregistreerde
+	gebruikers zijn
+	<%= safe_join(@recentusers.map { |user| link_to(user.login, user_path(user.login)).html_safe }, ', ') %>.
+</p>
 
 <h2>Top bewerkers</h2>
 
@@ -102,7 +105,7 @@ gebruikers zijn <%= @recentusers.map{ | user | link_to( user.login, user_path(us
 		</th>
 	</tr>
 	<% count = 0 %>
-	<% maxc = Float( @topreactors.first[ "c" ] ) %>
+	<% maxc = @topreactors.empty? ? 1 : Float( @topreactors.first[ "c" ] ) %>
 	<% for topreactor in @topreactors %>
 		<tr>
 			<td align="right">
