@@ -20,9 +20,14 @@
 	</div>
 	<div class="caption">
 			Bewerking door
-			<%= link_to user_path(definition_version.editor.login) do %>
-				<%= definition_version.editor.login %>
-			<% end %> op
+			<% if definition_version.editor %>
+				<%= link_to user_path(definition_version.editor.login) do %>
+					<%= definition_version.editor.login %>
+				<% end %>
+			<% else %>
+				Verwijderde gebruiker
+			<% end %>
+			op
 			<%=
 				localize( definition_version.updated_at, format = '%d %b %Y %H:%M' )
 			%><br/>

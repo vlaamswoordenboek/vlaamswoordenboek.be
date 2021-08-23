@@ -20,19 +20,27 @@ class GebruikerController < ApplicationController
     @title = 'Reacties van ' + @user.login
     @reactions = Reaction.where(created_by: @user.id).
                  order('created_at DESC').
-                 paginate(page: params['page'] || 1, per_page: 5)
+                 paginate(page: current_page, per_page: 5)
   end
 
   def edits
     @title = 'Wijzigingen door ' + @user.login
     @definition_versions = DefinitionVersion.where(updated_by: @user.id).
                            order('updated_at DESC').
-                           paginate(page: params['page'] || 1, per_page: 5)
+                           paginate(page: current_page, per_page: 5)
   end
 
   private
 
   def find_user
     @user = User.find_by(login: params[:id])
+  end
+
+  def current_page
+    if params['page']
+      params['page'].to_i
+    else
+      1
+    end
   end
 end

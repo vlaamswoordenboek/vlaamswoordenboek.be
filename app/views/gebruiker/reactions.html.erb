@@ -3,7 +3,13 @@
   <%= will_paginate @reactions %>
 
   <% @reactions.each do |reaction| %>
-    <h2><%= link_to reaction.definition.word, definition_path(reaction.definition) %></h2>
+    <h2>
+      <% if reaction.definition %>
+        <%= link_to reaction.definition.word, definition_path(reaction.definition) %>
+      <% else %>
+        -
+      <% end %>
+    </h2>
     <%= render partial: "definities/reaction", object: reaction %>
   <% end %>
 

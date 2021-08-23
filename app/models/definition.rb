@@ -4,10 +4,10 @@ class Definition < ActiveRecord::Base
   #    :description  => { :boost => 2 },
   #    :example     => { :boost => 1 }
   #  }
-  has_many :votes, :dependent => :destroy
-  has_many :reactions, :dependent => :destroy
-  has_many :wotds, :dependent => :destroy
-  has_many :versions, class_name: 'DefinitionVersion'
+  has_many :votes, dependent: :destroy
+  has_many :reactions, dependent: :destroy
+  has_many :wotds, dependent: :destroy
+  has_many :versions, class_name: 'DefinitionVersion', dependent: :destroy
 
   validates_presence_of :word
   validates_presence_of :description
