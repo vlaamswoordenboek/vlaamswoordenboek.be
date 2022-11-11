@@ -14,7 +14,7 @@ xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") do
         xml.guid definition_url(definition_version.definition.id)
         xml.description do
           xml << format_user_content_for_xml(definition_version.description)
-          xml << "<> #{format_user_content_for_xml(definition_version.example)} <>"
+          xml << "![CDATA[ #{format_user_content_for_xml(definition_version.example)} ]]"
         end
       end
     end
