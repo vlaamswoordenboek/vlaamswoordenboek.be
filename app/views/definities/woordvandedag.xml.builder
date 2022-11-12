@@ -13,8 +13,10 @@ xml.rss("version" => "2.0", "xmlns:dc" => "http://purl.org/dc/elements/1.1/") do
         xml.link definition_url(wotd.definition)
         xml.guid definition_url(wotd.definition)
         xml.description do
+          xml << "![CDATA["
           xml << format_user_content_for_xml(wotd.definition.description)
-          xml << "<> #{format_user_content_for_xml(wotd.definition.example)} <>"
+          xml << "#{format_user_content_for_xml(wotd.definition.example)}"
+          xml << "]]"
         end
       end
     end
