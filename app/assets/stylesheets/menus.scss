@@ -1,0 +1,27 @@
+#primarymenu {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #1D78D5;
+  padding: 5px 0px 3px 0px;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    sborder: 1px solid #0f0;
+
+    li {
+      display: inline;
+
+      a {
+        color: #777;
+        padding:2px 14px 2px 0px;
+        margin: 0px 1px 0px 0px;
+        font-family: "Trebuchet MS", Arial, Verdana, Sans-serif;
+        font-weight:bold;
+        font-size: 110%;
+      }
+    }
+  }
+}
