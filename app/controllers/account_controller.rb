@@ -30,14 +30,14 @@ class AccountController < ApplicationController
   end
 
   def create
-    @user = User.new(create_user_params)
-    if @user.save
-      self.current_user = @user
-      flash[:notice] = "Merci om u in te schrijven! Ge kunt nu nieuwe woorden aan het woordenboek toevoegen."
+#    @user = User.new(create_user_params)
+#    if @user.save
+#      self.current_user = @user
+#      flash[:notice] = "Merci om u in te schrijven! Ge kunt nu nieuwe woorden aan het woordenboek toevoegen."
       redirect_to root_path
-    else
-      render 'new'
-    end
+#    else
+#     render 'new'
+#    end
   end
 
   def edit
